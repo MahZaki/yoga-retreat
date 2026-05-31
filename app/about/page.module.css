@@ -1,0 +1,39 @@
+.hero{background:linear-gradient(135deg,var(--jungle-dark),var(--jungle));padding:calc(var(--nav-h) + 3rem) 0 3rem;text-align:center}
+.hero h1{color:#fff;margin-bottom:.5rem}
+.hero p{color:rgba(255,255,255,.75);max-width:560px;margin:0 auto}
+
+.story{padding:5rem 0}
+.storyGrid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.storyImg{position:relative;border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:4/3}
+.storyImg img{width:100%;height:100%;object-fit:cover}
+.storyContent h2{margin-bottom:1rem}
+.storyContent p{margin-bottom:1rem;color:var(--charcoal-light);line-height:1.85}
+.storyContent p:last-of-type{margin-bottom:0}
+
+.values{padding:5rem 0;background:var(--sand-light)}
+.valuesGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.valueCard{padding:2rem;border-radius:var(--radius-lg);background:#fff;text-align:center;transition:all .32s var(--ease)}
+.valueCard:hover{transform:translateY(-4px);box-shadow:var(--shadow-md)}
+.valueIcon{width:56px;height:56px;border-radius:var(--radius-full);background:rgba(46,90,71,.08);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:1.4rem}
+.valueCard h4{margin-bottom:.5rem}
+.valueCard p{font-size:.85rem;color:var(--slate)}
+
+.stats{padding:4rem 0}
+.statsGrid{display:flex;justify-content:center;gap:4rem;flex-wrap:wrap}
+.statItem{text-align:center}
+.statNum{font-family:var(--font-heading);font-size:2.4rem;font-weight:700;color:var(--jungle)}
+.statLabel{font-size:.82rem;color:var(--slate);margin-top:.25rem}
+
+.team{padding:5rem 0;background:var(--warm-white)}
+.teamGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.teamCard{text-align:center;padding:2rem;border-radius:var(--radius-lg);background:#fff;box-shadow:var(--shadow-sm)}
+.teamAvatar{width:80px;height:80px;border-radius:var(--radius-full);background:linear-gradient(135deg,var(--sage),var(--jungle-light));margin:0 auto 1rem;display:flex;align-items:center;justify-content:center;font-size:1.8rem;color:#fff;font-weight:700}
+.teamCard h4{margin-bottom:.25rem}
+.teamRole{font-size:.82rem;color:var(--terracotta);font-weight:500;margin-bottom:.75rem}
+.teamCard p{font-size:.85rem;color:var(--slate)}
+
+@media(max-width:768px){
+  .storyGrid{grid-template-columns:1fr;gap:2rem}
+  .valuesGrid,.teamGrid{grid-template-columns:1fr}
+  .statsGrid{gap:2rem}
+}

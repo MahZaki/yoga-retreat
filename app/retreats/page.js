@@ -1,0 +1,137 @@
+'use client'
+import { useState } from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
+import Newsletter from '@/components/Newsletter'
+import s from './page.module.css'
+
+const retreats = [
+  { id:1, name:'Ubud Serenity Retreat', location:'Ubud, Bali', duration:'7 days', price:1299, rating:4.9, reviews:128, type:'Luxury', level:'All Levels', img:'/images/retreat-luxury.png', badge:'Editor\'s Pick', meals:'3 daily', accom:'Private Villa' },
+  { id:2, name:'Sacred Silence Meditation', location:'Chiang Mai, Thailand', duration:'10 days', price:899, rating:4.8, reviews:94, type:'Meditation', level:'Intermediate', img:'/images/retreat-meditation.png', badge:'Most Popular', meals:'3 daily', accom:'Shared Room' },
+  { id:3, name:'Jungle Flow Costa Rica', location:'Nosara, Costa Rica', duration:'5 days', price:1599, rating:4.9, reviews:76, type:'Wellness', level:'All Levels', img:'/images/dest-costa-rica.png', badge:'', meals:'2 daily', accom:'Eco Lodge' },
+  { id:4, name:'Rishikesh Ashram Experience', location:'Rishikesh, India', duration:'14 days', price:649, rating:4.7, reviews:203, type:'Teacher Training', level:'Advanced', img:'/images/dest-india.png', badge:'Best Value', meals:'3 daily', accom:'Ashram Dorm' },
+  { id:5, name:'Tulum Beach Yoga', location:'Tulum, Mexico', duration:'6 days', price:1849, rating:4.8, reviews:62, type:'Luxury', level:'Beginner', img:'/images/dest-mexico.png', badge:'', meals:'All-inclusive', accom:'Boutique Hotel' },
+  { id:6, name:'Bali Wellness Immersion', location:'Canggu, Bali', duration:'8 days', price:1099, rating:4.9, reviews:157, type:'Wellness', level:'All Levels', img:'/images/dest-bali.png', badge:'Trending', meals:'2 daily', accom:'Private Room' },
+]
+
+export default function RetreatsPage() {
+  const [country, setCountry] = useState('all')
+  const [budget, setBudget] = useState('all')
+  const [type, setType] = useState('all')
+
+  const filtered = retreats.filter(r => {
+    if (country !== 'all' && !r.location.toLowerCase().includes(country)) return false
+    if (type !== 'all' && r.type !== type) return false
+    if (budget === 'under500' && r.price >= 500) return false
+    if (budget === '500-1500' && (r.price < 500 || r.price > 1500)) return false
+    if (budget === '1500-3000' && (r.price < 1500 || r.price > 3000)) return false
+    if (budget === '3000+' && r.price < 3000) return false
+    return true
+  })
+
+  return (
+    <>
+      <Navbar />
+      <section className={s.hero}>
+        <h1>Explore Yoga Retreats</h1>
+        <p>Compare handpicked retreats by price, duration, and style. Find the one that fits your journey.</p>
+      </section>
+
+      <div className={s.filters}>
+        <div className="container">
+          <div className={s.filterRow}>
+            <select className={s.filterSelect} value={country} onChange={e => setCountry(e.target.value)}>
+              <option value="all">All Countries</option>
+              <option value="bali">Bali</option>
+              <option value="thailand">Thailand</option>
+              <option value="costa rica">Costa Rica</option>
+              <option value="india">India</option>
+              <option value="mexico">Mexico</option>
+            </select>
+            <select className={s.filterSelect} value={budget} onChange={e => setBudget(e.target.value)}>
+              <option value="all">Any Budget</option>
+              <option value="under500">Under $500</option>
+              <option value="500-1500">$500 – $1,500</option>
+              <option value="1500-3000">$1,500 – $3,000</option>
+              <option value="3000+">$3,000+</option>
+            </select>
+            <select className={s.filterSelect} value={type} onChange={e => setType(e.target.value)}>
+              <option value="all">All Types</option>
+              <option value="Luxury">Luxury</option>
+              <option value="Wellness">Wellness</option>
+              <option value="Meditation">Meditation</option>
+              <option value="Teacher Training">Teacher Training</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div className="container">
+        <div className={s.grid}>
+          {filtered.map(r => (
+            <article key={r.id} className={s.card}>
+              <div className={s.cardImg}>
+                {r.badge && <span className={s.cardBadge}>{r.badge}</span>}
+                <Image src={r.img} alt={r.name} fill sizes="33vw" style={{ objectFit:'cover' }} />
+              </div>
+              <div className={s.cardBody}>
+                <span className={s.cardLocation}>📍 {r.location}</span>
+                <h4>{r.name}</h4>
+                <div className={s.cardMeta}>
+                  <span>⏱ {r.duration}</span>
+                  <span>🧘 {r.type}</span>
+                  <span>📊 {r.level}</span>
+                </div>
+                <div className={s.rating}>
+                  <span className={s.stars}>★★★★★</span>
+                  <span className={s.ratingNum}>{r.rating}</span>
+                  <span style={{ fontSize:'.75rem', color:'var(--slate)' }}>({r.reviews})</span>
+                </div>
+              </div>
+              <div className={s.cardFooter}>
+                <span className={s.cardPrice}>${r.price.toLocaleString()} <span>/ person</span></span>
+                <button className={s.cardBtn}>View Details</button>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        {/* Comparison Table */}
+        <section className={s.comparison}>
+          <div className="section-header center">
+            <span className="section-label">Compare Retreats</span>
+            <h2>Side-by-Side Comparison</h2>
+          </div>
+          <div style={{ overflowX:'auto' }}>
+            <table className={s.table}>
+              <thead>
+                <tr>
+                  <th>Retreat</th><th>Location</th><th>Duration</th><th>Price</th><th>Meals</th><th>Accommodation</th><th>Rating</th><th></th>
+                </tr>
+              </thead>
+              <tbody>
+                {retreats.slice(0,5).map(r => (
+                  <tr key={r.id}>
+                    <td style={{ fontWeight:600 }}>{r.name}</td>
+                    <td>{r.location}</td>
+                    <td>{r.duration}</td>
+                    <td style={{ fontWeight:600, color:'var(--jungle)' }}>${r.price.toLocaleString()}</td>
+                    <td>{r.meals}</td>
+                    <td>{r.accom}</td>
+                    <td>★ {r.rating}</td>
+                    <td><button className={s.tableBtn}>Book Now</button></td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+
+      <Newsletter />
+      <Footer />
+    </>
+  )
+}

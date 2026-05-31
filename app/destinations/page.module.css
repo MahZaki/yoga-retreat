@@ -1,0 +1,30 @@
+.hero{background:linear-gradient(135deg,var(--jungle-dark),var(--jungle));padding:calc(var(--nav-h) + 3rem) 0 3rem;text-align:center}
+.hero h1{color:#fff;margin-bottom:.5rem}
+.hero p{color:rgba(255,255,255,.75);max-width:560px;margin:0 auto}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;padding:4rem 0}
+.card{position:relative;border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:3/4;cursor:pointer;transition:transform .32s var(--ease)}
+.card:hover{transform:translateY(-6px)}
+.cardImg{position:absolute;inset:0}
+.cardImg img{width:100%;height:100%;object-fit:cover;transition:transform .52s var(--ease)}
+.card:hover .cardImg img{transform:scale(1.06)}
+.overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(43,43,43,.8) 0%,rgba(43,43,43,.1) 50%);display:flex;flex-direction:column;justify-content:flex-end;padding:2rem;z-index:2}
+.destName{font-family:var(--font-heading);font-size:1.6rem;font-weight:700;color:#fff;margin-bottom:.25rem}
+.destCount{font-size:.85rem;color:rgba(255,255,255,.7);margin-bottom:.75rem}
+.destDesc{font-size:.85rem;color:rgba(255,255,255,.65);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.destBtn{display:inline-flex;margin-top:1rem;padding:8px 18px;border-radius:var(--radius-full);background:rgba(255,255,255,.15);backdrop-filter:blur(6px);color:#fff;font-size:.82rem;font-weight:600;transition:background .18s;border:1.5px solid rgba(255,255,255,.3)}
+.destBtn:hover{background:rgba(255,255,255,.25)}
+
+.featured{padding:4rem 0;background:var(--sand-light)}
+.featGrid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.featImg{position:relative;border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:4/3}
+.featImg img{width:100%;height:100%;object-fit:cover}
+.featContent h2{margin-bottom:.75rem}
+.featContent p{margin-bottom:1rem;color:var(--slate)}
+.featStats{display:flex;gap:2rem;margin-bottom:1.5rem}
+.featStat{text-align:center}
+.featStatNum{font-family:var(--font-heading);font-size:1.5rem;font-weight:700;color:var(--jungle)}
+.featStatLabel{font-size:.75rem;color:var(--slate);text-transform:uppercase;letter-spacing:.06em}
+
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.featGrid{grid-template-columns:1fr}}
+@media(max-width:600px){.grid{grid-template-columns:1fr}}

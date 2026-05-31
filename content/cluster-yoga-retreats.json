@@ -1,0 +1,64 @@
+{
+  "pillar": {
+    "title": "The Complete Guide to Yoga Retreats in 2025",
+    "keyword": "yoga retreats",
+    "volume": 8100,
+    "kd": 58,
+    "intent": "commercial",
+    "template": "ultimate-guide",
+    "wordCount": 3500,
+    "url": "/blog/yoga-retreats",
+    "status": "published"
+  },
+  "clusters": [
+    {
+      "name": "Destination Retreats",
+      "color": "#2E5A47",
+      "posts": [
+        { "title": "Best Yoga Retreats in Bali: Ubud, Canggu, and Uluwatu Compared", "keyword": "yoga retreat bali", "volume": 880, "kd": 50, "template": "best-of", "wordCount": 2000, "url": "/blog/yoga-retreat-bali", "status": "planned" },
+        { "title": "7 Best Yoga Retreats in Costa Rica for 2025", "keyword": "yoga retreats in costa rica", "volume": 260, "kd": 30, "template": "best-of", "wordCount": 1800, "url": "/blog/yoga-retreats-costa-rica", "status": "planned" },
+        { "title": "Yoga Retreat California: 10 Top-Rated Centers by Region", "keyword": "yoga retreat california", "volume": 720, "kd": 26, "template": "best-of", "wordCount": 1800, "url": "/blog/yoga-retreat-california", "status": "planned" },
+        { "title": "Yoga Retreats in India: From Rishikesh Ashrams to Kerala Ayurveda", "keyword": "yoga retreats india", "volume": 170, "kd": 34, "template": "best-of", "wordCount": 1800, "url": "/blog/yoga-retreats-india", "status": "planned" }
+      ]
+    },
+    {
+      "name": "Retreat Types",
+      "color": "#C86B4A",
+      "posts": [
+        { "title": "Luxury Yoga Retreats: What $3,000+ Gets You (and Whether It Is Worth It)", "keyword": "luxury yoga retreats", "volume": 210, "kd": 46, "template": "review", "wordCount": 1500, "url": "/blog/luxury-yoga-retreats", "status": "planned" },
+        { "title": "Women's Yoga Retreats: 8 Programs Designed for Female Practitioners", "keyword": "women's yoga retreat", "volume": 720, "kd": 23, "template": "best-of", "wordCount": 1500, "url": "/blog/womens-yoga-retreat", "status": "planned" },
+        { "title": "Yoga Retreat for Beginners: What to Expect on Your First Trip", "keyword": "yoga retreat for beginners", "volume": 260, "kd": 14, "template": "how-to", "wordCount": 1500, "url": "/blog/yoga-retreat-for-beginners", "status": "planned" },
+        { "title": "Silent Yoga Retreats: A Guide to Meditation-Focused Programs", "keyword": "silent yoga retreat", "volume": 210, "kd": 23, "template": "explainer", "wordCount": 1500, "url": "/blog/silent-yoga-retreat", "status": "planned" }
+      ]
+    },
+    {
+      "name": "Planning and Booking",
+      "color": "#E6C9A8",
+      "posts": [
+        { "title": "Best Yoga Retreats: How to Compare and Choose the Right One", "keyword": "best yoga retreats", "volume": 480, "kd": 31, "template": "how-to", "wordCount": 1800, "url": "/blog/best-yoga-retreats", "status": "planned" },
+        { "title": "Affordable Yoga Retreats Under $500 That Do Not Cut Corners", "keyword": "affordable yoga retreats", "volume": 170, "kd": 9, "template": "best-of", "wordCount": 1500, "url": "/blog/affordable-yoga-retreats", "status": "planned" },
+        { "title": "All-Inclusive Yoga Retreats: What Is Included and What Is Not", "keyword": "all inclusive yoga retreat", "volume": 170, "kd": 8, "template": "explainer", "wordCount": 1500, "url": "/blog/all-inclusive-yoga-retreat", "status": "planned" },
+        { "title": "How to Book a Yoga Retreat: Pricing, Deposits, and Cancellation Policies", "keyword": "book yoga retreats", "volume": 390, "kd": 26, "template": "how-to", "wordCount": 1500, "url": "/blog/book-yoga-retreats", "status": "planned" }
+      ]
+    }
+  ],
+  "links": [
+    { "from": "pillar", "to": "yoga-retreat-bali", "type": "mandatory", "anchor": "yoga retreats in Bali" },
+    { "from": "pillar", "to": "yoga-retreats-costa-rica", "type": "mandatory", "anchor": "Costa Rica yoga retreats" },
+    { "from": "pillar", "to": "yoga-retreat-california", "type": "mandatory", "anchor": "yoga retreat California" },
+    { "from": "pillar", "to": "luxury-yoga-retreats", "type": "mandatory", "anchor": "luxury yoga retreats" },
+    { "from": "pillar", "to": "womens-yoga-retreat", "type": "mandatory", "anchor": "women's yoga retreat" },
+    { "from": "pillar", "to": "yoga-retreat-for-beginners", "type": "mandatory", "anchor": "yoga retreat for beginners" },
+    { "from": "pillar", "to": "best-yoga-retreats", "type": "mandatory", "anchor": "best yoga retreats" },
+    { "from": "pillar", "to": "affordable-yoga-retreats", "type": "mandatory", "anchor": "affordable yoga retreats" },
+    { "from": "pillar", "to": "book-yoga-retreats", "type": "mandatory", "anchor": "book yoga retreats" }
+  ],
+  "meta": {
+    "totalPosts": 13,
+    "totalClusters": 3,
+    "totalLinks": 36,
+    "estimatedWords": 23400,
+    "primaryKeyword": "yoga retreats",
+    "clusterVolume": 12690
+  }
+}

@@ -1,0 +1,43 @@
+'use client'
+import { useState } from 'react'
+import styles from './Newsletter.module.css'
+
+export default function Newsletter() {
+  const [email, setEmail] = useState('')
+  const [submitted, setSubmitted] = useState(false)
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    if (!email) return
+    setSubmitted(true)
+    setEmail('')
+    setTimeout(() => setSubmitted(false), 4000)
+  }
+
+  return (
+    <section className={styles.section}>
+      <div className={styles.glow} />
+      <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+        <div className={styles.inner}>
+          <span className={styles.lead}>🎁 Free Yoga Retreat Planning Guide</span>
+          <h2>Get Retreat Deals &amp; Wellness Inspiration</h2>
+          <p>Join 12,000+ mindful travelers. Get weekly retreat deals, destination guides, and wellness tips delivered to your inbox.</p>
+          <form className={styles.form} onSubmit={handleSubmit}>
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className={styles.input}
+              required
+            />
+            <button type="submit" className="btn btn-primary">
+              {submitted ? '✓ Subscribed' : 'Get Free Guide'}
+            </button>
+          </form>
+          <span className={styles.note}>No spam. Unsubscribe anytime.</span>
+        </div>
+      </div>
+    </section>
+  )
+}

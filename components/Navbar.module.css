@@ -1,0 +1,28 @@
+.navbar{position:fixed;top:0;left:0;right:0;height:var(--nav-h);z-index:1000;transition:all var(--transition)}
+.scrolled{background:rgba(247,244,239,.95);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:var(--shadow-sm)}
+.inner{max-width:var(--max-w);margin:0 auto;padding:0 1.5rem;height:100%;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:10px;transition:opacity .18s}
+.logo:hover{opacity:.85}
+.logoText{font-family:var(--font-heading);font-size:1.15rem;font-weight:700;color:#fff;transition:color var(--transition)}
+.logoAccent{font-weight:400}
+.dark{color:var(--charcoal)}
+.links{display:flex;align-items:center;gap:2rem}
+.link{font-size:.88rem;font-weight:500;color:rgba(255,255,255,.9);transition:color .18s;position:relative}
+.link::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--terracotta);border-radius:2px;transition:width var(--transition)}
+.link:hover::after{width:100%}
+.linkDark{color:var(--charcoal-light)}
+.linkDark:hover{color:var(--terracotta)}
+.cta{display:flex;align-items:center;gap:1rem}
+.ctaBtn{composes: btn-sm from global}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{display:block;width:24px;height:2px;background:#fff;border-radius:2px;transition:all var(--transition)}
+.barDark{background:var(--charcoal) !important}
+.mobile{position:fixed;inset:0;background:var(--warm-white);z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2rem;animation:fadeIn .3s}
+.mobileClose{position:absolute;top:24px;right:24px;font-size:1.8rem;color:var(--charcoal);cursor:pointer;width:48px;height:48px;display:flex;align-items:center;justify-content:center}
+.mobileLink{font-size:1.6rem;font-weight:700;font-family:var(--font-heading);color:var(--charcoal);transition:color .18s}
+.mobileLink:hover{color:var(--terracotta)}
+
+@media(max-width:900px){
+  .links,.cta{display:none}
+  .hamburger{display:flex}
+}
