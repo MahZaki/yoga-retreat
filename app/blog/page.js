@@ -8,124 +8,80 @@ import Newsletter from '@/components/Newsletter'
 import s from './page.module.css'
 
 const articles = [
-  { 
-    cat: 'Retreat Planning', 
-    title: 'Yoga Retreats: How to Choose, Book, and Prepare for Your First (or Next) Retreat', 
-    excerpt: 'Our ultimate, fully vetted guide to choosing, booking, and preparing for a yoga retreat. Read destination price breakdowns, packing lists, and E-E-A-T reviews.', 
-    img: '/images/blog/yoga-retreat-group-bali-beach.jpg', 
-    date: 'May 31, 2025', 
-    read: '18 min',
-    url: '/blog/yoga-retreats'
-  },
-  { 
-    cat: 'Retreat Planning', 
-    title: 'All-Inclusive Yoga Retreats: What Is Included and What Is Not', 
-    excerpt: 'Learn what "all-inclusive" actually means in the wellness retreat industry. Read about average costs, hidden fees, and drivers of pricing.', 
-    img: '/images/blog/luxury-yoga-retreat-pool.jpg', 
-    date: 'June 1, 2025', 
-    read: '10 min',
-    url: '/blog/all-inclusive-yoga-retreat'
-  },
-  { 
-    cat: 'Retreat Planning', 
-    title: 'Affordable Yoga Retreats: How to Find Cheap Retreats That Do Not Cut Corners', 
-    excerpt: 'A practical guide to finding verified wellness retreats under $500. Vetted destinations, warning red flags, and quality verification.', 
-    img: '/images/blog/meditation-retreat-group-outdoor.jpg', 
-    date: 'June 2, 2025', 
-    read: '11 min',
-    url: '/blog/affordable-yoga-retreats'
-  },
-  { 
-    cat: 'Retreat Planning', 
-    title: 'Yoga Retreat for Beginners: What to Expect on Your First Trip', 
-    excerpt: 'Booking your first wellness retreat? Learn how to choose a beginner-friendly program, what to pack, and how to avoid feeling overwhelmed.', 
-    img: '/images/blog/yoga-pose-nature-river.jpg', 
-    date: 'June 3, 2025', 
-    read: '12 min',
-    url: '/blog/yoga-retreat-for-beginners'
-  }
+  // Pillar
+  { slug: 'yoga-retreats', title: 'Yoga retreats: the complete guide to choosing, booking, and preparing', category: 'Guide', img: '/images/blog/yoga-retreat-hero.jpg', date: 'Aug 2025', readTime: '14 min', vol: 8100 },
+  // Planning cluster
+  { slug: 'best-yoga-retreats', title: 'Best yoga retreats 2025: how to actually compare and choose', category: 'Planning', img: '/images/blog/hero-bali.png', date: 'Nov 2025', readTime: '9 min', vol: 480 },
+  { slug: 'how-to-book-yoga-retreat', title: 'How to book a yoga retreat: pricing, deposits, and policies', category: 'Planning', img: '/images/blog/blog-planning-guide.png', date: 'Nov 2025', readTime: '7 min', vol: 390 },
+  { slug: 'affordable-yoga-retreats', title: 'Affordable yoga retreats under $500 that don\'t cut corners', category: 'Planning', img: '/images/blog/yoga-retreat-hero.jpg', date: 'Oct 2025', readTime: '6 min', vol: 170 },
+  { slug: 'all-inclusive-yoga-retreat', title: 'All-inclusive yoga retreats: what\'s included and what isn\'t', category: 'Planning', img: '/images/blog/yoga-retreat-hero.jpg', date: 'Oct 2025', readTime: '6 min', vol: 170 },
+  // Destination cluster
+  { slug: 'yoga-retreat-bali', title: 'Best yoga retreats in Bali: Ubud, Canggu, and Uluwatu compared', category: 'Destinations', img: '/images/blog/bali-yoga.jpg', date: 'Sep 2025', readTime: '9 min', vol: 880 },
+  { slug: 'yoga-retreat-california', title: 'Yoga retreat California: 10 top-rated centers by region', category: 'Destinations', img: '/images/blog/california-yoga.jpg', date: 'Sep 2025', readTime: '8 min', vol: 720 },
+  { slug: 'yoga-retreats-costa-rica', title: '7 best yoga retreats in Costa Rica for 2025', category: 'Destinations', img: '/images/blog/costa-rica-yoga.jpg', date: 'Sep 2025', readTime: '7 min', vol: 260 },
+  { slug: 'yoga-retreats-india', title: 'Yoga retreats India: Rishikesh ashrams to Kerala Ayurveda', category: 'Destinations', img: '/images/blog/india-yoga.jpg', date: 'Sep 2025', readTime: '8 min', vol: 170 },
+  // Types cluster
+  { slug: 'luxury-yoga-retreats', title: 'Luxury yoga retreats: what $3,000+ actually gets you', category: 'Retreat Types', img: '/images/blog/luxury-yoga.jpg', date: 'Oct 2025', readTime: '7 min', vol: 210 },
+  { slug: 'womens-yoga-retreat', title: "Women's yoga retreats: 8 programs for female practitioners", category: 'Retreat Types', img: '/images/blog/womens-yoga.jpg', date: 'Oct 2025', readTime: '7 min', vol: 720 },
+  { slug: 'silent-yoga-retreat', title: 'Silent yoga retreats: a guide to meditation-focused programs', category: 'Retreat Types', img: '/images/blog/silent-yoga.jpg', date: 'Oct 2025', readTime: '8 min', vol: 210 },
+  { slug: 'yoga-retreat-for-beginners', title: 'Yoga retreat for beginners: what to expect on your first trip', category: 'Retreat Types', img: '/images/blog/yoga-retreat-hero.jpg', date: 'Sep 2025', readTime: '7 min', vol: 260 },
 ]
 
-const categories = ['All', 'Retreat Planning']
+const categories = ['All', 'Guide', 'Planning', 'Destinations', 'Retreat Types']
 
 export default function BlogPage() {
-  const [active, setActive] = useState('All')
-  const filtered = active === 'All' ? articles : articles.filter(a => a.cat === active)
+  const [activeCategory, setActiveCategory] = useState('All')
+
+  const filtered = activeCategory === 'All'
+    ? articles
+    : articles.filter(a => a.category === activeCategory)
 
   return (
     <>
       <Navbar />
-      <section className={s.hero}>
-        <h1>The Journal</h1>
-        <p>Expert guides, destination deep-dives, and honest retreat reviews from the YogaRetreatAdvisor team.</p>
-      </section>
+      <main>
+        <section className={s.hero}>
+          <div className="container">
+            <h1>Yoga retreat guides &amp; resources</h1>
+            <p>Honest, research-backed guides from someone who has actually been there — 22 retreats, 14 countries, no sponsored opinions.</p>
+          </div>
+        </section>
 
-      <section className={s.content}>
-        <div className="container">
-          <div className={s.layout}>
-            <div>
-              <div className={s.cats}>
-                {categories.map(c => (
-                  <button key={c} className={`tag ${active === c ? 'active' : ''}`} onClick={() => setActive(c)}>{c}</button>
-                ))}
-              </div>
-              <div className={s.grid}>
-                {filtered.map(a => (
-                  <Link href={a.url} key={a.title} className={s.cardLink}>
-                    <article className={s.card}>
-                      <div className={s.cardImg}>
-                        <Image src={a.img} alt={a.title} fill sizes="380px" style={{ objectFit:'cover' }} />
-                      </div>
-                      <div className={s.cardBody}>
-                        <span className={s.cardCat}>{a.cat}</span>
-                        <h3>{a.title}</h3>
-                        <p>{a.excerpt}</p>
-                        <div className={s.cardMeta}><span>{a.date}</span><span>{a.read} read</span></div>
-                        <span className={s.readMore}>Read Article →</span>
-                      </div>
-                    </article>
-                  </Link>
-                ))}
-              </div>
+        <section className={s.content}>
+          <div className="container">
+            <div className={s.filters}>
+              {categories.map(c => (
+                <button key={c} className={`${s.filterBtn} ${activeCategory === c ? s.active : ''}`} onClick={() => setActiveCategory(c)}>{c}</button>
+              ))}
             </div>
 
-            <aside className={s.sidebar}>
-              <div className={s.sideWidget}>
-                <h4>Search Articles</h4>
-                <div className={s.sideSearch}>
-                  <input type="text" placeholder="Search..." />
-                  <button>Go</button>
-                </div>
-              </div>
-              <div className={s.sideWidget}>
-                <h4>Popular Posts</h4>
-                <div className={s.sideLinks}>
-                  {articles.map(a => (
-                    <Link href={a.url} key={a.title} className={s.sideLink}>
-                      {a.title.length > 40 ? a.title.slice(0,40)+'...' : a.title}
-                      <span>{a.read}</span>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-              <div className={s.sideCta}>
-                <h4>Free Planning Guide</h4>
-                <p>Download our complete yoga retreat planning checklist.</p>
-                <Link href="/retreat-matcher" className="btn btn-primary btn-sm">Get the Guide →</Link>
-              </div>
-              <div className={s.sideWidget}>
-                <h4>Categories</h4>
-                <div className={s.sideLinks}>
-                  {categories.map(c => (
-                    <button key={c} className={s.sideLink} onClick={() => setActive(c)}>{c}<span>→</span></button>
-                  ))}
-                </div>
-              </div>
-            </aside>
+            <div className={s.articleList}>
+              {filtered.map(article => (
+                <Link key={article.slug} href={`/blog/${article.slug}`} className={s.cardLink}>
+                  <article className={s.card}>
+                    <div className={s.cardImg}>
+                      <Image src={article.img} alt={article.title} fill style={{ objectFit: 'cover' }} />
+                    </div>
+                    <div className={s.cardBody}>
+                      <div className={s.cardMeta}>
+                        <span className={s.cardTag}>{article.category}</span>
+                        <span>{article.date}</span>
+                        <span>·</span>
+                        <span>{article.readTime} read</span>
+                      </div>
+                      <h2 className={s.cardTitle}>{article.title}</h2>
+                      <div className={s.cardFooter}>
+                        <span>By Sarah Mitchell</span>
+                        <span className={s.readMore}>Read article →</span>
+                      </div>
+                    </div>
+                  </article>
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
-
+        </section>
+      </main>
       <Newsletter />
       <Footer />
     </>
