@@ -9,12 +9,12 @@ import s from './page.module.css'
 
 const articles = [
   // Pillar
-  { slug: 'yoga-retreats', title: 'Yoga retreats: the complete guide to choosing, booking, and preparing', category: 'Guide', img: '/images/blog/yoga-retreat-hero.jpg', date: 'Aug 2025', readTime: '14 min', vol: 8100 },
+  { slug: 'yoga-retreats', title: 'Yoga retreats: the complete guide to choosing, booking, and preparing', category: 'Guide', img: '/images/blog/pillar-what-is.jpg', date: 'Aug 2025', readTime: '14 min', vol: 8100 },
   // Planning cluster
-  { slug: 'best-yoga-retreats', title: 'Best yoga retreats 2025: how to actually compare and choose', category: 'Planning', img: '/images/blog/hero-bali.png', date: 'Nov 2025', readTime: '9 min', vol: 480 },
-  { slug: 'how-to-book-yoga-retreat', title: 'How to book a yoga retreat: pricing, deposits, and policies', category: 'Planning', img: '/images/blog/blog-planning-guide.png', date: 'Nov 2025', readTime: '7 min', vol: 390 },
-  { slug: 'affordable-yoga-retreats', title: 'Affordable yoga retreats under $500 that don\'t cut corners', category: 'Planning', img: '/images/blog/yoga-retreat-hero.jpg', date: 'Oct 2025', readTime: '6 min', vol: 170 },
-  { slug: 'all-inclusive-yoga-retreat', title: 'All-inclusive yoga retreats: what\'s included and what isn\'t', category: 'Planning', img: '/images/blog/yoga-retreat-hero.jpg', date: 'Oct 2025', readTime: '6 min', vol: 170 },
+  { slug: 'best-yoga-retreats', title: 'Best yoga retreats 2025: how to actually compare and choose', category: 'Planning', img: '/images/blog/meditation-retreat-group-outdoor.jpg', date: 'Nov 2025', readTime: '9 min', vol: 480 },
+  { slug: 'how-to-book-yoga-retreat', title: 'How to book a yoga retreat: pricing, deposits, and policies', category: 'Planning', img: '/images/blog/yoga-pose-nature-river.jpg', date: 'Nov 2025', readTime: '7 min', vol: 390 },
+  { slug: 'affordable-yoga-retreats', title: 'Affordable yoga retreats under $500 that don\'t cut corners', category: 'Planning', img: '/images/blog/tropical-retreat-hut-bali.jpg', date: 'Oct 2025', readTime: '6 min', vol: 170 },
+  { slug: 'all-inclusive-yoga-retreat', title: 'All-inclusive yoga retreats: what\'s included and what isn\'t', category: 'Planning', img: '/images/blog/pillar-benefits.jpg', date: 'Oct 2025', readTime: '6 min', vol: 170 },
   // Destination cluster
   { slug: 'yoga-retreat-bali', title: 'Best yoga retreats in Bali: Ubud, Canggu, and Uluwatu compared', category: 'Destinations', img: '/images/blog/bali-yoga.jpg', date: 'Sep 2025', readTime: '9 min', vol: 880 },
   { slug: 'yoga-retreat-california', title: 'Yoga retreat California: 10 top-rated centers by region', category: 'Destinations', img: '/images/blog/california-yoga.jpg', date: 'Sep 2025', readTime: '8 min', vol: 720 },
@@ -24,7 +24,7 @@ const articles = [
   { slug: 'luxury-yoga-retreats', title: 'Luxury yoga retreats: what $3,000+ actually gets you', category: 'Retreat Types', img: '/images/blog/luxury-yoga.jpg', date: 'Oct 2025', readTime: '7 min', vol: 210 },
   { slug: 'womens-yoga-retreat', title: "Women's yoga retreats: 8 programs for female practitioners", category: 'Retreat Types', img: '/images/blog/womens-yoga.jpg', date: 'Oct 2025', readTime: '7 min', vol: 720 },
   { slug: 'silent-yoga-retreat', title: 'Silent yoga retreats: a guide to meditation-focused programs', category: 'Retreat Types', img: '/images/blog/silent-yoga.jpg', date: 'Oct 2025', readTime: '8 min', vol: 210 },
-  { slug: 'yoga-retreat-for-beginners', title: 'Yoga retreat for beginners: what to expect on your first trip', category: 'Retreat Types', img: '/images/blog/yoga-retreat-hero.jpg', date: 'Sep 2025', readTime: '7 min', vol: 260 },
+  { slug: 'yoga-retreat-for-beginners', title: 'Yoga retreat for beginners: what to expect on your first trip', category: 'Retreat Types', img: '/images/blog/pillar-typical-day.jpg', date: 'Sep 2025', readTime: '7 min', vol: 260 },
 ]
 
 const categories = ['All', 'Guide', 'Planning', 'Destinations', 'Retreat Types']

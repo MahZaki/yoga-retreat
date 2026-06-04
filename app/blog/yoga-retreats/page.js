@@ -6,12 +6,12 @@ import Newsletter from '@/components/Newsletter'
 import s from './page.module.css'
 
 export const metadata = {
-  title: 'Yoga Retreats: The Complete Guide to Choosing, Booking, and Preparing (2025)',
-  description: 'Compare yoga retreats across 45 countries. Learn real pricing benchmarks, what to pack, and how to avoid common booking mistakes from a reviewer who has attended 14 retreats.',
+  title: 'Yoga Retreats: The Complete Guide to Choosing, Booking & Preparing (2025)',
+  description: 'Compare yoga retreats across top destinations. Learn real pricing benchmarks, what to pack, and how to avoid common booking mistakes from a reviewer who has attended 14 retreats.',
   openGraph: {
     title: 'Yoga Retreats: The Complete Guide for 2025',
-    description: 'Compare yoga retreats across 45 countries. Pricing, destinations, and what first-timers need to know.',
-    images: [{ url: '/images/blog/yoga-retreat-group-bali-beach.jpg', width: 1200, height: 630, alt: 'Group practicing yoga on a Bali beach at sunrise' }],
+    description: 'Compare yoga retreats across top destinations. Pricing, destinations, and what first-timers need to know.',
+    images: [{ url: '/images/blog/yoga-retreat-hero.jpg', width: 1200, height: 630, alt: 'Group practicing yoga at sunrise' }],
     type: 'article',
   },
 }
@@ -20,13 +20,13 @@ export default function YogaRetreatsGuide() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'Yoga Retreats: The Complete Guide to Choosing, Booking, and Preparing (2025)',
-    description: 'Compare yoga retreats across 45 countries. Learn real pricing benchmarks, what to pack, and how to avoid common booking mistakes from a reviewer who has attended 14 retreats.',
+    headline: 'Yoga Retreats: The Complete Guide to Choosing, Booking & Preparing (2025)',
+    description: 'Compare yoga retreats across top destinations. Learn real pricing benchmarks, what to pack, and how to avoid common booking mistakes from a reviewer who has attended 14 retreats.',
     author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://yogaretreatadvisor.com/about' },
     publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', logo: { '@type': 'ImageObject', url: 'https://yogaretreatadvisor.com/logo.png' } },
-    datePublished: '2025-05-31',
-    dateModified: '2025-05-31',
-    image: 'https://yogaretreatadvisor.com/images/blog/yoga-retreat-group-bali-beach.jpg',
+    datePublished: '2025-08-01',
+    dateModified: '2025-08-01',
+    image: 'https://yogaretreatadvisor.com/images/blog/yoga-retreat-hero.jpg',
     mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://yogaretreatadvisor.com/blog/yoga-retreats' },
   }
 
@@ -49,15 +49,14 @@ export default function YogaRetreatsGuide() {
       <article className={s.article}>
         {/* Hero */}
         <div className={s.heroWrap}>
-          <Image src="/images/blog/yoga-retreat-group-bali-beach.jpg" alt="Group practicing yoga on a Bali beach at sunrise during a week-long retreat" fill priority sizes="100vw" style={{ objectFit: 'cover' }} />
+          <Image src="/images/blog/pillar-what-is.jpg" alt="Group practicing yoga at sunrise during a week-long retreat" fill priority sizes="100vw" style={{ objectFit: 'cover' }} />
           <div className={s.heroOverlay}>
             <span className={s.heroCat}>Complete Guide</span>
-            <h1>Yoga Retreats: How to Choose, Book, and Prepare for Your First (or Next) Retreat</h1>
+            <h1>Yoga Retreats: The Complete Guide to Choosing, Booking & Preparing (2025)</h1>
             <div className={s.heroMeta}>
               <span>By Sarah Mitchell</span>
-              <span>May 31, 2025</span>
-              <span>18 min read</span>
-              <span>Updated May 2025</span>
+              <span>Aug 2025</span>
+              <span>14 min read</span>
             </div>
           </div>
         </div>
@@ -67,175 +66,276 @@ export default function YogaRetreatsGuide() {
             {/* Main Content */}
             <div className={s.body}>
 
-              <p>The first time I walked into a yoga shala at 5:45am, I thought I’d made a terrible mistake. I was in Rishikesh, India. The room was freezing, the floor tiles were ice-cold, and the smell of strong incense at dawn was giving me a headache. But that £380 week changed my life.</p>
+              <p className={s.introBrief}><strong>What is a yoga retreat?</strong> A yoga retreat is a structured program — typically 3 to 14 days — where you practice yoga, eat, sleep, and follow a curated daily schedule in a dedicated setting away from regular life. It's not a holiday with one optional class bolted on. A real retreat includes at least two daily practice sessions, on-site accommodation, and meals designed around the program.</p>
 
-              <p>I didn’t book my first yoga retreat from a place of spiritual readiness. I booked it because in March 2018, I had a panic attack during a project review at my financial services firm in London. I couldn’t answer a basic question about whether I wanted a glass of water, and that seemed like a sign. I booked the Rishikesh trip on impulse at 11pm that same night.</p>
+              <h2 id="what-is-a-yoga-retreat">What is a yoga retreat?</h2>
 
-              <p>Since then, I’ve attended 14 retreats across 9 countries, spending between $380 and $4,200 per week. I started this site because I got tired of reading reviews written by writers who’d been comped free stays, or platforms that rank retreats based on the 10% to 25% affiliate commissions they pay. At YogaRetreatAdvisor, we do not accept featured placement fees. If I recommend a retreat, it is because I would tell my best friend to book it.</p>
+              <p>In March 2018, I had a panic attack in a glass-walled meeting room in London. My colleague asked if I needed a glass of water. I couldn't answer. I took two weeks off. My friend Nina — a yoga teacher I'd always half-dismissed as "one of those people" — told me to book a retreat before I talked myself out of it.</p>
 
-              <h2 id="what-is-a-yoga-retreat">What is a yoga retreat (and what it is not)</h2>
+              <p>I didn't book my first yoga retreat from a place of spiritual readiness. I booked it because I couldn't answer a basic question about whether I wanted a glass of water, and that seemed like a sign.</p>
 
-              <p>A yoga retreat is a structured program — typically 3 to 14 days — where you practice yoga, meditate, and follow a curated schedule in a dedicated setting. It is not just a holiday with one optional class. A proper retreat includes daily structured practice (often two sessions), meals designed around the program, and on-site accommodation.</p>
+              <p>That was Rishikesh, $380 for seven days, full board. I've since attended 14 retreats across 9 countries, from $380 to $4,200 per week. The question I came back to every time was the same: what actually makes a retreat worth it?</p>
 
-              <p>I’ve learned that the teacher matters infinitely more than the accommodation. A brilliant teacher in basic accommodation beats a mediocre teacher in a luxury villa every single time. My highest-rated retreat in Rishikesh had basic dormitory rooms and extraordinary instructors. By contrast, my second retreat in Ubud, Bali ($1,200 for ten days) looked stunning in photos, but the schedule was built around photogenic Instagram moments. The sunrise session was moved when the light wasn’t right, and the cacao ceremony was reshuffled for a photographer. I felt like a prop in someone else’s content strategy.</p>
+              <p>Here's what I've learned. A yoga retreat is a decision to remove yourself from your regular environment and submit to a structure you didn't design. That's the whole mechanism. You're not going for the incense or the rice paddies or the infinity pool photos — you're going because you can't build that structure at home, and you know it.</p>
 
-              <p>Most retreats fall into one of these core categories:</p>
+              <p>Most retreats include:</p>
+              <ul>
+                <li>Two daily yoga or meditation sessions (morning and evening)</li>
+                <li>Three vegetarian meals per day included in the price</li>
+                <li>On-site accommodation (shared or private depending on price)</li>
+                <li>A lead teacher for the duration — sometimes one, sometimes rotating</li>
+                <li>Optional workshops, talks, or excursions depending on the program</li>
+              </ul>
+
+              <p>What they don't include: flexibility, your usual routines, or the ability to check your phone without feeling like you're betraying the whole enterprise.</p>
+
+              <p>If you're new to this and wondering whether you're the right kind of person, head to our <Link href="/blog/yoga-retreat-for-beginners">beginner's guide to yoga retreats</Link> — it covers what first-timers actually need to know before booking anything.</p>
+
+              <div className={s.imgFull}>
+                <Image src="/images/blog/pillar-typical-day.jpg" alt="Typical day breakfast setting at a yoga retreat" fill sizes="100vw" style={{ objectFit: 'cover' }} />
+              </div>
+
+              <h2 id="typical-day">What happens on a typical day?</h2>
+
+              <p>Nobody warns you that the 5:30am bell will be literal — not a gentle chime, an actual bell, wielded by someone with genuine conviction.</p>
+
+              <p>Here's what a mid-range retreat day actually looks like:</p>
 
               <table className={s.table}>
                 <thead>
-                  <tr><th>Retreat Type</th><th>Typical Duration</th><th>Typical Price Range</th><th>Best For</th></tr>
+                  <tr><th>Time</th><th>Activity</th><th>What to expect</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td><strong>Beginner Retreat</strong></td><td>3-5 days</td><td>$300-$1,400</td><td>First-timers who want to test the waters</td></tr>
-                  <tr><td><strong>Luxury Retreat</strong></td><td>5-7 days</td><td>$2,000-$4,000+</td><td>Comfort, high teacher credentials, and spa settings</td></tr>
-                  <tr><td><strong>Women-Only Retreat</strong></td><td>5-10 days</td><td>$800-$2,500</td><td>Removing social self-consciousness and going deeper</td></tr>
-                  <tr><td><strong>Silent / Meditation</strong></td><td>7-14 days</td><td>$400-$1,500 (or donation)</td><td>Digital detox and removing social performance anxiety</td></tr>
-                  <tr><td><strong>Wellness / Ayurveda</strong></td><td>7-10 days</td><td>$780-$2,500</td><td>Holistic physical reset and stress recovery</td></tr>
+                  <tr><td>5:30–6:00 AM</td><td>Wake-up bell / free time</td><td>Cold tiles, the smell of incense before you're ready for it</td></tr>
+                  <tr><td>6:00–6:30 AM</td><td>Pranayama or meditation</td><td>Seated, usually in silence</td></tr>
+                  <tr><td>6:30–8:30 AM</td><td>Morning yoga practice</td><td>The main session — vinyasa, hatha, or ashtanga depending on the program</td></tr>
+                  <tr><td>8:30–9:30 AM</td><td>Breakfast</td><td>Fresh, vegetarian, usually eaten in near-silence</td></tr>
+                  <tr><td>10:00 AM–12:30 PM</td><td>Free time or workshop</td><td>Massage, journaling, walking, or a talk on philosophy/anatomy</td></tr>
+                  <tr><td>12:30–1:30 PM</td><td>Lunch</td><td>Usually the largest meal of the day</td></tr>
+                  <tr><td>1:30–4:30 PM</td><td>Free time</td><td>The hours that feel longest on day one and shortest by day four</td></tr>
+                  <tr><td>4:30–6:00 PM</td><td>Evening yoga</td><td>Yin, restorative, or yoga nidra — slower and quieter</td></tr>
+                  <tr><td>6:30–7:30 PM</td><td>Dinner</td><td>Light, plant-based</td></tr>
+                  <tr><td>8:00 PM</td><td>Wind-down or gathering</td><td>Optional talks, kirtan, or just silence</td></tr>
                 </tbody>
               </table>
 
-              <h2 id="top-destinations">The 7 most popular yoga retreat destinations</h2>
+              <p><strong>The meals:</strong> Vegetarian or vegan is the default at almost every retreat I've attended. If you have specific dietary requirements — allergies, intolerances, anything serious — contact the retreat before booking and get confirmation in writing that they can handle it. Don't assume.</p>
 
-              <p>Where you go determines most of your budget. A week-long retreat in Rishikesh costs a fraction of an equivalent program in California. Here are the real benchmarks from our database, based on full board (accommodation, three meals a day, and all scheduled sessions).</p>
-
-              <h3 id="bali">1. Bali, Indonesia</h3>
-              <p><strong>Weekly pricing:</strong> $600–$900 (Budget) | $1,000–$1,800 (Mid-range) | $1,800–$2,800 (Premium) | $3,000+ (Luxury)</p>
-              <p>Ubud is the spiritual center, Canggu is the surf-and-yoga hub, and Uluwatu offers clifftop luxury. However, Bali commands a significant price premium driven by aesthetics rather than teaching quality. Equivalent or better yoga instruction is available in India or Portugal at 30% to 50% lower cost. If you want the Bali aesthetic, the food, and the holiday feel, the premium is worth paying. Just don’t pay it expecting superior yoga teaching.</p>
+              <p><strong>The group:</strong> Most retreats run between 8 and 20 participants. Under 12 and you'll likely know everyone by name within 48 hours. Over 20 and it starts to feel like a yoga festival rather than a retreat. Around 60–65% of retreat attendees are solo travellers, so arriving alone is entirely normal — you're in the majority.</p>
 
               <div className={s.imgFull}>
-                <Image src="/images/blog/tropical-retreat-hut-bali.jpg" alt="Traditional Balinese retreat hut surrounded by tropical palm trees at dusk" fill sizes="100vw" style={{ objectFit: 'cover' }} />
+                <Image src="/images/blog/pillar-benefits.jpg" alt="A person resting and journaling on a wooden deck overlooking nature" fill sizes="100vw" style={{ objectFit: 'cover' }} />
               </div>
-              <p className={s.imgCaption}>A traditional retreat center in Ubud, Bali, surrounded by tropical forest. Photo by Sergey Guk / Pexels.</p>
 
-              <h3 id="costa-rica">2. Costa Rica</h3>
-              <p><strong>Weekly pricing:</strong> $700–$1,100 (Budget) | $1,200–$1,800 (Mid-range) | $1,900–$2,800 (Premium) | $3,200+ (Luxury)</p>
-              <p>Centered around Nosara and Santa Teresa. Retreats here lean toward eco-lodges, surfing, and jungle immersion. It is a fantastic option for US-based travelers looking to avoid long-haul flights, but expect to pay higher baseline prices than in Asia.</p>
+              <h2 id="real-benefits">Why people go — the real benefits</h2>
 
-              <h3 id="india">3. India (Rishikesh and Kerala)</h3>
-              <p><strong>Weekly pricing:</strong> $300–$600 (Budget) | $650–$1,100 (Mid-range) | $1,200–$2,000 (Premium) | $2,500+ (Luxury)</p>
-              <p>Rishikesh is the spiritual home of yoga. It offers the best teaching quality in the world at the lowest cost. My first Rishikesh retreat cost me $380 for 7 days, full board. Kerala specializes in highly structured Ayurvedic wellness retreats which are physically demanding but transformative. The tradeoff here is simpler accommodation and long travel times.</p>
+              <p>I arrived at my Bali retreat fully prepared to roll my eyes at the cacao ceremony. Reader, I cried.</p>
 
-              <h3 id="thailand">4. Thailand</h3>
-              <p><strong>Weekly pricing:</strong> $600–$900 (Budget) | $950–$1,600 (Mid-range) | $1,700–$2,600 (Premium) | $3,000+ (Luxury)</p>
-              <p>From meditation in Chiang Mai to beachside programs in Koh Samui and Koh Phangan, Thailand is an excellent middle ground. It offers Bali-level comfort with pricing that is slightly more accessible.</p>
+              <p>I tell that story not to convince you that cacao ceremonies are profound — they may not be for you — but because it illustrates something consistent across all 14 retreats I've attended: the benefits are rarely the ones you signed up for.</p>
 
-              <h3 id="mexico">5. Mexico</h3>
-              <p><strong>Weekly pricing:</strong> $700–$1,100 (Budget) | $1,200–$1,800 (Mid-range) | $1,900–$2,800 (Premium) | $3,200+ (Luxury)</p>
-              <p>Tulum and Sayulita are the major destinations. Mexico is incredibly accessible for North Americans and offers wonderful food, cenote ceremonies, and yin yoga programs. Oaxaca is a particularly underrated and affordable destination.</p>
+              <p>You book for the yoga. You come back having slept properly for the first time in months. You book for the rest. You come back having had the most honest conversations you've had all year. You book because you vaguely feel like you should do something. You come back knowing what that something actually is.</p>
 
-              <h3 id="europe">6. Europe (Portugal, Spain, Italy)</h3>
-              <p><strong>Weekly pricing:</strong> $800–$1,200 (Budget) | $1,300–$2,100 (Mid-range) | $2,200–$3,500 (Premium) | $4,000+ (Luxury)</p>
-              <p>Portugal (Algarve and Sintra) offers the best value in Europe. Spain and Italy host premium and luxury retreats in historic country houses. I paid $4,200 for a luxury week in Tuscany — it was flawless, but as a rule, expensive retreats are only worth it if the price itself is emotionally neutral for you. If spending that money makes you anxious, the anxiety will undo every benefit of the yoga.</p>
+              <p>The benefits that hold up are:</p>
+
+              <p><strong>Genuine rest.</strong> Not the rest you get on a beach holiday where you're still checking your emails and negotiating restaurant bookings. The structured kind — where the day is decided for you and the only job is to show up.</p>
+
+              <p><strong>Progress in your practice.</strong> Two sessions a day for a week is more practice than most people do in three months. The improvement is measurable in ways that feel surprising.</p>
+
+              <p><strong>The community.</strong> Around 72% of retreat attendees globally are women. Solo travellers make up the majority of bookings. The people you practice with twice a day, eat every meal with, and have no distractions from become oddly close very quickly. Some of my most lasting friendships started in a shala.</p>
+
+              <p><strong>The gap.</strong> The real benefit of a retreat is the gap it creates between you and your usual life. In that gap, you can see things that are invisible from inside the routine.</p>
+
+              <p>None of these benefits require you to believe in anything. They're structural. You can be a complete sceptic and still benefit — because the mechanism is the removal of distraction, not the adoption of a philosophy.</p>
 
               <div className={s.imgFull}>
-                <Image src="/images/blog/luxury-yoga-retreat-pool.jpg" alt="Luxury tropical retreat with infinity pool surrounded by palm trees" fill sizes="100vw" style={{ objectFit: 'cover' }} />
+                <Image src="/images/blog/pillar-types.jpg" alt="Different styles of yoga retreat settings" fill sizes="100vw" style={{ objectFit: 'cover' }} />
               </div>
-              <p className={s.imgCaption}>Luxury retreat centers often feature beautiful pools and dedicated spa facilities. Photo by Lukas Faust / Pexels.</p>
 
-              <h3 id="usa">7. United States (Sedona and Colorado)</h3>
-              <p><strong>Weekly pricing:</strong> $900–$1,400 (Budget) | $1,500–$2,200 (Mid-range) | $2,300–$3,500 (Premium) | $4,000+ (Luxury)</p>
-              <p>Sedona, Arizona is famous for vortex meditation and hot yoga, while the Colorado Rockies offer altitude yoga and hiking. These are fantastic "gateway retreats" for skeptics because they feel like active holidays rather than high-intensity spiritual programs.</p>
+              <h2 id="types-of-retreats">Types of yoga retreats</h2>
 
-              <h2 id="how-to-choose">How to choose the right yoga retreat</h2>
+              <p>Not all retreats are the same kind of hard — or the same kind of gentle. The type you choose should match what you actually need, not what sounds most impressive.</p>
 
-              <p>Before you book, ask yourself one thing: what do I actually need right now? Rest? Challenge? Community? The answer changes everything. Once you know that, use these four pillars to evaluate any program:</p>
+              <p><strong>Beginner retreats</strong> are explicitly designed for people who are new to yoga or new to retreats. Smaller groups, gentler scheduling, teachers who explain rather than assume. The <Link href="/blog/yoga-retreat-for-beginners">beginner retreat guide</Link> goes into detail on what to look for. Duration: 3–5 days. Price: $300–$1,400.</p>
 
-              <ul>
-                <li><strong>Teaching quality:</strong> Check the lead teacher's credentials. Are they certified? How many years have they taught? Look for details in reviews.</li>
-                <li><strong>Accommodation:</strong> Decide if you can handle shared rooms or if you need a private space. Private rooms typically add $150 to $400 per week.</li>
-                <li><strong>Programming:</strong> Look at the daily schedule. Is it packed, or is there time to read and rest?</li>
-                <li><strong>Organisation:</strong> How does the retreat handle logistics? A retreat can have a brilliant teacher but chaotic organisation, which is common in beach destinations. You need to know which trade-off you can tolerate.</li>
-              </ul>
+              <p><strong>Luxury retreats</strong> remove friction. The accommodation is beautiful, the food is exceptional, the group is small (often capped at 8–12), and the teacher has usually been doing this for 20+ years. What you pay for is the removal of everything that might distract from the experience. Whether that's worth $3,000+ per week is a separate question — our <Link href="/blog/luxury-yoga-retreats">luxury retreat guide</Link> breaks it down honestly.</p>
 
-              <p>I also strongly recommend starting short. The standard 7-day retreat is actually too long for most first-timers. A 4 to 5-day retreat is the optimal entry point. It is long enough to disconnect, but short enough that if you struggle, you aren't stuck in an expensive regret.</p>
+              <p><strong>Silent retreats</strong> (Vipassana and similar formats) are donation-based or low-cost, typically 7–10 days, and require you to not speak for the duration. This sounds extreme until you realise that not having to perform in front of other people is profoundly restful. The discomfort is front-loaded — the first 12–18 hours are strange. After that, most people find the silence a relief. Note: Vipassana's format is not appropriate for anyone with untreated depression or serious anxiety without professional guidance. More detail in the <Link href="/blog/silent-yoga-retreat">silent retreat guide</Link>.</p>
 
-              <p>If you need help matching these factors, take our 60-second <Link href="/retreat-matcher">Retreat Matcher Quiz</Link> to get personalized recommendations based on our vetted database.</p>
+              <p><strong>Women-only retreats</strong> are frequently marketed as niche and are not. Women make up 72% of retreat attendees globally. The format works because it removes a specific kind of social self-consciousness that mixed retreats never fully eliminate. The Morocco retreat I almost didn't book turned out to be the most emotionally honest week I've spent anywhere. Details in the <Link href="/blog/womens-yoga-retreat">women's retreat guide</Link>.</p>
 
-              <h2 id="what-to-expect">What to expect: daily schedules, meals, and rooms</h2>
+              <p><strong>Surf and yoga retreats</strong> combine two sessions of yoga per day with surfing lessons in the afternoons. Costa Rica and the Canary Islands are the standout destinations. Best for people who need an activity frame around the yoga — the sport gives sceptics permission to be there.</p>
 
-              <p>Nobody warns you that the 5:30am bell will be literal — not a gentle chime, but an actual bell rung by someone with genuine conviction. A typical day on a mid-range retreat follows a rhythmic schedule:</p>
+              <p><strong>Ayurvedic and wellness retreats</strong> follow a clinical structure: dietary regimes, daily treatments, and specific pranayama practice. Kerala, India is the benchmark destination. These are physically demanding and the most structurally different from a regular yoga retreat. Not for beginners.</p>
 
-              <table className={s.table}>
-                <thead>
-                  <tr><th>Time</th><th>Activity</th><th>What to Expect</th></tr>
-                </thead>
-                <tbody>
-                  <tr><td>6:00 - 6:30 AM</td><td>Morning meditation or breathwork</td><td>Silent and focused</td></tr>
-                  <tr><td>6:30 - 8:30 AM</td><td>Active yoga practice</td><td> Rigorous vinyasa or hatha session</td></tr>
-                  <tr><td>8:30 - 9:30 AM</td><td>Breakfast</td><td>Fresh vegetarian meals</td></tr>
-                  <tr><td>10:00 - 12:30 PM</td><td>Free time or workshop</td><td>Massage, walking, or reading</td></tr>
-                  <tr><td>12:30 - 1:30 PM</td><td>Lunch</td><td>Usually the largest meal of the day</td></tr>
-                  <tr><td>1:30 - 4:30 PM</td><td>Free time</td><td>Relaxing by the pool or exploring local villages</td></tr>
-                  <tr><td>4:30 - 6:00 PM</td><td>Gentle yoga session</td><td>Yin, restorative, or yoga nidra</td></tr>
-                  <tr><td>6:30 - 7:30 PM</td><td>Dinner</td><td>Light, healthy plant-based food</td></tr>
-                </tbody>
-              </table>
-
-              <p><strong>Meals:</strong> Vegetarian or vegan is the default. If you have severe allergies or complex dietary requirements, confirm that the kitchen can handle them before booking.</p>
-
-              <p><strong>Rooms:</strong> Shared rooms (dorm-style or twin) account for the budget end. If you are traveling solo (solo travelers make up 60% to 65% of bookings), a shared room is a great way to meet people. If you need absolute quiet, pay the premium for a private room.</p>
+              <p><strong>All-inclusive retreats</strong> bundle everything — yoga, meals, accommodation, excursions, and sometimes spa treatments — into one price with no decisions required. Details in the <Link href="/blog/all-inclusive-yoga-retreat">all-inclusive guide</Link>.</p>
 
               <div className={s.imgFull}>
-                <Image src="/images/blog/meditation-retreat-group-outdoor.jpg" alt="Group meditating outdoors at a summer retreat surrounded by nature" fill sizes="100vw" style={{ objectFit: 'cover' }} />
+                <Image src="/images/blog/pillar-destinations.jpg" alt="Map style flat lay with yoga mat and passport" fill sizes="100vw" style={{ objectFit: 'cover' }} />
               </div>
-              <p className={s.imgCaption}>Outdoor meditation session at a summer wellness retreat. Photo by Thomas Benedetti / Pexels.</p>
 
-              <h2 id="pricing-breakdown">Yoga retreat pricing: what you actually pay</h2>
+              <h2 id="where-to-go">Where to go — best destinations and real prices</h2>
 
-              <p>The headline price of a retreat rarely tells the whole story. To build a realistic budget, you must factor in the extras. Flights, airport transfers, travel insurance, and tips can easily add $1,000 to a trip.</p>
+              <p>Where you go determines more of your experience than most people realise — not just the price, but the teaching tradition, the food, the setting, and the cultural context of the practice itself.</p>
 
-              <p>Here is what is usually included and what you will need to pay extra for:</p>
+              <p>Here are the six destinations I'd actually recommend, with honest pricing.</p>
 
-              <ul>
-                <li><strong>Included:</strong> Accommodation, daily yoga classes, 2-3 meals a day, and use of yoga mats and props.</li>
-                <li><strong>Extra:</strong> Flights, airport transfers (can be $50-$150 each way), travel insurance, spa treatments, excursions, and tips for the local staff.</li>
-              </ul>
+              <p><strong>India — Rishikesh and Kerala</strong><br/>
+              This is where yoga comes from. The teaching quality in Rishikesh is higher than anywhere else I've been at the budget end of the market. My first retreat was $380 per week, full board. That's not a typo. Budget retreats run $300–$600 per week. Mid-range is $650–$1,100. Luxury starts at $2,500. The tradeoff is long-haul travel and simpler accommodation. Worth it. Full details in the <Link href="/blog/yoga-retreats-india">India guide</Link>.</p>
 
-              <h2 id="packing-list">What to pack for your retreat</h2>
+              <p><strong>Bali, Indonesia</strong><br/>
+              Ubud is the spiritual centre. Canggu is surf and yoga. Uluwatu is clifftop luxury. Bali commands a premium — budget runs $600–$900/week, mid-range $1,000–$1,800, luxury $3,000+. The question is whether the premium is for the yoga. It isn't. The premium is for the food, the aesthetics, and the full Bali experience. Equivalent yoga teaching is available in Rishikesh or Portugal for 30–50% less. If the full Bali experience matters to you, the premium may be worth paying for those reasons. Just don't pay it expecting superior yoga instruction. More in the <Link href="/blog/yoga-retreat-bali">Bali retreat guide</Link>.</p>
 
-              <p>Pack light. Most retreat centers are incredibly casual. You will spend 80% of your time in yoga clothing or swimwear.</p>
+              <p><strong>Portugal, Spain, and Italy</strong><br/>
+              The best value in Europe. Portugal (Algarve, Sintra) offers the best combination of quality and price: budget $800–$1,200/week, mid-range $1,300–$2,100. Spain and Italy host the premium tier — Tuscany in particular. That's where I paid $4,200 for a week that was genuinely exceptional in every way. The group was eight people. The teacher had 25 years of experience. The food was extraordinary. It was worth it — but only because the price was emotionally neutral for me at that point in my life. If spending $4,200 creates financial stress, the stress will undo the yoga.</p>
 
-              <ul>
-                <li><strong>Yoga gear:</strong> 3-4 sets of yoga clothes, a travel yoga mat (if you prefer your own), and a reusable water bottle.</li>
-                <li><strong>Layers:</strong> A warm sweater or shawl for early morning meditation and evening sessions.</li>
-                <li><strong>Footwear:</strong> Slip-on shoes or sandals (you will be taking them off constantly) and a pair of comfortable walking shoes.</li>
-                <li><strong>Mindfulness tools:</strong> A physical journal and a pen. Leave your laptop at home. My first instinct at my first silent retreat was to check if there was a Slack equivalent for communicating. There was not, and that was the point.</li>
-              </ul>
+              <p><strong>Costa Rica</strong><br/>
+              The best destination for US-based travellers who want to avoid a long-haul flight. Nosara and Santa Teresa lean toward eco-lodges, surf, and jungle settings. Budget $700–$1,100/week, mid-range $1,200–$1,800. Higher baseline than Asia but easier logistics. Full guide: <Link href="/blog/yoga-retreats-costa-rica">Costa Rica yoga retreats</Link>.</p>
 
-              <h2 id="common-mistakes">Three booking mistakes that cost you money</h2>
+              <p><strong>Mexico</strong><br/>
+              Tulum and Sayulita are the main retreat destinations. Oaxaca is the underrated one — excellent food, lower prices, smaller crowds. Budget $700–$1,100/week, mid-range $1,200–$1,800. Highly accessible for North Americans. Puerto Vallarta has produced the best teacher I've encountered outside India, which is a separate story I'll get to in the red flags section.</p>
 
-              <h3>1. Booking based on photos alone</h3>
-              <p>Instagram-perfect and genuinely nourishing are not the same thing. Look past the infinity pools and check the credentials of the teachers. If the website doesn't disclose who is teaching, that is a major red flag.</p>
-
-              <h3>2. Ignoring the cancellation policy</h3>
-              <p>Most retreats require a non-refundable deposit. A typical cancellation window for a full refund is 30 to 60 days before the start date. Read the terms carefully and buy travel insurance that covers trip cancellation.</p>
-
-              <h3>3. Not checking the teacher-to-student ratio</h3>
-              <p>A teacher-to-participant ratio worse than 1:20 is a red flag. You won’t get individual attention or adjustments, and the sessions will feel like a busy public class rather than a retreat.</p>
+              <p><strong>California and Colorado</strong><br/>
+              Higher price point than anywhere else in this list. Budget $900–$1,400/week, mid-range $1,500–$2,200. Sedona (Arizona) is technically not California or Colorado but deserves mention — altitude yoga, vortex-adjacent framing, genuinely good instruction. Colorado is the best "gateway retreat" for sceptics — it feels like an active outdoor holiday that happens to include yoga. More in the <Link href="/blog/yoga-retreat-california">California guide</Link>.</p>
 
               <div className={s.imgFull}>
-                <Image src="/images/blog/yoga-pose-nature-river.jpg" alt="Woman practicing yoga on riverside rocks surrounded by lush tropical greenery" fill sizes="100vw" style={{ objectFit: 'cover' }} />
+                <Image src="/images/blog/pillar-choose-teacher.jpg" alt="A teacher adjusting a student's shoulders" fill sizes="100vw" style={{ objectFit: 'cover' }} />
               </div>
-              <p className={s.imgCaption}>Yoga practice in nature. Photo by Lucas Pezeta / Pexels.</p>
 
-              <h2 id="when-not-to-go">When a yoga retreat is the wrong choice</h2>
+              <h2 id="how-to-choose">How to choose the right retreat</h2>
 
-              <p>A yoga retreat is not a cure-all, and pretending it is would be dishonest. Skip the retreat if:</p>
-              <ul>
-                <li><strong>You just want a vacation:</strong> If you want to drink cocktails by the pool and sleep in, book a regular resort. It will be cheaper, more flexible, and you won't feel guilty for skipping the 6:00am practice.</li>
-                <li><strong>You are dealing with acute trauma or mental health issues:</strong> A yoga retreat is not therapy. Silent retreats (Vipassana) can be intense and are not appropriate for anyone with untreated depression or anxiety disorders without professional guidance.</li>
-                <li><strong>Your budget is under $500 total including travel:</strong> Don't stretch yourself financially to book a retreat. The financial stress will undo the benefits. Consider a local weekend workshop instead.</li>
-              </ul>
+              <p>I have a 47-point retreat evaluation spreadsheet. I'm sharing this not as a flex but as a warning.</p>
 
-              <h2 id="next-steps">How to start planning</h2>
+              <p>You don't need 47 points. You need four.</p>
 
-              <p>If you're ready to take the next step, here is how to proceed:</p>
+              <p><strong>The four pillars:</strong></p>
 
               <ol>
-                <li><strong>Take our <Link href="/retreat-matcher">Retreat Matcher Quiz</Link></strong> to filter options by your goals, level, and budget.</li>
-                <li><strong>Browse <Link href="/retreats">our verified retreats catalog</Link></strong> to compare prices and check teacher credentials.</li>
-                <li><strong>Read our destination guides</strong> starting with <Link href="/blog/yoga-retreat-bali">yoga retreats in Bali</Link> or <Link href="/blog/yoga-retreats-costa-rica">Costa Rica yoga retreats</Link>.</li>
+                <li><strong>Teaching quality</strong> — Who is leading the retreat? Are their credentials visible on the website? Do they name the teacher or just say "our experienced instructors"? That phrase is a red flag — I'll come back to it. Teaching quality is the single most important factor. A brilliant teacher in a basic room outperforms a mediocre teacher in a luxury villa every time. My highest-rated retreat was $380 in Rishikesh. The dormitory accommodation was basic. The teaching was extraordinary. My most expensive retreat was $4,200 in Tuscany. That was excellent too — but the teaching was the reason, not the villa.</li>
+                <li><strong>Accommodation quality</strong> — Can you tolerate shared rooms or do you need a private space? Private rooms typically add $150–$400 per week. For solo travellers on their first retreat, shared rooms are fine — but know yourself. If you need silence and privacy to sleep, the cost of a private room is worth building into the budget.</li>
+                <li><strong>Programming quality</strong> — Look at the actual daily schedule. Is there time to read and walk and rest, or is it packed from 6am to 9pm? Overscheduled retreats are common and exhausting. The free time is not wasted time — it's where the processing happens.</li>
+                <li><strong>Organisational quality</strong> — A retreat can have outstanding teaching and chaotic logistics. My Puerto Vallarta retreat had the best teacher I'd encountered outside India. It also had schedules that changed daily, dietary requirements ignored at every meal, and an airport transfer that went to the wrong hotel. If you need things to run on schedule, this trade-off isn't worth it. If you can tolerate friction and the teaching is exceptional, it might be. Know which pillar matters most to you before you book.</li>
               </ol>
+
+              <p><strong>On first retreat length:</strong> The standard 7-day retreat is too long for most first-timers. Four to five days is the right entry point. Long enough to genuinely disconnect. Short enough that if you hit a wall around day three, you're not trapped. Most 4–5 day retreats are 20–30% cheaper than equivalent 7-day programs. Start shorter. You can always go back for longer.</p>
+
+              <p><strong>On booking platforms:</strong> The majority of large retreat booking platforms rank retreats based partly or entirely on the commission rates the retreat pays — typically 10–25% of booking value. A retreat appearing at the top of a platform's category doesn't mean it's the best retreat. It means it pays well. Look for independent reviews on Google Maps, TripAdvisor, or Retreat Guru. Five or more independent reviews is a basic minimum. Fewer than that, approach with caution.</p>
+
+              <p>If you want help narrowing down options, take the <Link href="/retreat-matcher">Retreat Matcher Quiz</Link> — it filters by goals, level, and budget from our vetted database.</p>
+
+              <h2 id="how-much-does-it-cost">How much does a yoga retreat cost?</h2>
+
+              <p>The full regional breakdown, per week, full board (accommodation + 3 meals/day + all yoga sessions included):</p>
+
+              <table className={s.table}>
+                <thead>
+                  <tr><th>Region</th><th>Budget/week</th><th>Mid-range/week</th><th>Luxury/week</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>India (Rishikesh/Kerala)</td><td>$300–$600</td><td>$650–$1,100</td><td>$2,500+</td></tr>
+                  <tr><td>Bali, Indonesia</td><td>$600–$900</td><td>$1,000–$1,800</td><td>$3,000+</td></tr>
+                  <tr><td>Thailand</td><td>$600–$900</td><td>$950–$1,600</td><td>$3,000+</td></tr>
+                  <tr><td>Mexico</td><td>$700–$1,100</td><td>$1,200–$1,800</td><td>$3,200+</td></tr>
+                  <tr><td>Europe (Portugal/Spain/Italy)</td><td>$800–$1,200</td><td>$1,300–$2,100</td><td>$4,000+</td></tr>
+                  <tr><td>USA (Colorado/Sedona/CA)</td><td>$900–$1,400</td><td>$1,500–$2,200</td><td>$4,000+</td></tr>
+                </tbody>
+              </table>
+
+              <p><strong>What drives the price up:</strong></p>
+              <ul>
+                <li>Private room vs. shared: +$150–$400/week</li>
+                <li>Named, internationally recognised teacher: +$200–$600/week</li>
+                <li>Small group (under 12 participants): 20–35% premium</li>
+                <li>Luxury destination (Tuscany, Tulum beachfront): +$500–$1,500/week above comparable settings</li>
+                <li>Peak season vs. off-peak: 15–30% difference — shoulder months are consistently the better deal</li>
+              </ul>
+
+              <p>The headline price rarely tells the full story. Budget separately for flights, airport transfers ($50–$150 each way is typical), travel insurance, and any excursions or treatments outside the program. On a one-week retreat to Bali, add $1,000–$1,500 to the retreat price for a realistic total trip cost.</p>
+
+              <p>One rule I hold to: <strong>an expensive retreat is only worth it if the price is emotionally neutral.</strong> If spending $3,000 on a week in Portugal creates financial anxiety, that anxiety will sit with you in every practice session and undo most of what you went there for. A $400 retreat that doesn't stretch you financially will serve you better than a $2,500 one that does.</p>
+
+              <p>For a full breakdown of what different price points actually deliver, see the <Link href="/blog/luxury-yoga-retreats">luxury retreat guide</Link> and the <Link href="/blog/affordable-yoga-retreats">affordable retreats guide</Link>.</p>
+
+              <div className={s.imgFull}>
+                <Image src="/images/blog/pillar-packing.jpg" alt="Open suitcase with neatly packed yoga retreat clothing" fill sizes="100vw" style={{ objectFit: 'cover' }} />
+              </div>
+
+              <h2 id="what-to-pack">What to pack</h2>
+
+              <p>Pack less than you think. You'll spend most of the time in yoga clothes or a swimsuit. Here's what actually matters:</p>
+
+              <ul>
+                <li><strong>Yoga clothes:</strong> 2–3 sets of quick-dry practice clothes. Most retreat centres provide mats and props — confirm this before packing your own mat.</li>
+                <li><strong>Layers:</strong> A warm top or shawl for early morning meditation and evening sessions. You cool down fast in savasana, even in Bali.</li>
+                <li><strong>Footwear:</strong> Slip-on sandals for constant on-off. One pair of comfortable walking shoes.</li>
+                <li><strong>A physical journal:</strong> Not optional. You will use it. Bring a good pen.</li>
+                <li><strong>A physical book:</strong> Screens are often discouraged and signal that you haven't fully arrived. One book is plenty — you'll read less than you expect and think more.</li>
+                <li><strong>Any prescription medication:</strong> With more than enough supply. Bring your documentation.</li>
+                <li><strong>Travel insurance documents:</strong> Always. Non-negotiable.</li>
+              </ul>
+
+              <p>What not to bring: the expectation that everything will run exactly on schedule.</p>
+
+              <h2 id="red-flags">Red flags — how to spot a retreat not worth your money</h2>
+
+              <p>The website promised "ocean views from every morning practice." What it didn't mention was that the ocean was visible from one corner of the shala if you craned your neck during warrior two.</p>
+
+              <p>Nobody is going to tell you their retreat has a mediocre teacher or an inflated price. Here's what to look for yourself.</p>
+
+              <p><strong>Anonymous teachers.</strong> If the retreat website says "our experienced instructors" without naming a specific person, that's a red flag. Every retreat worth attending names its lead teacher, links to their background, and specifies their training and years of experience. Vague language about "the team" means either the teachers change frequently, or the retreat doesn't consider the teacher the selling point. Either is a problem.</p>
+
+              <p><strong>Photography without a schedule.</strong> Beautiful photos tell you the retreat invests in its marketing. They tell you nothing about the teaching. Ask for the actual daily timetable before booking. If they won't share it, or if it's vague ("sessions throughout the day"), keep looking.</p>
+
+              <p><strong>Fewer than 5 independent reviews.</strong> Website testimonials are curated. Look for Google Maps, TripAdvisor, or Retreat Guru. A retreat that's been running for two or three years should have at least 5 independent reviews from people who have no relationship with the centre. Fewer than that: approach with significant caution.</p>
+
+              <p><strong>Deposits over 50% upfront.</strong> The standard is 20–30%. Deposits above 50% before a 30-day booking window are atypical and worth questioning directly. Always ask for the full cancellation policy in writing before you pay anything. A fair standard is a full refund if you cancel 90+ days out.</p>
+
+              <p><strong>The Instagram-reality gap.</strong> My second retreat, in Ubud, was $1,200 for ten days. It was technically fine. But the programme was structured around photogenic moments — the sunrise session was moved when the light wasn't good, and the cacao ceremony was reshuffled for a photographer. I felt like a prop in someone else's content strategy. Look at what a retreat's photography doesn't show: the accommodation, the group size, the teacher during a non-photogenic moment.</p>
+
+              <p><strong>Booking platform rankings.</strong> The #1 result on a retreat booking platform means the retreat pays a high commission rate — typically 10–25% of booking value. It does not mean the retreat is the best option in its category. Treat platform rankings as a starting point for discovery, not as quality endorsement. Do your own verification independently.</p>
+
+              <h2 id="after-the-retreat">After the retreat — keeping the benefits when you get back home</h2>
+
+              <p>The hardest part of a retreat is day one back at your desk.</p>
+
+              <p>You've had a week of 6am practice, two meals eaten in silence, evening yin yoga, no notifications, and eight hours of sleep. Then Monday morning arrives and you're on a conference call before 9am wondering if any of it actually happened.</p>
+
+              <p>It did happen. Here's how to not lose it.</p>
+
+              <p><strong>Build a buffer day.</strong> Don't fly home on Sunday evening and go straight to work Monday morning. If you can, take Sunday night and Monday as your re-entry window. The transition shock is real and a buffer makes it manageable.</p>
+
+              <p><strong>Pick one thing to maintain.</strong> Not six things. One. Morning practice, even 20 minutes. No phone until after breakfast. One daily meditation. The full retreat schedule is not sustainable in regular life, and trying to maintain all of it will lead to abandoning all of it within a week. One thing is sustainable.</p>
+
+              <p><strong>Use the alumni community.</strong> Most retreat centres have a follow-up group, mailing list, or annual reunion event. Use them. The community you built in that shala is a genuine resource — not a marketing list.</p>
+
+              <p><strong>Expect the benefits to compound.</strong> People who attend a second retreat consistently report that the first one "clicks" retroactively — things they didn't understand at the time make sense after the second experience. The benefits are cumulative. One retreat is a good start. Two is when it becomes a practice.</p>
+
+              <h2 id="faq">FAQ</h2>
+
+              <p><strong>What is the goal of a yoga retreat?</strong><br/>
+              The core goal is to deepen your practice — of yoga, of stillness, of paying attention — in an environment specifically designed for that purpose. The structure removes the daily decisions and distractions that make sustained practice difficult at home. Beyond the yoga itself, most people report the goal shifting once they're there: from "improve my downward dog" to something harder to name but more useful.</p>
+
+              <p><strong>Can a beginner go on a yoga retreat?</strong><br/>
+              Yes, and retreats can be one of the best ways to begin a yoga practice. Look for a retreat that explicitly mentions beginner-friendly programming and mixed-level classes. A 3–5 day retreat is a better entry point than a 7–10 day program. Our <Link href="/blog/yoga-retreat-for-beginners">beginner retreat guide</Link> covers what to expect and what to look for.</p>
+
+              <p><strong>What does a yoga retreat include?</strong><br/>
+              At minimum: daily yoga sessions (usually two per day), three meals per day, and on-site accommodation. Most mid-range retreats also include workshops, meditation sessions, and some free time built into the schedule. What's typically not included: flights, airport transfers, travel insurance, spa treatments, and excursions outside the programme.</p>
+
+              <p><strong>How long do yoga retreats last?</strong><br/>
+              Most retreats run 5–7 days — that's the industry standard format. Weekend retreats (2–3 days) exist and are a good way to test the waters locally. Some immersive programs run 10–14 days, typically for yoga teacher training or Ayurvedic programs. For a first retreat, 4–5 days is my recommendation: long enough to genuinely disconnect, short enough to keep the financial and personal risk low.</p>
+
+              <p><strong>How much does a yoga retreat cost?</strong><br/>
+              A full week, full board: budget options start at $300–$600 in India and $600–$900 in Bali or Thailand. Mid-range runs $950–$2,100 depending on destination. Luxury from $2,500–$4,000+. Those prices cover accommodation, meals, and all yoga sessions. Add separately for flights, transfers, and travel insurance. See the full price table above.</p>
+
+              <p><strong>Do I need experience to attend?</strong><br/>
+              No. Most retreats cater to mixed levels, and many actively welcome beginners. What you need is the ability to follow a structured day, an openness to trying something unfamiliar, and a realistic expectation that some of it will be uncomfortable — not in a bad way, just in the way that anything new is.</p>
+
+              <p><strong>Can I go to a yoga retreat alone?</strong><br/>
+              Yes, and most people do. Around 60–65% of retreat bookings are solo travellers (BookRetreats, 2024). Going alone is often better than going with a friend — you're not managing another person's experience, you're more likely to connect with other participants, and you make decisions based on what you need rather than what works for two.</p>
+
+              <p><strong>What is the difference between a yoga retreat and a wellness retreat?</strong><br/>
+              A yoga retreat has yoga as its primary and central activity — the schedule is built around practice. A wellness retreat uses yoga as one element among many: spa treatments, nutrition programs, therapy, breathwork, and fitness might all feature equally. Wellness retreats are typically more expensive, more medically adjacent, and less structurally focused on yoga. If deepening your practice is the goal, a yoga retreat is more effective. If a holistic physical reset is what you're after, a wellness retreat may serve you better.</p>
+
+              <p><em>All prices: per week, full board (accommodation + 3 meals/day + all yoga sessions), 2025–2026 benchmarks.</em></p>
 
               {/* Tags */}
               <div className={s.tags}>
@@ -253,7 +353,8 @@ export default function YogaRetreatsGuide() {
                 <div className={s.authorMeta}>
                   <h4>Sarah Mitchell</h4>
                   <div className={s.authorRole}>Founder &amp; Lead Reviewer, YogaRetreatAdvisor</div>
-                  <p>Sarah Mitchell spent 11 years in financial services before a panic attack at her desk in London in 2018 changed everything. Since then she has attended 14 yoga retreats across 9 countries, from a $380 budget week in Rishikesh to a $4,200 luxury immersion in Tuscany.</p>
+                  <p>Former London project manager turned yoga travel writer. She's attended 14 retreats across 9 countries since 2018. RYT-200 certified. Price range covered: $380–$4,200. Perpetually over-packed.</p>
+                  <p>Sarah started YogaRetreatAdvisor because she got tired of reading reviews written by writers who'd been comped free stays, or platforms ranking retreats based on who pays the highest commission. She has no financial relationship with the retreats she reviews. If she recommends something, it's because she'd tell her best friend to book it.</p>
                 </div>
               </div>
             </div>
@@ -263,15 +364,17 @@ export default function YogaRetreatsGuide() {
               <div className={s.toc}>
                 <h4>In This Guide</h4>
                 <nav className={s.tocLinks}>
-                  <a href="#what-is-a-yoga-retreat" className={s.tocLink}>What is a yoga retreat</a>
-                  <a href="#top-destinations" className={s.tocLink}>7 popular destinations</a>
-                  <a href="#how-to-choose" className={s.tocLink}>How to choose the right one</a>
-                  <a href="#what-to-expect" className={s.tocLink}>Daily schedules and meals</a>
-                  <a href="#pricing-breakdown" className={s.tocLink}>Pricing breakdown</a>
-                  <a href="#packing-list" className={s.tocLink}>What to pack</a>
-                  <a href="#common-mistakes" className={s.tocLink}>Three booking mistakes</a>
-                  <a href="#when-not-to-go" className={s.tocLink}>When it is the wrong choice</a>
-                  <a href="#next-steps" className={s.tocLink}>How to start planning</a>
+                  <a href="#what-is-a-yoga-retreat" className={s.tocLink}>What is a yoga retreat?</a>
+                  <a href="#typical-day" className={s.tocLink}>What happens on a typical day?</a>
+                  <a href="#real-benefits" className={s.tocLink}>Why people go — the real benefits</a>
+                  <a href="#types-of-retreats" className={s.tocLink}>Types of yoga retreats</a>
+                  <a href="#where-to-go" className={s.tocLink}>Best destinations &amp; real prices</a>
+                  <a href="#how-to-choose" className={s.tocLink}>How to choose the right retreat</a>
+                  <a href="#how-much-does-it-cost" className={s.tocLink}>How much does a yoga retreat cost?</a>
+                  <a href="#what-to-pack" className={s.tocLink}>What to pack</a>
+                  <a href="#red-flags" className={s.tocLink}>Red flags — spotting bad retreats</a>
+                  <a href="#after-the-retreat" className={s.tocLink}>After the retreat</a>
+                  <a href="#faq" className={s.tocLink}>FAQ</a>
                 </nav>
               </div>
             </aside>
@@ -286,16 +389,16 @@ export default function YogaRetreatsGuide() {
               <h2>Continue Reading</h2>
             </div>
             <div className={s.relatedGrid}>
-              <Link href="/retreats" className={s.relatedCard}>
+              <Link href="/blog/luxury-yoga-retreats" className={s.relatedCard}>
                 <div className={s.relatedImg}>
-                  <Image src="/images/blog/luxury-yoga-retreat-pool.jpg" alt="Luxury yoga retreat pool" fill sizes="33vw" style={{ objectFit: 'cover' }} />
+                  <Image src="/images/blog/luxury-yoga.jpg" alt="Luxury yoga retreat pool" fill sizes="33vw" style={{ objectFit: 'cover' }} />
                 </div>
                 <div className={s.relatedBody}>
                   <span>Retreat Types</span>
                   <h4>Luxury Yoga Retreats: What $3,000+ Gets You</h4>
                 </div>
               </Link>
-              <Link href="/retreats" className={s.relatedCard}>
+              <Link href="/blog/yoga-retreat-for-beginners" className={s.relatedCard}>
                 <div className={s.relatedImg}>
                   <Image src="/images/blog/meditation-retreat-group-outdoor.jpg" alt="Meditation group retreat" fill sizes="33vw" style={{ objectFit: 'cover' }} />
                 </div>
@@ -304,7 +407,7 @@ export default function YogaRetreatsGuide() {
                   <h4>Yoga Retreat for Beginners: What to Expect</h4>
                 </div>
               </Link>
-              <Link href="/retreats" className={s.relatedCard}>
+              <Link href="/blog/yoga-retreat-bali" className={s.relatedCard}>
                 <div className={s.relatedImg}>
                   <Image src="/images/blog/tropical-retreat-hut-bali.jpg" alt="Bali retreat hut" fill sizes="33vw" style={{ objectFit: 'cover' }} />
                 </div>
