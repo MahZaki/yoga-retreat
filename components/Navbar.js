@@ -38,8 +38,8 @@ export default function Navbar() {
             <Image
               src="/images/logo.png"
               alt="YogaRetreatAdvisor"
-              width={200}
-              height={44}
+              width={260}
+              height={56}
               priority
               className={styles.logoImg}
             />
@@ -72,7 +72,7 @@ export default function Navbar() {
       {mobileOpen && (
         <div className={styles.mobile}>
           <button className={styles.mobileClose} onClick={() => setMobileOpen(false)}>✕</button>
-          <Image src="/images/logo.png" alt="YogaRetreatAdvisor" width={200} height={44} style={{ marginBottom: '1rem' }} />
+          <Image src="/images/logo.png" alt="YogaRetreatAdvisor" width={260} height={56} style={{ marginBottom: '1rem' }} />
           {links.map(l => (
             <Link key={l.href} href={l.href} className={styles.mobileLink} onClick={() => setMobileOpen(false)}>
               {l.label}
