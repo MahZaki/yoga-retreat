@@ -30,8 +30,8 @@
 | 1 | `/blog/yoga-retreats` | yoga retreats | 8,100 | ✅ DONE |
 | 2 | `/blog/yoga-retreats-india` | yoga retreats india | 170 | ✅ DONE |
 | 3 | `/blog/yoga-retreat-bali` | yoga retreat bali | 880 | ✅ DONE |
-| 4 | `/blog/yoga-retreat-california` | yoga retreat california | 720 | 🔜 NEXT |
-| 5 | `/blog/womens-yoga-retreat` | womens yoga retreat | 720 | ⬜ TODO |
+| 4 | `/blog/yoga-retreat-california` | yoga retreat california | 720 | ✅ DONE |
+| 5 | `/blog/womens-yoga-retreat` | womens yoga retreat | 720 | 🔜 NEXT |
 | 6 | `/blog/best-yoga-retreats` | best yoga retreats | 480 | ⬜ TODO |
 | 7 | `/blog/how-to-book-yoga-retreat` | how to book a yoga retreat | 390 | ⬜ TODO |
 | 8 | `/blog/yoga-retreats-costa-rica` | yoga retreats costa rica | 260 | ⬜ TODO |

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Palm leaf icon only, centered and scaled for favicon -->
+  <g transform="translate(15, 10) scale(1.1)">
+    <path d="M 55 95 Q 35 65 15 30" stroke="#7A9E7E" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 47 82 Q 30 78 18 60" stroke="#7A9E7E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M 42 72 Q 24 65 14 48" stroke="#7A9E7E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M 36 60 Q 20 52 12 36" stroke="#7A9E7E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M 30 49 Q 17 40 13 26" stroke="#7A9E7E" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <path d="M 24 38 Q 14 29 14 16" stroke="#7A9E7E" stroke-width="2.0" fill="none" stroke-linecap="round"/>
+    <path d="M 19 28 Q 12 20 15 8" stroke="#7A9E7E" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <path d="M 50 86 Q 62 80 70 62" stroke="#7A9E7E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M 45 75 Q 56 66 62 48" stroke="#7A9E7E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M 39 63 Q 48 52 52 35" stroke="#7A9E7E" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <path d="M 33 51 Q 40 40 42 24" stroke="#7A9E7E" stroke-width="2.0" fill="none" stroke-linecap="round"/>
+    <path d="M 27 40 Q 32 30 32 15" stroke="#7A9E7E" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <path d="M 21 30 Q 25 20 27 8" stroke="#7A9E7E" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
