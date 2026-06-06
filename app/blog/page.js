@@ -56,8 +56,8 @@ export default function BlogPage() {
             </div>
 
             <div className={s.articleList}>
-              {filtered.map(article => (
-                <Link key={article.slug} href={`/blog/${article.slug}`} className={s.cardLink}>
+              {filtered.map((article, i) => (
+                <Link key={article.slug} href={`/blog/${article.slug}`} className={`${s.cardLink} ${i === 0 && activeCategory === 'All' ? s.featured : ''}`}>
                   <article className={s.card}>
                     <div className={s.cardImg}>
                       <Image src={article.img} alt={article.title} fill style={{ objectFit: 'cover' }} />

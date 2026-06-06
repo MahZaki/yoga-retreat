@@ -125,23 +125,23 @@
 .card:hover .readMore { letter-spacing: .02em; }
 
 /* ── Featured (pillar) card — spans full width ────────── */
-.cardLink:first-child .card {
+.featured .card {
   grid-column: 1 / -1;
   flex-direction: row;
 }
-.cardLink:first-child .cardImg {
+.featured .cardImg {
   width: 420px;
   height: auto;
   min-height: 260px;
   flex-shrink: 0;
 }
-.cardLink:first-child .cardTitle { font-size: 1.3rem; }
+.featured .cardTitle { font-size: 1.3rem; }
 
 /* ── Responsive ───────────────────────────────────────── */
 @media (max-width: 900px) {
   .articleList { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
-  .cardLink:first-child .card { flex-direction: column; }
-  .cardLink:first-child .cardImg { width: 100%; height: 220px; }
+  .featured .card { flex-direction: column; }
+  .featured .cardImg { width: 100%; height: 220px; }
 }
 @media (max-width: 600px) {
   .articleList { grid-template-columns: 1fr; }
