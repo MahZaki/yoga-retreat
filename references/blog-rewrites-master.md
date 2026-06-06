@@ -31,8 +31,8 @@
 | 2 | `/blog/yoga-retreats-india` | yoga retreats india | 170 | ✅ DONE |
 | 3 | `/blog/yoga-retreat-bali` | yoga retreat bali | 880 | ✅ DONE |
 | 4 | `/blog/yoga-retreat-california` | yoga retreat california | 720 | ✅ DONE |
-| 5 | `/blog/womens-yoga-retreat` | womens yoga retreat | 720 | 🔜 NEXT |
-| 6 | `/blog/best-yoga-retreats` | best yoga retreats | 480 | ⬜ TODO |
+| 5 | `/blog/womens-yoga-retreat` | womens yoga retreat | 720 | ✅ DONE |
+| 6 | `/blog/best-yoga-retreats` | best yoga retreats | 480 | 🔜 NEXT |
 | 7 | `/blog/how-to-book-yoga-retreat` | how to book a yoga retreat | 390 | ⬜ TODO |
 | 8 | `/blog/yoga-retreats-costa-rica` | yoga retreats costa rica | 260 | ⬜ TODO |
 | 9 | `/blog/yoga-retreat-for-beginners` | yoga retreat for beginners | 260 | ⬜ TODO |
@@ -59,30 +59,15 @@
 
 ---
 
-### 4. `/blog/yoga-retreat-california` — 720/mo
-**Primary keyword:** yoga retreat california  
-**Target length:** ~1,800 words  
-**Format:** regional guide + comparison table  
-**Featured snippet answer:** "California yoga retreats run $900–$1,400/week budget, $1,500–$2,200 mid-range. Top regions: Ojai (spiritual, quiet), Big Sur (nature immersion), Joshua Tree (desert), Esalen Institute (iconic, waitlisted)."  
-**Sections:** Ojai, Big Sur/Esalen, Joshua Tree, Sedona crossover, budget reality check  
-**Gaps to add:** Esalen booking reality (long waitlists), best season by region, California vs Colorado  
-**Story:** Colorado Convert (gateway retreat for sceptics — applicable here)  
-**Pexels queries:** `california yoga nature`, `joshua tree desert yoga`, `big sur coast yoga`, `ojai wellness retreat`  
-**Image filenames:** `california-ojai-yoga.jpg`, `california-joshua-tree.jpg`, `california-big-sur.jpg`
+### 4. `/blog/yoga-retreat-california` — 720/mo ✅
+**Completed:** June 2026  
+**What was done:** ~1,800-word regional breakdown across Big Sur, Ojai, Joshua Tree, and Bay Area. Included Esalen booking-reality warning, best-season-by-region table, California vs Colorado comparison, and the "Colorado Convert" story for sceptical first-timers. 3 Pexels images (Big Sur, Ojai, Joshua Tree). FAQ schema (4 Qs). Full sidebar ToC + related links. Author box with RYT-200 detail.
 
 ---
 
-### 5. `/blog/womens-yoga-retreat` — 720/mo
-**Primary keyword:** womens yoga retreat  
-**Target length:** ~2,000 words  
-**Format:** guide + program comparison table  
-**Featured snippet answer:** "Women-only yoga retreats are not niche — women make up 72% of retreat attendees globally. The format removes social self-consciousness that mixed retreats don't fully eliminate. Prices: $800–$2,500/week."  
-**Sections:** why the format works (evidence-based), what to look for, best destinations for women-only, solo travel safety, FAQ  
-**Gaps to add:** mental health caveat for intensive emotional retreats, first-time vs experienced comparison  
-**Story:** Morocco Surprise (the retreat Sarah almost didn't book, highest satisfaction)  
-**Opinion:** Opinion 6 — women-only is undermarketed not niche  
-**Pexels queries:** `women yoga retreat group`, `women meditation outdoor`, `women yoga circle`  
-**Image filenames:** `womens-retreat-group.jpg`, `womens-yoga-outdoor.jpg`
+### 5. `/blog/womens-yoga-retreat` — 720/mo ✅
+**Completed:** June 2026  
+**What was done:** ~2,100-word guide. Opened with Morocco Surprise story (highest-rated retreat Sarah almost skipped). Covered what the format genuinely changes (practice openness, community speed, solo logic), what to look for (teacher credentials, women-only vs women-focused distinction, mental health caveat, refund policy warning). Destination comparison table (India, Morocco, Portugal, Costa Rica, Bali, USA). 8 named programmes with honest price ranges. First-timer vs experienced section. 5-Q FAQ schema. 3 Pexels images (retreat group, meditation circle, outdoor sunrise). Sidebar ToC + related links.
 
 ---
 
