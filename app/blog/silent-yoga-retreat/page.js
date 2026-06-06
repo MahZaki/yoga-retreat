@@ -125,15 +125,15 @@ export default function SilentYogaRetreatPage() {
         </div>
 
         <div className={s.authorBox}>
-          <div className="container">
-            <div className={s.authorInner}>
-              <div className={s.authorInfo}>
-                <strong>Sarah Mitchell</strong>
-                <p>Former London project manager turned yoga travel writer. Has attended 22 retreats across 14 countries since 2018. RYT-200 certified, perpetually over-packed.</p>
+                <div className={s.authorAvatar}>
+                  <Image src="/images/hero-portrait.jpg" alt="Sarah Mitchell" fill sizes="80px" style={{ objectFit: 'cover' }} />
+                </div>
+                <div className={s.authorMeta}>
+                  <h4>Sarah Mitchell</h4>
+                  <div className={s.authorRole}>Founder &amp; Lead Reviewer, YogaRetreatAdvisor</div>
+                  <p>Former London project manager turned yoga travel writer. She's attended 14 retreats across 9 countries since 2018. RYT-50 certified. Price range covered: –,200. Perpetually over-packed.</p>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
 
         <Newsletter />
       </article>

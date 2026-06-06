@@ -256,6 +256,8 @@
   font-weight: 700;
   flex-shrink: 0;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
 }
 .authorMeta h4 { margin-bottom: .25rem; font-size: 1.15rem; color: var(--charcoal); }
 .authorRole {

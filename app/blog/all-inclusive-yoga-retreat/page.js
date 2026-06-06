@@ -144,7 +144,9 @@ export default function AllInclusiveYogaRetreats() {
 
               {/* Author Box */}
               <div className={s.authorBox}>
-                <div className={s.authorAvatar}>SM</div>
+                <div className={s.authorAvatar}>
+                  <Image src="/images/hero-portrait.jpg" alt="Sarah Mitchell" fill sizes="80px" style={{ objectFit: 'cover' }} />
+                </div>
                 <div className={s.authorMeta}>
                   <h4>Sarah Mitchell</h4>
                   <div className={s.authorRole}>Founder &amp; Lead Reviewer, YogaRetreatAdvisor</div>
