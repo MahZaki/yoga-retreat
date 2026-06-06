@@ -49,8 +49,8 @@ Before touching any page.js, you MUST read these five files and apply them:
 | 3 | `/blog/yoga-retreat-bali` | yoga retreat bali | 880 | ✅ DONE |
 | 4 | `/blog/yoga-retreat-california` | yoga retreat california | 720 | ✅ DONE |
 | 5 | `/blog/womens-yoga-retreat` | womens yoga retreat | 720 | ✅ DONE |
-| 6 | `/blog/best-yoga-retreats` | best yoga retreats | 480 | 🔜 NEXT |
-| 7 | `/blog/how-to-book-yoga-retreat` | how to book a yoga retreat | 390 | ⬜ TODO |
+| 6 | `/blog/best-yoga-retreats` | best yoga retreats | 480 | ✅ DONE |
+| 7 | `/blog/how-to-book-yoga-retreat` | how to book a yoga retreat | 390 | 🔜 NEXT |
 | 8 | `/blog/yoga-retreats-costa-rica` | yoga retreats costa rica | 260 | ⬜ TODO |
 | 9 | `/blog/yoga-retreat-for-beginners` | yoga retreat for beginners | 260 | ⬜ TODO |
 | 10 | `/blog/luxury-yoga-retreats` | luxury yoga retreats | 210 | ⬜ TODO |
@@ -88,16 +88,10 @@ Before touching any page.js, you MUST read these five files and apply them:
 
 ---
 
-### 6. `/blog/best-yoga-retreats` — 480/mo
-**Primary keyword:** best yoga retreats  
-**Target length:** ~2,200 words  
-**Format:** comparison guide + ranked table (not a pure listicle — that's what competitors do; we do evaluation criteria instead)  
-**Featured snippet answer:** "The best yoga retreat is the one that matches what you need right now: budget, teaching style, destination, and group size. There is no universal 'best' — but there are four things that reliably separate good retreats from expensive disappointments."  
-**Sections:** how to evaluate (4 pillars), top picks by category (budget/mid/luxury/beginner/solo), red flags, booking platform honesty  
-**Gaps to add:** booking platform conflict of interest (Opinion 1), teacher credential checklist  
-**Opinion:** Opinion 1 (platform rankings = commission), Opinion 3 (teacher > accommodation)  
-**Pexels queries:** `yoga retreat outdoor group`, `yoga teacher class`, `retreat meditation nature`  
-**Image filenames:** `best-retreats-group.jpg`, `best-retreats-teacher.jpg`
+### 6. `/blog/best-yoga-retreats` — 480/mo ✅
+**Completed:** June 2026  
+**SERP analysis:** 3 competitors analysed (retreator.com, bodyflows.com, bookyogaretreats.com). All were listing-format or operator-owned pages ~1,000–1,500 words. None included a structured evaluation framework, platform conflict of interest disclosure, or teacher credential checklist.  
+**What was done:** ~2,100-word evaluation guide (not a listicle — the gap competitors miss). 4-pillar framework (teacher, schedule, group size, refund policy). Teacher credential checklist (5 points). Best-picks-by-category table with canonical prices from stats.md. Platform conflict-of-interest section deploying Opinion 1 fully (10–25% commission, paid featured placements). Price reality check using Tuscany Moment story from stories.md. 5-Q FAQ schema. 3 Pexels images. Author box with canonical stats (14 retreats/9 countries/$380–$4,200/RYT-50).
 
 ---
 
