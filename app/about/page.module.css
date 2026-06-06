@@ -1,39 +1,62 @@
-.hero{background:linear-gradient(135deg,var(--jungle-dark),var(--jungle));padding:calc(var(--nav-h) + 3rem) 0 3rem;text-align:center}
-.hero h1{color:#fff;margin-bottom:.5rem}
-.hero p{color:rgba(255,255,255,.75);max-width:560px;margin:0 auto}
+.hero { padding: calc(var(--nav-h) + 4rem) 0 4rem; background: var(--warm-white); }
+.heroGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+.heroImg { position: relative; border-radius: var(--radius-lg); overflow: hidden; aspect-ratio: 3/4; box-shadow: var(--shadow-lg); }
+.heroImg img { width: 100%; height: 100%; object-fit: cover; }
+.heroContent h1 { font-size: clamp(2.5rem, 5vw, 3.8rem); margin-bottom: 1.5rem; color: var(--charcoal); letter-spacing: -0.03em; }
+.heroContent p { font-size: 1.15rem; line-height: 1.8; margin-bottom: 1.25rem; color: var(--charcoal-light); }
+.highlight { font-family: var(--font-heading); font-size: 1.3rem; font-weight: 600; color: var(--terracotta); margin: 2.5rem 0; border-left: 4px solid var(--terracotta); padding-left: 1.5rem; }
+.highlight p { color: inherit; font-size: inherit; margin-bottom: 0.5rem; }
 
-.story{padding:5rem 0}
-.storyGrid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
-.storyImg{position:relative;border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:4/3}
-.storyImg img{width:100%;height:100%;object-fit:cover}
-.storyContent h2{margin-bottom:1rem}
-.storyContent p{margin-bottom:1rem;color:var(--charcoal-light);line-height:1.85}
-.storyContent p:last-of-type{margin-bottom:0}
+.section { padding: 6rem 0; background: var(--warm-white); }
+.sectionAlt { padding: 6rem 0; background: #fff; }
 
-.values{padding:5rem 0;background:var(--sand-light)}
-.valuesGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
-.valueCard{padding:2rem;border-radius:var(--radius-lg);background:#fff;text-align:center;transition:all .32s var(--ease)}
-.valueCard:hover{transform:translateY(-4px);box-shadow:var(--shadow-md)}
-.valueIcon{width:56px;height:56px;border-radius:var(--radius-full);background:rgba(46,90,71,.08);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:1.4rem}
-.valueCard h4{margin-bottom:.5rem}
-.valueCard p{font-size:.85rem;color:var(--slate)}
+.storyGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 6rem; }
+.storyGrid:last-child { margin-bottom: 0; }
+.storyGrid.reverse { direction: rtl; }
+.storyGrid.reverse > * { direction: ltr; }
+.storyImg { position: relative; border-radius: var(--radius-lg); overflow: hidden; aspect-ratio: 4/5; box-shadow: var(--shadow-md); }
+.storyImg img { width: 100%; height: 100%; object-fit: cover; }
+.storyContent h2 { font-size: 2.2rem; margin-bottom: 1.5rem; color: var(--charcoal); }
+.storyContent p { font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.25rem; color: var(--charcoal-light); }
 
-.stats{padding:4rem 0}
-.statsGrid{display:flex;justify-content:center;gap:4rem;flex-wrap:wrap}
-.statItem{text-align:center}
-.statNum{font-family:var(--font-heading);font-size:2.4rem;font-weight:700;color:var(--jungle)}
-.statLabel{font-size:.82rem;color:var(--slate);margin-top:.25rem}
+.mission { text-align: center; max-width: 800px; margin: 0 auto; padding: 2rem 1.5rem; }
+.mission h2 { font-size: 2.5rem; margin-bottom: 2rem; color: var(--jungle); }
+.mission p { font-size: 1.2rem; line-height: 1.8; margin-bottom: 1.5rem; color: var(--charcoal-light); }
+.mission em { font-family: var(--font-heading); color: var(--terracotta); font-weight: 600; font-style: normal; font-size: 1.3rem; display: block; margin: 2rem 0; }
 
-.team{padding:5rem 0;background:var(--warm-white)}
-.teamGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
-.teamCard{text-align:center;padding:2rem;border-radius:var(--radius-lg);background:#fff;box-shadow:var(--shadow-sm)}
-.teamAvatar{width:80px;height:80px;border-radius:var(--radius-full);background:linear-gradient(135deg,var(--sage),var(--jungle-light));margin:0 auto 1rem;display:flex;align-items:center;justify-content:center;font-size:1.8rem;color:#fff;font-weight:700}
-.teamCard h4{margin-bottom:.25rem}
-.teamRole{font-size:.82rem;color:var(--terracotta);font-weight:500;margin-bottom:.75rem}
-.teamCard p{font-size:.85rem;color:var(--slate)}
+.lessons { padding: 6rem 0; background: var(--sand-light); }
+.lessonsHeader { text-align: center; margin-bottom: 4rem; }
+.lessonsHeader h2 { font-size: 2.5rem; margin-bottom: 1rem; color: var(--charcoal); }
+.lessonsGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; }
+.lessonCard { background: #fff; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); transition: transform 0.3s var(--ease); display: flex; flex-direction: column; }
+.lessonCard:hover { transform: translateY(-8px); box-shadow: var(--shadow-md); }
+.lessonImg { position: relative; aspect-ratio: 4/5; overflow: hidden; }
+.lessonImg img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s var(--ease); }
+.lessonCard:hover .lessonImg img { transform: scale(1.05); }
+.lessonBody { padding: 2.5rem 2rem; flex: 1; }
+.lessonBody h3 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--terracotta); }
+.lessonBody p { font-size: 1.05rem; line-height: 1.7; color: var(--charcoal-light); margin: 0; }
 
-@media(max-width:768px){
-  .storyGrid{grid-template-columns:1fr;gap:2rem}
-  .valuesGrid,.teamGrid{grid-template-columns:1fr}
-  .statsGrid{gap:2rem}
+.beliefs { padding: 6rem 0; background: #fff; }
+.beliefsGrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2.5rem; margin-top: 4rem; }
+.beliefCard { padding: 3rem; border: 1.5px solid var(--mist); border-radius: var(--radius-lg); background: var(--warm-white); transition: all 0.3s var(--ease); }
+.beliefCard:hover { border-color: var(--terracotta-light); transform: translateY(-4px); box-shadow: var(--shadow-sm); }
+.beliefCard h3 { font-size: 1.4rem; margin-bottom: 1.2rem; color: var(--jungle); }
+.beliefCard p { font-size: 1.1rem; line-height: 1.7; color: var(--charcoal-light); margin: 0; }
+
+.conclusion { padding: 6rem 0; background: var(--jungle-dark); color: #fff; }
+.conclusionGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+.conclusionImg { position: relative; border-radius: var(--radius-lg); overflow: hidden; aspect-ratio: 4/5; box-shadow: 0 20px 40px rgba(0,0,0,0.2); }
+.conclusionImg img { width: 100%; height: 100%; object-fit: cover; }
+.conclusionContent h2 { font-size: 2.5rem; margin-bottom: 1.5rem; color: var(--sand-light); }
+.conclusionContent p { font-size: 1.15rem; line-height: 1.8; margin-bottom: 1.5rem; color: rgba(255,255,255,0.85); }
+.signature { margin-top: 4rem; font-family: var(--font-heading); font-size: 1.5rem; color: var(--sand); font-style: italic; }
+
+@media (max-width: 900px) {
+  .heroGrid, .storyGrid, .conclusionGrid { grid-template-columns: 1fr; gap: 3rem; }
+  .storyGrid.reverse { direction: ltr; }
+  .lessonsGrid { grid-template-columns: 1fr; gap: 2rem; }
+  .beliefsGrid { grid-template-columns: 1fr; gap: 2rem; }
+  .heroContent h1 { font-size: 2.8rem; }
+  .storyContent h2, .mission h2, .lessonsHeader h2, .conclusionContent h2 { font-size: 2.2rem; }
 }
