@@ -11,7 +11,7 @@
   --shadow-sm:0 2px 8px rgba(43,43,43,.06);--shadow-md:0 8px 24px rgba(43,43,43,.10);
   --shadow-lg:0 20px 60px rgba(43,43,43,.14);
   --ease:cubic-bezier(.25,.46,.45,.94);--transition:.32s var(--ease);
-  --max-w:1280px;--nav-h:80px;
+  --max-w:1280px;--nav-h:100px;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
