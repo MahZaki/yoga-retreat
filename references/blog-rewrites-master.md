@@ -7,6 +7,23 @@
 
 ---
 
+## ⚠️ MANDATORY — Read all references BEFORE writing any post
+
+Before touching any page.js, you MUST read these five files and apply them:
+
+| File | What it controls |
+|---|---|
+| `references/voice.md` | Sentence rhythm, vocabulary, anti-patterns, formatting rules |
+| `references/humour.md` | How/where/how often humour appears — one dry observation per 800 words |
+| `references/opinions.md` | Sarah's standing positions (Op 1–6) — attach the correct one to each post |
+| `references/stats.md` | Canonical numbers — **14 retreats, 9 countries, $380–$4,200**. Use these exactly. Never invent stats. |
+| `references/stories.md` | Canonical anecdotes — use verbatim core facts, vary framing only |
+| `references/sarah-author-bio.md` | Author box copy — use short bio, RYT-50 (not RYT-200), based London/Lisbon |
+
+**Do not write the post until you have read all six files in this session.**
+
+---
+
 ## Rules for every rewrite (apply without exception)
 - Open with a scene, fact, or direct answer — never a question
 - Answer the primary keyword directly in the first paragraph (featured snippet)
@@ -17,9 +34,9 @@
 - Fetch 3–5 Pexels images per post, place above H2s
 - Use `s.introBrief` for opening highlighted summary
 - Internal links: always link to pillar `/blog/yoga-retreats` + 2–3 sibling posts
-- End with author box (Sarah Mitchell, 14 retreats, 9 countries, $380–$4,200)
+- End with author box — **14 retreats, 9 countries, $380–$4,200, RYT-50** (from `sarah-author-bio.md`)
 - Voice: honest, warm, specific. No jargon. Contractions always.
-- One dry observation per ~800 words. Humour must feel accidental.
+- One dry observation per ~800 words. Humour must feel accidental (see `humour.md`).
 
 ---
 
