@@ -6,10 +6,10 @@ import Newsletter from '@/components/Newsletter'
 import s from './page.module.css'
 
 export const metadata = {
-  title: 'Yoga Retreats: The Complete Guide to Choosing, Booking & Preparing (2025)',
+  title: 'Yoga Retreats: The Complete Guide to Choosing, Booking & Preparing (2026)',
   description: 'Compare yoga retreats across top destinations. Learn real pricing benchmarks, what to pack, and how to avoid common booking mistakes from a reviewer who has attended 14 retreats.',
   openGraph: {
-    title: 'Yoga Retreats: The Complete Guide for 2025',
+    title: 'Yoga Retreats: The Complete Guide for 2026',
     description: 'Compare yoga retreats across top destinations. Pricing, destinations, and what first-timers need to know.',
     images: [{ url: '/images/blog/yoga-retreat-hero.jpg', width: 1200, height: 630, alt: 'Group practicing yoga at sunrise' }],
     type: 'article',
@@ -20,12 +20,12 @@ export default function YogaRetreatsGuide() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'Yoga Retreats: The Complete Guide to Choosing, Booking & Preparing (2025)',
+    headline: 'Yoga Retreats: The Complete Guide to Choosing, Booking & Preparing (2026)',
     description: 'Compare yoga retreats across top destinations. Learn real pricing benchmarks, what to pack, and how to avoid common booking mistakes from a reviewer who has attended 14 retreats.',
     author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://yogaretreatadvisor.com/about' },
     publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', logo: { '@type': 'ImageObject', url: 'https://yogaretreatadvisor.com/logo.png' } },
-    datePublished: '2025-08-01',
-    dateModified: '2025-08-01',
+    datePublished: '2026-08-01',
+    dateModified: '2026-08-01',
     image: 'https://yogaretreatadvisor.com/images/blog/yoga-retreat-hero.jpg',
     mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://yogaretreatadvisor.com/blog/yoga-retreats' },
   }
@@ -52,10 +52,10 @@ export default function YogaRetreatsGuide() {
           <Image src="/images/blog/pillar-what-is.jpg" alt="Group practicing yoga at sunrise during a week-long retreat" fill priority sizes="100vw" style={{ objectFit: 'cover' }} />
           <div className={s.heroOverlay}>
             <span className={s.heroCat}>Complete Guide</span>
-            <h1>Yoga Retreats: The Complete Guide to Choosing, Booking & Preparing (2025)</h1>
+            <h1>Yoga Retreats: The Complete Guide to Choosing, Booking & Preparing (2026)</h1>
             <div className={s.heroMeta}>
               <span>By Sarah Mitchell</span>
-              <span>Aug 2025</span>
+              <span>Aug 2026</span>
               <span>14 min read</span>
             </div>
           </div>
@@ -413,7 +413,7 @@ export default function YogaRetreatsGuide() {
                 </div>
                 <div className={s.relatedBody}>
                   <span>Destinations</span>
-                  <h4>Best Yoga Retreats in Bali for 2025</h4>
+                  <h4>Best Yoga Retreats in Bali for 2026</h4>
                 </div>
               </Link>
             </div>

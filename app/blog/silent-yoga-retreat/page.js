@@ -6,7 +6,7 @@ import Newsletter from '@/components/Newsletter'
 import s from '../yoga-retreats/page.module.css'
 
 export const metadata = {
-  title: 'Silent Yoga Retreats: A Guide to Meditation-Focused Programs (2025)',
+  title: 'Silent Yoga Retreats: A Guide to Meditation-Focused Programs (2026)',
   description: "Noble Silence, Vipassana, or a hybrid? What silence actually means in a retreat context, what to expect physically, and whether it's right for you.",
   openGraph: {
     title: 'Silent Yoga Retreats: A Guide to Meditation-Focused Programs',
@@ -20,8 +20,8 @@ const schema = {
   '@type': 'Article',
   headline: 'Silent Yoga Retreats: A Guide to Meditation-Focused Programs',
   author: { '@type': 'Person', name: 'Sarah Mitchell' },
-  datePublished: '2025-10-20',
-  dateModified: '2025-10-20',
+  datePublished: '2026-10-20',
+  dateModified: '2026-10-20',
   publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
 }
 
@@ -40,7 +40,7 @@ export default function SilentYogaRetreatPage() {
               <h1>Silent yoga retreats: a guide to meditation-focused programs</h1>
               <div className={s.meta}>
                 <span>By Sarah Mitchell</span><span>·</span>
-                <span>October 2025</span><span>·</span>
+                <span>October 2026</span><span>·</span>
                 <span>8 min read</span>
               </div>
             </div>

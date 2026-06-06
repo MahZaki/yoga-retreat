@@ -20,8 +20,8 @@ const schema = {
   '@type': 'Article',
   headline: 'Best Yoga Retreats in Bali: Ubud, Canggu, and Uluwatu Compared',
   author: { '@type': 'Person', name: 'Sarah Mitchell' },
-  datePublished: '2025-09-01',
-  dateModified: '2025-09-01',
+  datePublished: '2026-09-01',
+  dateModified: '2026-09-01',
   publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
 }
 
@@ -41,7 +41,7 @@ export default function BaliYogaRetreatPage() {
               <div className={s.meta}>
                 <span>By Sarah Mitchell</span>
                 <span>·</span>
-                <span>September 2025</span>
+                <span>September 2026</span>
                 <span>·</span>
                 <span>9 min read</span>
               </div>

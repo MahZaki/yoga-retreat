@@ -6,10 +6,10 @@ import Newsletter from '@/components/Newsletter'
 import s from '../yoga-retreats/page.module.css'
 
 export const metadata = {
-  title: 'Best Yoga Retreats 2025: How to Actually Compare and Choose',
+  title: 'Best Yoga Retreats 2026: How to Actually Compare and Choose',
   description: "There's no single best yoga retreat. There's a best one for you, right now. Here's the framework Sarah uses after 22 retreats across 14 countries.",
   openGraph: {
-    title: "Best Yoga Retreats 2025: How to Actually Compare and Choose",
+    title: "Best Yoga Retreats 2026: How to Actually Compare and Choose",
     description: "The framework for finding the best retreat for you — not the most marketed one.",
     images: [{ url: '/images/blog/hero-bali.png', width: 940, height: 650 }],
   },
@@ -18,10 +18,10 @@ export const metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Best Yoga Retreats 2025: How to Actually Compare and Choose',
+  headline: 'Best Yoga Retreats 2026: How to Actually Compare and Choose',
   author: { '@type': 'Person', name: 'Sarah Mitchell' },
-  datePublished: '2025-11-01',
-  dateModified: '2025-11-01',
+  datePublished: '2026-11-01',
+  dateModified: '2026-11-01',
   publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
 }
 
@@ -37,10 +37,10 @@ export default function BestYogaRetreatsPage() {
           <div className={s.heroOverlay}>
             <div className="container">
               <span className={s.tag}>Planning</span>
-              <h1>Best yoga retreats 2025: how to actually compare and choose</h1>
+              <h1>Best yoga retreats 2026: how to actually compare and choose</h1>
               <div className={s.meta}>
                 <span>By Sarah Mitchell</span><span>·</span>
-                <span>November 2025</span><span>·</span>
+                <span>November 2026</span><span>·</span>
                 <span>9 min read</span>
               </div>
             </div>

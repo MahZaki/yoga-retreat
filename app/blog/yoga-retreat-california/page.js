@@ -6,10 +6,10 @@ import Newsletter from '@/components/Newsletter'
 import s from '../yoga-retreats/page.module.css'
 
 export const metadata = {
-  title: 'Yoga Retreat California: 10 Top-Rated Centers by Region (2025)',
+  title: 'Yoga Retreat California: 10 Top-Rated Centers by Region (2026)',
   description: 'Big Sur, Ojai, Joshua Tree, or the Bay Area? Real prices and honest picks for every budget across California\'s best yoga retreat regions.',
   openGraph: {
-    title: 'Yoga Retreat California: 10 Top-Rated Centers by Region (2025)',
+    title: 'Yoga Retreat California: 10 Top-Rated Centers by Region (2026)',
     description: 'Real prices and honest picks for every budget across California\'s best yoga retreat regions.',
     images: [{ url: '/images/blog/california-yoga.jpg', width: 940, height: 650 }],
   },
@@ -20,8 +20,8 @@ const schema = {
   '@type': 'Article',
   headline: 'Yoga Retreat California: 10 Top-Rated Centers by Region',
   author: { '@type': 'Person', name: 'Sarah Mitchell' },
-  datePublished: '2025-09-10',
-  dateModified: '2025-09-10',
+  datePublished: '2026-09-10',
+  dateModified: '2026-09-10',
   publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
 }
 
@@ -41,7 +41,7 @@ export default function CaliforniaYogaRetreatPage() {
               <div className={s.meta}>
                 <span>By Sarah Mitchell</span>
                 <span>·</span>
-                <span>September 2025</span>
+                <span>September 2026</span>
                 <span>·</span>
                 <span>8 min read</span>
               </div>

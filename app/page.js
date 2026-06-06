@@ -24,9 +24,9 @@ export default function Home() {
   ]
 
   const articles = [
-    { cat: 'Retreat Planning', title: 'How to Choose Your First Yoga Retreat: A Complete Guide', excerpt: 'Everything you need to know before booking your first yoga retreat, from budget to packing lists.', img: '/images/blog-planning.png', date: 'May 28, 2025', read: '8 min read' },
-    { cat: 'Destinations', title: 'The 10 Best Yoga Retreats in Bali for 2025', excerpt: 'Our curated selection of the most transformative yoga retreats across Ubud, Canggu, and Uluwatu.', img: '/images/dest-bali.png', date: 'May 22, 2025', read: '12 min read' },
-    { cat: 'Wellness', title: 'What to Expect at a Silent Meditation Retreat', excerpt: 'A first-hand account of spending seven days in silence at a Vipassana center in Thailand.', img: '/images/retreat-meditation.png', date: 'May 15, 2025', read: '10 min read' },
+    { cat: 'Retreat Planning', title: 'How to Choose Your First Yoga Retreat: A Complete Guide', excerpt: 'Everything you need to know before booking your first yoga retreat, from budget to packing lists.', img: '/images/blog-planning.png', date: 'May 28, 2026', read: '8 min read' },
+    { cat: 'Destinations', title: 'The 10 Best Yoga Retreats in Bali for 2026', excerpt: 'Our curated selection of the most transformative yoga retreats across Ubud, Canggu, and Uluwatu.', img: '/images/dest-bali.png', date: 'May 22, 2026', read: '12 min read' },
+    { cat: 'Wellness', title: 'What to Expect at a Silent Meditation Retreat', excerpt: 'A first-hand account of spending seven days in silence at a Vipassana center in Thailand.', img: '/images/retreat-meditation.png', date: 'May 15, 2026', read: '10 min read' },
   ]
 
   return (

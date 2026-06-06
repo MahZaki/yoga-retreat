@@ -6,7 +6,7 @@ import Newsletter from '@/components/Newsletter'
 import s from '../yoga-retreats/page.module.css'
 
 export const metadata = {
-  title: 'Luxury Yoga Retreats: What $3,000+ Actually Gets You (2025)',
+  title: 'Luxury Yoga Retreats: What $3,000+ Actually Gets You (2026)',
   description: 'What separates a genuinely premium yoga retreat from one that just charges premium prices? Real breakdown of what luxury looks like at $1,500, $3,000, and $6,000+.',
   openGraph: {
     title: 'Luxury Yoga Retreats: What $3,000+ Actually Gets You',
@@ -20,8 +20,8 @@ const schema = {
   '@type': 'Article',
   headline: 'Luxury Yoga Retreats: What $3,000+ Actually Gets You',
   author: { '@type': 'Person', name: 'Sarah Mitchell' },
-  datePublished: '2025-10-01',
-  dateModified: '2025-10-01',
+  datePublished: '2026-10-01',
+  dateModified: '2026-10-01',
   publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
 }
 
@@ -40,7 +40,7 @@ export default function LuxuryYogaRetreatPage() {
               <h1>Luxury yoga retreats: what $3,000+ actually gets you</h1>
               <div className={s.meta}>
                 <span>By Sarah Mitchell</span><span>·</span>
-                <span>October 2025</span><span>·</span>
+                <span>October 2026</span><span>·</span>
                 <span>7 min read</span>
               </div>
             </div>

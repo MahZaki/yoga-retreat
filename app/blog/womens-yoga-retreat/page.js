@@ -6,7 +6,7 @@ import Newsletter from '@/components/Newsletter'
 import s from '../yoga-retreats/page.module.css'
 
 export const metadata = {
-  title: "Women's Yoga Retreats: 8 Programs for Female Practitioners (2025)",
+  title: "Women's Yoga Retreats: 8 Programs for Female Practitioners (2026)",
   description: "Women-only yoga retreats offer something genuinely different — here's what to look for, what to avoid, and 8 programs worth your time and money.",
   openGraph: {
     title: "Women's Yoga Retreats: 8 Programs for Female Practitioners",
@@ -20,8 +20,8 @@ const schema = {
   '@type': 'Article',
   headline: "Women's Yoga Retreats: 8 Programs for Female Practitioners",
   author: { '@type': 'Person', name: 'Sarah Mitchell' },
-  datePublished: '2025-10-10',
-  dateModified: '2025-10-10',
+  datePublished: '2026-10-10',
+  dateModified: '2026-10-10',
   publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
 }
 
@@ -40,7 +40,7 @@ export default function WomensYogaRetreatPage() {
               <h1>Women&apos;s yoga retreats: 8 programs for female practitioners</h1>
               <div className={s.meta}>
                 <span>By Sarah Mitchell</span><span>·</span>
-                <span>October 2025</span><span>·</span>
+                <span>October 2026</span><span>·</span>
                 <span>7 min read</span>
               </div>
             </div>

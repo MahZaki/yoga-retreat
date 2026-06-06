@@ -6,10 +6,10 @@ import Newsletter from '@/components/Newsletter'
 import s from '../yoga-retreats/page.module.css'
 
 export const metadata = {
-  title: '7 Best Yoga Retreats in Costa Rica for 2025 (Nosara, Tulum, Santa Teresa)',
+  title: '7 Best Yoga Retreats in Costa Rica for 2026 (Nosara, Tulum, Santa Teresa)',
   description: 'Nosara, Santa Teresa, or the rainforest interior? Honest guide to Costa Rica\'s best yoga retreat areas with real prices and who each suits.',
   openGraph: {
-    title: '7 Best Yoga Retreats in Costa Rica for 2025',
+    title: '7 Best Yoga Retreats in Costa Rica for 2026',
     description: 'Honest guide to Costa Rica\'s best yoga retreat areas with real prices.',
     images: [{ url: '/images/blog/costa-rica-yoga.jpg', width: 940, height: 650 }],
   },
@@ -18,10 +18,10 @@ export const metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: '7 Best Yoga Retreats in Costa Rica for 2025',
+  headline: '7 Best Yoga Retreats in Costa Rica for 2026',
   author: { '@type': 'Person', name: 'Sarah Mitchell' },
-  datePublished: '2025-09-15',
-  dateModified: '2025-09-15',
+  datePublished: '2026-09-15',
+  dateModified: '2026-09-15',
   publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
 }
 
@@ -37,11 +37,11 @@ export default function CostaRicaYogaRetreatPage() {
           <div className={s.heroOverlay}>
             <div className="container">
               <span className={s.tag}>Destinations</span>
-              <h1>7 best yoga retreats in Costa Rica for 2025</h1>
+              <h1>7 best yoga retreats in Costa Rica for 2026</h1>
               <div className={s.meta}>
                 <span>By Sarah Mitchell</span>
                 <span>·</span>
-                <span>September 2025</span>
+                <span>September 2026</span>
                 <span>·</span>
                 <span>7 min read</span>
               </div>

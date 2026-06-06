@@ -6,7 +6,7 @@ import Newsletter from '@/components/Newsletter'
 import s from '../yoga-retreats/page.module.css'
 
 export const metadata = {
-  title: 'Yoga Retreat for Beginners: What to Expect on Your First Trip (2025)',
+  title: 'Yoga Retreat for Beginners: What to Expect on Your First Trip (2026)',
   description: 'First time booking a yoga retreat? Learn how to choose a beginner-friendly program, what to pack, and how to avoid feeling overwhelmed.',
   openGraph: {
     title: 'Yoga Retreat for Beginners: The Ultimate First-Timer Guide',
@@ -20,12 +20,12 @@ export default function YogaRetreatForBeginners() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'Yoga Retreat for Beginners: What to Expect on Your First Trip (2025)',
+    headline: 'Yoga Retreat for Beginners: What to Expect on Your First Trip (2026)',
     description: 'First time booking a yoga retreat? Learn how to choose a beginner-friendly program, what to pack, and how to avoid feeling overwhelmed.',
     author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://yogaretreatadvisor.com/about' },
     publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', logo: { '@type': 'ImageObject', url: 'https://yogaretreatadvisor.com/logo.png' } },
-    datePublished: '2025-06-03',
-    dateModified: '2025-06-03',
+    datePublished: '2026-06-03',
+    dateModified: '2026-06-03',
     image: 'https://yogaretreatadvisor.com/images/blog/yoga-pose-nature-river.jpg',
     mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://yogaretreatadvisor.com/blog/yoga-retreat-for-beginners' },
   }
@@ -55,9 +55,9 @@ export default function YogaRetreatForBeginners() {
             <h1>Yoga Retreat for Beginners: What to Expect on Your First Trip</h1>
             <div className={s.heroMeta}>
               <span>By Sarah Mitchell</span>
-              <span>June 3, 2025</span>
+              <span>June 3, 2026</span>
               <span>12 min read</span>
-              <span>Updated June 2025</span>
+              <span>Updated June 2026</span>
             </div>
           </div>
         </div>

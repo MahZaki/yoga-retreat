@@ -6,7 +6,7 @@ import Newsletter from '@/components/Newsletter'
 import s from '../yoga-retreats/page.module.css'
 
 export const metadata = {
-  title: 'How to Book a Yoga Retreat: Pricing, Deposits, and Policies (2025)',
+  title: 'How to Book a Yoga Retreat: Pricing, Deposits, and Policies (2026)',
   description: 'The mechanics of actually booking a retreat — what deposits are normal, which payment methods protect you, what the contract should say, and how to read the fine print.',
   openGraph: {
     title: 'How to Book a Yoga Retreat: Pricing, Deposits, and Policies',
@@ -20,8 +20,8 @@ const schema = {
   '@type': 'Article',
   headline: 'How to Book a Yoga Retreat: Pricing, Deposits, and Policies',
   author: { '@type': 'Person', name: 'Sarah Mitchell' },
-  datePublished: '2025-11-10',
-  dateModified: '2025-11-10',
+  datePublished: '2026-11-10',
+  dateModified: '2026-11-10',
   publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
 }
 
@@ -40,7 +40,7 @@ export default function BookYogaRetreatPage() {
               <h1>How to book a yoga retreat: pricing, deposits, and policies</h1>
               <div className={s.meta}>
                 <span>By Sarah Mitchell</span><span>·</span>
-                <span>November 2025</span><span>·</span>
+                <span>November 2026</span><span>·</span>
                 <span>7 min read</span>
               </div>
             </div>

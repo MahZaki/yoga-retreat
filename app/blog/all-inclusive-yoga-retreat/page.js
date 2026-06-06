@@ -6,7 +6,7 @@ import Newsletter from '@/components/Newsletter'
 import s from '../yoga-retreats/page.module.css'
 
 export const metadata = {
-  title: 'All-Inclusive Yoga Retreats: What Is Included and What Is Not (2025)',
+  title: 'All-Inclusive Yoga Retreats: What Is Included and What Is Not (2026)',
   description: 'Learn what "all-inclusive" actually means in the retreat industry. Read about average costs, common hidden fees, and how to avoid overpaying.',
   openGraph: {
     title: 'All-Inclusive Yoga Retreats: The Truth About Pricing',
@@ -20,12 +20,12 @@ export default function AllInclusiveYogaRetreats() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'All-Inclusive Yoga Retreats: What Is Included and What Is Not (2025)',
+    headline: 'All-Inclusive Yoga Retreats: What Is Included and What Is Not (2026)',
     description: 'Learn what "all-inclusive" actually means in the retreat industry. Read about average costs, common hidden fees, and how to avoid overpaying.',
     author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://yogaretreatadvisor.com/about' },
     publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', logo: { '@type': 'ImageObject', url: 'https://yogaretreatadvisor.com/logo.png' } },
-    datePublished: '2025-06-01',
-    dateModified: '2025-06-01',
+    datePublished: '2026-06-01',
+    dateModified: '2026-06-01',
     image: 'https://yogaretreatadvisor.com/images/blog/luxury-yoga-retreat-pool.jpg',
     mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://yogaretreatadvisor.com/blog/all-inclusive-yoga-retreat' },
   }
@@ -55,9 +55,9 @@ export default function AllInclusiveYogaRetreats() {
             <h1>All-Inclusive Yoga Retreats: What Is Included and What Is Not</h1>
             <div className={s.heroMeta}>
               <span>By Sarah Mitchell</span>
-              <span>June 1, 2025</span>
+              <span>June 1, 2026</span>
               <span>10 min read</span>
-              <span>Updated June 2025</span>
+              <span>Updated June 2026</span>
             </div>
           </div>
         </div>
@@ -79,7 +79,7 @@ export default function AllInclusiveYogaRetreats() {
 
               <h2 id="typical-pricing-benchmarks">Typical pricing benchmarks by region</h2>
 
-              <p>Here are the real costs you should expect for a 7-day all-inclusive retreat in 2025. These numbers cover accommodation, three meals a day, and all scheduled sessions.</p>
+              <p>Here are the real costs you should expect for a 7-day all-inclusive retreat in 2026. These numbers cover accommodation, three meals a day, and all scheduled sessions.</p>
 
               <table className={s.table}>
                 <thead>

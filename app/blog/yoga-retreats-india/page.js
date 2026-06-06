@@ -6,7 +6,7 @@ import Newsletter from '@/components/Newsletter'
 import s from '../yoga-retreats/page.module.css'
 
 export const metadata = {
-  title: 'Yoga Retreats India: Rishikesh Ashrams to Kerala Ayurveda (2025)',
+  title: 'Yoga Retreats India: Rishikesh Ashrams to Kerala Ayurveda (2026)',
   description: 'Rishikesh, Kerala, or Mysore? Honest guide to India\'s best yoga retreat regions with real ashram prices, what to expect, and who each suits.',
   openGraph: {
     title: 'Yoga Retreats India: Rishikesh Ashrams to Kerala Ayurveda',
@@ -20,8 +20,8 @@ const schema = {
   '@type': 'Article',
   headline: 'Yoga Retreats India: Rishikesh Ashrams to Kerala Ayurveda',
   author: { '@type': 'Person', name: 'Sarah Mitchell' },
-  datePublished: '2025-09-20',
-  dateModified: '2025-09-20',
+  datePublished: '2026-09-20',
+  dateModified: '2026-09-20',
   publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
 }
 
@@ -41,7 +41,7 @@ export default function IndiaYogaRetreatPage() {
               <div className={s.meta}>
                 <span>By Sarah Mitchell</span>
                 <span>·</span>
-                <span>September 2025</span>
+                <span>September 2026</span>
                 <span>·</span>
                 <span>8 min read</span>
               </div>
