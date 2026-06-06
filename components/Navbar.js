@@ -35,26 +35,14 @@ export default function Navbar() {
       <nav className={`${styles.navbar} ${solid ? styles.scrolled : ''}`}>
         <div className={styles.inner}>
           <Link href="/" className={styles.logo}>
-            {/* Light logo for hero overlay (homepage only, not scrolled) */}
-            {!solid ? (
-              <Image
-                src="/images/logo-white.svg"
-                alt="YogaRetreatAdvisor"
-                width={180}
-                height={40}
-                priority
-                className={styles.logoImg}
-              />
-            ) : (
-              <Image
-                src="/images/logo.svg"
-                alt="YogaRetreatAdvisor"
-                width={180}
-                height={40}
-                priority
-                className={styles.logoImg}
-              />
-            )}
+            <Image
+              src="/images/logo.png"
+              alt="YogaRetreatAdvisor"
+              width={200}
+              height={44}
+              priority
+              className={styles.logoImg}
+            />
           </Link>
           <div className={styles.links}>
             {links.map(l => (
@@ -84,7 +72,7 @@ export default function Navbar() {
       {mobileOpen && (
         <div className={styles.mobile}>
           <button className={styles.mobileClose} onClick={() => setMobileOpen(false)}>✕</button>
-          <Image src="/images/logo.svg" alt="YogaRetreatAdvisor" width={160} height={36} style={{ marginBottom: '1rem' }} />
+          <Image src="/images/logo.png" alt="YogaRetreatAdvisor" width={200} height={44} style={{ marginBottom: '1rem' }} />
           {links.map(l => (
             <Link key={l.href} href={l.href} className={styles.mobileLink} onClick={() => setMobileOpen(false)}>
               {l.label}
