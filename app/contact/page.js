@@ -15,10 +15,35 @@ const faqs = [
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false)
   const [openFaq, setOpenFaq] = useState(null)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState(null)
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    setSubmitted(true)
+    setLoading(true)
+    setError(null)
+    
+    const formData = new FormData(e.target)
+    const data = Object.fromEntries(formData)
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+      
+      const result = await res.json()
+      if (result.success) {
+        setSubmitted(true)
+      } else {
+        setError(result.error || 'Something went wrong. Please try again.')
+      }
+    } catch (err) {
+      setError('Failed to send message. Please try again.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -81,20 +106,20 @@ export default function ContactPage() {
                     <div className={s.formRow}>
                       <div className={s.formGroup}>
                         <label className={s.formLabel}>First Name</label>
-                        <input className={s.formInput} type="text" required />
+                        <input className={s.formInput} name="firstName" type="text" required />
                       </div>
                       <div className={s.formGroup}>
                         <label className={s.formLabel}>Last Name</label>
-                        <input className={s.formInput} type="text" required />
+                        <input className={s.formInput} name="lastName" type="text" required />
                       </div>
                     </div>
                     <div className={s.formGroup}>
                       <label className={s.formLabel}>Email</label>
-                      <input className={s.formInput} type="email" required />
+                      <input className={s.formInput} name="email" type="email" required />
                     </div>
                     <div className={s.formGroup}>
                       <label className={s.formLabel}>Subject</label>
-                      <select className={s.formInput}>
+                      <select className={s.formInput} name="subject">
                         <option>General Inquiry</option>
                         <option>Retreat Booking Help</option>
                         <option>Partnership</option>
@@ -104,9 +129,12 @@ export default function ContactPage() {
                     </div>
                     <div className={s.formGroup}>
                       <label className={s.formLabel}>Message</label>
-                      <textarea className={s.formTextarea} rows={5} required />
+                      <textarea className={s.formTextarea} name="message" rows={5} required />
                     </div>
-                    <button type="submit" className="btn btn-primary" style={{ width:'100%', justifyContent:'center' }}>Send Message →</button>
+                    <button type="submit" className="btn btn-primary" style={{ width:'100%', justifyContent:'center' }}>
+                      {loading ? 'Sending...' : 'Send Message →'}
+                    </button>
+                    {error && <p style={{ color: 'red', marginTop: '1rem', fontSize: '0.9rem' }}>{error}</p>}
                   </form>
                 </>
               )}

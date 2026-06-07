@@ -198,7 +198,7 @@
   top: calc(var(--nav-h) + 2rem);
   border: 1px solid var(--mist);
 }
-.toc h4 {
+.toc h3 {
   font-size: 1.05rem;
   margin-bottom: 1.2rem;
   padding-bottom: .75rem;
@@ -259,7 +259,7 @@
   position: relative;
   overflow: hidden;
 }
-.authorMeta h4 { margin-bottom: .25rem; font-size: 1.15rem; color: var(--charcoal); }
+.authorMeta h3 { margin-bottom: .25rem; font-size: 1.15rem; color: var(--charcoal); }
 .authorRole {
   font-size: .85rem;
   color: var(--terracotta);
@@ -303,7 +303,7 @@
   color: var(--terracotta);
   margin-bottom: 0.5rem;
 }
-.relatedBody h4 { font-size: 1.1rem; margin-top: 0; line-height: 1.4; color: var(--charcoal); }
+.relatedBody h3 { font-size: 1.1rem; margin-top: 0; line-height: 1.4; color: var(--charcoal); }
 
 /* ── Responsive ── */
 @media (max-width: 1024px) {

@@ -5,13 +5,29 @@ import styles from './Newsletter.module.css'
 export default function Newsletter() {
   const [email, setEmail] = useState('')
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     if (!email) return
-    setSubmitted(true)
-    setEmail('')
-    setTimeout(() => setSubmitted(false), 4000)
+    setLoading(true)
+    
+    try {
+      const res = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email })
+      })
+      if (res.ok) {
+        setSubmitted(true)
+        setEmail('')
+        setTimeout(() => setSubmitted(false), 4000)
+      }
+    } catch (err) {
+      console.error(err)
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -31,8 +47,8 @@ export default function Newsletter() {
               className={styles.input}
               required
             />
-            <button type="submit" className="btn btn-primary">
-              {submitted ? '✓ Subscribed' : 'Get Free Guide'}
+            <button type="submit" className="btn btn-primary" disabled={loading}>
+              {loading ? 'Subscribing...' : submitted ? '✓ Subscribed' : 'Get Free Guide'}
             </button>
           </form>
           <span className={styles.note}>No spam. Unsubscribe anytime.</span>

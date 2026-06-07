@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  // Optimize for modern browsers
+  experimental: {
+    optimizePackageImports: ['react', 'react-dom'],
+  },
 };
 
 export default nextConfig;

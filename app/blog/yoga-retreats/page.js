@@ -46,14 +46,15 @@ export default function YogaRetreatsGuide() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <Navbar />
 
-      <article className={s.article}>
+      <main>
+        <article className={s.article}>
         {/* Hero */}
         <div className={s.heroWrap}>
           <Image src="/images/blog/pillar-what-is.jpg" alt="Group practicing yoga at sunrise during a week-long retreat" fill priority sizes="100vw" style={{ objectFit: 'cover' }} />
           <div className={s.heroOverlay}>
             <span className={s.heroCat}>Complete Guide</span>
-            <h1>Yoga Retreats: The Complete Guide to Choosing, Booking & Preparing (2026)</h1>
-            <div className={s.heroMeta}>
+<h1>Yoga Retreats: The Complete Guide to Choosing, Booking & Preparing (2026)</h1>
+              <div className={s.heroMeta}>
               <span>By Sarah Mitchell</span>
               <span>January 14, 2025</span>
               <span>14 min read</span>
@@ -352,9 +353,9 @@ export default function YogaRetreatsGuide() {
                 <div className={s.authorAvatar}>
                   <Image src="/images/hero-portrait.jpg" alt="Sarah Mitchell" fill sizes="80px" style={{ objectFit: 'cover' }} />
                 </div>
-                <div className={s.authorMeta}>
-                  <h4>Sarah Mitchell</h4>
-                  <div className={s.authorRole}>Founder &amp; Lead Reviewer, YogaRetreatAdvisor</div>
+<div className={s.authorMeta}>
+                   <h3>Sarah Mitchell</h3>
+                   <div className={s.authorRole}>Founder &amp; Lead Reviewer, YogaRetreatAdvisor</div>
                   <p>Former London project manager turned yoga travel writer. She's attended 14 retreats across 9 countries since 2018. RYT-200 certified. Price range covered: $380–$4,200. Perpetually over-packed.</p>
                   <p>Sarah started YogaRetreatAdvisor because she got tired of reading reviews written by writers who'd been comped free stays, or platforms ranking retreats based on who pays the highest commission. She has no financial relationship with the retreats she reviews. If she recommends something, it's because she'd tell her best friend to book it.</p>
                 </div>
@@ -364,7 +365,7 @@ export default function YogaRetreatsGuide() {
             {/* Sidebar TOC */}
             <aside>
               <div className={s.toc}>
-                <h4>In This Guide</h4>
+                <h3>In This Guide</h3>
                 <nav className={s.tocLinks}>
                   <a href="#what-is-a-yoga-retreat" className={s.tocLink}>What is a yoga retreat?</a>
                   <a href="#typical-day" className={s.tocLink}>What happens on a typical day?</a>
@@ -395,33 +396,34 @@ export default function YogaRetreatsGuide() {
                 <div className={s.relatedImg}>
                   <Image src="/images/blog/luxury-yoga.jpg" alt="Luxury yoga retreat pool" fill sizes="33vw" style={{ objectFit: 'cover' }} />
                 </div>
-                <div className={s.relatedBody}>
-                  <span>Retreat Types</span>
-                  <h4>Luxury Yoga Retreats: What $3,000+ Gets You</h4>
-                </div>
-              </Link>
-              <Link href="/blog/yoga-retreat-for-beginners" className={s.relatedCard}>
-                <div className={s.relatedImg}>
-                  <Image src="/images/blog/meditation-retreat-group-outdoor.jpg" alt="Meditation group retreat" fill sizes="33vw" style={{ objectFit: 'cover' }} />
-                </div>
-                <div className={s.relatedBody}>
-                  <span>Beginners</span>
-                  <h4>Yoga Retreat for Beginners: What to Expect</h4>
-                </div>
-              </Link>
-              <Link href="/blog/yoga-retreat-bali" className={s.relatedCard}>
-                <div className={s.relatedImg}>
-                  <Image src="/images/blog/tropical-retreat-hut-bali.jpg" alt="Bali retreat hut" fill sizes="33vw" style={{ objectFit: 'cover' }} />
-                </div>
-                <div className={s.relatedBody}>
-                  <span>Destinations</span>
-                  <h4>Best Yoga Retreats in Bali for 2026</h4>
-                </div>
-              </Link>
+<div className={s.relatedBody}>
+                   <span>Retreat Types</span>
+                   <h3>Luxury Yoga Retreats: What $3,000+ Gets You</h3>
+                 </div>
+               </Link>
+               <Link href="/blog/yoga-retreat-for-beginners" className={s.relatedCard}>
+                 <div className={s.relatedImg}>
+                   <Image src="/images/blog/meditation-retreat-group-outdoor.jpg" alt="Meditation group retreat" fill sizes="33vw" style={{ objectFit: 'cover' }} />
+                 </div>
+                 <div className={s.relatedBody}>
+                   <span>Beginners</span>
+                   <h3>Yoga Retreat for Beginners: What to Expect</h3>
+                 </div>
+               </Link>
+               <Link href="/blog/yoga-retreat-bali" className={s.relatedCard}>
+                 <div className={s.relatedImg}>
+                   <Image src="/images/blog/tropical-retreat-hut-bali.jpg" alt="Bali retreat hut" fill sizes="33vw" style={{ objectFit: 'cover' }} />
+                 </div>
+                 <div className={s.relatedBody}>
+                   <span>Destinations</span>
+                   <h3>Best Yoga Retreats in Bali for 2026</h3>
+                 </div>
+               </Link>
             </div>
           </div>
-        </section>
-      </article>
+</section>
+        </article>
+      </main>
 
       <Newsletter />
       <Footer />

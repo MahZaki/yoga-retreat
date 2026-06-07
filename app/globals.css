@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-@font-face{font-family:'Satoshi';src:url('https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap')}
+
 :root{
   --terracotta:#C86B4A;--terracotta-light:#D98060;--terracotta-dark:#A8573C;
   --jungle:#2E5A47;--jungle-light:#3D7560;--jungle-dark:#1E3D30;
@@ -13,6 +13,12 @@
   --ease:cubic-bezier(.25,.46,.45,.94);--transition:.32s var(--ease);
   --max-w:1280px;--nav-h:100px;
 }
+
+/* Preconnect hints - should be in document head but included here for reference */
+/*
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+*/
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
 body{font-family:var(--font-body);color:var(--charcoal);background:var(--warm-white);line-height:1.7;overflow-x:hidden}

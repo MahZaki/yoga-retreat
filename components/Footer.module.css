@@ -6,12 +6,12 @@
 .accent{font-weight:400}
 .col h5{color:#fff;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.5rem;font-family:var(--font-heading)}
 .linkList{display:flex;flex-direction:column;gap:10px}
-.linkList a{font-size:.88rem;color:rgba(255,255,255,.55);transition:color .18s}
+.linkList a{color:#fff;font-size:.88rem;transition:color .18s}
 .linkList a:hover{color:var(--sand)}
-.bottom{padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:space-between;font-size:.82rem;color:rgba(255,255,255,.4)}
+.bottom{padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:space-between;font-size:.82rem;color:#fff}
 .social{display:flex;gap:12px}
-.socialLink{width:38px;height:38px;border-radius:var(--radius-full);border:1.5px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:600;color:rgba(255,255,255,.5);transition:all .18s}
-.socialLink:hover{border-color:var(--terracotta);color:var(--terracotta);background:rgba(200,107,74,.1)}
+.socialLink{width:38px;height:38px;border-radius:var(--radius-full);border:1.5px solid rgba(255,255,255,.4);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:600;color:#fff;transition:all .18s}
+.socialLink:hover{border-color:var(--terracotta);color:var(--terracotta);background:rgba(200,107,74,.2)}
 
 @media(max-width:768px){
   .grid{grid-template-columns:1fr;gap:2rem}
