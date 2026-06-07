@@ -40,7 +40,7 @@ export default function Footer() {
           </div>
         </div>
         <div className={styles.bottom}>
-          <span>© 2025 YogaRetreatAdvisor.com — All rights reserved.</span>
+          <span>© 2026 YogaRetreatAdvisor.com — All rights reserved.</span>
           <div className={styles.social}>
             <a href="#" className={styles.socialLink} aria-label="Instagram">IG</a>
             <a href="#" className={styles.socialLink} aria-label="Pinterest">PI</a>
