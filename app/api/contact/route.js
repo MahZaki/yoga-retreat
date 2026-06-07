@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
+import { render } from '@react-email/render'
 import { ContactEmail } from '../../../emails/ContactEmail'
 
 export async function POST(request) {
@@ -16,7 +17,7 @@ export async function POST(request) {
       to: ['ghostmzabi@gmail.com'], // Update this to your verified Resend email
       subject: `New Contact Form Submission: ${subject}`,
       replyTo: email,
-      react: ContactEmail({ firstName, lastName, email, subject, message }),
+      html: await render(ContactEmail({ firstName, lastName, email, subject, message })),
     })
 
     return NextResponse.json({ success: true, data })

@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
+import { render } from '@react-email/render'
 import { NewsletterEmail } from '../../../emails/NewsletterEmail'
 
 export async function POST(request) {
@@ -12,7 +13,7 @@ export async function POST(request) {
       from: 'Yoga Retreat Advisor <hello@yogaretreatadvisor.com>',
       to: ['ghostmzabi@gmail.com'], // Update this to your verified Resend email
       subject: `New Newsletter Subscriber: ${email}`,
-      react: NewsletterEmail({ email }),
+      html: await render(NewsletterEmail({ email })),
     })
 
     return NextResponse.json({ success: true, data })
