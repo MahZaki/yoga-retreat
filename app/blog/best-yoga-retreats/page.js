@@ -22,8 +22,8 @@ const schema = {
   headline: 'Best Yoga Retreats 2026: The 4-Pillar Framework for Choosing Well',
   description: "The evaluation framework that separates good retreats from expensive disappointments.",
   author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://yogaretreatadvisor.com/about' },
-  datePublished: '2026-06-06',
-  dateModified: '2026-06-06',
+  datePublished: '2025-06-03',
+  dateModified: '2025-06-03',
   publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
   image: 'https://yogaretreatadvisor.com/images/blog/best-retreats-group.jpg',
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://yogaretreatadvisor.com/blog/best-yoga-retreats' },
@@ -98,7 +98,7 @@ export default function BestYogaRetreatsPage() {
             <h1>Best yoga retreats 2026: the 4-pillar framework for choosing well</h1>
             <div className={s.heroMeta}>
               <span>By Sarah Mitchell</span>
-              <span>June 2026</span>
+              <span>June 3, 2025</span>
               <span>10 min read</span>
             </div>
           </div>

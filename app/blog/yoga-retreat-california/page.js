@@ -22,8 +22,8 @@ const schema = {
   headline: 'Yoga Retreat California 2026: 10 Top-Rated Centers by Region',
   description: 'Real prices and honest picks across California\'s yoga retreat regions.',
   author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://yogaretreatadvisor.com/about' },
-  datePublished: '2026-06-06',
-  dateModified: '2026-06-06',
+  datePublished: '2025-07-15',
+  dateModified: '2025-07-15',
   publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
   image: 'https://yogaretreatadvisor.com/images/blog/california-big-sur.jpg',
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://yogaretreatadvisor.com/blog/yoga-retreat-california' },
@@ -78,7 +78,7 @@ export default function CaliforniaYogaRetreatPage() {
             <h1>Yoga retreat California 2026: The 10 best centers by region</h1>
             <div className={s.heroMeta}>
               <span>By Sarah Mitchell</span>
-              <span>June 2026</span>
+              <span>July 15, 2025</span>
               <span>9 min read</span>
             </div>
           </div>

@@ -22,8 +22,8 @@ const schema = {
   headline: 'Best Yoga Retreats in Bali 2026: Ubud, Canggu & Uluwatu Compared',
   description: 'Real prices, honest comparisons, and who each Bali yoga area suits.',
   author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://yogaretreatadvisor.com/about' },
-  datePublished: '2026-06-06',
-  dateModified: '2026-06-06',
+  datePublished: '2025-02-11',
+  dateModified: '2025-02-11',
   publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
   image: 'https://yogaretreatadvisor.com/images/blog/bali-ubud-yoga.jpg',
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://yogaretreatadvisor.com/blog/yoga-retreat-bali' },
@@ -83,7 +83,7 @@ export default function BaliYogaRetreatPage() {
             <h1>Best yoga retreats in Bali 2026: Ubud, Canggu & Uluwatu — the honest comparison</h1>
             <div className={s.heroMeta}>
               <span>By Sarah Mitchell</span>
-              <span>June 2026</span>
+              <span>February 11, 2025</span>
               <span>11 min read</span>
             </div>
           </div>

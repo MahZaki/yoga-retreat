@@ -22,8 +22,8 @@ const schema = {
   headline: "Women's Yoga Retreats 2026: What the Format Actually Changes",
   description: "Why women-only yoga retreats work, what to look for, and the best programmes across every budget.",
   author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://yogaretreatadvisor.com/about' },
-  datePublished: '2026-06-06',
-  dateModified: '2026-06-06',
+  datePublished: '2025-08-26',
+  dateModified: '2025-08-26',
   publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
   image: 'https://yogaretreatadvisor.com/images/blog/womens-retreat-group.jpg',
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://yogaretreatadvisor.com/blog/womens-yoga-retreat' },
@@ -98,7 +98,7 @@ export default function WomensYogaRetreatPage() {
             <h1>Women&apos;s yoga retreats 2026: what the format actually changes</h1>
             <div className={s.heroMeta}>
               <span>By Sarah Mitchell</span>
-              <span>June 2026</span>
+              <span>August 26, 2025</span>
               <span>9 min read</span>
             </div>
           </div>

@@ -24,8 +24,8 @@ export default function AllInclusiveYogaRetreats() {
     description: 'Learn what "all-inclusive" actually means in the retreat industry. Read about average costs, common hidden fees, and how to avoid overpaying.',
     author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://yogaretreatadvisor.com/about' },
     publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', logo: { '@type': 'ImageObject', url: 'https://yogaretreatadvisor.com/logo.png' } },
-    datePublished: '2026-06-01',
-    dateModified: '2026-06-01',
+    datePublished: '2026-04-01',
+    dateModified: '2026-04-01',
     image: 'https://yogaretreatadvisor.com/images/blog/luxury-yoga-retreat-pool.jpg',
     mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://yogaretreatadvisor.com/blog/all-inclusive-yoga-retreat' },
   }
@@ -55,9 +55,9 @@ export default function AllInclusiveYogaRetreats() {
             <h1>All-Inclusive Yoga Retreats: What Is Included and What Is Not</h1>
             <div className={s.heroMeta}>
               <span>By Sarah Mitchell</span>
-              <span>June 1, 2026</span>
+              <span>April 1, 2026</span>
               <span>10 min read</span>
-              <span>Updated June 2026</span>
+              <span>Published April 2026</span>
             </div>
           </div>
         </div>

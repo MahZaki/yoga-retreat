@@ -24,8 +24,8 @@ export default function YogaRetreatsGuide() {
     description: 'Compare yoga retreats across top destinations. Learn real pricing benchmarks, what to pack, and how to avoid common booking mistakes from a reviewer who has attended 14 retreats.',
     author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://yogaretreatadvisor.com/about' },
     publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', logo: { '@type': 'ImageObject', url: 'https://yogaretreatadvisor.com/logo.png' } },
-    datePublished: '2026-08-01',
-    dateModified: '2026-08-01',
+    datePublished: '2025-01-14',
+    dateModified: '2025-01-14',
     image: 'https://yogaretreatadvisor.com/images/blog/yoga-retreat-hero.jpg',
     mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://yogaretreatadvisor.com/blog/yoga-retreats' },
   }
@@ -55,7 +55,7 @@ export default function YogaRetreatsGuide() {
             <h1>Yoga Retreats: The Complete Guide to Choosing, Booking & Preparing (2026)</h1>
             <div className={s.heroMeta}>
               <span>By Sarah Mitchell</span>
-              <span>Aug 2026</span>
+              <span>January 14, 2025</span>
               <span>14 min read</span>
             </div>
           </div>

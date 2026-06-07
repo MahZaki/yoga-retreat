@@ -20,8 +20,8 @@ const schema = {
   '@type': 'Article',
   headline: 'Luxury Yoga Retreats: What $3,000+ Actually Gets You',
   author: { '@type': 'Person', name: 'Sarah Mitchell' },
-  datePublished: '2026-10-01',
-  dateModified: '2026-10-01',
+  datePublished: '2025-10-07',
+  dateModified: '2025-10-07',
   publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
 }
 
@@ -40,7 +40,7 @@ export default function LuxuryYogaRetreatPage() {
               <h1>Luxury yoga retreats: what $3,000+ actually gets you</h1>
               <div className={s.meta}>
                 <span>By Sarah Mitchell</span><span>·</span>
-                <span>October 2026</span><span>·</span>
+                <span>October 7, 2025</span><span>·</span>
                 <span>7 min read</span>
               </div>
             </div>

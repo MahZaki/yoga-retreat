@@ -20,8 +20,8 @@ const schema = {
   '@type': 'Article',
   headline: 'Silent Yoga Retreats: A Guide to Meditation-Focused Programs',
   author: { '@type': 'Person', name: 'Sarah Mitchell' },
-  datePublished: '2026-10-20',
-  dateModified: '2026-10-20',
+  datePublished: '2025-11-18',
+  dateModified: '2025-11-18',
   publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
 }
 
@@ -40,7 +40,7 @@ export default function SilentYogaRetreatPage() {
               <h1>Silent yoga retreats: a guide to meditation-focused programs</h1>
               <div className={s.meta}>
                 <span>By Sarah Mitchell</span><span>·</span>
-                <span>October 2026</span><span>·</span>
+                <span>November 18, 2025</span><span>·</span>
                 <span>8 min read</span>
               </div>
             </div>

@@ -22,8 +22,8 @@ const schema = {
   headline: 'Yoga Retreats India: Rishikesh, Kerala & Mysore — Honest Guide (2026)',
   description: 'Rishikesh ashrams from $300/week, Kerala Ayurveda, Mysore Ashtanga. Real prices and who each suits.',
   author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://yogaretreatadvisor.com/about' },
-  datePublished: '2026-06-06',
-  dateModified: '2026-06-06',
+  datePublished: '2025-03-18',
+  dateModified: '2025-03-18',
   publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
   image: 'https://yogaretreatadvisor.com/images/blog/india-yoga.jpg',
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://yogaretreatadvisor.com/blog/yoga-retreats-india' },
@@ -83,7 +83,7 @@ export default function IndiaYogaRetreatPage() {
             <h1>Yoga retreats India: Rishikesh, Kerala & Mysore — the honest guide (2026)</h1>
             <div className={s.heroMeta}>
               <span>By Sarah Mitchell</span>
-              <span>June 2026</span>
+              <span>March 18, 2025</span>
               <span>10 min read</span>
             </div>
           </div>

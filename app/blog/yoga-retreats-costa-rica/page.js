@@ -20,8 +20,8 @@ const schema = {
   '@type': 'Article',
   headline: '7 Best Yoga Retreats in Costa Rica for 2026',
   author: { '@type': 'Person', name: 'Sarah Mitchell' },
-  datePublished: '2026-09-15',
-  dateModified: '2026-09-15',
+  datePublished: '2026-02-17',
+  dateModified: '2026-02-17',
   publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
 }
 
@@ -41,7 +41,7 @@ export default function CostaRicaYogaRetreatPage() {
               <div className={s.meta}>
                 <span>By Sarah Mitchell</span>
                 <span>·</span>
-                <span>September 2026</span>
+                <span>February 17, 2026</span>
                 <span>·</span>
                 <span>7 min read</span>
               </div>

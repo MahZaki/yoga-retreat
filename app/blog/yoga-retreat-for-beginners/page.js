@@ -24,8 +24,8 @@ export default function YogaRetreatForBeginners() {
     description: 'First time booking a yoga retreat? Learn how to choose a beginner-friendly program, what to pack, and how to avoid feeling overwhelmed.',
     author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://yogaretreatadvisor.com/about' },
     publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', logo: { '@type': 'ImageObject', url: 'https://yogaretreatadvisor.com/logo.png' } },
-    datePublished: '2026-06-03',
-    dateModified: '2026-06-03',
+    datePublished: '2025-04-22',
+    dateModified: '2025-04-22',
     image: 'https://yogaretreatadvisor.com/images/blog/yoga-pose-nature-river.jpg',
     mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://yogaretreatadvisor.com/blog/yoga-retreat-for-beginners' },
   }
@@ -55,9 +55,9 @@ export default function YogaRetreatForBeginners() {
             <h1>Yoga Retreat for Beginners: What to Expect on Your First Trip</h1>
             <div className={s.heroMeta}>
               <span>By Sarah Mitchell</span>
-              <span>June 3, 2026</span>
+              <span>April 22, 2025</span>
               <span>12 min read</span>
-              <span>Updated June 2026</span>
+              <span>Published April 2025</span>
             </div>
           </div>
         </div>

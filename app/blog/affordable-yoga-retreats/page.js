@@ -24,8 +24,8 @@ export default function AffordableYogaRetreats() {
     description: 'A practical guide to finding verified yoga retreats under $500. Read about top budget destinations, what to watch out for, and how to verify quality.',
     author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://yogaretreatadvisor.com/about' },
     publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', logo: { '@type': 'ImageObject', url: 'https://yogaretreatadvisor.com/logo.png' } },
-    datePublished: '2026-06-02',
-    dateModified: '2026-06-02',
+    datePublished: '2026-01-06',
+    dateModified: '2026-01-06',
     image: 'https://yogaretreatadvisor.com/images/blog/meditation-retreat-group-outdoor.jpg',
     mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://yogaretreatadvisor.com/blog/affordable-yoga-retreats' },
   }
@@ -55,9 +55,9 @@ export default function AffordableYogaRetreats() {
             <h1>Affordable Yoga Retreats: How to Find Vetted Programs Under $500</h1>
             <div className={s.heroMeta}>
               <span>By Sarah Mitchell</span>
-              <span>June 2, 2026</span>
+              <span>January 6, 2026</span>
               <span>11 min read</span>
-              <span>Updated June 2026</span>
+              <span>Published January 2026</span>
             </div>
           </div>
         </div>

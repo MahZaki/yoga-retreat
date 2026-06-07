@@ -20,8 +20,8 @@ const schema = {
   '@type': 'Article',
   headline: 'How to Book a Yoga Retreat: Pricing, Deposits, and Policies',
   author: { '@type': 'Person', name: 'Sarah Mitchell' },
-  datePublished: '2026-11-10',
-  dateModified: '2026-11-10',
+  datePublished: '2026-05-20',
+  dateModified: '2026-05-20',
   publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
 }
 
@@ -40,7 +40,7 @@ export default function BookYogaRetreatPage() {
               <h1>How to book a yoga retreat: pricing, deposits, and policies</h1>
               <div className={s.meta}>
                 <span>By Sarah Mitchell</span><span>·</span>
-                <span>November 2026</span><span>·</span>
+                <span>May 20, 2026</span><span>·</span>
                 <span>7 min read</span>
               </div>
             </div>
