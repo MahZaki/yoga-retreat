@@ -92,7 +92,7 @@ export default function YogaRetreatsGuide() {
               <p>If you're new to this and wondering whether you're the right kind of person, head to our <Link href="/blog/yoga-retreat-for-beginners">beginner's guide to yoga retreats</Link> — it covers what first-timers actually need to know before booking anything.</p>
 
               <div className={s.imgFull}>
-                <Image src="/images/blog/pillar-typical-day.jpg" alt="Typical day breakfast setting at a yoga retreat" fill sizes="100vw" style={{ objectFit: 'cover' }} />
+                <Image src="/images/blog/pillar-typical-day-new.png" alt="Typical day breakfast setting at a yoga retreat" fill sizes="100vw" style={{ objectFit: 'cover' }} />
               </div>
 
               <h2 id="typical-day">What happens on a typical day?</h2>
@@ -124,7 +124,7 @@ export default function YogaRetreatsGuide() {
               <p><strong>The group:</strong> Most retreats run between 8 and 20 participants. Under 12 and you'll likely know everyone by name within 48 hours. Over 20 and it starts to feel like a yoga festival rather than a retreat. Around 60–65% of retreat attendees are solo travellers, so arriving alone is entirely normal — you're in the majority.</p>
 
               <div className={s.imgFull}>
-                <Image src="/images/blog/pillar-benefits.jpg" alt="A person resting and journaling on a wooden deck overlooking nature" fill sizes="100vw" style={{ objectFit: 'cover' }} />
+                <Image src="/images/blog/pillar-benefits-new.png" alt="A person resting and journaling on a wooden deck overlooking nature" fill sizes="100vw" style={{ objectFit: 'cover' }} />
               </div>
 
               <h2 id="real-benefits">Why people go — the real benefits</h2>
@@ -148,7 +148,7 @@ export default function YogaRetreatsGuide() {
               <p>None of these benefits require you to believe in anything. They're structural. You can be a complete sceptic and still benefit — because the mechanism is the removal of distraction, not the adoption of a philosophy.</p>
 
               <div className={s.imgFull}>
-                <Image src="/images/blog/pillar-types.jpg" alt="Different styles of yoga retreat settings" fill sizes="100vw" style={{ objectFit: 'cover' }} />
+                <Image src="/images/blog/pillar-types-new.png" alt="Different styles of yoga retreat settings" fill sizes="100vw" style={{ objectFit: 'cover' }} />
               </div>
 
               <h2 id="types-of-retreats">Types of yoga retreats</h2>
@@ -170,7 +170,7 @@ export default function YogaRetreatsGuide() {
               <p><strong>All-inclusive retreats</strong> bundle everything — yoga, meals, accommodation, excursions, and sometimes spa treatments — into one price with no decisions required. Details in the <Link href="/blog/all-inclusive-yoga-retreat">all-inclusive guide</Link>.</p>
 
               <div className={s.imgFull}>
-                <Image src="/images/blog/pillar-destinations.jpg" alt="Map style flat lay with yoga mat and passport" fill sizes="100vw" style={{ objectFit: 'cover' }} />
+                <Image src="/images/blog/pillar-destinations-new.png" alt="Map style flat lay with yoga mat and passport" fill sizes="100vw" style={{ objectFit: 'cover' }} />
               </div>
 
               <h2 id="where-to-go">Where to go — best destinations and real prices</h2>
@@ -198,7 +198,7 @@ export default function YogaRetreatsGuide() {
               Higher price point than anywhere else in this list. Budget $900–$1,400/week, mid-range $1,500–$2,200. Sedona (Arizona) is technically not California or Colorado but deserves mention — altitude yoga, vortex-adjacent framing, genuinely good instruction. Colorado is the best "gateway retreat" for sceptics — it feels like an active outdoor holiday that happens to include yoga. More in the <Link href="/blog/yoga-retreat-california">California guide</Link>.</p>
 
               <div className={s.imgFull}>
-                <Image src="/images/blog/pillar-choose-teacher.jpg" alt="A teacher adjusting a student's shoulders" fill sizes="100vw" style={{ objectFit: 'cover' }} />
+                <Image src="/images/blog/pillar-choose-teacher-new.png" alt="A teacher adjusting a student's shoulders" fill sizes="100vw" style={{ objectFit: 'cover' }} />
               </div>
 
               <h2 id="how-to-choose">How to choose the right retreat</h2>
@@ -256,7 +256,7 @@ export default function YogaRetreatsGuide() {
               <p>For a full breakdown of what different price points actually deliver, see the <Link href="/blog/luxury-yoga-retreats">luxury retreat guide</Link> and the <Link href="/blog/affordable-yoga-retreats">affordable retreats guide</Link>.</p>
 
               <div className={s.imgFull}>
-                <Image src="/images/blog/pillar-packing.jpg" alt="Open suitcase with neatly packed yoga retreat clothing" fill sizes="100vw" style={{ objectFit: 'cover' }} />
+                <Image src="/images/blog/pillar-packing-new.jpg" alt="Open suitcase with neatly packed yoga retreat clothing" fill sizes="100vw" style={{ objectFit: 'cover' }} />
               </div>
 
               <h2 id="what-to-pack">What to pack</h2>
