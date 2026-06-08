@@ -93,7 +93,7 @@ export default function BookYogaRetreatPage() {
           <div className={s.heroOverlay}>
             <div className="container">
               <span className={s.tag}>Planning</span>
-              <h1>How to book a yoga retreat: pricing, deposits, and policies</h1>
+              <h1>How to book a yoga retreat: the complete step-by-step guide</h1>
               <div className={s.meta}>
                 <span>By Sarah Mitchell</span><span>·</span>
                 <span>May 20, 2026</span><span>·</span>
@@ -131,6 +131,17 @@ export default function BookYogaRetreatPage() {
               <p>The question to ask before choosing any destination: &quot;What evidence is there that the teaching at this price point is good?&quot; Not &quot;does it look good in photos.&quot;</p>
               <p>For a first retreat, <strong>India (Rishikesh) and Portugal (Algarve)</strong> consistently over-deliver on teaching quality relative to price. Bali can be excellent at the premium tier ($2,000+/week). At mid-range, the price premium is driven by aesthetics, not instruction.</p>
 
+              <h2 id="style">Step 3: Match the yoga style to what you actually need</h2>
+              <p>This is the step most first-timers skip — then arrive at a retreat that&apos;s wrong for their body. Before you book, confirm the yoga style matches what you&apos;re looking for.</p>
+              <ul>
+                <li><strong>Vinyasa / Flow:</strong> Dynamic, movement-linked-to-breath. Good if you want a physical challenge and have some existing practice. Most common in Bali and Tulum retreats.</li>
+                <li><strong>Hatha:</strong> Slower, posture-based, excellent for all levels. More common in India and traditional retreat centres. Better for first-timers who want to learn properly.</li>
+                <li><strong>Yin:</strong> Long-held passive poses, focused on connective tissue and release. Deeply restorative. Often offered as an evening complement to active morning sessions.</li>
+                <li><strong>Restorative:</strong> The most gentle format, using props to fully support the body. Ideal if you&apos;re recovering from burnout, injury, or stress. Not a workout — and that&apos;s the point.</li>
+              </ul>
+              <p>The best retreats mix morning Vinyasa or Hatha with evening Yin or Restorative — active and recovery in balance. If a retreat lists only one style all day every day, that&apos;s worth querying before you commit.</p>
+              <p>If you&apos;re a complete beginner: look for &quot;all levels welcome&quot; in the listing, and then <em>confirm</em> by emailing that the teacher actively provides modifications. &quot;All levels&quot; in marketing copy sometimes means &quot;experienced people who don&apos;t mind beginners.&quot; Very different things.</p>
+
               <div className={s.imageBlock}>
                 <Image
                   src="/images/blog/booking-retreat-journal.jpg"
@@ -141,25 +152,53 @@ export default function BookYogaRetreatPage() {
                 <p className={s.caption}>Good retreat planning starts on paper: write down what you actually need from a week away before opening a booking tab. Photo: Pexels</p>
               </div>
 
-              <h2 id="teacher">Step 3: Verify the teacher independently</h2>
+              <h2 id="whats-included">Step 4: Understand exactly what&apos;s included in the price</h2>
+              <p>Retreat pricing is not standardised. Two retreats listed at $1,200 can represent very different actual costs once you know what each includes. Always ask for a written itinerary before paying.</p>
+              <div className={s.tableWrap}>
+                <table className={s.table}>
+                  <thead><tr><th>Typically included</th><th>Typically extra</th></tr></thead>
+                  <tbody>
+                    <tr><td>Accommodation (confirm single vs shared)</td><td>Flights and travel to the destination</td></tr>
+                    <tr><td>Daily yoga and meditation sessions</td><td>Airport transfers (unless specified)</td></tr>
+                    <tr><td>Meals (usually all three, sometimes lunch excluded)</td><td>Spa treatments and massage</td></tr>
+                    <tr><td>Guided excursions (where listed)</td><td>Alcoholic beverages</td></tr>
+                    <tr><td>Use of retreat facilities (pool, mat, props)</td><td>Optional activities outside the schedule</td></tr>
+                    <tr><td>—</td><td>Travel insurance</td></tr>
+                    <tr><td>—</td><td>Gratuities for local staff and guides</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>A useful calculation: divide the total by the number of days to get a per-day cost, then compare what&apos;s included. A $3,000 retreat with all meals, transfers, and excursions included is often better value than a $1,500 retreat where everything is additional. Run the numbers before drawing conclusions from the headline price.</p>
+              <p>If you&apos;re going solo: always ask whether a single supplement applies. Most retreat centres charge an additional $100–$300/week for private room use when you&apos;re not sharing. Approximately 60–65% of retreat bookings are solo travellers — it&apos;s standard, not unusual, to ask.</p>
+
+              <h2 id="group-size">Step 5: Choose the right group size for the experience you want</h2>
+              <p>Group size changes the feel of a retreat more than almost any other variable. There&apos;s no universally right answer — it depends on what you&apos;re going for.</p>
+              <ul>
+                <li><strong>Small groups (8–14):</strong> Quieter, more introspective. The teacher knows your name. Better if you&apos;re going through something significant or prefer silence and space. More likely to bond deeply with a small number of people.</li>
+                <li><strong>Medium groups (15–25):</strong> The sweet spot for most retreat-goers. Enough social energy to feel connected without being overwhelming. Easier to find your own pace.</li>
+                <li><strong>Large groups (25+):</strong> More vibrant, more social. Solo travellers often prefer larger groups for the range of people to meet. Quality depends heavily on an experienced lead — a weak facilitator loses the room fast at this size.</li>
+              </ul>
+              <p>The red flag to watch: a teacher-to-participant ratio above 1:20. At that point, individual attention in yoga sessions is essentially gone. Ask the centre directly: &quot;What is the maximum group size, and how many teachers or assistants will be present?&quot;</p>
+
+              <h2 id="teacher">Step 6: Verify the teacher independently</h2>
               <p>This is the step most people skip. It&apos;s also the one that matters most.</p>
               <p>The teacher&apos;s credentials should be verifiable before you pay. Specifically:</p>
               <ul>
-                <li>What is their training (RYT-200, RYT-500, specific school)?</li>
-                <li>How many years have they been teaching retreats — not just classes?</li>
+                <li>What is their training (RYT-200 minimum, RYT-500 for more experienced)? Was it from a Yoga Alliance-registered school?</li>
+                <li>How many years have they been teaching retreats — not just classes? Leading a group for 7 days is a different skill from teaching a weekly studio class.</li>
                 <li>Is their name on the booking page as the confirmed lead, or is it listed as &quot;our qualified teachers&quot;?</li>
-                <li>Can you find them independently — a website, Instagram, reviews from retreat guests?</li>
-                <li>What is the teacher-to-participant ratio? Anything above 1:20 affects quality meaningfully.</li>
+                <li>Can you find them independently — a website, YouTube classes, Instagram, reviews from past retreat guests?</li>
+                <li>Watch a video of them teaching before you pay. Most credible retreat teachers have free content online.</li>
               </ul>
               <p>Before paying, email the centre and ask directly: &quot;Is [named teacher] confirmed as the lead teacher for this specific retreat date?&quot; A centre that can&apos;t confirm their teacher three months before a retreat either doesn&apos;t know yet, or the teacher is a placeholder. Either is useful information.</p>
               <p>My highest-rated retreat — $380 for seven days in Rishikesh — had basic shared accommodation and extraordinary teachers. My most expensive retreat (Tuscany, $4,200) was exceptional in part because the teacher had 25 years of experience. The accommodation amplified an already good experience. It didn&apos;t create it. <Link href="/blog/best-yoga-retreats">How you evaluate a retreat matters more than where it is.</Link></p>
 
-              <h2 id="deposits">Step 4: Understand the deposit before you pay it</h2>
+              <h2 id="deposits">Step 7: Understand the deposit before you pay it</h2>
               <p>A standard non-refundable deposit is <strong>20–30% of the total price</strong>. This is reasonable — the centre is holding a spot with real opportunity cost.</p>
               <p>A deposit above 50% is atypical and worth questioning. Some retreat centres, particularly newer ones or those with aggressive marketing, take the full amount at booking. This isn&apos;t inherently a scam, but it means you&apos;re carrying all the risk from day one. Before agreeing: ask what happens to your money if the retreat is cancelled by the centre, if the named teacher drops out, or if you need to cancel due to a medical emergency.</p>
               <p>Get the answers in writing. Not from a web page that can change — from a booking confirmation email.</p>
 
-              <h2 id="refunds">Step 5: Read the refund policy like it matters — because it does</h2>
+              <h2 id="refunds">Step 8: Read the refund policy like it matters — because it does</h2>
               <p>A fair refund policy looks like this:</p>
               <div className={s.tableWrap}>
                 <table className={s.table}>
@@ -175,7 +214,7 @@ export default function BookYogaRetreatPage() {
               </div>
               <p>If a centre offers no refund at any point but allows transfers to a future date — that&apos;s workable, as long as the transfer terms are genuinely flexible (not &quot;subject to availability&quot; at peak season). Get this in writing before you pay.</p>
 
-              <h2 id="payment">Step 6: Use the right payment method</h2>
+              <h2 id="payment">Step 9: Use the right payment method</h2>
               <p><strong>Credit card</strong> is the safest option. Chargeback rights are your backstop if a retreat is cancelled and the centre doesn&apos;t refund. Use a card with travel protection if you have one.</p>
               <p><strong>PayPal (Goods and Services):</strong> reasonable protection. Do not use PayPal Friends and Family — it has zero buyer protection. Some operators will ask for this to avoid fees. Decline.</p>
               <p><strong>Bank transfer:</strong> no protection once sent. Use only for operators you&apos;ve thoroughly vetted, or where a reputable platform (Retreat Guru, BookYogaRetreats) is holding the payment as an intermediary.</p>
@@ -201,30 +240,48 @@ export default function BookYogaRetreatPage() {
               <p>World Nomads and Battleface both cover yoga activities explicitly. Check carefully any policy that mentions &quot;extreme sports&quot; in the exclusions — some exclude yoga classes that involve inversions or advanced balances.</p>
               <p>Buy the insurance on the same day you pay the retreat deposit. Waiting a week makes the cover less comprehensive.</p>
 
-              <h2 id="questions">Questions to send before paying</h2>
-              <p>Send these by email — not WhatsApp, not Instagram DM — and save the replies. How fast they respond and how specifically they answer tells you as much as the content:</p>
-              <ul>
+              <h2 id="questions">10 questions to send before paying</h2>
+              <p>Send these by email — not WhatsApp, not Instagram DM — and save the replies. How fast and specifically they respond tells you as much as the content itself:</p>
+              <ol>
                 <li>Is [named teacher] confirmed as the lead for this specific retreat date?</li>
-                <li>What is the maximum group size for this retreat?</li>
+                <li>What is the maximum group size, and how many teachers or assistants will be present?</li>
                 <li>What is your cancellation policy, and can you confirm it in this email?</li>
-                <li>Are there any additional costs not included in the listed price?</li>
-                <li>Is travel insurance required, and do you have any recommended providers?</li>
+                <li>What is included in the price — meals, transfers, excursions?</li>
+                <li>Are there any additional costs not listed on the booking page?</li>
+                <li>Is the retreat suitable for my experience level — specifically, will modifications be offered?</li>
+                <li>Can you accommodate my dietary requirements?</li>
+                <li>Will our group have exclusive use of the venue, or will other guests be present?</li>
+                <li>Is travel insurance required, and do you have recommended providers?</li>
                 <li>What happens if the named teacher cannot attend?</li>
-              </ul>
+              </ol>
               <p>A centre that takes two weeks to respond to a pre-booking enquiry will take longer when something goes wrong mid-retreat. This is predictive information. Use it.</p>
 
-              <h2 id="checklist">The booking checklist</h2>
+              <h2 id="packing">What to pack for a yoga retreat</h2>
+              <p>Once you&apos;ve booked, the packing question comes up. Keep it simple:</p>
+              <ul>
+                <li>Comfortable yoga clothes — layers for early morning sessions, which are almost always cold regardless of climate</li>
+                <li>Walking shoes for excursions — most retreats include at least one</li>
+                <li>A reusable water bottle (most retreat centres discourage single-use plastic)</li>
+                <li>A journal — you&apos;ll have more time and mental space than usual, and it&apos;s worth using</li>
+                <li>Any personal medications, plus copies of prescriptions</li>
+                <li>Travel documents (passport, visa, insurance policy number)</li>
+                <li>Earplugs — shared accommodation or thin walls are more common than retreat marketing suggests</li>
+              </ul>
+              <p>Most retreat centres provide yoga mats and props. Confirm this before packing yours. Carrying a mat through three airports is optional suffering.</p>
+
+              <h2 id="checklist">The pre-booking checklist</h2>
               <ul>
                 <li>Real budget calculated (retreat price + flights + transfers + insurance + spending money) ✓</li>
-                <li>Destination chosen based on teaching quality, not aesthetics ✓</li>
+                <li>Yoga style confirmed as right for your level and goals ✓</li>
+                <li>What&apos;s included vs extra confirmed in writing ✓</li>
+                <li>Group size maximum and teacher ratio confirmed ✓</li>
                 <li>Teacher verified by name, credentials, and years of experience ✓</li>
-                <li>Group size maximum confirmed ✓</li>
                 <li>Deposit percentage checked — ideally 30% or less ✓</li>
                 <li>Refund policy read and saved in writing ✓</li>
                 <li>Payment made by credit card ✓</li>
                 <li>Travel insurance purchased ✓</li>
                 <li>Visa and vaccination requirements checked ✓</li>
-                <li>Pre-booking questions sent and answered in writing ✓</li>
+                <li>10 pre-booking questions sent and answered in writing ✓</li>
               </ul>
 
               <h2 id="verdict">The honest verdict</h2>
@@ -257,14 +314,18 @@ export default function BookYogaRetreatPage() {
                 <ul>
                   <li><a href="#budget">Step 1: Set your real budget</a></li>
                   <li><a href="#destination">Step 2: Choose the destination</a></li>
-                  <li><a href="#teacher">Step 3: Verify the teacher</a></li>
-                  <li><a href="#deposits">Step 4: Understand deposits</a></li>
-                  <li><a href="#refunds">Step 5: Read the refund policy</a></li>
-                  <li><a href="#payment">Step 6: Payment methods</a></li>
+                  <li><a href="#style">Step 3: Match the yoga style</a></li>
+                  <li><a href="#whats-included">Step 4: What&apos;s included vs extra</a></li>
+                  <li><a href="#group-size">Step 5: Group size</a></li>
+                  <li><a href="#teacher">Step 6: Verify the teacher</a></li>
+                  <li><a href="#deposits">Step 7: Deposits</a></li>
+                  <li><a href="#refunds">Step 8: Refund policy</a></li>
+                  <li><a href="#payment">Step 9: Payment methods</a></li>
                   <li><a href="#direct-vs-platform">Direct vs. platform</a></li>
                   <li><a href="#insurance">Travel insurance</a></li>
-                  <li><a href="#questions">Questions to ask</a></li>
-                  <li><a href="#checklist">Booking checklist</a></li>
+                  <li><a href="#questions">10 questions to ask</a></li>
+                  <li><a href="#packing">What to pack</a></li>
+                  <li><a href="#checklist">Checklist</a></li>
                   <li><a href="#faq">FAQ</a></li>
                 </ul>
               </div>
