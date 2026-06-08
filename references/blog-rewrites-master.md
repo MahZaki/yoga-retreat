@@ -50,8 +50,8 @@ Before touching any page.js, you MUST read these five files and apply them:
 | 4 | `/blog/yoga-retreat-california` | yoga retreat california | 720 | ✅ DONE |
 | 5 | `/blog/womens-yoga-retreat` | womens yoga retreat | 720 | ✅ DONE |
 | 6 | `/blog/best-yoga-retreats` | best yoga retreats | 480 | ✅ DONE |
-| 7 | `/blog/how-to-book-yoga-retreat` | how to book a yoga retreat | 390 | 🔜 NEXT |
-| 8 | `/blog/yoga-retreats-costa-rica` | yoga retreats costa rica | 260 | ⬜ TODO |
+| 7 | `/blog/how-to-book-yoga-retreat` | how to book a yoga retreat | 390 | ✅ DONE |
+| 8 | `/blog/yoga-retreats-costa-rica` | yoga retreats costa rica | 260 | 🔜 NEXT |
 | 9 | `/blog/yoga-retreat-for-beginners` | yoga retreat for beginners | 260 | ⬜ TODO |
 | 10 | `/blog/luxury-yoga-retreats` | luxury yoga retreats | 210 | ⬜ TODO |
 | 11 | `/blog/silent-yoga-retreat` | silent yoga retreat | 210 | ⬜ TODO |
