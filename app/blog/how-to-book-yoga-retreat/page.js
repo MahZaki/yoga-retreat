@@ -105,7 +105,7 @@ export default function BookYogaRetreatPage() {
 
         <div className="container">
           <div className={s.layout}>
-            <div className={s.content}>
+            <div className={s.body}>
 
               <div className={s.introBrief}>
                 <strong>To book a yoga retreat:</strong> (1) set your real budget including flights and transfers, (2) choose destination based on teaching style not aesthetics, (3) verify teacher credentials independently, (4) read the refund policy before paying any deposit, (5) pay by credit card and buy travel insurance. The whole process takes an hour if you know what you&apos;re looking for.

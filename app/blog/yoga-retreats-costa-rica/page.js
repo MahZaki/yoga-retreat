@@ -105,7 +105,7 @@ export default function CostaRicaYogaRetreatsPage() {
 
         <div className="container">
           <div className={s.layout}>
-            <div className={s.content}>
+            <div className={s.body}>
 
               <div className={s.introBrief}>
                 <strong>Costa Rica yoga retreats</strong> centre around Nosara and Santa Teresa — eco-lodges, jungle settings, surf add-ons. <strong>Budget: $700–$1,100/week. Mid-range: $1,200–$1,800.</strong> Best option for US travellers avoiding long-haul flights. The three main areas serve different needs: Nosara is the most established yoga hub, Santa Teresa is social and surf-forward, Uvita is for proper jungle immersion.

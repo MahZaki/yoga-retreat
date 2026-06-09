@@ -372,8 +372,8 @@
 .relatedBox ul li a:hover { color: var(--terracotta); text-decoration: underline; }
 
 /* ── TOC anchor scroll offset (prevents sticky nav overlap) ── */
-.content h2,
-.content h3 {
+.body h2,
+.body h3 {
   scroll-margin-top: calc(var(--nav-h) + 1.5rem);
 }
 

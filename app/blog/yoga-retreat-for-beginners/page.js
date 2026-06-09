@@ -105,7 +105,7 @@ export default function YogaRetreatForBeginnersPage() {
 
         <div className="container">
           <div className={s.layout}>
-            <div className={s.content}>
+            <div className={s.body}>
 
               <div className={s.introBrief}>
                 <strong>For a first yoga retreat, choose 4–5 days rather than 7.</strong> Look for mixed-level classes, a named lead teacher, and a group under 15. Budget $300–$1,400 depending on destination. You don&apos;t need to be flexible, experienced, or spiritual to attend.
