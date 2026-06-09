@@ -146,6 +146,16 @@ export default function CostaRicaYogaRetreatsPage() {
               <p><strong>Who Uvita suits:</strong> Experienced retreat-goers looking for something quieter and more inward, people who specifically want jungle (not beach), those interested in wellness beyond yoga — breathwork, plant medicine, somatic work.</p>
               <p><strong>Who it doesn&apos;t suit:</strong> First-timers who want a community vibe, anyone wanting surf access, people who need reliable wifi.</p>
 
+              <div className={s.imageBlock}>
+                <Image
+                  src="/images/blog/costa-rica-uvita-jungle.jpg"
+                  alt="Lush green rainforest environment ideal for meditation and deep nature immersion in Uvita, Costa Rica"
+                  width={860}
+                  height={500}
+                />
+                <p className={s.caption}>The Southern Pacific coast swaps the surf crowds for dense jungle and a focus on deeper, more introspective retreat formats. Photo: Pexels</p>
+              </div>
+
               <h2 id="comparison">Nosara vs Santa Teresa vs Uvita: comparison</h2>
               <div className={s.tableWrap}>
                 <table className={s.table}>

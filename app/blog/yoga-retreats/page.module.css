@@ -305,6 +305,78 @@
 }
 .relatedBody h3 { font-size: 1.1rem; margin-top: 0; line-height: 1.4; color: var(--charcoal); }
 
+/* ── Hero tag pill & meta line (used by newer posts) ── */
+.tag {
+  display: inline-flex;
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  background: var(--terracotta);
+  color: #fff;
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin-bottom: 1rem;
+  width: fit-content;
+  box-shadow: 0 4px 12px rgba(200, 107, 74, 0.4);
+}
+.meta {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: .9rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  flex-wrap: wrap;
+}
+.meta span { display: flex; align-items: center; gap: 4px; }
+
+/* ── Sidebar alias & related-reads box ── */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.relatedBox {
+  background: #fff;
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+  border: 1px solid var(--mist);
+}
+.relatedBox h3 {
+  font-size: 1.05rem;
+  margin: 0 0 1.2rem;
+  padding-bottom: .75rem;
+  border-bottom: 2px solid var(--terracotta);
+  color: var(--charcoal);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+.relatedBox ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+.relatedBox ul li a {
+  font-size: .9rem;
+  color: var(--jungle-dark);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color .2s ease;
+  line-height: 1.4;
+}
+.relatedBox ul li a:hover { color: var(--terracotta); text-decoration: underline; }
+
+/* ── TOC anchor scroll offset (prevents sticky nav overlap) ── */
+.content h2,
+.content h3 {
+  scroll-margin-top: calc(var(--nav-h) + 1.5rem);
+}
+
 /* ── Responsive ── */
 @media (max-width: 1024px) {
   .layout { grid-template-columns: 1fr; gap: 3rem; }
