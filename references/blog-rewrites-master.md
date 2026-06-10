@@ -54,8 +54,8 @@ Before touching any page.js, you MUST read these five files and apply them:
 | 8 | `/blog/yoga-retreats-costa-rica` | yoga retreats costa rica | 260 | ✅ DONE |
 | 9 | `/blog/yoga-retreat-for-beginners` | yoga retreat for beginners | 260 | ✅ DONE |
 | 10 | `/blog/luxury-yoga-retreats` | luxury yoga retreats | 210 | ✅ DONE |
-| 11 | `/blog/silent-yoga-retreat` | silent yoga retreat | 210 | 🔜 NEXT |
-| 12 | `/blog/affordable-yoga-retreats` | affordable yoga retreats | 170 | ⬜ TODO |
+| 11 | `/blog/silent-yoga-retreat` | silent yoga retreat | 210 | ✅ DONE |
+| 12 | `/blog/affordable-yoga-retreats` | affordable yoga retreats | 170 | 🔜 NEXT |
 | 13 | `/blog/all-inclusive-yoga-retreat` | all inclusive yoga retreat | 170 | ⬜ TODO |
 
 ---
