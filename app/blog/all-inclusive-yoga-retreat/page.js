@@ -6,174 +6,233 @@ import Newsletter from '@/components/Newsletter'
 import s from '../yoga-retreats/page.module.css'
 
 export const metadata = {
-  title: 'All-Inclusive Yoga Retreats: What Is Included and What Is Not (2026)',
-  description: 'Learn what "all-inclusive" actually means in the retreat industry. Read about average costs, common hidden fees, and how to avoid overpaying.',
+  title: 'All-Inclusive Yoga Retreats: Are They Actually Better Value? (2026)',
+  description: 'The honest truth about all-inclusive yoga retreats. What they include, what they hide in the fine print, and the exact math to determine if they are worth your money.',
   openGraph: {
-    title: 'All-Inclusive Yoga Retreats: The Truth About Pricing',
-    description: 'Vetted pricing guides, hidden cost breakdowns, and comparisons from 14 retreats attended at my own expense.',
-    images: [{ url: '/images/blog/luxury-yoga-retreat-pool.jpg', width: 1200, height: 630, alt: 'Luxury all-inclusive resort pool in Bali' }],
-    type: 'article',
+    title: 'All-Inclusive Yoga Retreats: Are They Actually Better Value? (2026)',
+    description: 'All-inclusive yoga retreats bundle accommodation, meals, and yoga into one price. Here is how to check the fine print and compare prices honestly.',
+    images: [{ url: '/images/blog/all-inclusive-resort.jpg', width: 940, height: 650 }],
   },
 }
 
-export default function AllInclusiveYogaRetreats() {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: 'All-Inclusive Yoga Retreats: What Is Included and What Is Not (2026)',
-    description: 'Learn what "all-inclusive" actually means in the retreat industry. Read about average costs, common hidden fees, and how to avoid overpaying.',
-    author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://yogaretreatadvisor.com/about' },
-    publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', logo: { '@type': 'ImageObject', url: 'https://yogaretreatadvisor.com/logo.png' } },
-    datePublished: '2026-04-01',
-    dateModified: '2026-04-01',
-    image: 'https://yogaretreatadvisor.com/images/blog/luxury-yoga-retreat-pool.jpg',
-    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://yogaretreatadvisor.com/blog/all-inclusive-yoga-retreat' },
-  }
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'All-Inclusive Yoga Retreats: Are They Actually Better Value? (2026)',
+  author: { '@type': 'Person', name: 'Sarah Mitchell' },
+  datePublished: '2026-06-11',
+  dateModified: '2026-06-11',
+  publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
+  image: 'https://yogaretreatadvisor.com/images/blog/all-inclusive-resort.jpg',
+}
 
-  const breadcrumbLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://yogaretreatadvisor.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://yogaretreatadvisor.com/blog' },
-      { '@type': 'ListItem', position: 3, name: 'All-Inclusive Yoga Retreats Guide', item: 'https://yogaretreatadvisor.com/blog/all-inclusive-yoga-retreat' },
-    ],
-  }
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What does an all-inclusive yoga retreat include?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'A standard all-inclusive yoga retreat includes your accommodation, two daily yoga classes, and three meals per day. Some premium retreats may also include one excursion or a group workshop. They almost never include flights, airport transfers, spa treatments, or alcohol.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How much does an all-inclusive yoga retreat cost?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Prices range widely by destination. In India or Southeast Asia, expect to pay $600–$1,200 per week. In Europe (like Portugal or Spain), expect $1,200–$1,800. In luxury destinations like Costa Rica or Tulum, all-inclusive packages typically start at $2,000–$2,500.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is it cheaper to book a yoga retreat or build your own?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Building your own (booking a hotel and buying drop-in yoga classes) is usually 15–20% cheaper on paper. However, you lose the structured schedule, the group dynamic, and the convenience of having all your healthy meals prepared for you.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do yoga retreats include flights?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'No. Almost no yoga retreats include flights in their "all-inclusive" price. You are always responsible for booking your own airfare, and usually your own airport transfer to the retreat venue.',
+      },
+    },
+  ],
+}
 
+export default function AllInclusiveYogaRetreatPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Navbar />
-
+      <main>
       <article className={s.article}>
-        {/* Hero */}
+
         <div className={s.heroWrap}>
-          <Image src="/images/blog/luxury-yoga-retreat-pool.jpg" alt="Luxury tropical pool at an all-inclusive yoga retreat resort" fill priority sizes="100vw" style={{ objectFit: 'cover' }} />
+          <Image
+            src="/images/blog/all-inclusive-resort.jpg"
+            alt="Beautiful all-inclusive resort setting with a large swimming pool and tropical palm trees"
+            fill
+            style={{ objectFit: 'cover' }}
+            priority
+          />
           <div className={s.heroOverlay}>
-            <span className={s.heroCat}>Retreat Planning</span>
-            <h1>All-Inclusive Yoga Retreats: What Is Included and What Is Not</h1>
-            <div className={s.heroMeta}>
-              <span>By Sarah Mitchell</span>
-              <span>April 1, 2026</span>
-              <span>10 min read</span>
-              <span>Published April 2026</span>
+            <div className="container">
+              <span className={s.tag}>Budget &amp; Planning</span>
+              <h1>All-inclusive yoga retreats: are they actually better value?</h1>
+              <div className={s.meta}>
+                <span>By Sarah Mitchell</span><span>·</span>
+                <span>June 11, 2026</span><span>·</span>
+                <span>8 min read</span>
+              </div>
             </div>
           </div>
         </div>
 
         <div className="container">
           <div className={s.layout}>
-            {/* Main Content */}
             <div className={s.body}>
 
-              <p>The term “all-inclusive” is the biggest source of confusion in the yoga retreat industry. In traditional travel, it means unlimited buffet meals and cocktails. In the wellness industry, it means something entirely different.</p>
+              <div className={s.introBrief}>
+                <strong>All-inclusive yoga retreats</strong> bundle accommodation, meals, yoga sessions, and sometimes excursions into one upfront price. Expect $900–$2,500/week depending on the destination. Always check what &quot;all-inclusive&quot; actually means — in the wellness industry, it almost always excludes airport transfers, spa treatments, and alcohol.
+              </div>
 
-              <p>If you book an all-inclusive wellness retreat expecting a beach resort swim-up bar, you will be disappointed. I have attended 14 retreats across 9 countries at my own expense. I have seen everything from basic ashrams to a $4,200 luxury week in Tuscany. Here is the direct truth about what all-inclusive actually buys you, what it excludes, and how to avoid booking a program that leaves you with a massive bill at check-out.</p>
+              <p>In the traditional travel industry, &quot;all-inclusive&quot; means you hand over your credit card at the time of booking, and you don&apos;t open your wallet again until you get to the airport to go home. It implies limitless margaritas by the pool and buffet dinners.</p>
+              <p>In the wellness industry, &quot;all-inclusive&quot; means something slightly different, and first-timers often get caught out by the discrepancy. I&apos;ve booked retreats that claimed to be all-inclusive, only to arrive and find out that lunch wasn&apos;t covered because &quot;people usually like to explore town during the day.&quot;</p>
+              <p>An all-inclusive yoga retreat can be the most stress-free holiday you&apos;ll ever take, but only if you run the math correctly before you pay the deposit.</p>
 
-              <h2 id="what-all-inclusive-means">What all-inclusive actually means in wellness</h2>
+              <h2 id="what-is-included">What is actually included (and what isn&apos;t)</h2>
+              <p>When a yoga retreat center markets a package as all-inclusive, here is the industry standard of what that actually covers.</p>
 
-              <p>In a standard yoga retreat, “all-inclusive” means the price covers your room, scheduled yoga classes, and your daily meals. That is it. It does not cover your travel, airport pickups, spa treatments, or tips.</p>
-
-              <p>Meals are almost always healthy, plant-based, and served at set times. Alcohol is rarely included, and at many locations, it is banned entirely. If you want a vacation where you can drink by the pool and skip morning classes without feeling guilty, book a regular hotel instead. It will be cheaper, and you won’t have a 5:30am bell ringing outside your window.</p>
-
-              <h2 id="typical-pricing-benchmarks">Typical pricing benchmarks by region</h2>
-
-              <p>Here are the real costs you should expect for a 7-day all-inclusive retreat in 2026. These numbers cover accommodation, three meals a day, and all scheduled sessions.</p>
-
-              <table className={s.table}>
-                <thead>
-                  <tr><th>Destination</th><th>Budget (Shared Room)</th><th>Mid-range</th><th>Premium / Luxury</th></tr>
-                </thead>
-                <tbody>
-                  <tr><td><strong>Bali</strong></td><td>$600–$900</td><td>$1,000–$1,800</td><td>$3,000+</td></tr>
-                  <tr><td><strong>India (Rishikesh)</strong></td><td>$300–$600</td><td>$650–$1,100</td><td>$2,500+</td></tr>
-                  <tr><td><strong>Costa Rica</strong></td><td>$700–$1,100</td><td>$1,200–$1,800</td><td>$3,200+</td></tr>
-                  <tr><td><strong>Europe (Portugal/Spain)</strong></td><td>$800–$1,200</td><td>$1,300–$2,100</td><td>$4,000+</td></tr>
-                </tbody>
-              </table>
-
-              <p>For a detailed overview of destination pricing differences, read our primary <Link href="/blog/yoga-retreats">yoga retreats guide</Link>.</p>
-
-              <h2 id="what-drives-the-cost">What drives the cost up?</h2>
-
-              <p>Understanding what you are paying for helps you evaluate value. When looking at retreat options, keep these three key drivers in mind:</p>
-
+              <h3>The standard inclusions</h3>
               <ul>
-                <li><strong>Private Room Premium:</strong> Choosing a private room instead of a shared dorm or twin room typically adds $150 to $400 per week to the base rate. Solo travelers make up 60% to 65% of retreat bookings, and many choose shared rooms to keep costs down and meet people.</li>
-                <li><strong>Group Size Capping:</strong> Small group retreats (under 12 participants) carry a 20% to 35% premium over larger programs. You pay for the individual attention from the teacher.</li>
-                <li><strong>Teacher Reputation:</strong> Internationally recognized teachers add $200 to $600 per week to the retreat price. Make sure their credentials are listed. If a retreat doesn't disclose who is teaching on their website, that is a major red flag.</li>
+                <li><strong>Accommodation:</strong> Usually 6 or 7 nights.</li>
+                <li><strong>Yoga classes:</strong> Typically two classes per day (an active morning flow and a restorative evening session).</li>
+                <li><strong>Meals:</strong> Three meals per day. These are usually set menus, vegetarian or vegan, served at specific times.</li>
+                <li><strong>Yoga props:</strong> Mats, blocks, and bolsters are provided.</li>
               </ul>
 
-              <h2 id="what-is-almost-never-included">What is almost never included</h2>
+              <h3>The standard exclusions (The &quot;Fine Print&quot;)</h3>
+              <p>This is where the budget often breaks down. Even the most comprehensive wellness packages usually exclude the following:</p>
+              <ul>
+                <li><strong>Flights:</strong> Never included.</li>
+                <li><strong>Airport transfers:</strong> Rarely included, though the venue will usually arrange a taxi for you at an additional cost.</li>
+                <li><strong>Spa treatments:</strong> Massages are almost always an extra fee, usually billed at Western prices even in cheaper countries.</li>
+                <li><strong>Alcohol:</strong> Many retreats are dry by design. Those that aren&apos;t will charge you separately for wine with dinner.</li>
+              </ul>
 
-              <p>These are the common expenses that will not be in the initial price. Always calculate these before making a deposit:</p>
+              <div className={s.imageBlock}>
+                <Image
+                  src="/images/blog/all-inclusive-meal.jpg"
+                  alt="Healthy vegetarian meal served on a wooden table, typical of all-inclusive retreat dining"
+                  width={860}
+                  height={500}
+                />
+                <p className={s.caption}>All-inclusive retreat meals are typically structured, communal, and highly nutritious. The benefit is not having to make a single decision about food for a week. Photo: Pexels</p>
+              </div>
 
-              <h3>1. Flights and visas</h3>
-              <p>You must book your own flights. If you are traveling internationally, visas can add another $50 to $100. Always purchase travel insurance immediately after booking your flights.</p>
+              <h2 id="the-math">How to compare prices honestly</h2>
+              <p>People often ask if it&apos;s cheaper to just book a nice hotel, buy a one-week unlimited pass at a local yoga studio, and eat at restaurants. The answer is yes — it is usually 15–20% cheaper on paper.</p>
+              <p>But comparing a DIY holiday to an all-inclusive retreat is comparing two entirely different experiences.</p>
+              <p>If you build it yourself, you have to wake up, figure out where to get breakfast, navigate a foreign city to find the yoga studio in time for the 8:00 AM class, figure out where to get lunch, and so on. You are spending mental energy on logistics.</p>
+              <p>When you book an all-inclusive package, the premium you are paying isn&apos;t just for the food and the bed. You are paying for the structure. You are paying for the privilege of waking up, walking thirty seconds to the yoga shala, and then sitting down at a table where a healthy breakfast simply appears in front of you. You are paying for the total absence of decision-making.</p>
 
-              <h3>2. Airport transfers</h3>
-              <p>Unless you are booking a high-end luxury retreat, airport pickups are an extra cost. A taxi from Denpasar airport to Ubud costs about $30 to $45. A transfer in Costa Rica from Liberia to Nosara can easily run $150 each way. Ask the coordinator to bundle this or connect you with other guests to share the cost.</p>
+              <h2 id="top-destinations">Best destinations for all-inclusive retreats</h2>
+              <p>If you want the all-inclusive experience, certain regions do it much better than others.</p>
 
-              <h3>3. Spa treatments and excursions</h3>
-              <p>Massage sessions, surfing lessons, and day trips to local waterfalls are typically scheduled during free afternoons. Expect to pay local rates for these, which range from $15/hour in Southeast Asia to $100+/hour in Europe or the US.</p>
+              <h3>1. Bali, Indonesia</h3>
+              <p>Bali is the undisputed king of the all-inclusive wellness package. Resorts in Ubud and Canggu have perfected the model. A $1,200/week package here will often include exceptional organic food, beautiful jungle-facing rooms, and occasionally a complimentary massage. The service standard in <Link href="/blog/yoga-retreat-bali">Bali retreats</Link> is incredibly high relative to the price.</p>
 
-              <h2 id="avoiding-booking-mistakes">How to avoid common booking mistakes</h2>
+              <h3>2. Costa Rica</h3>
+              <p>If you are travelling from the US and want to avoid a 20-hour flight, <Link href="/blog/yoga-retreats-costa-rica">Costa Rica is the primary alternative</Link>. Places like Nosara have excellent all-inclusive eco-resorts. However, because everything has to be imported, the price is significantly higher. Expect to pay $1,800–$2,500 for a package that would cost $1,200 in Asia.</p>
 
-              <p>Don't book based on photos alone. I learned this the hard way at an Ubud retreat in Bali. The website was stunning. The food was beautiful. But the scheduling was designed entirely for Instagram. The sunrise practice was moved to accommodate a photographer, and the cacao ceremony was staged. I came back feeling like a prop in someone else’s social media strategy.</p>
+              <h3>3. Portugal</h3>
+              <p>For Europeans, Portugal offers the best all-inclusive value. Many retreats operate out of large, converted farmhouses ("quintas") where the price includes all meals and yoga, though they tend to be slightly more rustic and community-focused than the slick resorts of Southeast Asia.</p>
 
-              <p>Always check the cancellation policy before booking. A typical cancellation window for a full refund is 30 to 60 days before the start date. Some retreats require a non-refundable deposit of up to 50% — anything higher than this before a 30-day window is atypical and a red flag.</p>
+              <div className={s.imageBlock}>
+                <Image
+                  src="/images/blog/all-inclusive-wellness-pool.jpg"
+                  alt="Woman relaxing by a pristine resort pool in a tropical environment"
+                  width={860}
+                  height={500}
+                />
+                <p className={s.caption}>The main appeal of the all-inclusive model is the complete removal of daily logistics, allowing your nervous system to fully down-regulate. Photo: Pexels</p>
+              </div>
 
-              <h2 id="next-steps">How to start planning</h2>
-
-              <p>If you're ready to find a vetted, truly all-inclusive program, here is how to start:</p>
-
+              <h2 id="red-flags">Red flags to watch out for</h2>
+              <p>Before you wire a $500 deposit for a retreat that claims to cover everything, ask these three questions:</p>
               <ol>
-                <li><strong>Try our <Link href="/retreat-matcher">Retreat Matcher Quiz</Link></strong> to get matched with programs that fit your budget and goals.</li>
-                <li><strong>Browse <Link href="/retreats">our verified retreats catalog</Link></strong> to compare prices and check teacher credentials.</li>
-                <li><strong>Read about budgeting</strong> in our guide to <Link href="/blog/affordable-yoga-retreats">affordable yoga retreats</Link>.</li>
+                <li><strong>&quot;Is lunch included?&quot;</strong> Some retreats only offer breakfast and dinner, leaving you to fend for yourself at midday. If the venue is isolated, you end up a captive audience at their café.</li>
+                <li><strong>&quot;Is the teacher confirmed?&quot;</strong> A beautiful resort is useless if the yoga is taught by a junior teacher who just happened to be available. Always vet the lead instructor.</li>
+                <li><strong>&quot;What is the cancellation policy?&quot;</strong> As detailed in our <Link href="/blog/how-to-book-yoga-retreat">booking guide</Link>, many boutique retreats have draconian refund policies. If you have to cancel, they will keep 100% of your money. Always buy "cancel for any reason" travel insurance.</li>
               </ol>
 
-              {/* Tags */}
-              <div className={s.tags}>
-                <span className="tag">All-Inclusive</span>
-                <span className="tag">Retreat Planning</span>
-                <span className="tag">Wellness Travel</span>
-                <span className="tag">Budgeting</span>
-              </div>
+              <h2 id="verdict">The final verdict</h2>
+              <p>If your primary goal is to explore a new city, eat at local restaurants, and have a varied cultural holiday, an all-inclusive retreat is a terrible idea. You will feel trapped by the schedule.</p>
+              <p>But if you are burned out, exhausted, and desperately need to down-regulate your nervous system without having to make a single logistical choice for seven days, an all-inclusive package is the smartest money you can spend. Just make sure you know exactly what the venue means when they use the word.</p>
+              <p>If you are trying to keep costs down but still want a structured experience, read our guide on finding <Link href="/blog/affordable-yoga-retreats">genuinely affordable retreats</Link> instead of rolling the dice on a cheap resort package.</p>
 
-              {/* Author Box */}
-              <div className={s.authorBox}>
-                <div className={s.authorAvatar}>
-                  <Image src="/images/hero-portrait.jpg" alt="Sarah Mitchell" fill sizes="80px" style={{ objectFit: 'cover' }} />
-                </div>
-                <div className={s.authorMeta}>
-                  <h4>Sarah Mitchell</h4>
-                  <div className={s.authorRole}>Founder &amp; Lead Reviewer, YogaRetreatAdvisor</div>
-                  <p>Sarah Mitchell spent 11 years in financial services before a panic attack at her desk in London in 2018 changed everything. Since then she has attended 14 yoga retreats across 9 countries, from a $380 budget week in Rishikesh to a $4,200 luxury immersion in Tuscany.</p>
-                </div>
-              </div>
+              <h2 id="faq">Frequently asked questions</h2>
+
+              <h3>What does an all-inclusive yoga retreat include?</h3>
+              <p>It typically includes accommodation, two daily yoga classes, and three meals per day. Some may include one excursion. They almost never include flights, airport transfers, spa treatments, or alcohol.</p>
+
+              <h3>How much does an all-inclusive yoga retreat cost?</h3>
+              <p>In India or Southeast Asia, expect $600–$1,200 per week. In Europe, expect $1,200–$1,800. In luxury destinations like Costa Rica, packages start at $2,000–$2,500.</p>
+
+              <h3>Is it cheaper to book a yoga retreat or build your own?</h3>
+              <p>Building your own (booking a hotel and buying drop-in classes) is usually 15–20% cheaper on paper. However, you lose the structured schedule and the convenience of having all healthy meals prepared for you.</p>
+
+              <h3>Do yoga retreats include flights?</h3>
+              <p>No. Almost no yoga retreats include flights in their all-inclusive price. You are always responsible for booking your own airfare and usually your own airport transfer.</p>
+
             </div>
 
-            {/* Sidebar TOC */}
-            <aside>
+            <aside className={s.sidebar}>
               <div className={s.toc}>
-                <h4>In This Guide</h4>
-                <nav className={s.tocLinks}>
-                  <a href="#what-all-inclusive-means" className={s.tocLink}>What all-inclusive means</a>
-                  <a href="#typical-pricing-benchmarks" className={s.tocLink}>Pricing benchmarks</a>
-                  <a href="#what-drives-the-cost" className={s.tocLink}>What drives the cost</a>
-                  <a href="#what-is-almost-never-included" className={s.tocLink}>What is not included</a>
-                  <a href="#avoiding-booking-mistakes" className={s.tocLink}>Booking mistakes to avoid</a>
-                  <a href="#next-steps" className={s.tocLink}>How to start planning</a>
-                </nav>
+                <h3>In this guide</h3>
+                <ul>
+                  <li><a href="#what-is-included">What is actually included</a></li>
+                  <li><a href="#the-math">Comparing prices honestly</a></li>
+                  <li><a href="#top-destinations">Top destinations</a></li>
+                  <li><a href="#red-flags">Red flags</a></li>
+                  <li><a href="#verdict">Final verdict</a></li>
+                  <li><a href="#faq">FAQ</a></li>
+                </ul>
+              </div>
+              <div className={s.relatedBox}>
+                <h3>Related reads</h3>
+                <ul>
+                  <li><Link href="/blog/yoga-retreats">The complete retreats guide</Link></li>
+                  <li><Link href="/blog/yoga-retreat-bali">Bali destination guide</Link></li>
+                  <li><Link href="/blog/luxury-yoga-retreats">Are luxury retreats worth it?</Link></li>
+                  <li><Link href="/blog/how-to-book-yoga-retreat">How to book safely</Link></li>
+                </ul>
               </div>
             </aside>
           </div>
         </div>
-      </article>
 
-      <Newsletter />
+        <div className={s.authorBox}>
+          <div className={s.authorAvatar}>
+            <Image src="/images/hero-portrait.jpg" alt="Sarah Mitchell" fill sizes="80px" style={{ objectFit: 'cover' }} />
+          </div>
+          <div className={s.authorMeta}>
+            <h3>Sarah Mitchell</h3>
+            <div className={s.authorRole}>Founder &amp; Lead Reviewer, YogaRetreatAdvisor</div>
+            <p>Former London project manager turned yoga travel writer. 14 retreats across 9 countries since 2018, from a $380 week in Rishikesh to a $4,200 luxury immersion in Tuscany. RYT-50. Based between London and Lisbon.</p>
+          </div>
+        </div>
+
+        <Newsletter />
+      </article>
+      </main>
       <Footer />
     </>
   )
