@@ -56,8 +56,9 @@ const categories = {
   }
 }
 
-export function generateMetadata({ params }) {
-  const data = categories[params.slug]
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const data = categories[resolvedParams.slug]
   if (!data) return { title: 'Retreats Not Found' }
   return {
     title: data.title,
@@ -65,8 +66,9 @@ export function generateMetadata({ params }) {
   }
 }
 
-export default function RetreatServicePage({ params }) {
-  const data = categories[params.slug]
+export default async function RetreatServicePage({ params }) {
+  const resolvedParams = await params;
+  const data = categories[resolvedParams.slug]
   
   if (!data) {
     notFound()
