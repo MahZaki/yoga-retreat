@@ -8,12 +8,12 @@ import Newsletter from '@/components/Newsletter'
 import s from './page.module.css'
 
 const retreats = [
-  { id:1, name:'Ubud Serenity Retreat', location:'Ubud, Bali', duration:'7 days', price:1299, rating:4.9, reviews:128, type:'Luxury', level:'All Levels', img:'/images/retreat-luxury.png', badge:'Editor\'s Pick', meals:'3 daily', accom:'Private Villa' },
-  { id:2, name:'Sacred Silence Meditation', location:'Chiang Mai, Thailand', duration:'10 days', price:899, rating:4.8, reviews:94, type:'Meditation', level:'Intermediate', img:'/images/retreat-meditation.png', badge:'Most Popular', meals:'3 daily', accom:'Shared Room' },
-  { id:3, name:'Jungle Flow Costa Rica', location:'Nosara, Costa Rica', duration:'5 days', price:1599, rating:4.9, reviews:76, type:'Wellness', level:'All Levels', img:'/images/dest-costa-rica.png', badge:'', meals:'2 daily', accom:'Eco Lodge' },
-  { id:4, name:'Rishikesh Ashram Experience', location:'Rishikesh, India', duration:'14 days', price:649, rating:4.7, reviews:203, type:'Teacher Training', level:'Advanced', img:'/images/dest-india.png', badge:'Best Value', meals:'3 daily', accom:'Ashram Dorm' },
-  { id:5, name:'Tulum Beach Yoga', location:'Tulum, Mexico', duration:'6 days', price:1849, rating:4.8, reviews:62, type:'Luxury', level:'Beginner', img:'/images/dest-mexico.png', badge:'', meals:'All-inclusive', accom:'Boutique Hotel' },
-  { id:6, name:'Bali Wellness Immersion', location:'Canggu, Bali', duration:'8 days', price:1099, rating:4.9, reviews:157, type:'Wellness', level:'All Levels', img:'/images/dest-bali.png', badge:'Trending', meals:'2 daily', accom:'Private Room' },
+  { id:1, name:'10 Best Wellness Retreats in Bali', location:'Bali, Indonesia', duration:'Varies', price:900, rating:4.9, reviews:342, type:'Wellness', level:'All Levels', img:'/images/dest-bali.png', badge:'Top Rated', slug:'wellness-retreats-bali' },
+  { id:2, name:'10 Best Yoga Retreats in Tulum Beach', location:'Tulum, Mexico', duration:'Varies', price:1500, rating:4.8, reviews:215, type:'Yoga', level:'All Levels', img:'/images/dest-mexico.png', badge:'Popular', slug:'yoga-retreats-tulum' },
+  { id:3, name:'10 Best Ashram Retreats in Rishikesh', location:'Rishikesh, India', duration:'Varies', price:400, rating:4.7, reviews:512, type:'Ashram', level:'All Levels', img:'/images/dest-india.png', badge:'Authentic', slug:'ashram-retreats-rishikesh' },
+  { id:4, name:'10 Best Silent Retreats in Ubud', location:'Ubud, Bali', duration:'Varies', price:700, rating:4.9, reviews:189, type:'Silent', level:'All Levels', img:'/images/blog/vipassana-meditation.jpg', badge:'Deep Healing', slug:'silent-retreats-ubud' },
+  { id:5, name:'10 Best Silent Retreats in Thailand', location:'Thailand', duration:'Varies', price:600, rating:4.8, reviews:276, type:'Silent', level:'All Levels', img:'/images/blog/affordable-yoga-thailand.jpg', badge:'Best Value', slug:'silent-retreats-thailand' },
+  { id:6, name:'10 Best Jungle Retreats in Costa Rica', location:'Costa Rica', duration:'Varies', price:1800, rating:4.9, reviews:310, type:'Jungle', level:'All Levels', img:'/images/dest-costa-rica.png', badge:'Eco Luxury', slug:'jungle-retreats-costa-rica' },
 ]
 
 export default function RetreatsPage() {
@@ -92,7 +92,7 @@ export default function RetreatsPage() {
               </div>
               <div className={s.cardFooter}>
                 <span className={s.cardPrice}>${r.price.toLocaleString()} <span>/ person</span></span>
-                <button className={s.cardBtn}>View Details</button>
+                <Link href={`/retreats/${r.slug}`}><button className={s.cardBtn}>View Details</button></Link>
               </div>
             </article>
           ))}
@@ -112,16 +112,16 @@ export default function RetreatsPage() {
                 </tr>
               </thead>
               <tbody>
-                {retreats.slice(0,5).map(r => (
+                {retreats.slice(0,6).map(r => (
                   <tr key={r.id}>
                     <td style={{ fontWeight:600 }}>{r.name}</td>
                     <td>{r.location}</td>
                     <td>{r.duration}</td>
-                    <td style={{ fontWeight:600, color:'var(--jungle)' }}>${r.price.toLocaleString()}</td>
-                    <td>{r.meals}</td>
-                    <td>{r.accom}</td>
+                    <td style={{ fontWeight:600, color:'var(--jungle)' }}>from ${r.price.toLocaleString()}</td>
+                    <td>Varies</td>
+                    <td>Varies</td>
                     <td>★ {r.rating}</td>
-                    <td><button className={s.tableBtn}>Book Now</button></td>
+                    <td><Link href={`/retreats/${r.slug}`}><button className={s.tableBtn}>View Collection</button></Link></td>
                   </tr>
                 ))}
               </tbody>
