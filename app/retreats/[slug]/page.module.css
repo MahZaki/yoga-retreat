@@ -21,7 +21,7 @@
 }
 
 .heroOverlay h1 {
-  color: var(--white);
+  color: #fff;
   font-size: clamp(2rem, 4vw, 3.5rem);
   line-height: 1.1;
   margin: 0;
@@ -38,13 +38,13 @@
 }
 
 .backLink:hover {
-  color: var(--white);
+  color: #fff;
 }
 
 .locationTag {
   display: inline-block;
   background-color: var(--jungle);
-  color: var(--white);
+  color: #fff;
   padding: 0.25rem 0.75rem;
   border-radius: 4px;
   font-size: 0.8rem;
@@ -84,7 +84,7 @@
 }
 
 .featureBox {
-  background-color: var(--white);
+  background-color: #fff;
   padding: 1.5rem;
   border-radius: 12px;
   font-weight: 600;
@@ -106,7 +106,7 @@
 }
 
 .ctaBox {
-  background-color: var(--white);
+  background-color: #fff;
   border: 1px solid rgba(0,0,0,0.05);
   border-radius: 16px;
   padding: 3rem;
@@ -130,7 +130,7 @@
 .primaryBtn {
   display: inline-block;
   background-color: var(--jungle);
-  color: var(--white);
+  color: #fff;
   text-decoration: none;
   padding: 1.2rem 2.5rem;
   border-radius: 8px;
@@ -159,7 +159,7 @@
 }
 
 .trustBox {
-  background-color: var(--white);
+  background-color: #fff;
   padding: 2rem;
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.03);

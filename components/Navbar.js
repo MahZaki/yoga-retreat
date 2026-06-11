@@ -36,7 +36,7 @@ export default function Navbar() {
         <div className={styles.inner}>
           <Link href="/" className={styles.logo}>
             <Image
-              src="/images/logo.png"
+              src={solid ? "/images/logodark.png" : "/images/logo.png"}
               alt="YogaRetreatAdvisor"
               width={370}
               height={80}
@@ -72,7 +72,7 @@ export default function Navbar() {
       {mobileOpen && (
         <div className={styles.mobile}>
           <button className={styles.mobileClose} onClick={() => setMobileOpen(false)}>✕</button>
-          <Image src="/images/logo.png" alt="YogaRetreatAdvisor" width={370} height={80} style={{ marginBottom: '1rem' }} />
+          <Image src="/images/logodark.png" alt="YogaRetreatAdvisor" width={370} height={80} style={{ marginBottom: '1rem' }} />
           {links.map(l => (
             <Link key={l.href} href={l.href} className={styles.mobileLink} onClick={() => setMobileOpen(false)}>
               {l.label}
