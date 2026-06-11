@@ -63,6 +63,12 @@ export async function generateMetadata({ params }) {
   return {
     title: data.title,
     description: data.description,
+    alternates: { canonical: `https://yogaretreatadvisor.com/retreats/${resolvedParams.slug}` },
+    openGraph: {
+      title: data.title,
+      description: data.description,
+      images: [{ url: data.image, width: 1200, height: 630 }],
+    },
   }
 }
 
@@ -74,8 +80,29 @@ export default async function RetreatServicePage({ params }) {
     notFound()
   }
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://yogaretreatadvisor.com' },
+      { '@type': 'ListItem', position: 2, name: 'Retreats', item: 'https://yogaretreatadvisor.com/retreats' },
+      { '@type': 'ListItem', position: 3, name: data.title, item: `https://yogaretreatadvisor.com/retreats/${resolvedParams.slug}` }
+    ]
+  };
+
+  const collectionSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: data.title,
+    description: data.description,
+    url: `https://yogaretreatadvisor.com/retreats/${resolvedParams.slug}`,
+    image: `https://yogaretreatadvisor.com${data.image}`
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }} />
       <Navbar />
       <main className={s.pageWrapper}>
         <div className={s.hero}>
@@ -88,9 +115,16 @@ export default async function RetreatServicePage({ params }) {
           />
           <div className={s.heroOverlay}>
             <div className="container">
-              <Link href="/retreats" className={s.backLink}>← Back to all collections</Link>
+              <div style={{ fontSize: '0.85rem', marginBottom: '1rem', color: 'rgba(255,255,255,0.8)' }}>
+                <Link href="/" style={{textDecoration:'underline'}}>Home</Link> &gt; <Link href="/retreats" style={{textDecoration:'underline'}}>Retreats</Link> &gt; <span>Collection</span>
+              </div>
               <div className={s.locationTag}>📍 {data.location}</div>
               <h1>{data.title}</h1>
+              <div style={{ marginTop: '2rem' }}>
+                <a href={data.link} target="_blank" rel="noopener noreferrer" className={s.primaryBtn} style={{ display: 'inline-block', width: 'auto' }}>
+                  View Availability &amp; Prices
+                </a>
+              </div>
             </div>
           </div>
         </div>
