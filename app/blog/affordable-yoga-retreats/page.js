@@ -8,6 +8,7 @@ import s from '../yoga-retreats/page.module.css'
 export const metadata = {
   title: 'Affordable Yoga Retreats: Where to Go in 2026',
   description: 'A complete guide to booking an affordable yoga retreat without sacrificing teaching quality. Featuring hard numbers for India ($300+), Thailand ($600+), and Portugal ($800+).',
+  alternates: { canonical: 'https://yogaretreatadvisor.com/blog/affordable-yoga-retreats' },
   openGraph: {
     title: 'Affordable Yoga Retreats: Where to Go in 2026',
     description: 'The most affordable yoga retreats are in India ($300–$600/week) and Thailand ($600–$900/week). Here is what you should and should not sacrifice when on a budget.',
@@ -65,14 +66,26 @@ const faqSchema = {
   ],
 }
 
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://yogaretreatadvisor.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://yogaretreatadvisor.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'affordable yoga retreats', item: 'https://yogaretreatadvisor.com/blog/affordable-yoga-retreats' }
+  ]
+};
+
 export default function AffordableYogaRetreatsPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Navbar />
       <main>
-      <article className={s.article}>
+      <article id="top" className={s.article}>
 
         <div className={s.heroWrap}>
           <Image
@@ -84,11 +97,14 @@ export default function AffordableYogaRetreatsPage() {
           />
           <div className={s.heroOverlay}>
             <div className="container">
+              <div className={s.breadcrumbs} style={{ fontSize: '0.85rem', marginBottom: '1rem', color: 'rgba(255,255,255,0.8)' }}>
+                <Link href="/" style={{textDecoration:'underline'}}>Home</Link> &gt; <Link href="/blog" style={{textDecoration:'underline'}}>Blog</Link> &gt; <span>Article</span>
+              </div>
               <span className={s.tag}>Budget &amp; Planning</span>
               <h1>Affordable yoga retreats: where to go and what to sacrifice</h1>
               <div className={s.meta}>
                 <span>By Sarah Mitchell</span><span>·</span>
-                <span>June 11, 2026</span><span>·</span>
+                <span>June 11, 2026</span><span>·</span><span>Last updated: June 11, 2026</span><span>·</span>
                 <span>8 min read</span>
               </div>
             </div>
@@ -255,6 +271,9 @@ export default function AffordableYogaRetreatsPage() {
         </div>
 
         <Newsletter />
+      <div className="container" style={{ textAlign: 'center', padding: '2rem 0' }}>
+          <a href="#top" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>↑ Back to top</a>
+        </div>
       </article>
       </main>
       <Footer />

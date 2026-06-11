@@ -8,6 +8,7 @@ import s from '../yoga-retreats/page.module.css'
 export const metadata = {
   title: 'Best Yoga Retreats 2026: The 4-Pillar Framework for Choosing Well',
   description: "There's no single best yoga retreat — there's a best one for you, right now. After 14 retreats across 9 countries, here's the evaluation framework that separates good retreats from expensive disappointments.",
+  alternates: { canonical: 'https://yogaretreatadvisor.com/blog/best-yoga-retreats' },
   openGraph: {
     title: 'Best Yoga Retreats 2026: The 4-Pillar Framework for Choosing Well',
     description: "The evaluation framework that separates good retreats from expensive ones. Four pillars. One teacher credential checklist. And the thing retreat ranking sites don't tell you about how they rank retreats.",
@@ -76,13 +77,24 @@ const faqSchema = {
   ],
 }
 
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://yogaretreatadvisor.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://yogaretreatadvisor.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'best yoga retreats', item: 'https://yogaretreatadvisor.com/blog/best-yoga-retreats' }
+  ]
+};
+
 export default function BestYogaRetreatsPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Navbar />
-      <article className={s.article}>
+      <article id="top" className={s.article}>
 
         {/* Hero */}
         <div className={s.heroWrap}>
@@ -304,6 +316,9 @@ export default function BestYogaRetreatsPage() {
         </div>
 
         <Newsletter />
+      <div className="container" style={{ textAlign: 'center', padding: '2rem 0' }}>
+          <a href="#top" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>↑ Back to top</a>
+        </div>
       </article>
       <Footer />
     </>

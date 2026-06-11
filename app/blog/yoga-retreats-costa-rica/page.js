@@ -8,6 +8,7 @@ import s from '../yoga-retreats/page.module.css'
 export const metadata = {
   title: 'Yoga Retreats in Costa Rica: Nosara vs Santa Teresa vs Uvita (2026 Guide)',
   description: 'Honest guide to Costa Rica yoga retreats — Nosara, Santa Teresa, and Uvita compared. Real prices, road conditions, and who each area actually suits.',
+  alternates: { canonical: 'https://yogaretreatadvisor.com/blog/yoga-retreats-costa-rica' },
   openGraph: {
     title: 'Yoga Retreats in Costa Rica: Nosara vs Santa Teresa vs Uvita',
     description: 'Budget $700–$1,100/week. Mid-range $1,200–$1,800. The honest guide to booking a Costa Rica yoga retreat in 2026.',
@@ -73,14 +74,26 @@ const faqSchema = {
   ],
 }
 
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://yogaretreatadvisor.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://yogaretreatadvisor.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'yoga retreats costa rica', item: 'https://yogaretreatadvisor.com/blog/yoga-retreats-costa-rica' }
+  ]
+};
+
 export default function CostaRicaYogaRetreatsPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Navbar />
       <main>
-      <article className={s.article}>
+      <article id="top" className={s.article}>
 
         <div className={s.heroWrap}>
           <Image
@@ -92,11 +105,14 @@ export default function CostaRicaYogaRetreatsPage() {
           />
           <div className={s.heroOverlay}>
             <div className="container">
+              <div className={s.breadcrumbs} style={{ fontSize: '0.85rem', marginBottom: '1rem', color: 'rgba(255,255,255,0.8)' }}>
+                <Link href="/" style={{textDecoration:'underline'}}>Home</Link> &gt; <Link href="/blog" style={{textDecoration:'underline'}}>Blog</Link> &gt; <span>Article</span>
+              </div>
               <span className={s.tag}>Destination Guide</span>
               <h1>Yoga retreats in Costa Rica: Nosara, Santa Teresa, and Uvita compared</h1>
               <div className={s.meta}>
                 <span>By Sarah Mitchell</span><span>·</span>
-                <span>May 28, 2026</span><span>·</span>
+                <span>May 28, 2026</span><span>·</span><span>Last updated: May 28, 2026</span><span>·</span>
                 <span>9 min read</span>
               </div>
             </div>
@@ -309,6 +325,9 @@ export default function CostaRicaYogaRetreatsPage() {
         </div>
 
         <Newsletter />
+      <div className="container" style={{ textAlign: 'center', padding: '2rem 0' }}>
+          <a href="#top" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>↑ Back to top</a>
+        </div>
       </article>
       </main>
       <Footer />

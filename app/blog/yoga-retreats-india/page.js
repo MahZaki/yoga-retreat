@@ -8,6 +8,7 @@ import s from '../yoga-retreats/page.module.css'
 export const metadata = {
   title: 'Yoga Retreats India: Rishikesh, Kerala & Mysore — Honest Guide (2026)',
   description: 'Rishikesh ashrams from $300/week, Kerala Ayurveda, Mysore Ashtanga. Real prices, what each region actually offers, and who each suits — from someone who started here.',
+  alternates: { canonical: 'https://yogaretreatadvisor.com/blog/yoga-retreats-india' },
   openGraph: {
     title: 'Yoga Retreats India: Rishikesh, Kerala & Mysore — Honest Guide (2026)',
     description: 'Real prices, honest assessments, and who each Indian yoga destination actually suits.',
@@ -61,13 +62,24 @@ const faqSchema = {
   ],
 }
 
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://yogaretreatadvisor.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://yogaretreatadvisor.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'yoga retreats india', item: 'https://yogaretreatadvisor.com/blog/yoga-retreats-india' }
+  ]
+};
+
 export default function IndiaYogaRetreatPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Navbar />
-      <article className={s.article}>
+      <article id="top" className={s.article}>
 
         {/* Hero */}
         <div className={s.heroWrap}>
@@ -334,6 +346,9 @@ export default function IndiaYogaRetreatPage() {
         </section>
 
         <Newsletter />
+      <div className="container" style={{ textAlign: 'center', padding: '2rem 0' }}>
+          <a href="#top" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>↑ Back to top</a>
+        </div>
       </article>
       <Footer />
     </>

@@ -8,6 +8,7 @@ import s from '../yoga-retreats/page.module.css'
 export const metadata = {
   title: 'Silent Yoga Retreats: The Honest Guide to Vipassana (2026)',
   description: 'What actually happens when you stop speaking for 10 days? A complete, unvarnished guide to silent yoga and meditation retreats, including costs, formats, and mental health risks.',
+  alternates: { canonical: 'https://yogaretreatadvisor.com/blog/silent-yoga-retreat' },
   openGraph: {
     title: 'Silent Yoga Retreats: The Honest Guide to Vipassana (2026)',
     description: 'A silent yoga retreat requires no speaking for 7–10 days. The discomfort is front-loaded, but after 24 hours, the silence usually becomes a profound relief.',
@@ -65,14 +66,26 @@ const faqSchema = {
   ],
 }
 
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://yogaretreatadvisor.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://yogaretreatadvisor.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'silent yoga retreat', item: 'https://yogaretreatadvisor.com/blog/silent-yoga-retreat' }
+  ]
+};
+
 export default function SilentYogaRetreatPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Navbar />
       <main>
-      <article className={s.article}>
+      <article id="top" className={s.article}>
 
         <div className={s.heroWrap}>
           <Image
@@ -84,11 +97,14 @@ export default function SilentYogaRetreatPage() {
           />
           <div className={s.heroOverlay}>
             <div className="container">
+              <div className={s.breadcrumbs} style={{ fontSize: '0.85rem', marginBottom: '1rem', color: 'rgba(255,255,255,0.8)' }}>
+                <Link href="/" style={{textDecoration:'underline'}}>Home</Link> &gt; <Link href="/blog" style={{textDecoration:'underline'}}>Blog</Link> &gt; <span>Article</span>
+              </div>
               <span className={s.tag}>Retreat Styles</span>
               <h1>Silent yoga retreats: the honest guide to Vipassana and noble silence</h1>
               <div className={s.meta}>
                 <span>By Sarah Mitchell</span><span>·</span>
-                <span>June 11, 2026</span><span>·</span>
+                <span>June 11, 2026</span><span>·</span><span>Last updated: June 11, 2026</span><span>·</span>
                 <span>8 min read</span>
               </div>
             </div>
@@ -221,6 +237,9 @@ export default function SilentYogaRetreatPage() {
         </div>
 
         <Newsletter />
+      <div className="container" style={{ textAlign: 'center', padding: '2rem 0' }}>
+          <a href="#top" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>↑ Back to top</a>
+        </div>
       </article>
       </main>
       <Footer />

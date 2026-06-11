@@ -8,6 +8,7 @@ import s from '../yoga-retreats/page.module.css'
 export const metadata = {
   title: "Women's Yoga Retreats 2026: What the Format Actually Changes",
   description: "Women-only yoga retreats are the fastest-growing segment in the market — and not because they're niche. Real prices, honest programme picks, and the Morocco story Sarah almost didn't tell.",
+  alternates: { canonical: 'https://yogaretreatadvisor.com/blog/womens-yoga-retreat' },
   openGraph: {
     title: "Women's Yoga Retreats 2026: What the Format Actually Changes",
     description: "72% of retreat attendees are women. Women-only formats consistently outperform mixed retreats on satisfaction scores. Here's what actually changes — and the best programmes from $280 to $2,400/week.",
@@ -76,13 +77,24 @@ const faqSchema = {
   ],
 }
 
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://yogaretreatadvisor.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://yogaretreatadvisor.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'womens yoga retreat', item: 'https://yogaretreatadvisor.com/blog/womens-yoga-retreat' }
+  ]
+};
+
 export default function WomensYogaRetreatPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Navbar />
-      <article className={s.article}>
+      <article id="top" className={s.article}>
 
         {/* Hero */}
         <div className={s.heroWrap}>
@@ -311,6 +323,9 @@ export default function WomensYogaRetreatPage() {
         </div>
 
         <Newsletter />
+      <div className="container" style={{ textAlign: 'center', padding: '2rem 0' }}>
+          <a href="#top" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>↑ Back to top</a>
+        </div>
       </article>
       <Footer />
     </>

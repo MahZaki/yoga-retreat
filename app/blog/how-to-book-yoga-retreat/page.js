@@ -8,6 +8,7 @@ import s from '../yoga-retreats/page.module.css'
 export const metadata = {
   title: 'How to Book a Yoga Retreat: The Complete Step-by-Step Guide (2026)',
   description: 'Everything you need to know before you pay a deposit — budget, teacher verification, deposits, refund policies, and the questions to ask before handing over money.',
+  alternates: { canonical: 'https://yogaretreatadvisor.com/blog/how-to-book-yoga-retreat' },
   openGraph: {
     title: 'How to Book a Yoga Retreat: The Complete Step-by-Step Guide',
     description: 'Budget, deposits, refund policies, and teacher verification — the mechanics of booking a retreat without expensive regrets.',
@@ -73,14 +74,26 @@ const faqSchema = {
   ],
 }
 
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://yogaretreatadvisor.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://yogaretreatadvisor.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'how to book yoga retreat', item: 'https://yogaretreatadvisor.com/blog/how-to-book-yoga-retreat' }
+  ]
+};
+
 export default function BookYogaRetreatPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Navbar />
       <main>
-      <article className={s.article}>
+      <article id="top" className={s.article}>
 
         <div className={s.heroWrap}>
           <Image
@@ -92,11 +105,14 @@ export default function BookYogaRetreatPage() {
           />
           <div className={s.heroOverlay}>
             <div className="container">
+              <div className={s.breadcrumbs} style={{ fontSize: '0.85rem', marginBottom: '1rem', color: 'rgba(255,255,255,0.8)' }}>
+                <Link href="/" style={{textDecoration:'underline'}}>Home</Link> &gt; <Link href="/blog" style={{textDecoration:'underline'}}>Blog</Link> &gt; <span>Article</span>
+              </div>
               <span className={s.tag}>Planning</span>
               <h1>How to book a yoga retreat: the complete step-by-step guide</h1>
               <div className={s.meta}>
                 <span>By Sarah Mitchell</span><span>·</span>
-                <span>May 20, 2026</span><span>·</span>
+                <span>May 20, 2026</span><span>·</span><span>Last updated: May 20, 2026</span><span>·</span>
                 <span>8 min read</span>
               </div>
             </div>
@@ -355,6 +371,9 @@ export default function BookYogaRetreatPage() {
         </div>
 
         <Newsletter />
+      <div className="container" style={{ textAlign: 'center', padding: '2rem 0' }}>
+          <a href="#top" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>↑ Back to top</a>
+        </div>
       </article>
       </main>
       <Footer />

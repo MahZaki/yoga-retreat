@@ -8,6 +8,7 @@ import s from '../yoga-retreats/page.module.css'
 export const metadata = {
   title: 'Yoga Retreat for Beginners: What to Expect, How to Choose, What to Pack (2026)',
   description: 'You don\'t need to be flexible or experienced to book a yoga retreat. Honest first-timer guide: how long to go, what to look for, common mistakes, and real budget ranges.',
+  alternates: { canonical: 'https://yogaretreatadvisor.com/blog/yoga-retreat-for-beginners' },
   openGraph: {
     title: 'Yoga Retreat for Beginners: The Honest First-Timer Guide (2026)',
     description: 'Choose 4–5 days, not 7. Look for a named lead teacher, mixed-level classes, and a group under 15. Budget $300–$1,400. You don\'t need to be flexible to attend.',
@@ -73,14 +74,26 @@ const faqSchema = {
   ],
 }
 
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://yogaretreatadvisor.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://yogaretreatadvisor.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'yoga retreat for beginners', item: 'https://yogaretreatadvisor.com/blog/yoga-retreat-for-beginners' }
+  ]
+};
+
 export default function YogaRetreatForBeginnersPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Navbar />
       <main>
-      <article className={s.article}>
+      <article id="top" className={s.article}>
 
         <div className={s.heroWrap}>
           <Image
@@ -92,11 +105,14 @@ export default function YogaRetreatForBeginnersPage() {
           />
           <div className={s.heroOverlay}>
             <div className="container">
+              <div className={s.breadcrumbs} style={{ fontSize: '0.85rem', marginBottom: '1rem', color: 'rgba(255,255,255,0.8)' }}>
+                <Link href="/" style={{textDecoration:'underline'}}>Home</Link> &gt; <Link href="/blog" style={{textDecoration:'underline'}}>Blog</Link> &gt; <span>Article</span>
+              </div>
               <span className={s.tag}>Beginner Guide</span>
               <h1>Yoga retreat for beginners: what to expect, how to choose, and what nobody tells you</h1>
               <div className={s.meta}>
                 <span>By Sarah Mitchell</span><span>·</span>
-                <span>June 1, 2026</span><span>·</span>
+                <span>June 1, 2026</span><span>·</span><span>Last updated: June 1, 2026</span><span>·</span>
                 <span>10 min read</span>
               </div>
             </div>
@@ -317,6 +333,9 @@ export default function YogaRetreatForBeginnersPage() {
         </div>
 
         <Newsletter />
+      <div className="container" style={{ textAlign: 'center', padding: '2rem 0' }}>
+          <a href="#top" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>↑ Back to top</a>
+        </div>
       </article>
       </main>
       <Footer />

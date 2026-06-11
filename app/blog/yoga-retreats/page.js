@@ -8,6 +8,7 @@ import s from './page.module.css'
 export const metadata = {
   title: 'Yoga Retreats: The Complete Guide to Choosing, Booking & Preparing (2026)',
   description: 'Compare yoga retreats across top destinations. Learn real pricing benchmarks, what to pack, and how to avoid common booking mistakes from a reviewer who has attended 14 retreats.',
+  alternates: { canonical: 'https://yogaretreatadvisor.com/blog/yoga-retreats' },
   openGraph: {
     title: 'Yoga Retreats: The Complete Guide for 2026',
     description: 'Compare yoga retreats across top destinations. Pricing, destinations, and what first-timers need to know.',
@@ -47,7 +48,7 @@ export default function YogaRetreatsGuide() {
       <Navbar />
 
       <main>
-        <article className={s.article}>
+        <article id="top" className={s.article}>
         {/* Hero */}
         <div className={s.heroWrap}>
           <Image src="/images/blog/pillar-what-is.jpg" alt="Group practicing yoga at sunrise during a week-long retreat" fill priority sizes="100vw" style={{ objectFit: 'cover' }} />

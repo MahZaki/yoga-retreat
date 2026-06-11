@@ -8,6 +8,7 @@ import s from '../yoga-retreats/page.module.css'
 export const metadata = {
   title: 'Yoga Retreat California 2026: 10 Top-Rated Centers by Region',
   description: 'Big Sur, Ojai, Joshua Tree, or the Bay Area? Real prices ($500–$2,400/week) and honest picks for every budget across California\'s best yoga retreat regions.',
+  alternates: { canonical: 'https://yogaretreatadvisor.com/blog/yoga-retreat-california' },
   openGraph: {
     title: 'Yoga Retreat California 2026: 10 Top-Rated Centers by Region',
     description: 'Real prices and honest picks for every budget across California\'s best yoga retreat regions.',
@@ -56,13 +57,24 @@ const faqSchema = {
   ],
 }
 
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://yogaretreatadvisor.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://yogaretreatadvisor.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'yoga retreat california', item: 'https://yogaretreatadvisor.com/blog/yoga-retreat-california' }
+  ]
+};
+
 export default function CaliforniaYogaRetreatPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Navbar />
-      <article className={s.article}>
+      <article id="top" className={s.article}>
 
         {/* Hero */}
         <div className={s.heroWrap}>
@@ -256,6 +268,9 @@ export default function CaliforniaYogaRetreatPage() {
         </div>
 
         <Newsletter />
+      <div className="container" style={{ textAlign: 'center', padding: '2rem 0' }}>
+          <a href="#top" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>↑ Back to top</a>
+        </div>
       </article>
       <Footer />
     </>
