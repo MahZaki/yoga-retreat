@@ -8,7 +8,7 @@ import s from '../yoga-retreats/page.module.css'
 export const metadata = {
   title: 'Yoga Retreat for Beginners: What to Expect, How to Choose, What to Pack (2026)',
   description: 'You don\'t need to be flexible or experienced to book a yoga retreat. Honest first-timer guide: how long to go, what to look for, common mistakes, and real budget ranges.',
-  alternates: { canonical: 'https://yogaretreatadvisor.com/blog/yoga-retreat-for-beginners' },
+  alternates: { canonical: 'https://www.yogaretreatadvisor.com/blog/yoga-retreat-for-beginners' },
   openGraph: {
     title: 'Yoga Retreat for Beginners: The Honest First-Timer Guide (2026)',
     description: 'Choose 4–5 days, not 7. Look for a named lead teacher, mixed-level classes, and a group under 15. Budget $300–$1,400. You don\'t need to be flexible to attend.',
@@ -23,8 +23,8 @@ const articleSchema = {
   author: { '@type': 'Person', name: 'Sarah Mitchell' },
   datePublished: '2026-06-01',
   dateModified: '2026-06-01',
-  publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
-  image: 'https://yogaretreatadvisor.com/images/blog/beginner-yoga-class.jpg',
+  publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://www.yogaretreatadvisor.com' },
+  image: 'https://www.yogaretreatadvisor.com/images/blog/beginner-yoga-class.jpg',
 }
 
 const faqSchema = {
@@ -79,9 +79,9 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://yogaretreatadvisor.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://yogaretreatadvisor.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'yoga retreat for beginners', item: 'https://yogaretreatadvisor.com/blog/yoga-retreat-for-beginners' }
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.yogaretreatadvisor.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.yogaretreatadvisor.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'yoga retreat for beginners', item: 'https://www.yogaretreatadvisor.com/blog/yoga-retreat-for-beginners' }
   ]
 };
 

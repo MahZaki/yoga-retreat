@@ -8,7 +8,7 @@ import s from '../yoga-retreats/page.module.css'
 export const metadata = {
   title: 'Yoga Retreats India: Rishikesh, Kerala & Mysore — Honest Guide (2026)',
   description: 'Rishikesh ashrams from $300/week, Kerala Ayurveda, Mysore Ashtanga. Real prices, what each region actually offers, and who each suits — from someone who started here.',
-  alternates: { canonical: 'https://yogaretreatadvisor.com/blog/yoga-retreats-india' },
+  alternates: { canonical: 'https://www.yogaretreatadvisor.com/blog/yoga-retreats-india' },
   openGraph: {
     title: 'Yoga Retreats India: Rishikesh, Kerala & Mysore — Honest Guide (2026)',
     description: 'Real prices, honest assessments, and who each Indian yoga destination actually suits.',
@@ -22,12 +22,12 @@ const schema = {
   '@type': 'Article',
   headline: 'Yoga Retreats India: Rishikesh, Kerala & Mysore — Honest Guide (2026)',
   description: 'Rishikesh ashrams from $300/week, Kerala Ayurveda, Mysore Ashtanga. Real prices and who each suits.',
-  author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://yogaretreatadvisor.com/about' },
+  author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://www.yogaretreatadvisor.com/about' },
   datePublished: '2025-03-18',
   dateModified: '2025-03-18',
-  publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
-  image: 'https://yogaretreatadvisor.com/images/blog/india-yoga.jpg',
-  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://yogaretreatadvisor.com/blog/yoga-retreats-india' },
+  publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://www.yogaretreatadvisor.com' },
+  image: 'https://www.yogaretreatadvisor.com/images/blog/india-yoga.jpg',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.yogaretreatadvisor.com/blog/yoga-retreats-india' },
 }
 
 const faqSchema = {
@@ -67,9 +67,9 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://yogaretreatadvisor.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://yogaretreatadvisor.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'yoga retreats india', item: 'https://yogaretreatadvisor.com/blog/yoga-retreats-india' }
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.yogaretreatadvisor.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.yogaretreatadvisor.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'yoga retreats india', item: 'https://www.yogaretreatadvisor.com/blog/yoga-retreats-india' }
   ]
 };
 

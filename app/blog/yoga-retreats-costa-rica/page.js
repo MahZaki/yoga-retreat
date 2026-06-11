@@ -8,7 +8,7 @@ import s from '../yoga-retreats/page.module.css'
 export const metadata = {
   title: 'Yoga Retreats in Costa Rica: Nosara vs Santa Teresa vs Uvita (2026 Guide)',
   description: 'Honest guide to Costa Rica yoga retreats — Nosara, Santa Teresa, and Uvita compared. Real prices, road conditions, and who each area actually suits.',
-  alternates: { canonical: 'https://yogaretreatadvisor.com/blog/yoga-retreats-costa-rica' },
+  alternates: { canonical: 'https://www.yogaretreatadvisor.com/blog/yoga-retreats-costa-rica' },
   openGraph: {
     title: 'Yoga Retreats in Costa Rica: Nosara vs Santa Teresa vs Uvita',
     description: 'Budget $700–$1,100/week. Mid-range $1,200–$1,800. The honest guide to booking a Costa Rica yoga retreat in 2026.',
@@ -23,8 +23,8 @@ const articleSchema = {
   author: { '@type': 'Person', name: 'Sarah Mitchell' },
   datePublished: '2026-05-28',
   dateModified: '2026-05-28',
-  publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
-  image: 'https://yogaretreatadvisor.com/images/blog/costa-rica-jungle-yoga.jpg',
+  publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://www.yogaretreatadvisor.com' },
+  image: 'https://www.yogaretreatadvisor.com/images/blog/costa-rica-jungle-yoga.jpg',
 }
 
 const faqSchema = {
@@ -79,9 +79,9 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://yogaretreatadvisor.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://yogaretreatadvisor.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'yoga retreats costa rica', item: 'https://yogaretreatadvisor.com/blog/yoga-retreats-costa-rica' }
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.yogaretreatadvisor.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.yogaretreatadvisor.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'yoga retreats costa rica', item: 'https://www.yogaretreatadvisor.com/blog/yoga-retreats-costa-rica' }
   ]
 };
 

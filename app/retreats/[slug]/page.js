@@ -63,7 +63,7 @@ export async function generateMetadata({ params }) {
   return {
     title: data.title,
     description: data.description,
-    alternates: { canonical: `https://yogaretreatadvisor.com/retreats/${resolvedParams.slug}` },
+    alternates: { canonical: `https://www.yogaretreatadvisor.com/retreats/${resolvedParams.slug}` },
     openGraph: {
       title: data.title,
       description: data.description,
@@ -84,9 +84,9 @@ export default async function RetreatServicePage({ params }) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://yogaretreatadvisor.com' },
-      { '@type': 'ListItem', position: 2, name: 'Retreats', item: 'https://yogaretreatadvisor.com/retreats' },
-      { '@type': 'ListItem', position: 3, name: data.title, item: `https://yogaretreatadvisor.com/retreats/${resolvedParams.slug}` }
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.yogaretreatadvisor.com' },
+      { '@type': 'ListItem', position: 2, name: 'Retreats', item: 'https://www.yogaretreatadvisor.com/retreats' },
+      { '@type': 'ListItem', position: 3, name: data.title, item: `https://www.yogaretreatadvisor.com/retreats/${resolvedParams.slug}` }
     ]
   };
 
@@ -95,8 +95,8 @@ export default async function RetreatServicePage({ params }) {
     '@type': 'CollectionPage',
     name: data.title,
     description: data.description,
-    url: `https://yogaretreatadvisor.com/retreats/${resolvedParams.slug}`,
-    image: `https://yogaretreatadvisor.com${data.image}`
+    url: `https://www.yogaretreatadvisor.com/retreats/${resolvedParams.slug}`,
+    image: `https://www.yogaretreatadvisor.com${data.image}`
   };
 
   return (

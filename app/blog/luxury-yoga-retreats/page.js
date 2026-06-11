@@ -8,7 +8,7 @@ import s from '../yoga-retreats/page.module.css'
 export const metadata = {
   title: 'Luxury Yoga Retreats: What the Premium Actually Buys (2026)',
   description: 'Is a $4,000 yoga retreat actually better than a $1,000 one? The honest guide to luxury yoga retreats in Tuscany, Bali, and Mexico — and when they are worth the money.',
-  alternates: { canonical: 'https://yogaretreatadvisor.com/blog/luxury-yoga-retreats' },
+  alternates: { canonical: 'https://www.yogaretreatadvisor.com/blog/luxury-yoga-retreats' },
   openGraph: {
     title: 'Luxury Yoga Retreats: What the Premium Actually Buys (2026)',
     description: 'Luxury yoga retreats ($2,500–$4,000+/week) differ from mid-range in four ways: small groups, 20+ years teaching experience, private rooms, and zero logistical friction.',
@@ -23,8 +23,8 @@ const articleSchema = {
   author: { '@type': 'Person', name: 'Sarah Mitchell' },
   datePublished: '2026-06-05',
   dateModified: '2026-06-05',
-  publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
-  image: 'https://yogaretreatadvisor.com/images/blog/luxury-resort-yoga.jpg',
+  publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://www.yogaretreatadvisor.com' },
+  image: 'https://www.yogaretreatadvisor.com/images/blog/luxury-resort-yoga.jpg',
 }
 
 const faqSchema = {
@@ -71,9 +71,9 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://yogaretreatadvisor.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://yogaretreatadvisor.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'luxury yoga retreats', item: 'https://yogaretreatadvisor.com/blog/luxury-yoga-retreats' }
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.yogaretreatadvisor.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.yogaretreatadvisor.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'luxury yoga retreats', item: 'https://www.yogaretreatadvisor.com/blog/luxury-yoga-retreats' }
   ]
 };
 

@@ -8,7 +8,7 @@ import s from '../yoga-retreats/page.module.css'
 export const metadata = {
   title: "Women's Yoga Retreats 2026: What the Format Actually Changes",
   description: "Women-only yoga retreats are the fastest-growing segment in the market — and not because they're niche. Real prices, honest programme picks, and the Morocco story Sarah almost didn't tell.",
-  alternates: { canonical: 'https://yogaretreatadvisor.com/blog/womens-yoga-retreat' },
+  alternates: { canonical: 'https://www.yogaretreatadvisor.com/blog/womens-yoga-retreat' },
   openGraph: {
     title: "Women's Yoga Retreats 2026: What the Format Actually Changes",
     description: "72% of retreat attendees are women. Women-only formats consistently outperform mixed retreats on satisfaction scores. Here's what actually changes — and the best programmes from $280 to $2,400/week.",
@@ -22,12 +22,12 @@ const schema = {
   '@type': 'Article',
   headline: "Women's Yoga Retreats 2026: What the Format Actually Changes",
   description: "Why women-only yoga retreats work, what to look for, and the best programmes across every budget.",
-  author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://yogaretreatadvisor.com/about' },
+  author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://www.yogaretreatadvisor.com/about' },
   datePublished: '2025-08-26',
   dateModified: '2025-08-26',
-  publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
-  image: 'https://yogaretreatadvisor.com/images/blog/womens-retreat-group.jpg',
-  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://yogaretreatadvisor.com/blog/womens-yoga-retreat' },
+  publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://www.yogaretreatadvisor.com' },
+  image: 'https://www.yogaretreatadvisor.com/images/blog/womens-retreat-group.jpg',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.yogaretreatadvisor.com/blog/womens-yoga-retreat' },
 }
 
 const faqSchema = {
@@ -82,9 +82,9 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://yogaretreatadvisor.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://yogaretreatadvisor.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'womens yoga retreat', item: 'https://yogaretreatadvisor.com/blog/womens-yoga-retreat' }
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.yogaretreatadvisor.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.yogaretreatadvisor.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'womens yoga retreat', item: 'https://www.yogaretreatadvisor.com/blog/womens-yoga-retreat' }
   ]
 };
 

@@ -8,7 +8,7 @@ import s from '../yoga-retreats/page.module.css'
 export const metadata = {
   title: 'Silent Yoga Retreats: The Honest Guide to Vipassana (2026)',
   description: 'What actually happens when you stop speaking for 10 days? A complete, unvarnished guide to silent yoga and meditation retreats, including costs, formats, and mental health risks.',
-  alternates: { canonical: 'https://yogaretreatadvisor.com/blog/silent-yoga-retreat' },
+  alternates: { canonical: 'https://www.yogaretreatadvisor.com/blog/silent-yoga-retreat' },
   openGraph: {
     title: 'Silent Yoga Retreats: The Honest Guide to Vipassana (2026)',
     description: 'A silent yoga retreat requires no speaking for 7–10 days. The discomfort is front-loaded, but after 24 hours, the silence usually becomes a profound relief.',
@@ -23,8 +23,8 @@ const articleSchema = {
   author: { '@type': 'Person', name: 'Sarah Mitchell' },
   datePublished: '2026-06-11',
   dateModified: '2026-06-11',
-  publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
-  image: 'https://yogaretreatadvisor.com/images/blog/silent-retreat-meditation.jpg',
+  publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://www.yogaretreatadvisor.com' },
+  image: 'https://www.yogaretreatadvisor.com/images/blog/silent-retreat-meditation.jpg',
 }
 
 const faqSchema = {
@@ -71,9 +71,9 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://yogaretreatadvisor.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://yogaretreatadvisor.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'silent yoga retreat', item: 'https://yogaretreatadvisor.com/blog/silent-yoga-retreat' }
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.yogaretreatadvisor.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.yogaretreatadvisor.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'silent yoga retreat', item: 'https://www.yogaretreatadvisor.com/blog/silent-yoga-retreat' }
   ]
 };
 

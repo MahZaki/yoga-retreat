@@ -8,7 +8,7 @@ import s from './page.module.css'
 export const metadata = {
   title: 'Yoga Retreats: The Complete Guide to Choosing, Booking & Preparing (2026)',
   description: 'Compare yoga retreats across top destinations. Learn real pricing benchmarks, what to pack, and how to avoid common booking mistakes from a reviewer who has attended 14 retreats.',
-  alternates: { canonical: 'https://yogaretreatadvisor.com/blog/yoga-retreats' },
+  alternates: { canonical: 'https://www.yogaretreatadvisor.com/blog/yoga-retreats' },
   openGraph: {
     title: 'Yoga Retreats: The Complete Guide for 2026',
     description: 'Compare yoga retreats across top destinations. Pricing, destinations, and what first-timers need to know.',
@@ -23,21 +23,21 @@ export default function YogaRetreatsGuide() {
     '@type': 'Article',
     headline: 'Yoga Retreats: The Complete Guide to Choosing, Booking & Preparing (2026)',
     description: 'Compare yoga retreats across top destinations. Learn real pricing benchmarks, what to pack, and how to avoid common booking mistakes from a reviewer who has attended 14 retreats.',
-    author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://yogaretreatadvisor.com/about' },
-    publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', logo: { '@type': 'ImageObject', url: 'https://yogaretreatadvisor.com/logo.png' } },
+    author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://www.yogaretreatadvisor.com/about' },
+    publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', logo: { '@type': 'ImageObject', url: 'https://www.yogaretreatadvisor.com/logo.png' } },
     datePublished: '2025-01-14',
     dateModified: '2025-01-14',
-    image: 'https://yogaretreatadvisor.com/images/blog/yoga-retreat-hero.jpg',
-    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://yogaretreatadvisor.com/blog/yoga-retreats' },
+    image: 'https://www.yogaretreatadvisor.com/images/blog/yoga-retreat-hero.jpg',
+    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.yogaretreatadvisor.com/blog/yoga-retreats' },
   }
 
   const breadcrumbLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://yogaretreatadvisor.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://yogaretreatadvisor.com/blog' },
-      { '@type': 'ListItem', position: 3, name: 'Yoga Retreats Guide', item: 'https://yogaretreatadvisor.com/blog/yoga-retreats' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.yogaretreatadvisor.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.yogaretreatadvisor.com/blog' },
+      { '@type': 'ListItem', position: 3, name: 'Yoga Retreats Guide', item: 'https://www.yogaretreatadvisor.com/blog/yoga-retreats' },
     ],
   }
 

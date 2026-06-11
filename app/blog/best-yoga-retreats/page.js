@@ -8,7 +8,7 @@ import s from '../yoga-retreats/page.module.css'
 export const metadata = {
   title: 'Best Yoga Retreats 2026: The 4-Pillar Framework for Choosing Well',
   description: "There's no single best yoga retreat — there's a best one for you, right now. After 14 retreats across 9 countries, here's the evaluation framework that separates good retreats from expensive disappointments.",
-  alternates: { canonical: 'https://yogaretreatadvisor.com/blog/best-yoga-retreats' },
+  alternates: { canonical: 'https://www.yogaretreatadvisor.com/blog/best-yoga-retreats' },
   openGraph: {
     title: 'Best Yoga Retreats 2026: The 4-Pillar Framework for Choosing Well',
     description: "The evaluation framework that separates good retreats from expensive ones. Four pillars. One teacher credential checklist. And the thing retreat ranking sites don't tell you about how they rank retreats.",
@@ -22,12 +22,12 @@ const schema = {
   '@type': 'Article',
   headline: 'Best Yoga Retreats 2026: The 4-Pillar Framework for Choosing Well',
   description: "The evaluation framework that separates good retreats from expensive disappointments.",
-  author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://yogaretreatadvisor.com/about' },
+  author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://www.yogaretreatadvisor.com/about' },
   datePublished: '2025-06-03',
   dateModified: '2025-06-03',
-  publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
-  image: 'https://yogaretreatadvisor.com/images/blog/best-retreats-group.jpg',
-  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://yogaretreatadvisor.com/blog/best-yoga-retreats' },
+  publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://www.yogaretreatadvisor.com' },
+  image: 'https://www.yogaretreatadvisor.com/images/blog/best-retreats-group.jpg',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.yogaretreatadvisor.com/blog/best-yoga-retreats' },
 }
 
 const faqSchema = {
@@ -82,9 +82,9 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://yogaretreatadvisor.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://yogaretreatadvisor.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'best yoga retreats', item: 'https://yogaretreatadvisor.com/blog/best-yoga-retreats' }
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.yogaretreatadvisor.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.yogaretreatadvisor.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'best yoga retreats', item: 'https://www.yogaretreatadvisor.com/blog/best-yoga-retreats' }
   ]
 };
 

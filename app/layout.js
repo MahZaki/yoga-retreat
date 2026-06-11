@@ -1,7 +1,7 @@
 import './globals.css'
 
 export const metadata = {
-  metadataBase: new URL('https://yogaretreatadvisor.com'),
+  metadataBase: new URL('https://www.yogaretreatadvisor.com'),
   title: {
     default: 'YogaRetreatAdvisor — Discover, Compare & Book the Best Yoga Retreats',
     template: '%s | YogaRetreatAdvisor',
@@ -28,8 +28,8 @@ const orgSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'YogaRetreatAdvisor',
-  url: 'https://yogaretreatadvisor.com',
-  logo: 'https://yogaretreatadvisor.com/images/logo.png',
+  url: 'https://www.yogaretreatadvisor.com',
+  logo: 'https://www.yogaretreatadvisor.com/images/logo.png',
   sameAs: [
     'https://twitter.com/yogaretreatadvisor',
     'https://facebook.com/yogaretreatadvisor'

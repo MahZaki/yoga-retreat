@@ -8,7 +8,7 @@ import s from '../yoga-retreats/page.module.css'
 export const metadata = {
   title: 'Best Yoga Retreats in Bali 2026: Ubud, Canggu & Uluwatu Compared',
   description: 'Ubud, Canggu, or Uluwatu? Real prices ($600–$3,500/week), honest comparisons, and exactly who each area suits — from someone who has stayed in all three.',
-  alternates: { canonical: 'https://yogaretreatadvisor.com/blog/yoga-retreat-bali' },
+  alternates: { canonical: 'https://www.yogaretreatadvisor.com/blog/yoga-retreat-bali' },
   openGraph: {
     title: 'Best Yoga Retreats in Bali 2026: Ubud, Canggu & Uluwatu Compared',
     description: 'Real prices, honest comparisons, and exactly who each Bali yoga area suits.',
@@ -22,12 +22,12 @@ const schema = {
   '@type': 'Article',
   headline: 'Best Yoga Retreats in Bali 2026: Ubud, Canggu & Uluwatu Compared',
   description: 'Real prices, honest comparisons, and who each Bali yoga area suits.',
-  author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://yogaretreatadvisor.com/about' },
+  author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://www.yogaretreatadvisor.com/about' },
   datePublished: '2025-02-11',
   dateModified: '2025-02-11',
-  publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
-  image: 'https://yogaretreatadvisor.com/images/blog/bali-ubud-yoga.jpg',
-  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://yogaretreatadvisor.com/blog/yoga-retreat-bali' },
+  publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://www.yogaretreatadvisor.com' },
+  image: 'https://www.yogaretreatadvisor.com/images/blog/bali-ubud-yoga.jpg',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.yogaretreatadvisor.com/blog/yoga-retreat-bali' },
 }
 
 const faqSchema = {
@@ -67,9 +67,9 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://yogaretreatadvisor.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://yogaretreatadvisor.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'yoga retreat bali', item: 'https://yogaretreatadvisor.com/blog/yoga-retreat-bali' }
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.yogaretreatadvisor.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.yogaretreatadvisor.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'yoga retreat bali', item: 'https://www.yogaretreatadvisor.com/blog/yoga-retreat-bali' }
   ]
 };
 

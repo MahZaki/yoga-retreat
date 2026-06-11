@@ -8,7 +8,7 @@ import s from '../yoga-retreats/page.module.css'
 export const metadata = {
   title: 'How to Book a Yoga Retreat: The Complete Step-by-Step Guide (2026)',
   description: 'Everything you need to know before you pay a deposit — budget, teacher verification, deposits, refund policies, and the questions to ask before handing over money.',
-  alternates: { canonical: 'https://yogaretreatadvisor.com/blog/how-to-book-yoga-retreat' },
+  alternates: { canonical: 'https://www.yogaretreatadvisor.com/blog/how-to-book-yoga-retreat' },
   openGraph: {
     title: 'How to Book a Yoga Retreat: The Complete Step-by-Step Guide',
     description: 'Budget, deposits, refund policies, and teacher verification — the mechanics of booking a retreat without expensive regrets.',
@@ -23,8 +23,8 @@ const articleSchema = {
   author: { '@type': 'Person', name: 'Sarah Mitchell' },
   datePublished: '2026-05-20',
   dateModified: '2026-05-20',
-  publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
-  image: 'https://yogaretreatadvisor.com/images/blog/booking-laptop-plan.jpg',
+  publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://www.yogaretreatadvisor.com' },
+  image: 'https://www.yogaretreatadvisor.com/images/blog/booking-laptop-plan.jpg',
 }
 
 const faqSchema = {
@@ -79,9 +79,9 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://yogaretreatadvisor.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://yogaretreatadvisor.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'how to book yoga retreat', item: 'https://yogaretreatadvisor.com/blog/how-to-book-yoga-retreat' }
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.yogaretreatadvisor.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.yogaretreatadvisor.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'how to book yoga retreat', item: 'https://www.yogaretreatadvisor.com/blog/how-to-book-yoga-retreat' }
   ]
 };
 

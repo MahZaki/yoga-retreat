@@ -8,7 +8,7 @@ import s from '../yoga-retreats/page.module.css'
 export const metadata = {
   title: 'All-Inclusive Yoga Retreats: Are They Actually Better Value? (2026)',
   description: 'The honest truth about all-inclusive yoga retreats. What they include, what they hide in the fine print, and the exact math to determine if they are worth your money.',
-  alternates: { canonical: 'https://yogaretreatadvisor.com/blog/all-inclusive-yoga-retreat' },
+  alternates: { canonical: 'https://www.yogaretreatadvisor.com/blog/all-inclusive-yoga-retreat' },
   openGraph: {
     title: 'All-Inclusive Yoga Retreats: Are They Actually Better Value? (2026)',
     description: 'All-inclusive yoga retreats bundle accommodation, meals, and yoga into one price. Here is how to check the fine print and compare prices honestly.',
@@ -23,8 +23,8 @@ const articleSchema = {
   author: { '@type': 'Person', name: 'Sarah Mitchell' },
   datePublished: '2026-06-11',
   dateModified: '2026-06-11',
-  publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
-  image: 'https://yogaretreatadvisor.com/images/blog/all-inclusive-resort.jpg',
+  publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://www.yogaretreatadvisor.com' },
+  image: 'https://www.yogaretreatadvisor.com/images/blog/all-inclusive-resort.jpg',
 }
 
 const faqSchema = {
@@ -71,9 +71,9 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://yogaretreatadvisor.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://yogaretreatadvisor.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'all inclusive yoga retreat', item: 'https://yogaretreatadvisor.com/blog/all-inclusive-yoga-retreat' }
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.yogaretreatadvisor.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.yogaretreatadvisor.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'all inclusive yoga retreat', item: 'https://www.yogaretreatadvisor.com/blog/all-inclusive-yoga-retreat' }
   ]
 };
 

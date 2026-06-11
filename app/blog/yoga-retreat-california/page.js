@@ -8,7 +8,7 @@ import s from '../yoga-retreats/page.module.css'
 export const metadata = {
   title: 'Yoga Retreat California 2026: 10 Top-Rated Centers by Region',
   description: 'Big Sur, Ojai, Joshua Tree, or the Bay Area? Real prices ($500–$2,400/week) and honest picks for every budget across California\'s best yoga retreat regions.',
-  alternates: { canonical: 'https://yogaretreatadvisor.com/blog/yoga-retreat-california' },
+  alternates: { canonical: 'https://www.yogaretreatadvisor.com/blog/yoga-retreat-california' },
   openGraph: {
     title: 'Yoga Retreat California 2026: 10 Top-Rated Centers by Region',
     description: 'Real prices and honest picks for every budget across California\'s best yoga retreat regions.',
@@ -22,12 +22,12 @@ const schema = {
   '@type': 'Article',
   headline: 'Yoga Retreat California 2026: 10 Top-Rated Centers by Region',
   description: 'Real prices and honest picks across California\'s yoga retreat regions.',
-  author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://yogaretreatadvisor.com/about' },
+  author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://www.yogaretreatadvisor.com/about' },
   datePublished: '2025-07-15',
   dateModified: '2025-07-15',
-  publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
-  image: 'https://yogaretreatadvisor.com/images/blog/california-big-sur.jpg',
-  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://yogaretreatadvisor.com/blog/yoga-retreat-california' },
+  publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://www.yogaretreatadvisor.com' },
+  image: 'https://www.yogaretreatadvisor.com/images/blog/california-big-sur.jpg',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.yogaretreatadvisor.com/blog/yoga-retreat-california' },
 }
 
 const faqSchema = {
@@ -62,9 +62,9 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://yogaretreatadvisor.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://yogaretreatadvisor.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'yoga retreat california', item: 'https://yogaretreatadvisor.com/blog/yoga-retreat-california' }
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.yogaretreatadvisor.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.yogaretreatadvisor.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'yoga retreat california', item: 'https://www.yogaretreatadvisor.com/blog/yoga-retreat-california' }
   ]
 };
 

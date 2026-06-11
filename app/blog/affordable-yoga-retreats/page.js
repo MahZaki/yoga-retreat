@@ -8,7 +8,7 @@ import s from '../yoga-retreats/page.module.css'
 export const metadata = {
   title: 'Affordable Yoga Retreats: Where to Go in 2026',
   description: 'A complete guide to booking an affordable yoga retreat without sacrificing teaching quality. Featuring hard numbers for India ($300+), Thailand ($600+), and Portugal ($800+).',
-  alternates: { canonical: 'https://yogaretreatadvisor.com/blog/affordable-yoga-retreats' },
+  alternates: { canonical: 'https://www.yogaretreatadvisor.com/blog/affordable-yoga-retreats' },
   openGraph: {
     title: 'Affordable Yoga Retreats: Where to Go in 2026',
     description: 'The most affordable yoga retreats are in India ($300–$600/week) and Thailand ($600–$900/week). Here is what you should and should not sacrifice when on a budget.',
@@ -23,8 +23,8 @@ const articleSchema = {
   author: { '@type': 'Person', name: 'Sarah Mitchell' },
   datePublished: '2026-06-11',
   dateModified: '2026-06-11',
-  publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://yogaretreatadvisor.com' },
-  image: 'https://yogaretreatadvisor.com/images/blog/budget-yoga-nature.jpg',
+  publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://www.yogaretreatadvisor.com' },
+  image: 'https://www.yogaretreatadvisor.com/images/blog/budget-yoga-nature.jpg',
 }
 
 const faqSchema = {
@@ -71,9 +71,9 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://yogaretreatadvisor.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://yogaretreatadvisor.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'affordable yoga retreats', item: 'https://yogaretreatadvisor.com/blog/affordable-yoga-retreats' }
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.yogaretreatadvisor.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.yogaretreatadvisor.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'affordable yoga retreats', item: 'https://www.yogaretreatadvisor.com/blog/affordable-yoga-retreats' }
   ]
 };
 
