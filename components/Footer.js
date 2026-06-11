@@ -34,8 +34,8 @@ export default function Footer() {
             <div className={styles.linkList}>
               <Link href="/about">About Us</Link>
               <Link href="/contact">Contact</Link>
-              <Link href="#">Privacy Policy</Link>
-              <Link href="#">Terms of Service</Link>
+              <Link href="/privacy">Privacy Policy</Link>
+              <Link href="/terms">Terms of Service</Link>
             </div>
           </div>
         </div>
