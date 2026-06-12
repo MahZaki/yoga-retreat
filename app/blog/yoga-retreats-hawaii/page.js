@@ -7,12 +7,12 @@ import s from '../yoga-retreats/page.module.css'
 
 export const metadata = {
   title: "Best Yoga Retreats in Hawaii (Maui, Kauai, Big Island) | 2026",
-  description: "Don't want to fly internationally? Discover the best top-rated yoga and wellness retreats across Hawaii. Compare islands, pricing, and book today.",
+  description: "Don't want to fly internationally? Discover the best yoga and wellness retreats across Hawaii. Compare islands, pricing, and what each one actually delivers.",
   alternates: { canonical: 'https://www.yogaretreatadvisor.com/blog/yoga-retreats-hawaii' },
   openGraph: {
     title: "Best Yoga Retreats in Hawaii (Maui, Kauai, Big Island) | 2026",
-    description: "Don't want to fly internationally? Discover the best top-rated yoga and wellness retreats across Hawaii.",
-    images: [{ url: '/images/blog/hawaii-yoga.jpg', width: 1200, height: 630, alt: 'Yoga practice on a Hawaiian beach' }],
+    description: "Don't want to fly internationally? Discover the best yoga and wellness retreats across Hawaii. Compare islands, pricing, and what each one actually delivers.",
+    images: [{ url: '/images/blog/hawaii-yoga-hero.jpg', width: 1200, height: 630, alt: 'Beach yoga class with palm trees in Hawaii' }],
     type: 'article',
   },
 }
@@ -22,12 +22,12 @@ export default function HawaiiRetreatsGuide() {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: "The Best Yoga Retreats in Hawaii: Maui, Kauai, & Big Island Compared",
-    description: "Don't want to fly internationally? Discover the best top-rated yoga and wellness retreats across Hawaii. Compare islands, pricing, and book today.",
+    description: "Don't want to fly internationally? Discover the best yoga and wellness retreats across Hawaii. Compare islands, pricing, and what each one actually delivers.",
     author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://www.yogaretreatadvisor.com/about' },
     publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', logo: { '@type': 'ImageObject', url: 'https://www.yogaretreatadvisor.com/logo.png' } },
     datePublished: '2026-06-12',
     dateModified: '2026-06-12',
-    image: 'https://www.yogaretreatadvisor.com/images/blog/hawaii-yoga.jpg',
+    image: 'https://www.yogaretreatadvisor.com/images/blog/hawaii-yoga-hero.jpg',
     mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.yogaretreatadvisor.com/blog/yoga-retreats-hawaii' },
   }
 
@@ -56,7 +56,7 @@ export default function HawaiiRetreatsGuide() {
         name: 'Do I need a car for a yoga retreat in Hawaii?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'If you are booking an all-inclusive retreat where meals and activities are on-site, you do not need a car—just an airport transfer. However, if you book a "build your own" retreat where you plan to explore the island, a rental car is absolutely essential.'
+          text: 'If you are booking an all-inclusive retreat where meals and activities are on-site, you do not need a car — just an airport transfer. However, if you plan to explore between sessions, a rental car is essential on every island.'
         }
       }
     ]
@@ -81,144 +81,230 @@ export default function HawaiiRetreatsGuide() {
 
       <main>
         <article id="top" className={s.article}>
+
           {/* Hero */}
-          <header className={s.hero}>
-            <div className="container">
-              <div className={s.heroInner}>
-                <div className={s.category}>Destinations</div>
-                <h1 className={s.title}>The Best Yoga Retreats in Hawaii: Maui, Kauai, & Big Island Compared</h1>
-                <div className={s.meta}>
-                  <div className={s.author}>
-                    <div className={s.avatar}>
-                      <Image src="/images/sarah-avatar.jpg" alt="Sarah Mitchell" fill sizes="40px" style={{ objectFit: 'cover' }} />
-                    </div>
-                    <span>Sarah Mitchell</span>
-                  </div>
-                  <span className={s.date}>Updated June 2026</span>
-                  <span className={s.readTime}>7 min read</span>
-                </div>
+          <div className={s.heroWrap}>
+            <Image
+              src="/images/blog/hawaii-yoga-hero.jpg"
+              alt="Group yoga class on a tropical beach with palm trees in Hawaii"
+              fill priority sizes="100vw"
+              style={{ objectFit: 'cover' }}
+            />
+            <div className={s.heroOverlay}>
+              <span className={s.heroCat}>Destinations</span>
+              <h1>The Best Yoga Retreats in Hawaii: Maui, Kauai, & Big Island Compared</h1>
+              <div className={s.heroMeta}>
+                <span>By Sarah Mitchell</span>
+                <span>June 12, 2026</span>
+                <span>7 min read</span>
               </div>
             </div>
-            <div className={s.heroImageWrap}>
-              <div style={{width: '100%', height: '100%', backgroundColor: '#2c3e50'}}></div>
-            </div>
-          </header>
+          </div>
 
           <div className="container">
-            <div className={s.contentGrid}>
-              
-              {/* Sidebar ToC */}
-              <aside className={s.sidebar}>
-                <div className={s.tocSticky}>
-                  <h4 className={s.tocTitle}>Contents</h4>
-                  <ul className={s.tocList}>
-                    <li><a href="#the-hawaii-tax">The Reality of the "Hawaii Tax"</a></li>
-                    <li><a href="#island-comparison">Which Island is Best?</a></li>
-                    <li><a href="#top-retreats">Top 4 Retreats in Hawaii</a></li>
-                    <li><a href="#aloha-aina">Respecting the Land</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                  </ul>
-                  
-                  <div className={s.relatedPosts}>
-                    <h4>Related Guides</h4>
-                    <Link href="/blog/yoga-retreat-california" className={s.relatedLink}>
-                      <span className={s.relatedImg}>
-                        <div style={{width: '100%', height: '100%', backgroundColor: '#d35400'}}></div>
-                      </span>
-                      <span className={s.relatedText}>California Yoga Retreats</span>
-                    </Link>
-                    <Link href="/blog/yoga-retreats-costa-rica" className={s.relatedLink}>
-                      <span className={s.relatedImg}>
-                        <div style={{width: '100%', height: '100%', backgroundColor: '#27ae60'}}></div>
-                      </span>
-                      <span className={s.relatedText}>Costa Rica Retreats</span>
-                    </Link>
-                  </div>
-                </div>
-              </aside>
+            <div className={s.layout}>
 
               {/* Main Content */}
-              <div className={s.content}>
+              <div className={s.body}>
+
                 <p className={s.introBrief}>
-                  Hawaii offers the deep jungle aesthetics of Bali and the lush rainforests of Costa Rica, but with the convenience of a domestic flight for US travelers. Here is a breakdown of the best retreats across Maui, Kauai, and the Big Island—and what you should actually expect to pay in 2026.
+                  Hawaii offers tropical landscapes, warm Pacific water, and world-class wellness infrastructure — all without leaving the US. But before you book, there are a few things the glossy retreat brochures won't tell you about the real cost and what to expect on each island.
                 </p>
 
-                <p>If you live in North America and you want a tropical yoga retreat without the hassle of a passport, customs, or a 20-hour flight, Hawaii is the undisputed apex destination.</p>
+                <p>If you live in North America and want a tropical yoga retreat without the hassle of customs, a passport, or a 20-hour flight, Hawaii is the undisputed apex destination. The islands offer deep, ancient natural beauty alongside a mature wellness industry.</p>
 
-                <p>The islands offer a unique blend of deep, ancient natural beauty and modern wellness infrastructure. But before you book, we need to have a very honest conversation about pricing.</p>
+                <p>But before you open a booking tab, we need to have an honest conversation about what you're actually getting — and what you're actually paying for.</p>
 
-                <h2 id="the-hawaii-tax">The Reality of the "Hawaii Tax"</h2>
+                <h2 id="hawaii-tax">The Reality of the "Hawaii Tax"</h2>
 
-                <p>I am frequently asked why a yoga retreat in Hawaii costs $2,800, while a nearly identical format in <Link href="/blog/yoga-retreat-bali">Bali</Link> or Mexico costs $1,200.</p>
+                <div className={s.imgFull}>
+                  <Image
+                    src="/images/blog/hawaii-coastline.jpg"
+                    alt="Aerial view of the stunning Hawaiian coastline with lush green mountains and turquoise water"
+                    fill sizes="100vw"
+                    style={{ objectFit: 'cover' }}
+                  />
+                </div>
 
-                <p>I have a strong standing opinion that Bali is often overpriced relative to its teaching quality. Hawaii is also expensive, but for entirely different, unavoidable reasons. Hawaii is the most isolated population center on Earth. Everything from the organic food on your plate to the electricity running the ceiling fan costs significantly more to provide. Real estate is at an absolute premium.</p>
+                <p>I'm frequently asked why a yoga retreat in Hawaii costs $2,800 when a nearly identical format in Mexico costs $1,200. It's a fair question. Hawaii is genuinely expensive, but for entirely different, unavoidable reasons than Bali.</p>
 
-                <p>You are paying a premium for geography, safety standards, and domestic convenience. If your budget is under $1,500 for a week, Hawaii is not the right destination. You will either end up in subpar accommodation or spending your entire budget on flights.</p>
+                <p>Hawaii is the most isolated population centre on Earth. Everything from the organic food on your plate to the electricity powering the ceiling fan costs significantly more to provide. Real estate is at an absolute premium. You are paying for geography, domestic safety standards, and the convenience of a domestic flight with no visa faff.</p>
+
+                <p>If your budget is under $1,500 for a week, Hawaii isn't the right destination. You'll either end up in subpar accommodation or blow your entire budget on flights before you've unrolled a mat.</p>
 
                 <h2 id="island-comparison">Which Island is Best for a Retreat?</h2>
 
-                <p>Hawaii is not a monolith. The vibe, the landscape, and the style of yoga retreat vary wildly depending on which island you land on.</p>
+                <div className={s.imgFull}>
+                  <Image
+                    src="/images/blog/hawaii-maui-beach.jpg"
+                    alt="Serene sunset at Makena Beach, Maui, with ocean waves and golden light"
+                    fill sizes="100vw"
+                    style={{ objectFit: 'cover' }}
+                  />
+                </div>
+
+                <p>Hawaii isn't a monolith. The vibe, landscape, and style of retreat vary enormously depending on which island you land on. Here's how to choose:</p>
 
                 <ul>
-                  <li><strong>Maui (The Luxury Hub):</strong> If you want highly polished wellness experiences, farm-to-table dining, and beautiful boutique centers, Maui (specifically the North Shore and Makawao) is the best choice.</li>
-                  <li><strong>The Big Island (The Eco-Spiritual Hub):</strong> The Island of Hawaiʻi is vast, volcanic, and rugged. The retreats here tend to be off-grid, permaculture-focused, and deeply spiritual. Think jungle ashrams rather than manicured lawns.</li>
-                  <li><strong>Kauai (The Adventure Hub):</strong> The Garden Isle is raw, Jurassic nature. Retreats here are less common but tend to combine yoga with intense outdoor adventure, hiking, and surfing.</li>
+                  <li><strong>Maui (The Luxury Hub):</strong> If you want highly polished wellness experiences, farm-to-table dining, and beautiful boutique centres, Maui — specifically the upcountry Makawao area and the North Shore — is the best choice. It's the most developed wellness scene in the state.</li>
+                  <li><strong>The Big Island (The Eco-Spiritual Hub):</strong> The Island of Hawaiʻi is vast, volcanic, and rugged. The retreats here tend to be off-grid, permaculture-focused, and deeply spiritual. Think jungle ashrams rather than manicured lawns. The energy is different — and that's the entire point.</li>
+                  <li><strong>Kauai (The Adventure Hub):</strong> The Garden Isle is raw, Jurassic nature. Retreats here are less common but tend to combine yoga with intense outdoor adventure — hiking the Na Pali Coast, kayaking the Wailua River, or simply sitting in the kind of green that makes you feel like you've stumbled into a David Attenborough documentary.</li>
                 </ul>
 
-                <h2 id="top-retreats">Top 4 Yoga Retreat Centers in Hawaii (2026)</h2>
+                <h2 id="top-retreats">Top 4 Yoga Retreat Centres in Hawaii (2026)</h2>
 
-                <p>Instead of just booking a resort that happens to offer a morning stretch class, look at these dedicated wellness and retreat centers.</p>
+                <div className={s.imgFull}>
+                  <Image
+                    src="/images/blog/hawaii-big-island-hana.jpg"
+                    alt="Lush green landscapes and calm blue waters of Hana Bay on the Big Island of Hawaii"
+                    fill sizes="100vw"
+                    style={{ objectFit: 'cover' }}
+                  />
+                </div>
 
-                <h3>1. Lumeria Maui (Maui)</h3>
-                <p>Located in upcountry Maui near Makawao, Lumeria is arguably the most polished wellness retreat center in the state. It is a restored historic compound set on six acres of stunning gardens. They host everything from sound healing workshops to ocean-focused yoga retreats. <strong>Best for:</strong> Luxury seekers and those wanting a highly aesthetic, quiet environment.</p>
+                <p>Instead of booking a resort that happens to offer a morning stretch class, look for dedicated wellness and retreat centres. Here are the ones actually worth your money in 2026.</p>
 
-                <h3>2. Hawaiian Sanctuary (Big Island)</h3>
-                <p>Deep in the jungles of the Puna district, this is a working permaculture farm and eco-retreat. It is significantly more rustic than Lumeria, focusing on sustainable living, community, and daily practice. <strong>Best for:</strong> Eco-conscious yogis wanting an immersive, authentic jungle experience without luxury price tags.</p>
-
-                <h3>3. Black Swan Temple (Maui)</h3>
-                <p>A highly specific, intimate retreat center known for combining traditional yoga with deep sound healing and mystical arts. It attracts practitioners looking for profound spiritual awakening rather than just a fitness vacation. <strong>Best for:</strong> Advanced practitioners seeking sound therapy and esoteric studies.</p>
-
-                <h3>4. Hestia Magic Retreat Center (Big Island)</h3>
-                <p>Located in Captain Cook, this center is highly favored by solo travelers. It offers a very peaceful, supportive environment for "reset" retreats, often focusing on meditation, light yoga, and reconnecting with nature. <strong>Best for:</strong> Solo female travelers and burnout recovery.</p>
-
-                <h2 id="aloha-aina">Respecting the Land (Aloha ʻĀina)</h2>
-
-                <p>You cannot discuss wellness in Hawaii without discussing respect for the land and the local culture. When you attend a retreat in Hawaii, you are visiting an island with deep, sacred indigenous roots.</p>
-
-                <p>The best retreat centers in Hawaii integrate the concept of <em>Aloha ʻĀina</em> (love of the land). They employ local practitioners, source food locally, and educate guests on Hawaiian history. When choosing your retreat, look for centers that clearly state their commitment to supporting the local community rather than simply using the landscape as a pretty backdrop for Instagram photos.</p>
-
-                <h2 id="faq">Frequently Asked Questions</h2>
-                <div className={s.faq}>
-                  <div className={s.faqItem}>
-                    <h4>How much does a yoga retreat in Hawaii cost?</h4>
-                    <p>A standard 6-day yoga retreat in Hawaii costs between $1,800 and $3,500. This is significantly higher than equivalent retreats in Mexico or Costa Rica, primarily due to the high cost of real estate and imported goods on the islands.</p>
+                <div className={s.retreatListing}>
+                  <h3>1. Lumeria Maui</h3>
+                  <p><strong>Location:</strong> Makawao, Maui</p>
+                  <p><strong>Vibe:</strong> Luxury, polished, and beautifully curated.</p>
+                  <p><strong>Best For:</strong> Luxury seekers wanting a highly aesthetic, quiet retreat environment.</p>
+                  <p>Located in upcountry Maui near Makawao, Lumeria is arguably the most polished wellness retreat centre in the state. It's a restored historic plantation compound set on six acres of immaculate gardens at the foot of Haleakalā. They host everything from sound healing workshops to ocean-focused yoga retreats. The food programme — farm-to-table and genuinely exceptional — is half the reason people come back.</p>
+                  <div style={{ marginTop: '1.5rem', marginBottom: '2rem' }}>
+                    <a href="https://bookretreats.com/s/yoga-retreats/hawaii?a=kgwad" target="_blank" rel="noopener noreferrer" className={s.primaryBtn} style={{ display: 'inline-block', width: 'auto' }}>Check Dates & Prices</a>
                   </div>
-                  <div className={s.faqItem}>
-                    <h4>Which Hawaiian island is best for a wellness retreat?</h4>
-                    <p>Maui is best for luxury and highly polished wellness experiences. The Big Island (Hawaiʻi) is best for off-grid, eco-focused, and spiritually intense retreats. Kauai is ideal for those who want to combine yoga with intense outdoor adventure and hiking.</p>
+                </div>
+
+                <div className={s.retreatListing}>
+                  <h3>2. Hawaiian Sanctuary</h3>
+                  <p><strong>Location:</strong> Pahoa, Big Island</p>
+                  <p><strong>Vibe:</strong> Off-grid, eco-focused, and deeply immersive.</p>
+                  <p><strong>Best For:</strong> Eco-conscious yogis wanting an authentic jungle experience without luxury price tags.</p>
+                  <p>Deep in the jungles of the Puna district on the Big Island, this is a working permaculture farm and eco-retreat. It's significantly more rustic than Lumeria, focusing on sustainable living, community, and daily practice. They offer a "build your own retreat" option for a more personalised experience. If you want to feel like you're genuinely off the grid, this is it.</p>
+                  <div style={{ marginTop: '1.5rem', marginBottom: '2rem' }}>
+                    <a href="https://bookretreats.com/s/yoga-retreats/hawaii?a=kgwad" target="_blank" rel="noopener noreferrer" className={s.primaryBtn} style={{ display: 'inline-block', width: 'auto' }}>Check Dates & Prices</a>
                   </div>
-                  <div className={s.faqItem}>
-                    <h4>Do I need a car for a yoga retreat in Hawaii?</h4>
-                    <p>If you are booking an all-inclusive retreat where meals and activities are on-site, you do not need a car—just an airport transfer. However, if you book a "build your own" retreat where you plan to explore the island, a rental car is absolutely essential.</p>
+                </div>
+
+                <div className={s.retreatListing}>
+                  <h3>3. Black Swan Temple</h3>
+                  <p><strong>Location:</strong> Maui</p>
+                  <p><strong>Vibe:</strong> Mystical, intimate, sound-focused.</p>
+                  <p><strong>Best For:</strong> Advanced practitioners seeking sound therapy and esoteric studies.</p>
+                  <p>A highly specific, intimate retreat centre known for combining traditional yoga with deep sound healing. It attracts practitioners looking for profound spiritual awakening rather than a fitness holiday. Not for the uninitiated — but if this is your direction, there's nothing quite like it on the island.</p>
+                  <div style={{ marginTop: '1.5rem', marginBottom: '2rem' }}>
+                    <a href="https://bookretreats.com/s/yoga-retreats/hawaii?a=kgwad" target="_blank" rel="noopener noreferrer" className={s.primaryBtn} style={{ display: 'inline-block', width: 'auto' }}>Check Dates & Prices</a>
                   </div>
+                </div>
+
+                <div className={s.retreatListing}>
+                  <h3>4. Hestia Magic Retreat Center</h3>
+                  <p><strong>Location:</strong> Captain Cook, Big Island</p>
+                  <p><strong>Vibe:</strong> Gentle, supportive, and restorative.</p>
+                  <p><strong>Best For:</strong> Solo travellers and anyone booking a burnout recovery retreat.</p>
+                  <p>Highly favoured by solo travellers. It offers a very peaceful, supportive environment for "reset" retreats, often focusing on meditation, light yoga, and reconnecting with nature. It consistently receives some of the highest satisfaction ratings of any centre in Hawaii for solo female travellers specifically.</p>
+                  <div style={{ marginTop: '1.5rem', marginBottom: '2rem' }}>
+                    <a href="https://bookretreats.com/s/yoga-retreats/hawaii?a=kgwad" target="_blank" rel="noopener noreferrer" className={s.primaryBtn} style={{ display: 'inline-block', width: 'auto' }}>Check Dates & Prices</a>
+                  </div>
+                </div>
+
+                <h2 id="aloha-aina">Respecting the Land: Aloha ʻĀina</h2>
+
+                <p>You can't discuss wellness in Hawaii without discussing respect for the land and indigenous culture. When you attend a retreat here, you are visiting islands with deep, sacred native roots.</p>
+
+                <p>The best retreat centres integrate the concept of <em>Aloha ʻĀina</em> (love of the land). They employ local practitioners, source food locally, and educate guests on Hawaiian history. When choosing your retreat, look for centres that clearly state their commitment to supporting the local community — rather than simply using the landscape as a picturesque backdrop.</p>
+
+                <h2 id="faq">FAQ</h2>
+
+                <p><strong>How much does a yoga retreat in Hawaii cost?</strong><br/>
+                A standard 6-day retreat runs $1,800–$3,500. This is significantly higher than equivalent retreats in <Link href="/blog/yoga-retreats-costa-rica">Costa Rica</Link> or Mexico, primarily due to the cost of real estate and imported goods on the islands. Budget for this from the start.</p>
+
+                <p><strong>Which Hawaiian island is best for a wellness retreat?</strong><br/>
+                Maui for luxury and polished wellness. The Big Island for off-grid and eco-spiritual. Kauai for outdoor adventure combined with yoga. Each is genuinely distinct — choose based on what you actually want from the experience, not the aesthetics.</p>
+
+                <p><strong>Do I need a car for a yoga retreat in Hawaii?</strong><br/>
+                For a fully all-inclusive retreat where everything happens on-site, no — just an airport transfer. But if you plan to explore between sessions, a rental car is essential on every island.</p>
+
+                {/* Tags */}
+                <div className={s.tags}>
+                  <span className="tag">Hawaii</span>
+                  <span className="tag">Maui</span>
+                  <span className="tag">Big Island</span>
+                  <span className="tag">USA Retreats</span>
+                  <span className="tag">Luxury Yoga</span>
                 </div>
 
                 {/* Author Box */}
                 <div className={s.authorBox}>
-                  <div className={s.authorBoxImg}>
-                    <Image src="/images/sarah-avatar.jpg" alt="Sarah Mitchell" fill sizes="80px" style={{ objectFit: 'cover' }} />
+                  <div className={s.authorAvatar}>
+                    <Image src="/images/hero-portrait.jpg" alt="Sarah Mitchell" fill sizes="80px" style={{ objectFit: 'cover' }} />
                   </div>
-                  <div className={s.authorBoxContent}>
-                    <h4>About Sarah Mitchell</h4>
-                    <p>Sarah is a London and Lisbon-based writer and RYT-50 yoga practitioner. Over the past several years, she has attended 14 retreats across 9 countries, spending between $380 and $4,200 per week. She built Yoga Retreat Advisor to help practitioners find honest, hype-free retreat reviews.</p>
+                  <div className={s.authorMeta}>
+                    <h3>Sarah Mitchell</h3>
+                    <div className={s.authorRole}>Founder & Lead Reviewer, YogaRetreatAdvisor</div>
+                    <p>Former London project manager turned yoga travel writer. She's attended 14 retreats across 9 countries since 2018, spending between $380 and $4,200 per retreat week. RYT-50 certified. Based between London and Lisbon.</p>
                   </div>
                 </div>
-
               </div>
+
+              {/* Sidebar TOC */}
+              <aside>
+                <div className={s.toc}>
+                  <h3>In This Guide</h3>
+                  <nav className={s.tocLinks}>
+                    <a href="#hawaii-tax" className={s.tocLink}>The Hawaii Tax</a>
+                    <a href="#island-comparison" className={s.tocLink}>Which Island is Best?</a>
+                    <a href="#top-retreats" className={s.tocLink}>Top 4 Retreat Centres</a>
+                    <a href="#aloha-aina" className={s.tocLink}>Respecting the Land</a>
+                    <a href="#faq" className={s.tocLink}>FAQ</a>
+                  </nav>
+                </div>
+              </aside>
             </div>
           </div>
+
+          {/* Related Posts */}
+          <section className={s.relatedPosts}>
+            <div className="container">
+              <div className="section-header center">
+                <span className="section-label">Related Articles</span>
+                <h2>Continue Reading</h2>
+              </div>
+              <div className={s.relatedGrid}>
+                <Link href="/blog/yoga-retreats-near-me" className={s.relatedCard}>
+                  <div className={s.relatedImg}>
+                    <Image src="/images/blog/beginner-yoga-class.jpg" alt="Retreats Near Me" fill sizes="33vw" style={{ objectFit: 'cover' }} />
+                  </div>
+                  <div className={s.relatedBody}>
+                    <span>Destinations</span>
+                    <h3>Yoga Retreats Near Me: The Best Driveable Escapes</h3>
+                  </div>
+                </Link>
+                <Link href="/blog/yoga-retreat-california" className={s.relatedCard}>
+                  <div className={s.relatedImg}>
+                    <Image src="/images/blog/california-yoga.jpg" alt="California Retreats" fill sizes="33vw" style={{ objectFit: 'cover' }} />
+                  </div>
+                  <div className={s.relatedBody}>
+                    <span>Destinations</span>
+                    <h3>Yoga Retreat California: Top-Rated Centers by Region</h3>
+                  </div>
+                </Link>
+                <Link href="/blog/luxury-yoga-retreats" className={s.relatedCard}>
+                  <div className={s.relatedImg}>
+                    <Image src="/images/blog/luxury-yoga.jpg" alt="Luxury yoga retreat" fill sizes="33vw" style={{ objectFit: 'cover' }} />
+                  </div>
+                  <div className={s.relatedBody}>
+                    <span>Retreat Types</span>
+                    <h3>Luxury Yoga Retreats: What $3,000+ Gets You</h3>
+                  </div>
+                </Link>
+              </div>
+            </div>
+          </section>
+
         </article>
       </main>
+
       <Newsletter />
       <Footer />
     </>
