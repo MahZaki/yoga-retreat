@@ -7,6 +7,37 @@
 
 ---
 
+## 🏗️ BLOG ARCHITECTURE — How New Posts Work
+
+**Every new blog post MUST use the shared `<BlogPost>` component.**  
+Never write raw Navbar/Footer/layout HTML in a page.js again.
+
+### 3-step process for every new post:
+
+1. **Copy the template:**
+   ```
+   cp references/blog-post-template.js app/blog/YOUR-SLUG/page.js
+   ```
+2. **Fill in the props** at the top (title, heroImage, tocItems, faqSchema, etc.)
+3. **Write your content** as JSX children between the `<BlogPost>` tags
+
+### Component location:
+- **Layout component:** `components/BlogPost.js`
+- **Template to copy:** `references/blog-post-template.js`
+- **Shared CSS:** `app/blog/yoga-retreats/page.module.css`
+
+### What BlogPost handles automatically:
+- Full hero image with overlay, title, date, read time
+- Two-column layout (body + sidebar TOC)
+- Author box (Sarah Mitchell, canonical bio, RYT-50)
+- Tags row
+- Related posts grid (3 cards)
+- Article JSON-LD schema
+- BreadcrumbList JSON-LD schema
+- FAQPage JSON-LD schema (if faqSchema prop provided)
+
+---
+
 ## ⚠️ MANDATORY — Read all references BEFORE writing any post
 
 Before touching any page.js, you MUST read these five files and apply them:
