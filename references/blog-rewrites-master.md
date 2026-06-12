@@ -3,7 +3,7 @@
 
 **Pexels API key:** `bgOwLYzNCcO3RRdVO0Y1UeMJK4XOW4AuHGG3uwhqgiEddcVMf2PL7p16`  
 **Image folder:** `/public/images/blog/`  
-**CSS module to use:** `../yoga-retreats/page.module.css` (shared across all posts)
+**Full keyword list:** `references/keyword-master-list.md` ← check this first  
 
 ---
 
@@ -40,7 +40,7 @@ Never write raw Navbar/Footer/layout HTML in a page.js again.
 
 ## ⚠️ MANDATORY — Read all references BEFORE writing any post
 
-Before touching any page.js, you MUST read these five files and apply them:
+Before touching any page.js, you MUST read these files and apply them:
 
 | File | What it controls |
 |---|---|
@@ -71,27 +71,276 @@ Before touching any page.js, you MUST read these five files and apply them:
 
 ---
 
-## Status
+## ✅ Completion Status (All Published Posts)
 
-| # | Slug | Keyword | Vol | Status |
+| # | Slug | Keyword | Vol | Published |
 |---|---|---|---|---|
-| 1 | `/blog/yoga-retreats` | yoga retreats | 8,100 | ✅ DONE |
-| 2 | `/blog/yoga-retreats-india` | yoga retreats india | 170 | ✅ DONE |
-| 3 | `/blog/yoga-retreat-bali` | yoga retreat bali | 880 | ✅ DONE |
-| 4 | `/blog/yoga-retreat-california` | yoga retreat california | 720 | ✅ DONE |
-| 5 | `/blog/womens-yoga-retreat` | womens yoga retreat | 720 | ✅ DONE |
-| 6 | `/blog/best-yoga-retreats` | best yoga retreats | 480 | ✅ DONE |
-| 7 | `/blog/how-to-book-yoga-retreat` | how to book a yoga retreat | 390 | ✅ DONE |
-| 8 | `/blog/yoga-retreats-costa-rica` | yoga retreats costa rica | 260 | ✅ DONE |
-| 9 | `/blog/yoga-retreat-for-beginners` | yoga retreat for beginners | 260 | ✅ DONE |
-| 10 | `/blog/luxury-yoga-retreats` | luxury yoga retreats | 210 | ✅ DONE |
-| 11 | `/blog/silent-yoga-retreat` | silent yoga retreat | 210 | ✅ DONE |
-| 12 | `/blog/affordable-yoga-retreats` | affordable yoga retreats | 170 | ✅ DONE |
-| 13 | `/blog/all-inclusive-yoga-retreat` | all inclusive yoga retreat | 170 | ✅ DONE |
+| 1 | `/blog/yoga-retreats` | yoga retreats (pillar) | 8,100 | ✅ Jan 2025 |
+| 2 | `/blog/wellness-retreats` | wellness retreats | 9,900 | ✅ Jun 2026 |
+| 3 | `/blog/yoga-retreat-bali` | yoga retreat bali | 880 | ✅ Feb 2025 |
+| 4 | `/blog/yoga-retreat-california` | yoga retreat california | 720 | ✅ Jul 2025 |
+| 5 | `/blog/womens-yoga-retreat` | womens yoga retreat | 720 | ✅ Jun 2026 |
+| 6 | `/blog/best-womens-yoga-retreats` | best womens yoga retreats | 480 | ✅ Jun 2026 |
+| 7 | `/blog/best-yoga-retreats` | best yoga retreats | 480 | ✅ Jun 2025 |
+| 8 | `/blog/how-to-book-yoga-retreat` | how to book a yoga retreat | 390 | ✅ May 2026 |
+| 9 | `/blog/yoga-retreats-colorado` | yoga retreats colorado | 390 | ✅ Jun 2026 |
+| 10 | `/blog/yoga-retreats-hawaii` | yoga retreats hawaii | 390 | ✅ Jun 2026 |
+| 11 | `/blog/yoga-retreats-near-me` | yoga retreats near me | 2,400 | ✅ Jun 2026 |
+| 12 | `/blog/yoga-retreats-costa-rica` | yoga retreats costa rica | 260 | ✅ Feb 2026 |
+| 13 | `/blog/yoga-retreats-greece` | yoga retreats greece | 260 | ✅ Jun 2026 |
+| 14 | `/blog/yoga-retreat-for-beginners` | yoga retreat for beginners | 260 | ✅ Jun 2026 |
+| 15 | `/blog/luxury-yoga-retreats` | luxury yoga retreats | 210 | ✅ Jun 2026 |
+| 16 | `/blog/silent-yoga-retreat` | silent yoga retreat | 210 | ✅ Jun 2026 |
+| 17 | `/blog/affordable-yoga-retreats` | affordable yoga retreats | 170 | ✅ Jan 2026 |
+| 18 | `/blog/all-inclusive-yoga-retreat` | all inclusive yoga retreat | 170 | ✅ Apr 2026 |
+| 19 | `/blog/yoga-retreats-india` | yoga retreats india | 170 | ✅ Mar 2025 |
+
+**Total: 19 posts live.**
 
 ---
 
-## Per-Post Briefs
+## 🔴 NEXT 10 — Priority Queue (Write in This Order)
+
+| Order | Keyword | Vol | Target Slug | Why |
+|-------|---------|-----|-------------|-----|
+| **1** | how much does a yoga retreat cost | 590 | `/blog/yoga-retreat-cost` | Highest unmet planning intent. FAQ magnet. Competitors dodge real numbers — we don't. |
+| **2** | what to pack for a yoga retreat | 480 | `/blog/what-to-pack-yoga-retreat` | Low KD, evergreen, strong internal link target from all geo pages. |
+| **3** | yoga and meditation retreat | 590 | `/blog/yoga-and-meditation-retreat` | Broad format — captures non-yoga wellness searches. Major traffic opportunity. |
+| **4** | weekend yoga retreat | 480 | `/blog/weekend-yoga-retreat` | High volume, near-me intent. Huge UK + US traffic. Short-trip audience. |
+| **5** | yoga teacher training retreat | 1,200 | `/blog/yoga-teacher-training` | Highest-volume uncovered keyword. High CPC ($3.20) = affiliate gold. Own the "Is YTT right for me?" advisory angle. |
+| **6** | couples yoga retreat | 390 | `/blog/couples-yoga-retreat` | Distinct audience, Valentine's/anniversary seasonal traffic. |
+| **7** | yoga retreat tulum | 590 | `/blog/yoga-retreat-tulum` | Biggest uncovered international destination. Luxury/aesthetic intent. |
+| **8** | yoga retreat thailand | 480 | `/blog/yoga-retreat-thailand` | Major destination gap. Less competitive than Bali. Strong volume. |
+| **9** | yoga retreat portugal | 390 | `/blog/yoga-retreat-portugal` | Low KD. Sarah's base (London/Lisbon) = high E-E-A-T signal. |
+| **10** | yoga retreat new york | 320 | `/blog/yoga-retreat-new-york` | Highest-traffic US domestic gap after the ones we've covered. |
+
+---
+
+## Per-Post Briefs — Next 10
+
+---
+
+### POST 1 · `/blog/yoga-retreat-cost` — 590/mo
+
+**Primary keyword:** how much does a yoga retreat cost  
+**Secondary:** yoga retreat price, yoga retreat cost per week  
+**Target length:** ~1,800 words  
+**Format:** practical breakdown guide  
+**Featured snippet answer:** "A yoga retreat costs $300–$600/week in India, $700–$1,100 in Costa Rica or Thailand, $900–$1,800 in Bali or Europe, and $1,500–$3,500 in Hawaii or the US. Flights and travel insurance are almost always excluded."  
+**Sections:**
+- Full cost-per-destination table with realistic ranges
+- What is and isn't included in headline prices
+- Hidden costs (airport transfers, single supplement, excursions)
+- Budget vs mid-range vs luxury breakdowns
+- How to calculate your true all-in cost
+- Best value destinations by quality-per-dollar
+
+**Opinion to anchor:** Opinion 1 (booking platform commission inflates apparent prices)  
+**Stats to use:** $380–$4,200 range from stats.md  
+**Story:** Tuscany Moment — she almost cancelled because the price felt absurd; why it wasn't, and the rule for knowing when premium is worth it  
+**Gaps competitors miss:** Real all-in cost calculator; single supplement reality; what "deposit" actually means  
+**Pexels queries:** `travel budget planning laptop`, `yoga retreat tropical pool`, `booking travel journal`  
+**Image filenames:** `retreat-cost-planning.jpg`, `retreat-budget-tropical.jpg`, `retreat-booking-journal.jpg`
+
+---
+
+### POST 2 · `/blog/what-to-pack-yoga-retreat` — 480/mo
+
+**Primary keyword:** what to pack for a yoga retreat  
+**Secondary:** yoga retreat packing list, what to bring to a yoga retreat  
+**Target length:** ~1,600 words  
+**Format:** practical checklist guide  
+**Featured snippet answer:** "For a yoga retreat, pack: 2–3 sets of yoga clothes, a high-quality mat (unless provided), a journal, layers for cool evenings, electrolytes, and any personal supplements. Leave behind: excessive tech, perfume/strong scent, and alarm clocks."  
+**Sections:**
+- The essential yoga kit (mat, clothes, props)
+- Destination-specific add-ons (altitude, tropical heat, mountain cold)
+- What NOT to bring (Sarah's honest list)
+- Tech: how much is too much
+- Digital detox considerations
+- The 1-bag vs 2-bag decision
+
+**Opinion:** Opinion 6 (tech brings the office with you — leave it behind)  
+**Pexels queries:** `yoga mat packing bag travel`, `yoga clothes suitcase`, `travel journal morning`  
+**Image filenames:** `packing-yoga-mat.jpg`, `packing-yoga-clothes.jpg`
+
+---
+
+### POST 3 · `/blog/yoga-and-meditation-retreat` — 590/mo
+
+**Primary keyword:** yoga and meditation retreat  
+**Secondary:** yoga meditation retreat, meditation yoga retreat  
+**Target length:** ~2,000 words  
+**Format:** explainer guide + destination picks  
+**Featured snippet answer:** "A yoga and meditation retreat combines daily asana practice (1–2 sessions) with formal meditation instruction (seated, walking, or Yoga Nidra). The combination accelerates both practices — most participants report deeper stillness in week one than months of home practice."  
+**Sections:**
+- How yoga and meditation work together (why the combo is more than the sum)
+- What a typical day actually looks like
+- Different formats: Hatha+Vipassana, Yin+Nidra, Vinyasa+Mindfulness
+- How to choose based on your existing practice level
+- Top destinations for this format (India, Bali, Thailand, Portugal)
+- Who this is best for — and who should choose pure yoga or pure meditation instead
+
+**Opinion:** Opinion 5 (silent retreats are underrated for non-spiritual people)  
+**Story:** Origin Story (the Meeting Room) — the power of enforced silence  
+**Pexels queries:** `meditation yoga outdoor sunrise`, `yoga nidra nature`, `silent meditation group`  
+**Image filenames:** `meditation-yoga-sunrise.jpg`, `yoga-nidra-nature.jpg`
+
+---
+
+### POST 4 · `/blog/weekend-yoga-retreat` — 480/mo
+
+**Primary keyword:** weekend yoga retreat  
+**Secondary:** weekend yoga retreat near me, yoga weekend retreat, yoga retreat 2 days  
+**Target length:** ~1,800 words  
+**Format:** guide + destination recommendations  
+**Featured snippet answer:** "A weekend yoga retreat (2–3 nights) costs $250–$800 depending on location and accommodation. They're best for beginners testing the format, burned-out professionals needing a reset, and anyone who can't take a full week. Look for a minimum of 4 scheduled yoga sessions."  
+**Sections:**
+- Is 2 days enough? (direct answer — yes, with caveats)
+- What to look for in a weekend retreat (session count, teacher quality, location)
+- Best domestic options USA (Berkshires, Catskills, Ojai, Colorado)
+- Best UK weekend retreat areas (Cotswolds, Lake District, Yorkshire Dales)
+- What to do after — how to maintain the shift
+- The false economy of booking the cheapest one
+
+**Opinion:** Opinion 2 (4–5 days is better than 7 for first-timers; same applies to 2-day formats — better than nothing)  
+**Internal links:** `/blog/yoga-retreats-near-me`, `/blog/yoga-retreat-for-beginners`  
+**Pexels queries:** `yoga weekend nature retreat`, `uk countryside yoga`, `yoga cottage retreat morning`  
+**Image filenames:** `weekend-yoga-nature.jpg`, `yoga-countryside-uk.jpg`
+
+---
+
+### POST 5 · `/blog/yoga-teacher-training` — 1,200/mo
+
+**Primary keyword:** yoga teacher training retreat  
+**Secondary:** 200 hour yoga teacher training, YTT retreat, yoga teacher training abroad  
+**Target length:** ~2,200 words  
+**Format:** advisory guide (NOT a listicle of programmes)  
+**Featured snippet answer:** "A yoga teacher training (YTT) retreat is an immersive 200-hour or 300-hour programme combining daily yoga, anatomy, philosophy, and teaching methodology. A 200-hour YTT abroad costs $1,500–$4,000 all-in. You don't need to want to teach — many people attend to deepen their personal practice."  
+**Sections:**
+- YTT vs retreat — what's actually different
+- Who YTT is (and isn't) for — the honest version
+- 200 hour vs 300 hour: which to start with
+- What a YTT month actually looks like day-to-day
+- How to evaluate a school (Yoga Alliance accreditation reality check)
+- Best destinations for YTT: India, Bali, Thailand, Portugal, Costa Rica
+- Cost breakdown: what's included vs. what's not
+- What certification actually gives you — and what it doesn't
+
+**Opinion:** The Yoga Alliance certification reality (it's a minimum floor, not a quality guarantee — Sarah's Opinion 3 on teacher quality)  
+**Affiliate angle:** Link to BookRetreats YTT filter  
+**Pexels queries:** `yoga teacher training group outdoor`, `yoga teacher demonstration class`, `yoga training india ashram`  
+**Image filenames:** `ytt-group-outdoor.jpg`, `yoga-teacher-class.jpg`, `ytt-india-ashram.jpg`
+
+---
+
+### POST 6 · `/blog/couples-yoga-retreat` — 390/mo
+
+**Primary keyword:** couples yoga retreat  
+**Secondary:** romantic yoga retreat, yoga retreat for two, yoga holiday for couples  
+**Target length:** ~1,800 words  
+**Format:** guide + destination picks  
+**Featured snippet answer:** "A couples yoga retreat is a shared retreat where two people attend together, practising side-by-side (not partner yoga). The real benefit isn't the partner yoga classes — it's the enforced shared slowness, the removed distractions, and the fact that you're both in the same state of openness."  
+**Sections:**
+- What a couples retreat actually looks like (vs. the fantasy)
+- Why shared stillness is the real benefit
+- What to look for — and what "couples retreat" is actually just a marketing label on
+- Best destinations: Bali, Portugal, Greece, Tuscany, Costa Rica
+- When NOT to go (if your relationship needs a therapist, not a retreat)
+- Budget reality for couples
+
+**Opinion:** Sarah's honest take: "The best thing about doing a retreat with a partner isn't the yoga — it's the 48 hours where neither of you is looking at a phone."  
+**Pexels queries:** `couple yoga retreat tropical`, `romantic wellness resort pool`, `yoga couple outdoor morning`  
+**Image filenames:** `couples-yoga-retreat.jpg`, `romantic-wellness-pool.jpg`
+
+---
+
+### POST 7 · `/blog/yoga-retreat-tulum` — 590/mo
+
+**Primary keyword:** yoga retreat tulum  
+**Secondary:** tulum yoga retreat, best yoga retreats tulum, tulum wellness retreat  
+**Target length:** ~2,000 words  
+**Format:** destination guide  
+**Featured snippet answer:** "Yoga retreats in Tulum cost $1,400–$3,500/week. Tulum is best for aesthetic, eco-luxury retreats set among cenotes and jungle. The teaching quality is inconsistent — choose a retreat with a named lead teacher and a fixed schedule, not a 'pop-up' programme at a boutique hotel."  
+**Sections:**
+- Tulum vs Bali — how to choose
+- Where to stay: Tulum town vs Tulum beach road vs Aldea Zamá
+- The aesthetic trap — beautiful cenote settings vs actual teaching quality
+- Top 4–5 genuine retreat centres
+- Practical: safety, transport, rainy season realities
+- Best times to go
+
+**Opinion:** Opinion 4 (aesthetics ≠ quality; the platforms push the visually striking over the actually good)  
+**Pexels queries:** `tulum mexico cenote yoga`, `tulum jungle retreat`, `mexico beach yoga morning`  
+**Image filenames:** `tulum-yoga-cenote.jpg`, `tulum-jungle-retreat.jpg`, `tulum-beach-yoga.jpg`
+
+---
+
+### POST 8 · `/blog/yoga-retreat-thailand` — 480/mo
+
+**Primary keyword:** yoga retreat thailand  
+**Secondary:** thailand yoga retreat, yoga retreat koh samui, yoga retreat chiang mai  
+**Target length:** ~2,000 words  
+**Format:** destination guide + island comparison  
+**Featured snippet answer:** "Yoga retreats in Thailand cost $600–$1,400/week — the best value in Asia outside of India. Koh Phangan is the spiritual centre. Chiang Mai offers jungle immersion. Koh Samui is best for combining luxury with practice. Avoid the 'party island yoga' trap on Koh Phangan Full Moon week."  
+**Sections:**
+- Thailand vs Bali: who should go where
+- Island-by-island comparison: Koh Phangan, Koh Samui, Koh Tao, Chiang Mai, Pai
+- The Koh Phangan trap (Full Moon party culture vs. genuine retreat centres)
+- Top retreat picks (4–5 specific centres)
+- Visa, practical travel, timing (avoid monsoon months)
+- Budget breakdown
+
+**Opinion:** Opinion 4 (Bali overpriced vs teaching quality; Thailand often delivers same quality at 30% less cost)  
+**Pexels queries:** `thailand yoga jungle tropical`, `koh samui beach yoga`, `chiang mai yoga retreat`  
+**Image filenames:** `thailand-yoga-jungle.jpg`, `koh-samui-beach-yoga.jpg`, `chiang-mai-yoga.jpg`
+
+---
+
+### POST 9 · `/blog/yoga-retreat-portugal` — 390/mo
+
+**Primary keyword:** yoga retreat portugal  
+**Secondary:** yoga retreat algarve, yoga retreat lisbon, portugal yoga holiday  
+**Target length:** ~2,000 words  
+**Format:** destination guide  
+**Featured snippet answer:** "Yoga retreats in Portugal cost $900–$1,800/week — the best value in Western Europe. The Algarve has the longest season (May–October). The Silver Coast and Comporta offer quieter, more immersive alternatives. Portugal works for both solo travellers and couples, and is easy to reach from the UK without long-haul flights."  
+**Sections:**
+- Why Portugal is Europe's best-value retreat destination
+- Regional breakdown: Algarve, Silver Coast / Peniche, Comporta, Lisbon area, Alentejo, Douro Valley
+- Surf + yoga retreats: what they're actually like
+- Top 4–5 specific retreat centres
+- When to go (shoulder season advantage)
+- Sarah's personal connection (based London/Lisbon)
+
+**Sarah's angle:** This is where she's based half the year — high first-person E-E-A-T. Use it.  
+**Opinion:** Opinion 2 (4–5 days over 7 for European retreats — jet lag isn't a factor, so a long weekend is genuinely viable)  
+**Pexels queries:** `algarve portugal coast yoga`, `portugal surf yoga atlantic`, `lisbon portugal yoga terrace`  
+**Image filenames:** `portugal-algarve-yoga.jpg`, `portugal-surf-yoga.jpg`, `portugal-yoga-terrace.jpg`
+
+---
+
+### POST 10 · `/blog/yoga-retreat-new-york` — 320/mo
+
+**Primary keyword:** yoga retreat new york  
+**Secondary:** yoga retreat upstate new york, yoga retreat catskills, yoga retreat hudson valley  
+**Target length:** ~1,800 words  
+**Format:** regional destination guide  
+**Featured snippet answer:** "The best yoga retreats near New York City are in the Catskills, Hudson Valley, and the Berkshires — all within 2–3 hours of Manhattan. Expect to pay $400–$1,200 for a weekend, or $800–$2,000 for a week. None of these require a flight."  
+**Sections:**
+- Best areas within driving distance: Catskills, Hudson Valley, Berkshires, Woodstock area
+- Why upstate NY works as a retreat destination (4 seasons, proximity to the city)
+- Top 4–5 retreat centres
+- Weekend vs mid-week pricing reality
+- What makes NY different from other US domestic options
+- Internal links to `/blog/yoga-retreats-near-me`
+
+**Pexels queries:** `catskills nature yoga forest`, `upstate new york retreat woodland`, `yoga retreat autumn leaves`  
+**Image filenames:** `catskills-yoga-forest.jpg`, `hudson-valley-retreat.jpg`, `yoga-autumn-retreat.jpg`
+
+---
+
+## Per-Post Briefs — Original 13 (Archive Reference)
+
+---
 
 ### 3. `/blog/yoga-retreat-bali` — 880/mo
 **Primary keyword:** yoga retreat bali  
@@ -107,25 +356,6 @@ Before touching any page.js, you MUST read these five files and apply them:
 
 ---
 
-### 4. `/blog/yoga-retreat-california` — 720/mo ✅
-**Completed:** June 2026  
-**What was done:** ~1,800-word regional breakdown across Big Sur, Ojai, Joshua Tree, and Bay Area. Included Esalen booking-reality warning, best-season-by-region table, California vs Colorado comparison, and the "Colorado Convert" story for sceptical first-timers. 3 Pexels images (Big Sur, Ojai, Joshua Tree). FAQ schema (4 Qs). Full sidebar ToC + related links. Author box with RYT-200 detail.
-
----
-
-### 5. `/blog/womens-yoga-retreat` — 720/mo ✅
-**Completed:** June 2026  
-**What was done:** ~2,100-word guide. Opened with Morocco Surprise story (highest-rated retreat Sarah almost skipped). Covered what the format genuinely changes (practice openness, community speed, solo logic), what to look for (teacher credentials, women-only vs women-focused distinction, mental health caveat, refund policy warning). Destination comparison table (India, Morocco, Portugal, Costa Rica, Bali, USA). 8 named programmes with honest price ranges. First-timer vs experienced section. 5-Q FAQ schema. 3 Pexels images (retreat group, meditation circle, outdoor sunrise). Sidebar ToC + related links.
-
----
-
-### 6. `/blog/best-yoga-retreats` — 480/mo ✅
-**Completed:** June 2026  
-**SERP analysis:** 3 competitors analysed (retreator.com, bodyflows.com, bookyogaretreats.com). All were listing-format or operator-owned pages ~1,000–1,500 words. None included a structured evaluation framework, platform conflict of interest disclosure, or teacher credential checklist.  
-**What was done:** ~2,100-word evaluation guide (not a listicle — the gap competitors miss). 4-pillar framework (teacher, schedule, group size, refund policy). Teacher credential checklist (5 points). Best-picks-by-category table with canonical prices from stats.md. Platform conflict-of-interest section deploying Opinion 1 fully (10–25% commission, paid featured placements). Price reality check using Tuscany Moment story from stories.md. 5-Q FAQ schema. 3 Pexels images. Author box with canonical stats (14 retreats/9 countries/$380–$4,200/RYT-50).
-
----
-
 ### 7. `/blog/how-to-book-yoga-retreat` — 390/mo
 **Primary keyword:** how to book a yoga retreat  
 **Target length:** ~1,800 words  
@@ -135,75 +365,3 @@ Before touching any page.js, you MUST read these five files and apply them:
 **Gaps to add:** deposit red flags (>50% upfront), travel insurance non-negotiable, teacher-to-student ratio  
 **Pexels queries:** `booking travel laptop coffee`, `yoga retreat planning`, `passport travel yoga`  
 **Image filenames:** `booking-laptop-plan.jpg`, `booking-passport-travel.jpg`
-
----
-
-### 8. `/blog/yoga-retreats-costa-rica` — 260/mo
-**Primary keyword:** yoga retreats costa rica  
-**Target length:** ~1,800 words  
-**Format:** destination guide + comparison table  
-**Featured snippet answer:** "Costa Rica yoga retreats centre around Nosara and Santa Teresa — eco-lodges, jungle settings, surf add-ons. Budget: $700–$1,100/week. Mid-range: $1,200–$1,800. Best option for US travellers avoiding long-haul flights."  
-**Sections:** Nosara vs Santa Teresa vs Uvita, surf + yoga format, best time, practical travel notes, Costa Rica vs Bali comparison  
-**Gaps to add:** road conditions/transport reality, why it beats Mexico for US east coasters on price/time  
-**Pexels queries:** `costa rica yoga jungle`, `nosara beach yoga`, `surf yoga costa rica`  
-**Image filenames:** `costa-rica-jungle-yoga.jpg`, `costa-rica-beach.jpg`
-
----
-
-### 9. `/blog/yoga-retreat-for-beginners` — 260/mo
-**Primary keyword:** yoga retreat for beginners  
-**Target length:** ~2,000 words  
-**Format:** practical guide  
-**Featured snippet answer:** "For a first yoga retreat, choose 4–5 days rather than 7. Look for mixed-level classes, a named lead teacher, and a group under 15. Budget $300–$1,400 depending on destination. You don't need to be flexible, experienced, or spiritual to attend."  
-**Sections:** what to expect on day 1, how to choose your first retreat (length, level, group size), what to pack, common mistakes, when to upgrade to longer retreats  
-**Story:** Origin Story (the Meeting Room) — why she booked with zero preparation  
-**Opinion:** Opinion 2 (7-day is too long for first-timers), Opinion 3 (teacher matters more than room)  
-**Pexels queries:** `beginner yoga class outdoor`, `first yoga retreat`, `yoga mat nature morning`  
-**Image filenames:** `beginner-yoga-class.jpg`, `beginner-yoga-mat.jpg`
-
----
-
-### 10. `/blog/luxury-yoga-retreats` — 210/mo
-**Primary keyword:** luxury yoga retreats  
-**Target length:** ~1,800 words  
-**Format:** guide + comparison table  
-**Featured snippet answer:** "Luxury yoga retreats ($2,500–$4,000+/week) differ from mid-range in four ways: group capped at 8–12, teacher with 20+ years experience, private accommodation, and zero logistical friction. The price is only worth it when it's emotionally neutral."  
-**Sections:** what the premium actually buys, top luxury destinations (Tuscany, Tulum, Ubud), what to look for, when luxury is and isn't worth it  
-**Story:** Tuscany Moment ($4,200, almost cancelled 3x, why it was worth it — and the emotional neutrality rule)  
-**Pexels queries:** `luxury yoga resort pool`, `tuscany wellness retreat`, `luxury spa yoga`  
-**Image filenames:** `luxury-resort-yoga.jpg`, `luxury-tuscany-wellness.jpg`
-
----
-
-### 11. `/blog/silent-yoga-retreat` — 210/mo
-**Primary keyword:** silent yoga retreat  
-**Target length:** ~1,800 words  
-**Format:** explainer guide  
-**Featured snippet answer:** "A silent yoga retreat (Vipassana and similar) requires no speaking for 7–10 days. They're donation-based or low-cost. The discomfort is front-loaded — the first 12–18 hours are strange. After that, most participants find the silence a relief. Not appropriate for untreated depression or anxiety without professional guidance."  
-**Sections:** what silent retreats actually involve, Vipassana vs other formats, who they suit (and don't), what to expect day by day, cost, how to apply  
-**Gaps to add:** mental health contraindications (must include), what happens if you break silence  
-**Opinion:** Opinion 5 (underrated for non-spiritual people, especially former corporate)  
-**Pexels queries:** `silent meditation retreat`, `vipassana meditation`, `meditation silence nature`  
-**Image filenames:** `silent-retreat-meditation.jpg`, `silent-nature-meditation.jpg`
-
----
-
-### 12. `/blog/affordable-yoga-retreats` — 170/mo
-**Primary keyword:** affordable yoga retreats  
-**Target length:** ~1,800 words  
-**Format:** guide + destination comparison table  
-**Featured snippet answer:** "The most affordable yoga retreats are in India ($300–$600/week full board in Rishikesh) and Thailand ($600–$900/week). In Europe, Portugal offers the best value at $800–$1,200/week. Budget retreats can be excellent — the key is verifying teacher credentials, not chasing the lowest price."  
-**Sections:** what budget actually means (never use "affordable" without a number), best cheap destinations ranked, what to sacrifice vs what you don't have to, red flags in budget retreats  
-**Pexels queries:** `budget yoga retreat nature`, `rishikesh yoga affordable`, `thailand yoga budget`  
-**Image filenames:** `affordable-yoga-india.jpg`, `affordable-yoga-thailand.jpg`
-
----
-
-### 13. `/blog/all-inclusive-yoga-retreat` — 170/mo
-**Primary keyword:** all inclusive yoga retreat  
-**Target length:** ~1,600 words  
-**Format:** explainer guide  
-**Featured snippet answer:** "All-inclusive yoga retreats bundle accommodation, meals, yoga sessions, and sometimes excursions into one upfront price. Expect $900–$2,500/week depending on destination. Always check what 'all-inclusive' actually means — most exclude airport transfers, spa treatments, and alcohol."  
-**Sections:** what's actually included vs what usually isn't, best destinations for all-inclusive, how to compare prices honestly, is it better value than booking separately?  
-**Pexels queries:** `all inclusive resort yoga`, `yoga retreat meal included`, `wellness resort pool yoga`  
-**Image filenames:** `all-inclusive-resort.jpg`, `all-inclusive-meal.jpg`
