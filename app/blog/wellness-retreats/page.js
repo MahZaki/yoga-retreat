@@ -7,12 +7,12 @@ import s from '../yoga-retreats/page.module.css'
 
 export const metadata = {
   title: 'The Ultimate Guide to Wellness Retreats (2026) | YogaRetreatAdvisor',
-  description: 'Discover the life-changing benefits of a wellness retreat. Explore top destinations, learn how to choose the perfect escape, and book your transformational journey.',
+  description: 'Wellness retreats have shifted toward data-driven health and nervous-system regulation. Discover top 2026 destinations, expected costs, and how to choose the right reset.',
   alternates: { canonical: 'https://www.yogaretreatadvisor.com/blog/wellness-retreats' },
   openGraph: {
     title: 'The Ultimate Guide to Wellness Retreats (2026)',
-    description: 'Discover the life-changing benefits of a wellness retreat. Explore top destinations, learn how to choose the perfect escape, and book your transformational journey.',
-    images: [{ url: '/images/blog/meditation-retreat-group-outdoor.jpg', width: 1200, height: 630, alt: 'Group practicing wellness at an outdoor retreat' }],
+    description: 'Wellness retreats have shifted toward data-driven health and nervous-system regulation. Discover top 2026 destinations, expected costs, and how to choose the right reset.',
+    images: [{ url: '/images/blog/wellness-retreat-forest.jpg', width: 1200, height: 630, alt: 'Forest bathing at a wellness retreat' }],
     type: 'article',
   },
 }
@@ -21,14 +21,53 @@ export default function WellnessRetreatsGuide() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'The Ultimate Guide to Wellness Retreats: Transform Your Mind & Body',
-    description: 'Discover the life-changing benefits of a wellness retreat. Explore top destinations, learn how to choose the perfect escape, and book your transformational journey.',
+    headline: 'The Ultimate Guide to Wellness Retreats (2026)',
+    description: 'Wellness retreats have shifted toward data-driven health and nervous-system regulation. Discover top 2026 destinations, expected costs, and how to choose the right reset.',
     author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://www.yogaretreatadvisor.com/about' },
     publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', logo: { '@type': 'ImageObject', url: 'https://www.yogaretreatadvisor.com/logo.png' } },
-    datePublished: '2026-06-11',
-    dateModified: '2026-06-11',
-    image: 'https://www.yogaretreatadvisor.com/images/blog/meditation-retreat-group-outdoor.jpg',
+    datePublished: '2026-06-18',
+    dateModified: '2026-06-18',
+    image: 'https://www.yogaretreatadvisor.com/images/blog/wellness-retreat-forest.jpg',
     mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.yogaretreatadvisor.com/blog/wellness-retreats' },
+  }
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Are wellness retreats worth the money?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'An expensive wellness retreat is only worth it if the price is emotionally neutral. If spending $4,000 creates financial stress, that anxiety will undo every nervous-system benefit the retreat aims to provide. If you can tolerate a bit of logistical friction, you can find life-changing experiences for under $1,500.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'What actually happens at a wellness retreat?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Unlike standard yoga retreats, 2026 wellness retreats focus heavily on nervous system regulation and longevity. You can expect contrast therapy (hot/cold plunges), advanced sleep diagnostics, metabolic testing, daily breathwork, and structured periods of silence or "cocooning" to combat urban burnout.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'Do I need to be fit to attend a wellness retreat?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Absolutely not. Most wellness retreats are highly personalized and cater to all physical levels. Their primary goal is restoration and regulation of the nervous system, not athletic performance.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'Where are the best wellness retreats located?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'For medical and data-driven wellness, Thailand (Kamalaya, RAKxa) and Europe (Lanserhof Lans, Palazzo Fiuggi) are the 2026 benchmarks. For eco-luxury and jungle immersion, Costa Rica and Bali remain top choices.'
+        }
+      }
+    ]
   }
 
   const breadcrumbLd = {
@@ -44,6 +83,7 @@ export default function WellnessRetreatsGuide() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <Navbar />
 
@@ -51,14 +91,14 @@ export default function WellnessRetreatsGuide() {
         <article id="top" className={s.article}>
           {/* Hero */}
           <div className={s.heroWrap}>
-            <Image src="/images/blog/meditation-retreat-group-outdoor.jpg" alt="Group sitting in meditation during a wellness retreat" fill priority sizes="100vw" style={{ objectFit: 'cover' }} />
+            <Image src="/images/blog/wellness-retreat-forest.jpg" alt="A person sitting quietly in a dense, fog-covered forest" fill priority sizes="100vw" style={{ objectFit: 'cover' }} />
             <div className={s.heroOverlay}>
               <span className={s.heroCat}>Complete Guide</span>
-              <h1>The Ultimate Guide to Wellness Retreats: Transform Your Mind & Body</h1>
+              <h1>The Ultimate Guide to Wellness Retreats (2026)</h1>
               <div className={s.heroMeta}>
                 <span>By Sarah Mitchell</span>
-                <span>June 11, 2026</span>
-                <span>12 min read</span>
+                <span>June 18, 2026</span>
+                <span>10 min read</span>
               </div>
             </div>
           </div>
@@ -68,159 +108,133 @@ export default function WellnessRetreatsGuide() {
               {/* Main Content */}
               <div className={s.body}>
 
-                <p className={s.introBrief}>Before you book a wellness retreat, ask yourself one thing: what do you actually need right now? Rest? Challenge? A complete neurological reset? The answer changes everything.</p>
-
-                <h2 id="what-is-it">What is a wellness retreat?</h2>
-
-                <p>The first time I walked into a dedicated wellness program, I thought I was just going for a holiday with better food. I was wrong. A true wellness retreat isn't just a hotel with a nice spa menu — it is a structured, intentional environment designed to reset your baseline.</p>
-
-                <p>If you are confused by the marketing jargon, you're not alone. The meaning of a wellness retreat has become diluted by every luxury resort claiming to offer one. A genuine wellness retreat uses clinical, nutritional, or holistic structures (like yoga, meditation, or Ayurveda) to target specific outcomes. They are typically more expensive, more medically adjacent, and less structurally focused on pure yoga than a standard <Link href="/blog/yoga-retreats">yoga retreat</Link>. If a holistic physical reset is what you're after, this is where you start.</p>
-
-                <div className={s.imgFull}>
-                  <Image src="/images/blog/pillar-benefits-new.png" alt="A person resting and journaling on a wooden deck overlooking nature" fill sizes="100vw" style={{ objectFit: 'cover' }} />
+                <div className={s.introBrief}>
+                  <strong>Wellness retreats in 2026 have shifted from simple relaxation to data-driven health, nervous-system regulation, and deep nature immersion.</strong> Expect contrast therapy, sleep optimization, and "cocooning" over high-intensity detoxes. <strong>Budget $1,500–$2,500/week for mid-range.</strong> Premium medical wellness runs $4,000+.
                 </div>
 
-                <h2 id="benefits">5 Life-Changing Benefits of Attending a Wellness Retreat</h2>
+                <p>The term "wellness retreat" used to mean a hotel with a slightly elevated spa menu and some morning yoga. By 2026, the industry has fractured into something far more specific, and frankly, far more effective. The current landscape is split between highly clinical, longevity-focused programs and deep, nature-immersive nervous system resets.</p>
 
-                <p>I don't use words like "life-changing" lightly. But when you remove the chronic stress of daily decision-making, the body responds rapidly. According to a 2022 study on retreat experiences, participants showed significant decreases in cortisol and sustained improvements in psychological well-being up to six weeks post-retreat. Here's what you can actually expect:</p>
+                <p>Before you book anything, you have to ask yourself one question: what are you trying to fix? If you are physically burnt out from urban living, a strict Ayurvedic detox might actually break you. If you want measurable health data, a silent meditation retreat in a forest won't give you the metabolic insights you need.</p>
+
+                <p>Here is the honest guide to navigating the 2026 wellness retreat landscape, from what they actually cost to how to spot a hotel masquerading as a wellness centre.</p>
+
+                <h2 id="what-has-changed">How Wellness Retreats Changed in 2026</h2>
+
+                <p>If you haven't looked at retreat options since 2022, the market has shifted dramatically. We've moved away from the punishing "detox" cultures and juice fasts of the late 2010s. The focus now is almost entirely on <strong>nervous system regulation</strong> and <strong>longevity</strong>.</p>
 
                 <ul>
-                  <li><strong>Total decision fatigue reset:</strong> You don't have to decide what to eat, when to wake up, or what to do next. The structure holds you, allowing your brain to genuinely rest.</li>
-                  <li><strong>A drop in baseline anxiety:</strong> Being disconnected from notifications and news cycles for even 72 hours changes how your nervous system behaves.</li>
-                  <li><strong>Nutritional recalibration:</strong> Eating clean, anti-inflammatory, chef-prepared meals for a week reminds you what your body is actually supposed to feel like.</li>
-                  <li><strong>Honest connection:</strong> The people you meet in these environments — particularly on <Link href="/blog/womens-yoga-retreat">women-only retreats</Link> — bypass small talk. You will have more honest conversations in three days than you've had in six months.</li>
-                  <li><strong>Distance from routine:</strong> The real benefit is the gap it creates between you and your usual life. In that gap, you can see things that are invisible from inside the routine.</li>
+                  <li><strong>Precision and Longevity:</strong> The premium tier of wellness travel is now essentially diagnostic. Places like Lanserhof Lans in Austria or RAKxa in Thailand are leading with metabolic testing, advanced sleep optimization, and biohacking protocols. You aren't just resting; you are collecting data.</li>
+                  <li><strong>Contrast Therapy as Standard:</strong> Hot and cold plunges are no longer niche. Almost every credible wellness centre in 2026 has built dedicated contrast therapy circuits to force physiological adaptation and stress management.</li>
+                  <li><strong>Nature as Architecture:</strong> Nature is no longer just the view from the massage table; it is the primary tool for healing. "Eco-luxury" has evolved into intentional forest bathing, silence, and what the industry is calling "cocooning" — isolating yourself in safe, profoundly quiet environments.</li>
                 </ul>
 
-                <h2 id="types">Top Types of Wellness Retreats to Consider</h2>
-
-                <p>Not all retreats are the same kind of hard, or the same kind of gentle. Match the retreat to the person it actually serves.</p>
-
-                <h3>Yoga and Meditation Retreats</h3>
-                <p>The gateway to the wellness world. These retreats use physical practice and seated meditation as the primary tools for mental clarity. They are highly structured but generally accessible. If you want to dive deep into this specific format, read our guide on <Link href="/blog/yoga-retreats">how to choose a yoga retreat</Link>.</p>
-
-                <h3>Digital Detox & Silent Retreats</h3>
-                <p>These are frequently dismissed as extreme. In practice, the forced removal of social performance anxiety — not having to hold conversation or be interesting — is profoundly restful for people who find social interaction draining. The 10-day Vipassana format is intense but highly effective. It is right for you if you are overstimulated. It is not right for you if you have untreated depression or trauma history.</p>
-
-                <h3>Holistic Spa & Ayurveda Retreats</h3>
-                <p>Ayurvedic wellness retreats follow a clinical structure: dietary regimes, daily treatments, and specific breathwork. Kerala, India is the benchmark destination for this. These are physically demanding and require total submission to the process. You are there to heal, not to sightsee.</p>
-
-                <div className={s.imgFull}>
-                  <Image src="/images/blog/pillar-choose-teacher-new.png" alt="A teacher adjusting a student's shoulders" fill sizes="100vw" style={{ objectFit: 'cover' }} />
+                <div className={s.imageBlock}>
+                  <Image src="/images/blog/wellness-contrast-therapy.jpg" alt="A person stepping into a cold plunge pool surrounded by steam" width={860} height={500} />
+                  <p className={s.caption}>Contrast therapy (alternating hot saunas with cold plunges) has become the baseline offering for any serious wellness retreat focused on nervous system regulation. Photo: Pexels</p>
                 </div>
 
-                <h2 id="how-to-choose">How to Choose the Right Wellness Retreat for You</h2>
+                <h2 id="cost-and-value">What Expensive Actually Buys You</h2>
 
-                <p>The majority of large retreat booking platforms rank the "best" wellness retreats based partly on commission rates paid by the retreat, not on actual quality. You are often seeing curated revenue, not curated quality. Here is how you evaluate them yourself:</p>
+                <p>A $4,200 luxury wellness retreat in Tuscany remains the most expensive thing I have ever bought for myself. I almost cancelled it three times. What I found was that at that price point, every logistical friction point had been removed. The food was exceptional, the scheduling was impeccable, the clinical staff were world-class, and nothing was wasted.</p>
 
-                <p>First, evaluate the <strong>programming quality</strong>. Look at the actual daily schedule. Is there time to read and walk, or is it packed from 6am to 9pm? Overscheduled retreats are exhausting. Second, evaluate the <strong>facilitators</strong>. Are their credentials visible on the website? If they just say "our experienced team" without naming names, keep looking.</p>
+                <p>But there is a hard rule I learned from that experience: <strong>Price only buys quality up to a point. Beyond that, you are paying for friction removal and exclusivity.</strong> Neither of those things matters if the price tag creates financial stress. If spending $4,000 on a week of wellness causes you anxiety, that anxiety will undo every physiological benefit the retreat is trying to provide. Expensive retreats are only worth it when the price itself is emotionally neutral.</p>
 
-                <p>Finally, consider the length. The standard 7-day retreat is too long for most first-timers. Four to five days is the optimal entry point — long enough to genuinely disconnect, short enough that a difficult first experience doesn't become an expensive regret.</p>
+                <p>If you can tolerate a bit of logistical friction—booking your own airport transfers, sharing a bathroom, or dealing with less-than-perfect scheduling—you can find profoundly effective <Link href="/blog/affordable-yoga-retreats">mid-range retreats</Link> for $1,200 to $1,800.</p>
 
-                <h2 id="destinations">The Best Wellness Retreat Destinations for 2026</h2>
+                <h2 id="top-destinations">The 2026 Benchmark Destinations</h2>
 
-                <p>Where you go determines more of your experience than most people realise. Here are the standout destinations right now:</p>
+                <p>The global leaders in wellness have distinct geographical hubs depending on what you are looking for.</p>
+
+                <h3>1. Thailand (The Medical & Holistic Blend)</h3>
+                <p>Thailand remains the undisputed leader in blending serious clinical wellness with Eastern holistic traditions. <strong>Kamalaya</strong> in Koh Samui and <strong>Chiva-Som</strong> in Hua Hin are the legacy institutions, while <strong>RAKxa Integrative Wellness</strong> in Bangkok is currently setting the benchmark for data-led, high-tech diagnostic retreats. <Link href="/blog/yoga-retreat-bali">Bali</Link> competes on aesthetics, but Thailand wins on clinical depth.</p>
+
+                <h3>2. Europe (The Clinical Heavyweights)</h3>
+                <p>If you want serious, doctor-led interventions, you go to Europe. <strong>Lanserhof Lans</strong> (Austria) and <strong>Palazzo Fiuggi</strong> (Italy) dominate the luxury medical wellness space. This is where you go for advanced longevity protocols, heavy metal detoxing, and comprehensive physical overhauls. Expect to pay a massive premium.</p>
+
+                <h3>3. Costa Rica (Jungle Immersion & Eco-Luxury)</h3>
+                <p>For US-based travellers who want profound nervous system resets without the 15-hour flight to Asia, <Link href="/blog/yoga-retreats-costa-rica">Costa Rica</Link> is the obvious choice. The focus here is less on clinical data and more on raw nature, surf, and somatic tracking in the jungle. It is the ultimate antidote to urban burnout.</p>
+
+                <div className={s.imageBlock}>
+                  <Image src="/images/blog/wellness-sound-healing.jpg" alt="A practitioner playing singing bowls during a sound healing session" width={860} height={500} />
+                  <p className={s.caption}>Sound healing and vibrational therapy have shifted from fringe offerings to core components of burnout recovery programs. Photo: Pexels</p>
+                </div>
+
+                <h2 id="how-to-choose">How to Spot a Fake Wellness Retreat</h2>
+
+                <p>Because "wellness" commands a higher nightly rate, many hotels have simply rebranded their spa packages. Here is how you evaluate if a retreat is genuine:</p>
 
                 <ul>
-                  <li><strong><Link href="/retreats/wellness-retreats-bali">Bali, Indonesia</Link>:</strong> The global capital of wellness. Ubud commands a premium, but the food and holistic spa quality are unmatched.</li>
-                  <li><strong><Link href="/retreats/jungle-retreats-costa-rica">Costa Rica</Link>:</strong> Best for US-based travellers wanting eco-luxury, jungle immersion, and the "Pura Vida" lifestyle without the jetlag.</li>
-                  <li><strong><Link href="/blog/yoga-retreat-california">California, USA</Link>:</strong> High price point, but unmatched access to world-class functional medicine practitioners and luxury desert escapes.</li>
+                  <li><strong>Look at the daily schedule:</strong> Is it packed from 6am to 9pm? A real wellness retreat understands that rest and integration are required. Overscheduled retreats are exhausting and counterproductive.</li>
+                  <li><strong>Check the facilitators:</strong> Are the practitioners named? Do they have verifiable credentials (e.g., licensed nutritionists, registered somatic therapists)? If the website just says "our experienced holistic team" without naming names, keep looking.</li>
+                  <li><strong>Beware of Instagram-first formatting:</strong> The retreats that look the best in photos are sometimes the ones working the hardest to distract you from what's missing. If the schedule seems arranged purely for golden-hour photography rather than clinical efficacy, it is a holiday, not a retreat.</li>
                 </ul>
 
-                <h2 id="packing">What to Pack for a Wellness Retreat</h2>
+                <h2 id="verdict">The Honest Summary</h2>
 
-                <p>Pack less than you think. You'll spend most of your time in comfortable clothing. Bring layers (you cool down fast after treatments), slip-on sandals, and a physical journal. Leave the laptop at home. Bring a book. One book is plenty — you'll read less than you expect and think more.</p>
+                <p>Before you hand over a deposit, be relentlessly honest with yourself about what you need. If you are chronically exhausted, do not book a rigorous 10-day Ayurvedic cleanse that will physically deplete you further. Book a 5-day <Link href="/blog/womens-yoga-retreat">women's retreat</Link> with restorative yoga and forest walks.</p>
 
-                <h2 id="faq">Frequently Asked Questions (FAQ)</h2>
+                <p>If you want data and longevity protocols, accept the premium price tag and go to a dedicated clinical centre. The right retreat is the one that directly answers the deficit you are currently experiencing.</p>
 
-                <p><strong>Are wellness retreats worth the money?</strong><br/>
-                An expensive retreat is only worth it if the price is emotionally neutral. If spending $4,000 on a week in Tuscany creates financial stress, that anxiety will undo every benefit. Expensive retreats buy the removal of friction. If you can tolerate a bit of logistical friction, you can find life-changing experiences for under $1,000.</p>
+                <h2 id="faq">Frequently Asked Questions</h2>
 
-                <p><strong>Do I need to be fit to attend a wellness retreat?</strong><br/>
-                Absolutely not. Most wellness retreats are highly personalized and cater to all physical levels. Their goal is restoration, not athletic performance.</p>
+                <h3>Are wellness retreats worth the money?</h3>
+                <p>An expensive wellness retreat is only worth it if the price is emotionally neutral. If spending $4,000 creates financial stress, that anxiety will undo every nervous-system benefit the retreat aims to provide. If you can tolerate a bit of logistical friction, you can find life-changing experiences for under $1,500.</p>
 
-                {/* Tags */}
-                <div className={s.tags}>
-                  <span className="tag">Wellness Retreats</span>
-                  <span className="tag">Mental Health</span>
-                  <span className="tag">Retreat Planning</span>
-                  <span className="tag">Holistic Healing</span>
-                </div>
+                <h3>What actually happens at a wellness retreat?</h3>
+                <p>Unlike standard <Link href="/blog/yoga-retreats">yoga retreats</Link>, 2026 wellness retreats focus heavily on nervous system regulation and longevity. You can expect contrast therapy (hot/cold plunges), advanced sleep diagnostics, metabolic testing, daily breathwork, and structured periods of silence or "cocooning" to combat urban burnout.</p>
 
-                {/* Author Box */}
-                <div className={s.authorBox}>
-                  <div className={s.authorAvatar}>
-                    <Image src="/images/hero-portrait.jpg" alt="Sarah Mitchell" fill sizes="80px" style={{ objectFit: 'cover' }} />
-                  </div>
-                  <div className={s.authorMeta}>
-                    <h3>Sarah Mitchell</h3>
-                    <div className={s.authorRole}>Founder &amp; Lead Reviewer, YogaRetreatAdvisor</div>
-                    <p>Former London project manager turned yoga travel writer. She's attended 14 retreats across 9 countries since 2018. RYT-200 certified. Price range covered: $380–$4,200. Perpetually over-packed.</p>
-                    <p>Sarah started YogaRetreatAdvisor because she got tired of reading reviews written by writers who'd been comped free stays, or platforms ranking retreats based on who pays the highest commission. She has no financial relationship with the retreats she reviews.</p>
-                  </div>
-                </div>
+                <h3>Do I need to be fit to attend a wellness retreat?</h3>
+                <p>Absolutely not. Most wellness retreats are highly personalized and cater to all physical levels. Their primary goal is restoration and regulation of the nervous system, not athletic performance.</p>
+
+                <h3>Where are the best wellness retreats located?</h3>
+                <p>For medical and data-driven wellness, Thailand (Kamalaya, RAKxa) and Europe (Lanserhof Lans, Palazzo Fiuggi) are the 2026 benchmarks. For eco-luxury and jungle immersion, Costa Rica and Bali remain top choices.</p>
+
               </div>
 
               {/* Sidebar TOC */}
-              <aside>
+              <aside className={s.sidebar}>
                 <div className={s.toc}>
                   <h3>In This Guide</h3>
-                  <nav className={s.tocLinks}>
-                    <a href="#what-is-it" className={s.tocLink}>What is a wellness retreat?</a>
-                    <a href="#benefits" className={s.tocLink}>5 Life-Changing Benefits</a>
-                    <a href="#types" className={s.tocLink}>Top Types to Consider</a>
-                    <a href="#how-to-choose" className={s.tocLink}>How to Choose the Right One</a>
-                    <a href="#destinations" className={s.tocLink}>Best Destinations for 2026</a>
-                    <a href="#packing" className={s.tocLink}>What to Pack</a>
-                    <a href="#faq" className={s.tocLink}>FAQ</a>
-                  </nav>
+                  <ul>
+                    <li><a href="#what-has-changed">What Changed in 2026</a></li>
+                    <li><a href="#cost-and-value">Cost vs Value</a></li>
+                    <li><a href="#top-destinations">Benchmark Destinations</a></li>
+                    <li><a href="#how-to-choose">Spotting a Fake</a></li>
+                    <li><a href="#verdict">Honest Summary</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                  </ul>
+                </div>
+                <div className={s.relatedBox}>
+                  <h3>Related reads</h3>
+                  <ul>
+                    <li><Link href="/blog/yoga-retreats">The complete yoga retreats guide</Link></li>
+                    <li><Link href="/blog/how-to-book-yoga-retreat">How to book a yoga retreat</Link></li>
+                    <li><Link href="/blog/best-yoga-retreats">best yoga retreats</Link></li>
+                    <li><Link href="/blog/yoga-retreats-costa-rica">Costa Rica yoga retreats</Link></li>
+                    <li><Link href="/blog/luxury-yoga-retreats">Luxury retreats guide</Link></li>
+                  </ul>
                 </div>
               </aside>
             </div>
           </div>
 
-          {/* Related Posts */}
-          <section className={s.relatedPosts}>
-            <div className="container">
-              <div className="section-header center">
-                <span className="section-label">Related Articles</span>
-                <h2>Continue Reading</h2>
-              </div>
-              <div className={s.relatedGrid}>
-                <Link href="/blog/yoga-retreats" className={s.relatedCard}>
-                  <div className={s.relatedImg}>
-                    <Image src="/images/blog/yoga-retreat-hero.jpg" alt="Yoga Retreats" fill sizes="33vw" style={{ objectFit: 'cover' }} />
-                  </div>
-                  <div className={s.relatedBody}>
-                    <span>Complete Guide</span>
-                    <h3>Yoga Retreats: Choosing, Booking & Preparing</h3>
-                  </div>
-                </Link>
-                <Link href="/blog/luxury-yoga-retreats" className={s.relatedCard}>
-                  <div className={s.relatedImg}>
-                    <Image src="/images/blog/luxury-yoga.jpg" alt="Luxury yoga retreat pool" fill sizes="33vw" style={{ objectFit: 'cover' }} />
-                  </div>
-                  <div className={s.relatedBody}>
-                    <span>Retreat Types</span>
-                    <h3>Luxury Yoga Retreats: What $3,000+ Gets You</h3>
-                  </div>
-                </Link>
-                <Link href="/blog/womens-yoga-retreat" className={s.relatedCard}>
-                  <div className={s.relatedImg}>
-                    <Image src="/images/blog/meditation-retreat-group-outdoor.jpg" alt="Women's Retreat" fill sizes="33vw" style={{ objectFit: 'cover' }} />
-                  </div>
-                  <div className={s.relatedBody}>
-                    <span>Retreat Types</span>
-                    <h3>The Truth About Women's Yoga Retreats</h3>
-                  </div>
-                </Link>
-              </div>
+          <div className={s.authorBox}>
+            <div className={s.authorAvatar}>
+              <Image src="/images/hero-portrait.jpg" alt="Sarah Mitchell" fill sizes="80px" style={{ objectFit: 'cover' }} />
             </div>
-          </section>
+            <div className={s.authorMeta}>
+              <h3>Sarah Mitchell</h3>
+              <div className={s.authorRole}>Founder &amp; Lead Reviewer, YogaRetreatAdvisor</div>
+              <p>Former London project manager turned yoga travel writer. 14 retreats across 9 countries since 2018, from a $380 week in Rishikesh to a $4,200 luxury immersion in Tuscany. RYT-50. Based between London and Lisbon.</p>
+            </div>
+          </div>
+
+          <Newsletter />
+          <div className="container" style={{ textAlign: 'center', padding: '2rem 0' }}>
+            <a href="#top" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>↑ Back to top</a>
+          </div>
         </article>
       </main>
-
-      <Newsletter />
       <Footer />
     </>
   )

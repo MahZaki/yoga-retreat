@@ -25,8 +25,8 @@ export default function GreeceRetreatsGuide() {
     description: "Discover the best authentic yoga retreats in Greece. From luxury sanctuaries in Corfu to hidden gems in Amorgos.",
     author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://www.yogaretreatadvisor.com/about' },
     publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', logo: { '@type': 'ImageObject', url: 'https://www.yogaretreatadvisor.com/logo.png' } },
-    datePublished: '2026-06-12',
-    dateModified: '2026-06-12',
+    datePublished: '2026-06-18',
+    dateModified: '2026-06-18',
     image: 'https://www.yogaretreatadvisor.com/images/blog/greece-yoga-hero.jpg',
     mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.yogaretreatadvisor.com/blog/yoga-retreats-greece' },
   }
@@ -95,7 +95,7 @@ export default function GreeceRetreatsGuide() {
               <h1>The Best Yoga Retreats in Greece: Corfu, Crete, and the Cyclades</h1>
               <div className={s.heroMeta}>
                 <span>By Sarah Mitchell</span>
-                <span>June 12, 2026</span>
+                <span>June 18, 2026</span>
                 <span>8 min read</span>
               </div>
             </div>
@@ -107,9 +107,9 @@ export default function GreeceRetreatsGuide() {
               {/* Main Content */}
               <div className={s.body}>
 
-                <p className={s.introBrief}>
-                  Greece has quietly become the premier yoga destination in Europe. But with hundreds of retreats scattered across dozens of islands, how do you choose — and how do you avoid paying for a mediocre class with a nice view? Here's an honest breakdown for 2026.
-                </p>
+                <div className={s.introBrief}>
+                  <strong>Yoga retreats in Greece cost $900 for a budget stay in Crete up to $3,500+ for luxury in Santorini.</strong> Avoid July and August due to intense heat and tourist swarms—the best months are May and September. The Mediterranean diet and stunning aesthetics make Greece Europe's premier wellness destination, but beware of overpriced, under-taught "resort yoga."
+                </div>
 
                 <p>There's a specific quality of light in Greece. It bounces off the white-washed buildings, reflects off the impossibly blue Aegean Sea, and makes everything look slightly cinematic. It is, undeniably, one of the most beautiful places on earth to roll out a yoga mat.</p>
 
@@ -130,7 +130,7 @@ export default function GreeceRetreatsGuide() {
 
                 <p>Before we get to specific recommendations, I need to share a warning about how retreats in Greece are marketed online.</p>
 
-                <p>If you go to a major retreat aggregator website and search "Greece," you'll be shown a list of "Top Rated" options. What you're often actually seeing is curated revenue. Many of the largest retreat booking platforms rank retreats based partly — or entirely — on the commission rates paid by the retreat centre itself, which can range from 10% to 25% of booking value. The retreats at the top of those lists are paying for placement.</p>
+                <p>If you go to a major retreat aggregator website and search "Greece," you'll be shown a list of "Top Rated" options. What you're often actually seeing is curated revenue. Many of the largest retreat booking platforms rank retreats based partly — or entirely — on the commission rates paid by the retreat centre itself, which can range from 15% to 20% of booking value. The retreats at the top of those lists are paying for placement.</p>
 
                 <p>Readers assume they're seeing curated quality. They're often seeing the highest bidder. I have no financial relationship with the specific retreat centres listed below. If you want to book them, find their direct websites. The teachers will actually keep what they earn.</p>
 
@@ -227,14 +227,14 @@ export default function GreeceRetreatsGuide() {
 
                 <h2 id="faq">FAQ</h2>
 
-                <p><strong>What is the best month to do a yoga retreat in Greece?</strong><br/>
-                May, September, and early October. The weather is warm enough for swimming, but the intense heat and tourist swarms of July and August have dispersed. Retreats are also typically cheaper and easier to book during shoulder season.</p>
+                <h3>What is the best month to do a yoga retreat in Greece?</h3>
+                <p>May, September, and early October. The weather is warm enough for swimming, but the intense heat and tourist swarms of July and August have dispersed. Retreats are also typically cheaper and easier to book during shoulder season.</p>
 
-                <p><strong>How much does a yoga retreat in Greece cost?</strong><br/>
-                A budget shared-room retreat in Crete: around $900 for a week. A luxury private sea-view retreat in Corfu or Santorini: $3,500+. Most quality mid-range programmes fall between $1,200 and $2,000 for 7 days, including accommodation and meals.</p>
+                <h3>How much does a yoga retreat in Greece cost?</h3>
+                <p>A budget shared-room retreat in Crete: around $900 for a week. A luxury private sea-view retreat in Corfu or Santorini: $3,500+. Most quality mid-range programmes fall between $1,200 and $2,000 for 7 days, including accommodation and meals.</p>
 
-                <p><strong>Do I need to be an advanced yogi to attend a retreat in Greece?</strong><br/>
-                Not at all. The vast majority of retreats in Greece cater to all levels with modifications for beginners. The focus is usually on holistic wellness and the Mediterranean lifestyle, not athletic performance.</p>
+                <h3>Do I need to be an advanced yogi to attend a retreat in Greece?</h3>
+                <p>Not at all. The vast majority of retreats in Greece cater to all levels with modifications for beginners. The focus is usually on holistic wellness and the Mediterranean lifestyle, not athletic performance.</p>
 
                 {/* Tags */}
                 <div className={s.tags}>
@@ -253,7 +253,7 @@ export default function GreeceRetreatsGuide() {
                   <div className={s.authorMeta}>
                     <h3>Sarah Mitchell</h3>
                     <div className={s.authorRole}>Founder & Lead Reviewer, YogaRetreatAdvisor</div>
-                    <p>Former London project manager turned yoga travel writer. She's attended 14 retreats across 9 countries since 2018, spending between $380 and $4,200 per retreat week. RYT-50 certified. Based between London and Lisbon.</p>
+                    <p>Former London project manager turned yoga travel writer. 14 retreats across 9 countries since 2018. RYT-50 certified. Based between London and Lisbon. Price range covered: $380–$4,200.</p>
                   </div>
                 </div>
               </div>

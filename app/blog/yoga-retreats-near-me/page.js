@@ -141,9 +141,9 @@ export default function YogaRetreatsNearMe() {
 
               {/* Main Content */}
               <div className={s.content}>
-                <p className={s.introBrief}>
-                  You don't need a 15-hour flight to Bali to genuinely disconnect. In fact, if this is your first retreat, a 3-to-4-day driveable weekend getaway within the US is actually the optimal entry point. Here is how to find the best dedicated wellness centers across the East Coast, West Coast, South, and Rockies.
-                </p>
+                <div className={s.introBrief}>
+                  <strong>A domestic weekend yoga retreat in the US costs $400–$900 for a 3-night stay.</strong> You don't need a 15-hour flight to genuinely disconnect. The best driveable retreats are found at dedicated wellness centers like Kripalu (East Coast), Esalen (West Coast), Art of Living (South), and Drala Mountain Center (Rockies).
+                </div>
 
                 <p>When most people decide they need a yoga retreat, their first instinct is to open Google Flights and look at Costa Rica, Mexico, or Indonesia. It feels like distance equals transformation. The further away you go, the more you can leave your stress behind.</p>
 

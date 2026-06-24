@@ -124,7 +124,7 @@ export default function BookYogaRetreatPage() {
             <div className={s.body}>
 
               <div className={s.introBrief}>
-                <strong>To book a yoga retreat:</strong> (1) set your real budget including flights and transfers, (2) choose destination based on teaching style not aesthetics, (3) verify teacher credentials independently, (4) read the refund policy before paying any deposit, (5) pay by credit card and buy travel insurance. The whole process takes an hour if you know what you&apos;re looking for.
+                <strong>To book a yoga retreat safely:</strong> (1) set a total budget including flights and transfers, (2) choose a destination based on teaching style, (3) verify teacher credentials off-platform, (4) check the refund policy before paying a deposit (avoid anything over 50% upfront), and (5) always pay by credit card. Never rely solely on retreat booking platforms, as rankings are often influenced by 10–25% commission rates.
               </div>
 
               <p>Most retreat mistakes aren&apos;t about choosing the wrong destination. They&apos;re about skipping the 45 minutes of admin that happens between &quot;I want to book this&quot; and &quot;I&apos;ve paid the deposit.&quot; Across 14 retreats in 9 countries, I&apos;ve watched myself — and heard from hundreds of readers — make every version of this mistake at least once. This guide is the checklist I wish I&apos;d had in 2018.</p>
@@ -207,7 +207,7 @@ export default function BookYogaRetreatPage() {
                 <li>Watch a video of them teaching before you pay. Most credible retreat teachers have free content online.</li>
               </ul>
               <p>Before paying, email the centre and ask directly: &quot;Is [named teacher] confirmed as the lead teacher for this specific retreat date?&quot; A centre that can&apos;t confirm their teacher three months before a retreat either doesn&apos;t know yet, or the teacher is a placeholder. Either is useful information.</p>
-              <p>My highest-rated retreat — $380 for seven days in Rishikesh — had basic shared accommodation and extraordinary teachers. My most expensive retreat (Tuscany, $4,200) was exceptional in part because the teacher had 25 years of experience. The accommodation amplified an already good experience. It didn&apos;t create it. <Link href="/blog/best-yoga-retreats">How you evaluate a retreat matters more than where it is.</Link></p>
+              <p>My highest-rated retreat — $380 for seven days in Rishikesh — had basic shared accommodation and extraordinary teachers. My most expensive retreat (Tuscany, $4,200) was exceptional in part because the teacher had 25 years of experience. The accommodation amplified an already good experience. It didn&apos;t create it. Here is how to evaluate the <Link href="/blog/best-yoga-retreats">best yoga retreats</Link>.</p>
 
               <h2 id="deposits">Step 7: Understand the deposit before you pay it</h2>
               <p>A standard non-refundable deposit is <strong>20–30% of the total price</strong>. This is reasonable — the centre is holding a spot with real opportunity cost.</p>
@@ -249,7 +249,7 @@ export default function BookYogaRetreatPage() {
               <h2 id="direct-vs-platform">Booking directly vs. through a platform</h2>
               <p>Booking directly with the retreat centre is usually 5–15% cheaper — they&apos;re not paying a platform commission. The trade-off: no intermediary if something goes wrong.</p>
               <p>Booking through Retreat Guru, BookYogaRetreats, or similar platforms adds cost but gives you a standardised cancellation framework, a review system, and someone to contact if the centre goes dark. For an established centre you&apos;ve researched thoroughly, direct is fine. For an unknown operator in an unfamiliar country, the platform fee is cheap insurance.</p>
-              <p>One caveat on platforms: <Link href="/blog/best-yoga-retreats">most booking platforms rank retreats based partly on commission rates, not quality</Link>. &quot;Top-rated&quot; and &quot;featured&quot; labels on platform pages reflect who&apos;s paying the platform, not who&apos;s teaching the best yoga. Use them for logistics, not for curation.</p>
+              <p>One caveat on platforms: <Link href="/blog/best-yoga-retreats">best yoga retreats</Link> lists on platforms are often based partly on commission rates, not quality. &quot;Top-rated&quot; and &quot;featured&quot; labels on platform pages reflect who&apos;s paying the platform, not who&apos;s teaching the best yoga. Use them for logistics, not for curation.</p>
 
               <h2 id="insurance">Travel insurance: buy it before you need it</h2>
               <p>A &quot;cancel for any reason&quot; policy costs approximately 5–8% of total trip cost. On a $2,000 retreat, that&apos;s $100–$160. On a $4,000 retreat, $200–$320. The first time you need it — a family emergency, a sudden illness, a travel disruption — you&apos;ll wonder how you ever considered skipping it.</p>
@@ -303,7 +303,7 @@ export default function BookYogaRetreatPage() {
               <h2 id="verdict">The honest verdict</h2>
               <p>Most bad retreat experiences come down to three things: a teacher who wasn&apos;t as described, a refund policy that wasn&apos;t read until it was too late, or a payment method with no protection. All three are preventable in under an hour of preparation.</p>
               <p>The boring admin before booking isn&apos;t the opposite of the retreat experience — it&apos;s the part that makes the retreat experience possible. Do it once, do it properly, and then stop thinking about it and just go.</p>
-              <p>Once you&apos;ve covered the mechanics, read our <Link href="/blog/yoga-retreats">complete yoga retreats guide</Link> and <Link href="/blog/best-yoga-retreats">how to compare and choose retreats</Link> before you finalise your decision.</p>
+              <p>Once you&apos;ve covered the mechanics, read our <Link href="/blog/yoga-retreats">complete yoga retreats guide</Link> and <Link href="/blog/best-yoga-retreats">best yoga retreats</Link> guide before you finalise your decision.</p>
 
               <h2 id="faq">Frequently asked questions</h2>
 
@@ -349,7 +349,7 @@ export default function BookYogaRetreatPage() {
                 <h3>Related reads</h3>
                 <ul>
                   <li><Link href="/blog/yoga-retreats">The complete yoga retreats guide</Link></li>
-                  <li><Link href="/blog/best-yoga-retreats">How to compare and choose retreats</Link></li>
+                  <li><Link href="/blog/best-yoga-retreats">best yoga retreats</Link></li>
                   <li><Link href="/blog/affordable-yoga-retreats">Affordable retreats under $500</Link></li>
                   <li><Link href="/blog/yoga-retreat-bali">Bali yoga retreats: Ubud vs Canggu vs Uluwatu</Link></li>
                   <li><Link href="/blog/all-inclusive-yoga-retreat">All-inclusive retreats explained</Link></li>

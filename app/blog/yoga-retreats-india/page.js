@@ -106,9 +106,9 @@ export default function IndiaYogaRetreatPage() {
             <div className={s.body}>
 
               {/* Featured snippet answer */}
-              <p className={s.introBrief}>
-                <strong>The short answer:</strong> India offers the best yoga teaching in the world at the lowest price. A week at a serious Rishikesh ashram — accommodation, three meals, twice-daily practice, evening lectures — costs $300–$600. Kerala is for Ayurvedic treatment and physical recovery, not yoga practice. Mysore is for Ashtanga practitioners specifically. Goa is a beach holiday with some yoga attached, and that's fine, but it's not the same thing.
-              </p>
+              <div className={s.introBrief}>
+                <strong>A yoga retreat in India costs $300–$600 per week for a full-board ashram stay.</strong> India offers the most authentic teaching globally at the lowest price point. Rishikesh is best for traditional yoga and philosophy, Kerala is for Ayurvedic medical treatments, and Mysore is exclusively for Ashtanga practitioners.
+              </div>
 
               <p>My first yoga retreat was Rishikesh. $380, seven days, full board. I booked it at 11pm in March 2018, roughly two hours after concluding that the pace of my London financial services job had begun to express itself in ways that concerned my colleagues. I did not know what I was doing. I had been to one yoga class in my life. I arrived with three suitcases.</p>
 
@@ -298,7 +298,7 @@ export default function IndiaYogaRetreatPage() {
                 <nav className={s.tocLinks}>
                   <Link href="/blog/yoga-retreats" className={s.tocLink}>The complete yoga retreats guide</Link>
                   <Link href="/blog/yoga-retreat-bali" className={s.tocLink}>Best retreats in Bali</Link>
-                  <Link href="/blog/affordable-yoga-retreats" className={s.tocLink}>Affordable retreats under $500</Link>
+                  <Link href="/blog/affordable-yoga-retreats" className={s.tocLink}>Cheapest cities for yoga guide</Link>
                   <Link href="/blog/yoga-retreat-for-beginners" className={s.tocLink}>First retreat: what to expect</Link>
                 </nav>
               </div>
@@ -334,11 +334,11 @@ export default function IndiaYogaRetreatPage() {
               </Link>
               <Link href="/blog/affordable-yoga-retreats" className={s.relatedCard}>
                 <div className={s.relatedImg}>
-                  <Image src="/images/blog/pillar-destinations.jpg" alt="Affordable yoga retreats" fill sizes="33vw" style={{ objectFit: 'cover' }} />
+                  <Image src="/images/blog/pillar-destinations.jpg" alt="Cheapest cities for yoga retreats" fill sizes="33vw" style={{ objectFit: 'cover' }} />
                 </div>
                 <div className={s.relatedBody}>
                   <span>Planning</span>
-                  <h4>Affordable yoga retreats under $500 that don't cut corners</h4>
+                  <h4>Cheapest cities for yoga retreats under $500 that don't cut corners</h4>
                 </div>
               </Link>
             </div>

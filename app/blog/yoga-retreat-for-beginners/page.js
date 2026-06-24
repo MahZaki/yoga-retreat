@@ -124,7 +124,7 @@ export default function YogaRetreatForBeginnersPage() {
             <div className={s.body}>
 
               <div className={s.introBrief}>
-                <strong>For a first yoga retreat, choose 4–5 days rather than 7.</strong> Look for mixed-level classes, a named lead teacher, and a group under 15. Budget $300–$1,400 depending on destination. You don&apos;t need to be flexible, experienced, or spiritual to attend.
+                <strong>The best yoga retreats for beginners last 4–5 days rather than the standard 7 days.</strong> This duration provides a complete reset without the commitment of a full week. Budget $300–$1,400 depending on the destination. Look for mixed-level classes, a named lead teacher, and a group size under 15. You do not need to be flexible, experienced, or spiritual to attend.
               </div>
 
               <p>I booked my first yoga retreat at 11pm on a Tuesday, slightly panicked, after a panic attack during a work meeting had left me unable to answer whether I wanted a glass of water. My friend Nina, a yoga teacher I&apos;d largely dismissed as &quot;one of those people,&quot; suggested I book something before I talked myself out of it. Seven days in Rishikesh, India. I arrived with no practice history, genuinely poor flexibility, and absolutely no spiritual framework. I came back different in ways that have proved lasting.</p>
@@ -266,7 +266,7 @@ export default function YogaRetreatForBeginnersPage() {
 
               <h2 id="when-to-upgrade">When to book a longer retreat</h2>
               <p>After your first 4–5 day retreat, you&apos;ll have a much clearer sense of what you want from the format. If you came back wanting more time in practice, a quieter group, or a different location — that&apos;s the information you need to choose the second retreat confidently. Most people who do a second retreat extend to 7 days and find it genuinely different from what the first 7 days would have been: you arrive knowing the rhythm, knowing yourself in the context, and using the full week rather than spending half of it adjusting.</p>
-              <p>The 10-day format — common in Vipassana and more intensive programmes — is best left until you&apos;ve done at least two shorter retreats and you specifically want depth over comfort. It&apos;s not a beginner format. Neither is teacher training, which serves a different purpose entirely (<Link href="/blog/best-yoga-retreats">our evaluation guide</Link> covers the distinction).</p>
+              <p>The 10-day format — common in Vipassana and more intensive programmes — is best left until you&apos;ve done at least two shorter retreats and you specifically want depth over comfort. It&apos;s not a beginner format. Neither is teacher training, which serves a different purpose entirely (our guide to the <Link href="/blog/best-yoga-retreats">best yoga retreats</Link> covers the distinction).</p>
 
               <h2 id="verdict">The honest summary</h2>
               <p>Yoga retreats are not exclusively for people who already do yoga. They&apos;re for people who want to disconnect, reset, and spend a few days doing something that&apos;s good for their body and their nervous system, in a context where that&apos;s the whole point of being there.</p>
@@ -312,7 +312,7 @@ export default function YogaRetreatForBeginnersPage() {
                 <ul>
                   <li><Link href="/blog/yoga-retreats">The complete yoga retreats guide</Link></li>
                   <li><Link href="/blog/how-to-book-yoga-retreat">How to book a yoga retreat</Link></li>
-                  <li><Link href="/blog/best-yoga-retreats">How to evaluate any retreat</Link></li>
+                  <li><Link href="/blog/best-yoga-retreats">best yoga retreats</Link></li>
                   <li><Link href="/blog/yoga-retreats-india">India yoga retreats: Rishikesh guide</Link></li>
                   <li><Link href="/blog/yoga-retreats-costa-rica">Costa Rica yoga retreats</Link></li>
                 </ul>

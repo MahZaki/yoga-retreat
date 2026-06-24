@@ -116,7 +116,7 @@ export default function SilentYogaRetreatPage() {
             <div className={s.body}>
 
               <div className={s.introBrief}>
-                <strong>A silent yoga retreat (Vipassana and similar)</strong> requires no speaking for 7–10 days. They are donation-based or low-cost. The discomfort is front-loaded — the first 12–18 hours are strange. After that, most participants find the silence a profound relief. Not appropriate for untreated depression or anxiety without professional guidance.
+                <strong>A silent yoga retreat requires strict "noble silence" (no speaking, eye contact, or gestures) for 3 to 10 days.</strong> Traditional 10-day Vipassana retreats are donation-based, while commercial hybrid silent retreats cost $600–$1,200/week. While deeply restorative for many, silent retreats strip away social coping mechanisms and are contraindicated for individuals with untreated depression, PTSD, or severe anxiety.
               </div>
 
               <p>The first time I handed my phone over at a silent retreat registration desk, my immediate physical reaction was mild panic. It felt like handing over a vital organ. You put your phone, your books, and your journals into a canvas bag, and you don&apos;t see them again for ten days.</p>

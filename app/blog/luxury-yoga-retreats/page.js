@@ -116,7 +116,7 @@ export default function LuxuryYogaRetreatsPage() {
             <div className={s.body}>
 
               <div className={s.introBrief}>
-                <strong>Luxury yoga retreats ($2,500–$4,000+/week)</strong> differ from mid-range in four ways: group capped at 8–12, teacher with 20+ years experience, private accommodation, and zero logistical friction. The price is only worth it when it&apos;s emotionally neutral.
+                <strong>Luxury yoga retreats cost $2,500–$5,000+ per week.</strong> The premium price buys you four specific things: zero logistical friction (private transfers, all meals), elite teaching depth (instructors with 20+ years of experience), intimate groups capped at 8–12 people, and high-end private accommodation. The best luxury wellness hubs are Tuscany, Bali, Provence, and the Riviera Maya.
               </div>
 
               <p>Two years ago, I booked a six-day yoga retreat in a restored 12th-century farmhouse in Tuscany. The price was $4,200. In the months leading up to it, I almost cancelled three separate times. The number felt ridiculous. I had done excellent retreats in India for $380 a week. I knew exactly what a good teacher cost, and I knew the margin on this European retreat was enormous.</p>
@@ -151,7 +151,7 @@ export default function LuxuryYogaRetreatsPage() {
               <h2 id="when-its-worth-it">The rule of emotional neutrality</h2>
               <p>There is a harsh reality to luxury yoga retreats: the price is only worth it if the money is emotionally neutral to you.</p>
               <p>If spending $3,500 causes you financial anxiety, that stress will accompany you to the retreat. You will spend the week calculating whether the organic farm-to-table lunch was &quot;worth&quot; $80. You will resent the teacher if the morning flow feels too basic. You will carry the financial tension in your jaw while trying to relax your shoulders.</p>
-              <p>A luxury retreat works when the cost is a non-issue. You aren&apos;t evaluating the ROI of the thread count on the sheets; you are just sleeping well. If the price tag makes your stomach drop, book a <Link href="/blog/best-yoga-retreats">superb mid-range retreat</Link> for $1,200 instead. The yoga will be just as good, and you will actually be able to relax.</p>
+              <p>A luxury retreat works when the cost is a non-issue. You aren&apos;t evaluating the ROI of the thread count on the sheets; you are just sleeping well. If the price tag makes your stomach drop, book one of the <Link href="/blog/best-yoga-retreats">best yoga retreats</Link> (mid-range) for $1,200 instead. The yoga will be just as good, and you will actually be able to relax.</p>
 
               <h2 id="top-destinations">The top luxury destinations in 2026</h2>
               <p>The luxury wellness market has shifted recently. It used to be entirely focused on aesthetics and spa treatments. Now, it&apos;s leaning heavily into &quot;integrated wellness&quot; — combining traditional yoga with longevity clinics, metabolic tracking, and highly specific dietary protocols.</p>

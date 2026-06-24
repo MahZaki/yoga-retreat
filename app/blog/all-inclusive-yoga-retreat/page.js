@@ -116,7 +116,7 @@ export default function AllInclusiveYogaRetreatPage() {
             <div className={s.body}>
 
               <div className={s.introBrief}>
-                <strong>All-inclusive yoga retreats</strong> bundle accommodation, meals, yoga sessions, and sometimes excursions into one upfront price. Expect $900–$2,500/week depending on the destination. Always check what &quot;all-inclusive&quot; actually means — in the wellness industry, it almost always excludes airport transfers, spa treatments, and alcohol.
+                <strong>All-inclusive yoga retreats cost $600–$1,200/week in Asia, $1,200–$1,800/week in Europe, and $2,000–$2,500/week in Costa Rica or Mexico.</strong> A standard all-inclusive package covers accommodation, two daily yoga classes, and three meals per day. Unlike resort holidays, wellness retreats almost never include flights, airport transfers, spa treatments, or alcohol in their base price.
               </div>
 
               <p>In the traditional travel industry, &quot;all-inclusive&quot; means you hand over your credit card at the time of booking, and you don&apos;t open your wallet again until you get to the airport to go home. It implies limitless margaritas by the pool and buffet dinners.</p>

@@ -68,7 +68,9 @@ export default function YogaRetreatsGuide() {
             {/* Main Content */}
             <div className={s.body}>
 
-              <p className={s.introBrief}><strong>What is a yoga retreat?</strong> A yoga retreat is a structured program — typically 3 to 14 days — where you practice yoga, eat, sleep, and follow a curated daily schedule in a dedicated setting away from regular life. It's not a holiday with one optional class bolted on. A real retreat includes at least two daily practice sessions, on-site accommodation, and meals designed around the program.</p>
+              <div className={s.introBrief}>
+                <strong>A yoga retreat is a structured 3 to 14-day wellness program focused on daily yoga practice.</strong> The standard package includes on-site accommodation, three healthy meals, and at least two daily practice sessions. It differs from a regular holiday by providing a curated schedule designed to remove daily decision-making and physical distractions.
+              </div>
 
               <h2 id="what-is-a-yoga-retreat">What is a yoga retreat?</h2>
 
