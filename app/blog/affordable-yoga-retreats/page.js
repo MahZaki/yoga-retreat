@@ -1,9 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import Newsletter from '@/components/Newsletter'
-import s from '../yoga-retreats/page.module.css'
 
 export const metadata = {
   title: 'Cheapest Cities for Yoga Retreats in 2026',
@@ -101,45 +97,26 @@ const breadcrumbSchema = {
   ]
 };
 
+import BlogPost from '@/components/BlogPost'
+import s from '@/app/blog/yoga-retreats/page.module.css'
+
 export default function AffordableYogaRetreatsPage() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Navbar />
-      <main>
-      <article id="top" className={s.article}>
-
-        <div className={s.heroWrap}>
-          <Image
-            src="/images/blog/budget-yoga-nature.jpg"
-            alt="Person practicing yoga outdoors on a wooden deck surrounded by trees, highlighting nature-based affordable retreats"
-            fill
-            style={{ objectFit: 'cover' }}
-            priority
-          />
-          <div className={s.heroOverlay}>
-            <div className="container">
-              <div className={s.breadcrumbs} style={{ fontSize: '0.85rem', marginBottom: '1rem', color: 'rgba(255,255,255,0.8)' }}>
-                <Link href="/" style={{textDecoration:'underline'}}>Home</Link> &gt; <Link href="/blog" style={{textDecoration:'underline'}}>Blog</Link> &gt; <span>Article</span>
-              </div>
-              <span className={s.tag}>Budget &amp; Planning</span>
-              <h1>Cheapest cities for yoga retreats: where to go and what to sacrifice</h1>
-              <div className={s.meta}>
-                <span>By Sarah Mitchell</span><span>·</span>
-                <span>June 11, 2026</span><span>·</span><span>Last updated: June 11, 2026</span><span>·</span>
-                <span>8 min read</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="container">
-          <div className={s.layout}>
-            <div className={s.body}>
-
-              <div className={s.introBrief}>
+    <BlogPost
+      title={metadata.title}
+      category="Destinations"
+      date="June"
+      readTime="8 min read"
+      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
+      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
+      canonicalUrl={metadata.alternates?.canonical || ''}
+      tocItems={[]}
+      tags={[]}
+      relatedPosts={[]}
+      faqSchema={faqSchema}
+      articleSchema={articleSchema}
+    >
+      <div className={s.introBrief}>
                 <strong>When looking for the cheapest cities for yoga, expect to pay $300–$600/week in Rishikesh (India), $600–$900/week in Koh Phangan (Thailand), and $800–$1,200/week in the Algarve (Portugal).</strong> To book safely on a budget in these cheapest cities for yoga retreats, accept shared dormitories and set menus, but never compromise on the teacher's credentials. Always check for hidden costs like airport transfers, and verify if the retreat is genuinely all-inclusive.
               </div>
 
@@ -270,51 +247,6 @@ export default function AffordableYogaRetreatsPage() {
 
               <h3>What do you sacrifice on a budget yoga retreat?</h3>
               <p>On a budget retreat, you sacrifice privacy (you will likely share a room and bathroom), aesthetic luxury (no infinity pools), and menu variety. You should never compromise on teaching quality or basic safety.</p>
-
-            </div>
-
-            <aside className={s.sidebar}>
-              <div className={s.toc}>
-                <h3>In this guide</h3>
-                <ul>
-                  <li><a href="#what-to-sacrifice">What to sacrifice</a></li>
-                  <li><a href="#best-destinations">Best destinations</a></li>
-                  <li><a href="#red-flags">Budget red flags</a></li>
-                  <li><a href="#verdict">Final verdict</a></li>
-                  <li><a href="#faq">FAQ</a></li>
-                </ul>
-              </div>
-              <div className={s.relatedBox}>
-                <h3>Related reads</h3>
-                <ul>
-                  <li><Link href="/blog/yoga-retreats-india">The guide to retreats in India</Link></li>
-                  <li><Link href="/blog/yoga-retreat-for-beginners">Beginner&apos;s guide to retreats</Link></li>
-                  <li><Link href="/blog/silent-yoga-retreat">What is a silent retreat?</Link></li>
-                  <li><Link href="/blog/luxury-yoga-retreats">What luxury actually buys you</Link></li>
-                </ul>
-              </div>
-            </aside>
-          </div>
-        </div>
-
-        <div className={s.authorBox}>
-          <div className={s.authorAvatar}>
-            <Image src="/images/hero-portrait.jpg" alt="Sarah Mitchell" fill sizes="80px" style={{ objectFit: 'cover' }} />
-          </div>
-          <div className={s.authorMeta}>
-            <h3>Sarah Mitchell</h3>
-            <div className={s.authorRole}>Founder &amp; Lead Reviewer, YogaRetreatAdvisor</div>
-            <p>Former London project manager turned yoga travel writer. 14 retreats across 9 countries since 2018, from a $380 week in Rishikesh to a $4,200 luxury immersion in Tuscany. RYT-50. Based between London and Lisbon.</p>
-          </div>
-        </div>
-
-        <Newsletter />
-      <div className="container" style={{ textAlign: 'center', padding: '2rem 0' }}>
-          <a href="#top" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>↑ Back to top</a>
-        </div>
-      </article>
-      </main>
-      <Footer />
-    </>
+    </BlogPost>
   )
 }

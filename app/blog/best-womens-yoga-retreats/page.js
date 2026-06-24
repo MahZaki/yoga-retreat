@@ -1,9 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import Newsletter from '@/components/Newsletter'
-import s from '../yoga-retreats/page.module.css'
 
 export const metadata = {
   title: "10 Best Yoga Retreats for Women in 2026 | YogaRetreatAdvisor",
@@ -17,58 +13,26 @@ export const metadata = {
   },
 }
 
+import BlogPost from '@/components/BlogPost'
+import s from '@/app/blog/yoga-retreats/page.module.css'
+
 export default function BestWomensRetreats() {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: "10 Best Yoga Retreats for Women in 2026 (Empower & Reconnect)",
-    description: "Find your sisterhood. Discover the 10 best women-only yoga and wellness retreats for empowerment, healing, and deep connection. Compare and book today.",
-    author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://www.yogaretreatadvisor.com/about' },
-    publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', logo: { '@type': 'ImageObject', url: 'https://www.yogaretreatadvisor.com/logo.png' } },
-    datePublished: '2026-06-11',
-    dateModified: '2026-06-11',
-    image: 'https://www.yogaretreatadvisor.com/images/blog/womens-yoga-circle.jpg',
-    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.yogaretreatadvisor.com/blog/best-womens-yoga-retreats' },
-  }
-
-  const breadcrumbLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.yogaretreatadvisor.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.yogaretreatadvisor.com/blog' },
-      { '@type': 'ListItem', position: 3, name: "Best Women's Retreats", item: 'https://www.yogaretreatadvisor.com/blog/best-womens-yoga-retreats' },
-    ],
-  }
-
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
-      <Navbar />
-
-      <main>
-        <article id="top" className={s.article}>
-          {/* Hero */}
-          <div className={s.heroWrap}>
-            <Image src="/images/blog/womens-yoga-circle.jpg" alt="Women sitting in a circle during a yoga retreat" fill priority sizes="100vw" style={{ objectFit: 'cover' }} />
-            <div className={s.heroOverlay}>
-              <span className={s.heroCat}>Top 10 List</span>
-              <h1>10 Best Yoga Retreats for Women in 2026 (Empower & Reconnect)</h1>
-              <div className={s.heroMeta}>
-                <span>By Sarah Mitchell</span>
-                <span>June 11, 2026</span>
-                <span>10 min read</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="container">
-            <div className={s.layout}>
-              {/* Main Content */}
-              <div className={s.body}>
-
-                <div className={s.introBrief}>
+    <BlogPost
+      title={metadata.title}
+      category="Top 10 List"
+      date="June"
+      readTime="10 min read"
+      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
+      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
+      canonicalUrl={metadata.alternates?.canonical || ''}
+      tocItems={[]}
+      tags={[]}
+      relatedPosts={[]}
+      faqSchema={null}
+      articleSchema={jsonLd}
+    >
+      <div className={s.introBrief}>
                   <strong>The best women's yoga retreats prioritize safety, deep emotional connection, and high-quality facilitation.</strong> Expect to pay $1,200–$2,800 for a week. Top destinations include Morocco (for emotional intensity), Costa Rica (for surfing and sisterhood), and Bali. Women make up roughly 72% of all retreat attendees globally.
                 </div>
 
@@ -219,86 +183,6 @@ export default function BestWomensRetreats() {
 
                 <p><strong>What is the difference between women-only and women-focused retreats?</strong><br/>
                 Women-only means absolutely no male participants. Women-focused means the curriculum is designed around the female experience, but they may occasionally permit male participants or feature male teachers. Always double-check the fine print.</p>
-
-                {/* Tags */}
-                <div className={s.tags}>
-                  <span className="tag">Women's Retreats</span>
-                  <span className="tag">Solo Travel</span>
-                  <span className="tag">Empowerment</span>
-                  <span className="tag">Top 10</span>
-                </div>
-
-                {/* Author Box */}
-                <div className={s.authorBox}>
-                  <div className={s.authorAvatar}>
-                    <Image src="/images/hero-portrait.jpg" alt="Sarah Mitchell" fill sizes="80px" style={{ objectFit: 'cover' }} />
-                  </div>
-                  <div className={s.authorMeta}>
-                    <h3>Sarah Mitchell</h3>
-                    <div className={s.authorRole}>Founder &amp; Lead Reviewer, YogaRetreatAdvisor</div>
-                    <p>Former London project manager turned yoga travel writer. She's attended 14 retreats across 9 countries since 2018. RYT-200 certified. The Atlas Mountains women-only retreat remains her highest-rated programme — the one she almost didn't book.</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Sidebar TOC */}
-              <aside>
-                <div className={s.toc}>
-                  <h3>In This Guide</h3>
-                  <nav className={s.tocLinks}>
-                    <a href="#why-choose" className={s.tocLink}>Why Choose Women-Only?</a>
-                    <a href="#top-10" className={s.tocLink}>Top 10 Retreats</a>
-                    <a href="#what-to-expect" className={s.tocLink}>What to Expect</a>
-                    <a href="#faq" className={s.tocLink}>FAQ</a>
-                  </nav>
-                </div>
-              </aside>
-            </div>
-          </div>
-
-          {/* Related Posts */}
-          <section className={s.relatedPosts}>
-            <div className="container">
-              <div className="section-header center">
-                <span className="section-label">Related Articles</span>
-                <h2>Continue Reading</h2>
-              </div>
-              <div className={s.relatedGrid}>
-                <Link href="/blog/womens-yoga-retreat" className={s.relatedCard}>
-                  <div className={s.relatedImg}>
-                    <Image src="/images/blog/womens-yoga.jpg" alt="Women's Yoga Retreat" fill sizes="33vw" style={{ objectFit: 'cover' }} />
-                  </div>
-                  <div className={s.relatedBody}>
-                    <span>Deep Dive</span>
-                    <h3>What the Women-Only Format Actually Changes</h3>
-                  </div>
-                </Link>
-                <Link href="/blog/yoga-retreat-for-beginners" className={s.relatedCard}>
-                  <div className={s.relatedImg}>
-                    <Image src="/images/blog/meditation-retreat-group-outdoor.jpg" alt="Meditation group retreat" fill sizes="33vw" style={{ objectFit: 'cover' }} />
-                  </div>
-                  <div className={s.relatedBody}>
-                    <span>Beginners</span>
-                    <h3>Yoga Retreat for Beginners: What to Expect</h3>
-                  </div>
-                </Link>
-                <Link href="/blog/yoga-retreats-india" className={s.relatedCard}>
-                  <div className={s.relatedImg}>
-                    <Image src="/images/blog/india-yoga.jpg" alt="India Retreats" fill sizes="33vw" style={{ objectFit: 'cover' }} />
-                  </div>
-                  <div className={s.relatedBody}>
-                    <span>Destinations</span>
-                    <h3>Best Retreats in India (Ashrams to Ayurveda)</h3>
-                  </div>
-                </Link>
-              </div>
-            </div>
-          </section>
-        </article>
-      </main>
-
-      <Newsletter />
-      <Footer />
-    </>
+    </BlogPost>
   )
 }

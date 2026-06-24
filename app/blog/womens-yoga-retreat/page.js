@@ -1,9 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import Newsletter from '@/components/Newsletter'
-import s from '../yoga-retreats/page.module.css'
 
 export const metadata = {
   title: "Women's Yoga Retreats 2026: What the Format Actually Changes",
@@ -88,39 +84,26 @@ const breadcrumbSchema = {
   ]
 };
 
+import BlogPost from '@/components/BlogPost'
+import s from '@/app/blog/yoga-retreats/page.module.css'
+
 export default function WomensYogaRetreatPage() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Navbar />
-      <article id="top" className={s.article}>
-
-        {/* Hero */}
-        <div className={s.heroWrap}>
-          <Image
-            src="/images/blog/womens-retreat-group.jpg"
-            alt="Group of women practising yoga together outdoors at a retreat"
-            fill
-            style={{ objectFit: 'cover' }}
-            priority
-          />
-          <div className={s.heroOverlay}>
-            <span className={s.heroCat}>Retreat Types</span>
-            <h1>Women&apos;s yoga retreats 2026: what the format actually changes</h1>
-            <div className={s.heroMeta}>
-              <span>By Sarah Mitchell</span>
-              <span>August 26, 2025</span>
-              <span>9 min read</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="container">
-          <div className={s.layout}>
-            <div className={s.body}>
-
-              {/* Featured snippet block — direct answer */}
+    <BlogPost
+      title={metadata.title}
+      category="Retreat Types"
+      date="August"
+      readTime="9 min read"
+      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
+      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
+      canonicalUrl={metadata.alternates?.canonical || ''}
+      tocItems={[]}
+      tags={[]}
+      relatedPosts={[]}
+      faqSchema={faqSchema}
+      articleSchema={schema}
+    >
+      {/* Featured snippet block — direct answer */}
               <div className={s.introBrief}>
                 <strong>Women-only yoga retreats cost $280–$550/week (India) to $1,600–$2,400/week (luxury Bali).</strong> The format consistently produces the highest participant satisfaction scores of any retreat type because it removes social self-consciousness. Women make up 72% of all retreat attendees globally, making this the fastest-growing segment in wellness travel.
               </div>
@@ -272,62 +255,6 @@ export default function WomensYogaRetreatPage() {
 
               <p><strong>What&apos;s the difference between women-only and women-focused retreats?</strong><br />
               Women-only: no male participants. Women-focused: curriculum designed around female experience, may include male participants and teachers. The terms are used loosely — always confirm the specific policy before paying a deposit.</p>
-
-              {/* Tags */}
-              <div className={s.tags}>
-                <span className="tag">Women&apos;s Retreats</span>
-                <span className="tag">Solo Travel</span>
-                <span className="tag">Morocco</span>
-                <span className="tag">Bali</span>
-                <span className="tag">India</span>
-              </div>
-
-              {/* Author box — canonical stats from sarah-author-bio.md + stats.md */}
-              <div className={s.authorBox}>
-                <div className={s.authorAvatar}>
-                  <Image src="/images/hero-portrait.jpg" alt="Sarah Mitchell" fill sizes="80px" style={{ objectFit: 'cover' }} />
-                </div>
-                <div className={s.authorMeta}>
-                  <h4>Sarah Mitchell</h4>
-                  <div className={s.authorRole}>Founder &amp; Lead Reviewer, YogaRetreatAdvisor</div>
-                  <p>Former financial services project manager, London. First retreat: Rishikesh, 2018 ($380, full board, dormitory). Has attended 14 retreats across 9 countries ($380–$4,200). RYT-50 certified. The Atlas Mountains women-only retreat remains her highest-rated programme — the one she almost didn&apos;t book.</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Sidebar */}
-            <aside>
-              <div className={s.toc}>
-                <h4>In this guide</h4>
-                <nav className={s.tocLinks}>
-                  <a href="#what-changes" className={s.tocLink}>What the format changes</a>
-                  <a href="#what-to-look-for" className={s.tocLink}>What to look for</a>
-                  <a href="#destinations" className={s.tocLink}>Best destinations by budget</a>
-                  <a href="#programmes" className={s.tocLink}>8 programmes</a>
-                  <a href="#first-time-vs-experienced" className={s.tocLink}>First-timers vs. experienced</a>
-                  <a href="#faq" className={s.tocLink}>FAQ</a>
-                </nav>
-              </div>
-
-              <div className={s.toc} style={{ marginTop: '1.5rem' }}>
-                <h4>Related guides</h4>
-                <nav className={s.tocLinks}>
-                  <Link href="/blog/yoga-retreats" className={s.tocLink}>The complete yoga retreats guide</Link>
-                  <Link href="/blog/yoga-retreat-for-beginners" className={s.tocLink}>First retreat: what to expect</Link>
-                  <Link href="/blog/yoga-retreats-india" className={s.tocLink}>Best retreats in India</Link>
-                  <Link href="/blog/yoga-retreat-bali" className={s.tocLink}>Bali guide: the honest version</Link>
-                </nav>
-              </div>
-            </aside>
-          </div>
-        </div>
-
-        <Newsletter />
-      <div className="container" style={{ textAlign: 'center', padding: '2rem 0' }}>
-          <a href="#top" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>↑ Back to top</a>
-        </div>
-      </article>
-      <Footer />
-    </>
+    </BlogPost>
   )
 }

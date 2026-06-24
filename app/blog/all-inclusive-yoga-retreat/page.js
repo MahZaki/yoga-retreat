@@ -1,9 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import Newsletter from '@/components/Newsletter'
-import s from '../yoga-retreats/page.module.css'
 
 export const metadata = {
   title: 'All-Inclusive Yoga Retreats: Are They Actually Better Value? (2026)',
@@ -77,45 +73,26 @@ const breadcrumbSchema = {
   ]
 };
 
+import BlogPost from '@/components/BlogPost'
+import s from '@/app/blog/yoga-retreats/page.module.css'
+
 export default function AllInclusiveYogaRetreatPage() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Navbar />
-      <main>
-      <article id="top" className={s.article}>
-
-        <div className={s.heroWrap}>
-          <Image
-            src="/images/blog/all-inclusive-resort.jpg"
-            alt="Beautiful all-inclusive resort setting with a large swimming pool and tropical palm trees"
-            fill
-            style={{ objectFit: 'cover' }}
-            priority
-          />
-          <div className={s.heroOverlay}>
-            <div className="container">
-              <div className={s.breadcrumbs} style={{ fontSize: '0.85rem', marginBottom: '1rem', color: 'rgba(255,255,255,0.8)' }}>
-                <Link href="/" style={{textDecoration:'underline'}}>Home</Link> &gt; <Link href="/blog" style={{textDecoration:'underline'}}>Blog</Link> &gt; <span>Article</span>
-              </div>
-              <span className={s.tag}>Budget &amp; Planning</span>
-              <h1>All-inclusive yoga retreats: are they actually better value?</h1>
-              <div className={s.meta}>
-                <span>By Sarah Mitchell</span><span>·</span>
-                <span>June 11, 2026</span><span>·</span><span>Last updated: June 11, 2026</span><span>·</span>
-                <span>8 min read</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="container">
-          <div className={s.layout}>
-            <div className={s.body}>
-
-              <div className={s.introBrief}>
+    <BlogPost
+      title={metadata.title}
+      category="Destinations"
+      date="June"
+      readTime="8 min read"
+      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
+      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
+      canonicalUrl={metadata.alternates?.canonical || ''}
+      tocItems={[]}
+      tags={[]}
+      relatedPosts={[]}
+      faqSchema={faqSchema}
+      articleSchema={articleSchema}
+    >
+      <div className={s.introBrief}>
                 <strong>All-inclusive yoga retreats cost $600–$1,200/week in Asia, $1,200–$1,800/week in Europe, and $2,000–$2,500/week in Costa Rica or Mexico.</strong> A standard all-inclusive package covers accommodation, two daily yoga classes, and three meals per day. Unlike resort holidays, wellness retreats almost never include flights, airport transfers, spa treatments, or alcohol in their base price.
               </div>
 
@@ -207,52 +184,6 @@ export default function AllInclusiveYogaRetreatPage() {
 
               <h3>Do yoga retreats include flights?</h3>
               <p>No. Almost no yoga retreats include flights in their all-inclusive price. You are always responsible for booking your own airfare and usually your own airport transfer.</p>
-
-            </div>
-
-            <aside className={s.sidebar}>
-              <div className={s.toc}>
-                <h3>In this guide</h3>
-                <ul>
-                  <li><a href="#what-is-included">What is actually included</a></li>
-                  <li><a href="#the-math">Comparing prices honestly</a></li>
-                  <li><a href="#top-destinations">Top destinations</a></li>
-                  <li><a href="#red-flags">Red flags</a></li>
-                  <li><a href="#verdict">Final verdict</a></li>
-                  <li><a href="#faq">FAQ</a></li>
-                </ul>
-              </div>
-              <div className={s.relatedBox}>
-                <h3>Related reads</h3>
-                <ul>
-                  <li><Link href="/blog/yoga-retreats">The complete retreats guide</Link></li>
-                  <li><Link href="/blog/yoga-retreat-bali">Bali destination guide</Link></li>
-                  <li><Link href="/blog/luxury-yoga-retreats">Are luxury retreats worth it?</Link></li>
-                  <li><Link href="/blog/how-to-book-yoga-retreat">How to book safely</Link></li>
-                </ul>
-              </div>
-            </aside>
-          </div>
-        </div>
-
-        <div className={s.authorBox}>
-          <div className={s.authorAvatar}>
-            <Image src="/images/hero-portrait.jpg" alt="Sarah Mitchell" fill sizes="80px" style={{ objectFit: 'cover' }} />
-          </div>
-          <div className={s.authorMeta}>
-            <h3>Sarah Mitchell</h3>
-            <div className={s.authorRole}>Founder &amp; Lead Reviewer, YogaRetreatAdvisor</div>
-            <p>Former London project manager turned yoga travel writer. 14 retreats across 9 countries since 2018, from a $380 week in Rishikesh to a $4,200 luxury immersion in Tuscany. RYT-50. Based between London and Lisbon.</p>
-          </div>
-        </div>
-
-        <Newsletter />
-      <div className="container" style={{ textAlign: 'center', padding: '2rem 0' }}>
-          <a href="#top" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>↑ Back to top</a>
-        </div>
-      </article>
-      </main>
-      <Footer />
-    </>
+    </BlogPost>
   )
 }

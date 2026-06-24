@@ -1,9 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import Newsletter from '@/components/Newsletter'
-import s from '../yoga-retreats/page.module.css'
 
 export const metadata = {
   title: 'How to Book a Yoga Retreat: The Complete Step-by-Step Guide (2026)',
@@ -85,45 +81,26 @@ const breadcrumbSchema = {
   ]
 };
 
+import BlogPost from '@/components/BlogPost'
+import s from '@/app/blog/yoga-retreats/page.module.css'
+
 export default function BookYogaRetreatPage() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Navbar />
-      <main>
-      <article id="top" className={s.article}>
-
-        <div className={s.heroWrap}>
-          <Image
-            src="/images/blog/booking-laptop-plan.jpg"
-            alt="Person planning a yoga retreat on a laptop with coffee, journal, and travel documents on a desk"
-            fill
-            style={{ objectFit: 'cover' }}
-            priority
-          />
-          <div className={s.heroOverlay}>
-            <div className="container">
-              <div className={s.breadcrumbs} style={{ fontSize: '0.85rem', marginBottom: '1rem', color: 'rgba(255,255,255,0.8)' }}>
-                <Link href="/" style={{textDecoration:'underline'}}>Home</Link> &gt; <Link href="/blog" style={{textDecoration:'underline'}}>Blog</Link> &gt; <span>Article</span>
-              </div>
-              <span className={s.tag}>Planning</span>
-              <h1>How to book a yoga retreat: the complete step-by-step guide</h1>
-              <div className={s.meta}>
-                <span>By Sarah Mitchell</span><span>·</span>
-                <span>May 20, 2026</span><span>·</span><span>Last updated: May 20, 2026</span><span>·</span>
-                <span>8 min read</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="container">
-          <div className={s.layout}>
-            <div className={s.body}>
-
-              <div className={s.introBrief}>
+    <BlogPost
+      title={metadata.title}
+      category="Destinations"
+      date="May"
+      readTime="8 min read"
+      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
+      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
+      canonicalUrl={metadata.alternates?.canonical || ''}
+      tocItems={[]}
+      tags={[]}
+      relatedPosts={[]}
+      faqSchema={faqSchema}
+      articleSchema={articleSchema}
+    >
+      <div className={s.introBrief}>
                 <strong>To book a yoga retreat safely:</strong> (1) set a total budget including flights and transfers, (2) choose a destination based on teaching style, (3) verify teacher credentials off-platform, (4) check the refund policy before paying a deposit (avoid anything over 50% upfront), and (5) always pay by credit card. Never rely solely on retreat booking platforms, as rankings are often influenced by 10–25% commission rates.
               </div>
 
@@ -321,62 +298,6 @@ export default function BookYogaRetreatPage() {
 
               <h3>What questions should I ask before booking?</h3>
               <p>Ask: is the named teacher confirmed for this specific date? What is the maximum group size? What is the cancellation policy in writing? Are there any additional costs? What happens if the lead teacher can&apos;t attend? Send these by email and save the replies.</p>
-
-            </div>
-
-            <aside className={s.sidebar}>
-              <div className={s.toc}>
-                <h3>In this guide</h3>
-                <ul>
-                  <li><a href="#budget">Step 1: Set your real budget</a></li>
-                  <li><a href="#destination">Step 2: Choose the destination</a></li>
-                  <li><a href="#style">Step 3: Match the yoga style</a></li>
-                  <li><a href="#whats-included">Step 4: What&apos;s included vs extra</a></li>
-                  <li><a href="#group-size">Step 5: Group size</a></li>
-                  <li><a href="#teacher">Step 6: Verify the teacher</a></li>
-                  <li><a href="#deposits">Step 7: Deposits</a></li>
-                  <li><a href="#refunds">Step 8: Refund policy</a></li>
-                  <li><a href="#payment">Step 9: Payment methods</a></li>
-                  <li><a href="#direct-vs-platform">Direct vs. platform</a></li>
-                  <li><a href="#insurance">Travel insurance</a></li>
-                  <li><a href="#questions">10 questions to ask</a></li>
-                  <li><a href="#packing">What to pack</a></li>
-                  <li><a href="#checklist">Checklist</a></li>
-                  <li><a href="#faq">FAQ</a></li>
-                </ul>
-              </div>
-              <div className={s.relatedBox}>
-                <h3>Related reads</h3>
-                <ul>
-                  <li><Link href="/blog/yoga-retreats">The complete yoga retreats guide</Link></li>
-                  <li><Link href="/blog/best-yoga-retreats">best yoga retreats</Link></li>
-                  <li><Link href="/blog/affordable-yoga-retreats">Affordable retreats under $500</Link></li>
-                  <li><Link href="/blog/yoga-retreat-bali">Bali yoga retreats: Ubud vs Canggu vs Uluwatu</Link></li>
-                  <li><Link href="/blog/all-inclusive-yoga-retreat">All-inclusive retreats explained</Link></li>
-                </ul>
-              </div>
-            </aside>
-          </div>
-        </div>
-
-        <div className={s.authorBox}>
-          <div className={s.authorAvatar}>
-            <Image src="/images/hero-portrait.jpg" alt="Sarah Mitchell" fill sizes="80px" style={{ objectFit: 'cover' }} />
-          </div>
-          <div className={s.authorMeta}>
-            <h3>Sarah Mitchell</h3>
-            <div className={s.authorRole}>Founder &amp; Lead Reviewer, YogaRetreatAdvisor</div>
-            <p>Former London project manager turned yoga travel writer. 14 retreats across 9 countries since 2018, from a $380 week in Rishikesh to a $4,200 luxury immersion in Tuscany. RYT-50. She has a 47-point retreat evaluation spreadsheet. She shares this not as a flex but as a warning.</p>
-          </div>
-        </div>
-
-        <Newsletter />
-      <div className="container" style={{ textAlign: 'center', padding: '2rem 0' }}>
-          <a href="#top" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>↑ Back to top</a>
-        </div>
-      </article>
-      </main>
-      <Footer />
-    </>
+    </BlogPost>
   )
 }

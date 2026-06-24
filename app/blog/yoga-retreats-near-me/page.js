@@ -1,9 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import Newsletter from '@/components/Newsletter'
-import s from '../yoga-retreats/page.module.css'
 
 export const metadata = {
   title: "Find Yoga Retreats Near Me: Best Local US Escapes (2026)",
@@ -17,131 +13,26 @@ export const metadata = {
   },
 }
 
+import BlogPost from '@/components/BlogPost'
+import s from '@/app/blog/yoga-retreats/page.module.css'
+
 export default function YogaRetreatsNearMe() {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: "Yoga Retreats Near Me: The Best Driveable Wellness Escapes",
-    description: "Skip the long-haul flight. Discover the best top-rated yoga and wellness retreats within driving distance across the US.",
-    author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://www.yogaretreatadvisor.com/about' },
-    publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', logo: { '@type': 'ImageObject', url: 'https://www.yogaretreatadvisor.com/logo.png' } },
-    datePublished: '2026-06-12',
-    dateModified: '2026-06-12',
-    image: 'https://www.yogaretreatadvisor.com/images/blog/beginner-yoga-class.jpg',
-    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.yogaretreatadvisor.com/blog/yoga-retreats-near-me' },
-  }
-
-  const faqLd = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'How do I find a good local yoga retreat?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'The best way to find a legitimate local retreat is to search for dedicated retreat centers rather than hotels. Look for places that run year-round wellness programming, as they will have proper facilities, dedicated meditation spaces, and vetted teaching staff.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'Are weekend yoga retreats worth it?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Absolutely. For beginners, a 3-to-4-day weekend retreat is the optimal length. It provides enough time to genuinely disconnect without the physical exhaustion or financial risk of a 7-to-10-day intensive program.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'How much does a domestic yoga retreat cost?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'A domestic weekend yoga retreat in the US typically costs between $400 and $900 for a 3-night stay, depending on accommodation type (dorm vs. private room) and whether meals are included. Dedicated ashrams are usually cheaper than resort-style centers.'
-        }
-      }
-    ]
-  }
-
-  const breadcrumbLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.yogaretreatadvisor.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.yogaretreatadvisor.com/blog' },
-      { '@type': 'ListItem', position: 3, name: 'Retreats Near Me', item: 'https://www.yogaretreatadvisor.com/blog/yoga-retreats-near-me' },
-    ],
-  }
-
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
-      <Navbar />
-
-      <main>
-        <article id="top" className={s.article}>
-          {/* Hero */}
-          <header className={s.hero}>
-            <div className="container">
-              <div className={s.heroInner}>
-                <div className={s.category}>Destinations</div>
-                <h1 className={s.title}>Yoga Retreats Near Me: The Best Driveable Wellness Escapes</h1>
-                <div className={s.meta}>
-                  <div className={s.author}>
-                    <div className={s.avatar}>
-                      <Image src="/images/sarah-avatar.jpg" alt="Sarah Mitchell" fill sizes="40px" style={{ objectFit: 'cover' }} />
-                    </div>
-                    <span>Sarah Mitchell</span>
-                  </div>
-                  <span className={s.date}>Updated June 2026</span>
-                  <span className={s.readTime}>8 min read</span>
-                </div>
-              </div>
-            </div>
-            <div className={s.heroImageWrap}>
-              <Image src="/images/blog/beginner-yoga-class.jpg" alt="Local outdoor yoga retreat" fill sizes="100vw" style={{ objectFit: 'cover' }} priority />
-            </div>
-          </header>
-
-          <div className="container">
-            <div className={s.contentGrid}>
-              
-              {/* Sidebar ToC */}
-              <aside className={s.sidebar}>
-                <div className={s.tocSticky}>
-                  <h4 className={s.tocTitle}>Contents</h4>
-                  <ul className={s.tocList}>
-                    <li><a href="#why-domestic">Why Domestic Retreats Work</a></li>
-                    <li><a href="#hotel-yoga">The "Hotel Yoga" Trap</a></li>
-                    <li><a href="#east-coast">East Coast Retreats</a></li>
-                    <li><a href="#west-coast">West Coast Retreats</a></li>
-                    <li><a href="#the-south">Southern Retreats</a></li>
-                    <li><a href="#the-rockies">The Rockies</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                  </ul>
-                  
-                  <div className={s.relatedPosts}>
-                    <h4>Related Guides</h4>
-                    <Link href="/blog/yoga-retreat-california" className={s.relatedLink}>
-                      <span className={s.relatedImg}>
-                        <Image src="/images/blog/california-yoga.jpg" alt="California" fill sizes="60px" style={{ objectFit: 'cover' }} />
-                      </span>
-                      <span className={s.relatedText}>California Yoga Retreats</span>
-                    </Link>
-                    <Link href="/blog/yoga-retreats-colorado" className={s.relatedLink}>
-                      <span className={s.relatedImg}>
-                        <Image src="/images/blog/california-yoga.jpg" alt="Colorado" fill sizes="60px" style={{ objectFit: 'cover' }} />
-                      </span>
-                      <span className={s.relatedText}>Colorado Retreat Guide</span>
-                    </Link>
-                  </div>
-                </div>
-              </aside>
-
-              {/* Main Content */}
-              <div className={s.content}>
-                <div className={s.introBrief}>
+    <BlogPost
+      title={metadata.title}
+      category="Destinations"
+      date="June 2026"
+      readTime="8 min read"
+      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
+      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
+      canonicalUrl={metadata.alternates?.canonical || ''}
+      tocItems={[]}
+      tags={[]}
+      relatedPosts={[]}
+      faqSchema={faqLd}
+      articleSchema={jsonLd}
+    >
+      <div className={s.introBrief}>
                   <strong>A domestic weekend yoga retreat in the US costs $400–$900 for a 3-night stay.</strong> You don't need a 15-hour flight to genuinely disconnect. The best driveable retreats are found at dedicated wellness centers like Kripalu (East Coast), Esalen (West Coast), Art of Living (South), and Drala Mountain Center (Rockies).
                 </div>
 
@@ -228,25 +119,6 @@ export default function YogaRetreatsNearMe() {
                     <p>A domestic weekend yoga retreat in the US typically costs between $400 and $900 for a 3-night stay, depending on accommodation type (dorm vs. private room) and whether meals are included. Dedicated ashrams are usually cheaper than resort-style centers.</p>
                   </div>
                 </div>
-
-                {/* Author Box */}
-                <div className={s.authorBox}>
-                  <div className={s.authorBoxImg}>
-                    <Image src="/images/sarah-avatar.jpg" alt="Sarah Mitchell" fill sizes="80px" style={{ objectFit: 'cover' }} />
-                  </div>
-                  <div className={s.authorBoxContent}>
-                    <h4>About Sarah Mitchell</h4>
-                    <p>Sarah is a London and Lisbon-based writer and RYT-50 yoga practitioner. Over the past several years, she has attended 14 retreats across 9 countries, spending between $380 and $4,200 per week. She built Yoga Retreat Advisor to help practitioners find honest, hype-free retreat reviews.</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </article>
-      </main>
-      <Newsletter />
-      <Footer />
-    </>
+    </BlogPost>
   )
 }

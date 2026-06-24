@@ -1,9 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import Newsletter from '@/components/Newsletter'
-import s from '../yoga-retreats/page.module.css'
 
 export const metadata = {
   title: 'Yoga Retreat for Beginners: What to Expect, How to Choose, What to Pack (2026)',
@@ -85,45 +81,26 @@ const breadcrumbSchema = {
   ]
 };
 
+import BlogPost from '@/components/BlogPost'
+import s from '@/app/blog/yoga-retreats/page.module.css'
+
 export default function YogaRetreatForBeginnersPage() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Navbar />
-      <main>
-      <article id="top" className={s.article}>
-
-        <div className={s.heroWrap}>
-          <Image
-            src="/images/blog/beginner-yoga-class.jpg"
-            alt="Small group yoga class outdoors in a garden setting, instructor guiding students through a foundational pose"
-            fill
-            style={{ objectFit: 'cover' }}
-            priority
-          />
-          <div className={s.heroOverlay}>
-            <div className="container">
-              <div className={s.breadcrumbs} style={{ fontSize: '0.85rem', marginBottom: '1rem', color: 'rgba(255,255,255,0.8)' }}>
-                <Link href="/" style={{textDecoration:'underline'}}>Home</Link> &gt; <Link href="/blog" style={{textDecoration:'underline'}}>Blog</Link> &gt; <span>Article</span>
-              </div>
-              <span className={s.tag}>Beginner Guide</span>
-              <h1>Yoga retreat for beginners: what to expect, how to choose, and what nobody tells you</h1>
-              <div className={s.meta}>
-                <span>By Sarah Mitchell</span><span>·</span>
-                <span>June 1, 2026</span><span>·</span><span>Last updated: June 1, 2026</span><span>·</span>
-                <span>10 min read</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="container">
-          <div className={s.layout}>
-            <div className={s.body}>
-
-              <div className={s.introBrief}>
+    <BlogPost
+      title={metadata.title}
+      category="Destinations"
+      date="June"
+      readTime="10 min read"
+      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
+      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
+      canonicalUrl={metadata.alternates?.canonical || ''}
+      tocItems={[]}
+      tags={[]}
+      relatedPosts={[]}
+      faqSchema={faqSchema}
+      articleSchema={articleSchema}
+    >
+      <div className={s.introBrief}>
                 <strong>The best yoga retreats for beginners last 4–5 days rather than the standard 7 days.</strong> This duration provides a complete reset without the commitment of a full week. Budget $300–$1,400 depending on the destination. Look for mixed-level classes, a named lead teacher, and a group size under 15. You do not need to be flexible, experienced, or spiritual to attend.
               </div>
 
@@ -289,56 +266,6 @@ export default function YogaRetreatForBeginnersPage() {
 
               <h3>What yoga style is best for a first retreat?</h3>
               <p>Hatha is the most beginner-accessible: slower, posture-focused, and foundational. Yin is excellent for rest and deep release. Vinyasa is workable with a skilled teacher but more demanding. A mixed programme (Hatha mornings, Yin evenings) is usually the best format for a first experience.</p>
-
-            </div>
-
-            <aside className={s.sidebar}>
-              <div className={s.toc}>
-                <h3>In this guide</h3>
-                <ul>
-                  <li><a href="#do-i-qualify">Do I qualify?</a></li>
-                  <li><a href="#how-long">How long to go</a></li>
-                  <li><a href="#how-to-choose">How to choose</a></li>
-                  <li><a href="#what-to-expect">What to expect on day 1</a></li>
-                  <li><a href="#what-to-pack">What to pack</a></li>
-                  <li><a href="#common-mistakes">Common mistakes</a></li>
-                  <li><a href="#when-to-upgrade">When to go longer</a></li>
-                  <li><a href="#verdict">Honest summary</a></li>
-                  <li><a href="#faq">FAQ</a></li>
-                </ul>
-              </div>
-              <div className={s.relatedBox}>
-                <h3>Related reads</h3>
-                <ul>
-                  <li><Link href="/blog/yoga-retreats">The complete yoga retreats guide</Link></li>
-                  <li><Link href="/blog/how-to-book-yoga-retreat">How to book a yoga retreat</Link></li>
-                  <li><Link href="/blog/best-yoga-retreats">best yoga retreats</Link></li>
-                  <li><Link href="/blog/yoga-retreats-india">India yoga retreats: Rishikesh guide</Link></li>
-                  <li><Link href="/blog/yoga-retreats-costa-rica">Costa Rica yoga retreats</Link></li>
-                </ul>
-              </div>
-            </aside>
-          </div>
-        </div>
-
-        <div className={s.authorBox}>
-          <div className={s.authorAvatar}>
-            <Image src="/images/hero-portrait.jpg" alt="Sarah Mitchell" fill sizes="80px" style={{ objectFit: 'cover' }} />
-          </div>
-          <div className={s.authorMeta}>
-            <h3>Sarah Mitchell</h3>
-            <div className={s.authorRole}>Founder &amp; Lead Reviewer, YogaRetreatAdvisor</div>
-            <p>Former London project manager turned yoga travel writer. 14 retreats across 9 countries since 2018, from a $380 week in Rishikesh to a $4,200 luxury immersion in Tuscany. RYT-50. Based between London and Lisbon.</p>
-          </div>
-        </div>
-
-        <Newsletter />
-      <div className="container" style={{ textAlign: 'center', padding: '2rem 0' }}>
-          <a href="#top" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>↑ Back to top</a>
-        </div>
-      </article>
-      </main>
-      <Footer />
-    </>
+    </BlogPost>
   )
 }

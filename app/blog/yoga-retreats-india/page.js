@@ -1,9 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import Newsletter from '@/components/Newsletter'
-import s from '../yoga-retreats/page.module.css'
 
 export const metadata = {
   title: 'Yoga Retreats India: Rishikesh, Kerala & Mysore — Honest Guide (2026)',
@@ -73,39 +69,26 @@ const breadcrumbSchema = {
   ]
 };
 
+import BlogPost from '@/components/BlogPost'
+import s from '@/app/blog/yoga-retreats/page.module.css'
+
 export default function IndiaYogaRetreatPage() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Navbar />
-      <article id="top" className={s.article}>
-
-        {/* Hero */}
-        <div className={s.heroWrap}>
-          <Image
-            src="/images/blog/india-yoga.jpg"
-            alt="Yoga practice at a Rishikesh ashram on the banks of the Ganges river"
-            fill
-            style={{ objectFit: 'cover' }}
-            priority
-          />
-          <div className={s.heroOverlay}>
-            <span className={s.heroCat}>Destinations</span>
-            <h1>Yoga retreats India: Rishikesh, Kerala & Mysore — the honest guide (2026)</h1>
-            <div className={s.heroMeta}>
-              <span>By Sarah Mitchell</span>
-              <span>March 18, 2025</span>
-              <span>10 min read</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="container">
-          <div className={s.layout}>
-            <div className={s.body}>
-
-              {/* Featured snippet answer */}
+    <BlogPost
+      title={metadata.title}
+      category="Destinations"
+      date="March"
+      readTime="10 min read"
+      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
+      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
+      canonicalUrl={metadata.alternates?.canonical || ''}
+      tocItems={[]}
+      tags={[]}
+      relatedPosts={[]}
+      faqSchema={faqSchema}
+      articleSchema={schema}
+    >
+      {/* Featured snippet answer */}
               <div className={s.introBrief}>
                 <strong>A yoga retreat in India costs $300–$600 per week for a full-board ashram stay.</strong> India offers the most authentic teaching globally at the lowest price point. Rishikesh is best for traditional yoga and philosophy, Kerala is for Ayurvedic medical treatments, and Mysore is exclusively for Ashtanga practitioners.
               </div>
@@ -254,103 +237,6 @@ export default function IndiaYogaRetreatPage() {
 
               <p><strong>Can a complete beginner attend a yoga retreat in India?</strong><br />
               Yes. Many Rishikesh retreats cater explicitly to beginners — particularly the larger ashrams like Parmarth Niketan. The teaching tends to be more traditional than in Western retreat destinations, but that's an asset rather than a barrier. Read the retreat description carefully; most will specify their level requirements.</p>
-
-              {/* Tags */}
-              <div className={s.tags}>
-                <span className="tag">India</span>
-                <span className="tag">Rishikesh</span>
-                <span className="tag">Kerala</span>
-                <span className="tag">Ayurveda</span>
-                <span className="tag">Ashram</span>
-                <span className="tag">Budget Retreats</span>
-              </div>
-
-              {/* Author */}
-              <div className={s.authorBox}>
-                <div className={s.authorAvatar}>
-                  <Image src="/images/hero-portrait.jpg" alt="Sarah Mitchell" fill sizes="80px" style={{ objectFit: 'cover' }} />
-                </div>
-                <div className={s.authorMeta}>
-                  <h4>Sarah Mitchell</h4>
-                  <div className={s.authorRole}>Founder &amp; Lead Reviewer, YogaRetreatAdvisor</div>
-                  <p>Former London project manager. First retreat: Rishikesh, 2018, $380, no idea what she was doing. Has since attended 14 retreats across 9 countries (price range: $380–$4,200). RYT-200 certified. No financial relationship with any retreat she reviews.</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Sidebar TOC */}
-            <aside>
-              <div className={s.toc}>
-                <h4>In this guide</h4>
-                <nav className={s.tocLinks}>
-                  <a href="#rishikesh" className={s.tocLink}>Rishikesh — where to actually go</a>
-                  <a href="#kerala" className={s.tocLink}>Kerala — Ayurveda and the south</a>
-                  <a href="#mysore" className={s.tocLink}>Mysore — Ashtanga practitioners</a>
-                  <a href="#goa" className={s.tocLink}>Goa — the honest assessment</a>
-                  <a href="#practical" className={s.tocLink}>Practical notes</a>
-                  <a href="#comparison" className={s.tocLink}>How India compares</a>
-                  <a href="#faq" className={s.tocLink}>FAQ</a>
-                </nav>
-              </div>
-
-              <div className={s.toc} style={{ marginTop: '1.5rem' }}>
-                <h4>Related guides</h4>
-                <nav className={s.tocLinks}>
-                  <Link href="/blog/yoga-retreats" className={s.tocLink}>The complete yoga retreats guide</Link>
-                  <Link href="/blog/yoga-retreat-bali" className={s.tocLink}>Best retreats in Bali</Link>
-                  <Link href="/blog/affordable-yoga-retreats" className={s.tocLink}>Cheapest cities for yoga guide</Link>
-                  <Link href="/blog/yoga-retreat-for-beginners" className={s.tocLink}>First retreat: what to expect</Link>
-                </nav>
-              </div>
-            </aside>
-          </div>
-        </div>
-
-        {/* Related Posts */}
-        <section className={s.relatedPosts}>
-          <div className="container">
-            <div className="section-header center">
-              <span className="section-label">More Destinations</span>
-              <h2>Continue reading</h2>
-            </div>
-            <div className={s.relatedGrid}>
-              <Link href="/blog/yoga-retreat-bali" className={s.relatedCard}>
-                <div className={s.relatedImg}>
-                  <Image src="/images/blog/bali-yoga.jpg" alt="Yoga retreat in Bali" fill sizes="33vw" style={{ objectFit: 'cover' }} />
-                </div>
-                <div className={s.relatedBody}>
-                  <span>Destinations</span>
-                  <h4>Best yoga retreats in Bali: Ubud, Canggu &amp; Uluwatu compared</h4>
-                </div>
-              </Link>
-              <Link href="/blog/yoga-retreats-costa-rica" className={s.relatedCard}>
-                <div className={s.relatedImg}>
-                  <Image src="/images/blog/costa-rica-yoga.jpg" alt="Yoga retreat in Costa Rica" fill sizes="33vw" style={{ objectFit: 'cover' }} />
-                </div>
-                <div className={s.relatedBody}>
-                  <span>Destinations</span>
-                  <h4>7 best yoga retreats in Costa Rica for 2026</h4>
-                </div>
-              </Link>
-              <Link href="/blog/affordable-yoga-retreats" className={s.relatedCard}>
-                <div className={s.relatedImg}>
-                  <Image src="/images/blog/pillar-destinations.jpg" alt="Cheapest cities for yoga retreats" fill sizes="33vw" style={{ objectFit: 'cover' }} />
-                </div>
-                <div className={s.relatedBody}>
-                  <span>Planning</span>
-                  <h4>Cheapest cities for yoga retreats under $500 that don't cut corners</h4>
-                </div>
-              </Link>
-            </div>
-          </div>
-        </section>
-
-        <Newsletter />
-      <div className="container" style={{ textAlign: 'center', padding: '2rem 0' }}>
-          <a href="#top" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>↑ Back to top</a>
-        </div>
-      </article>
-      <Footer />
-    </>
+    </BlogPost>
   )
 }

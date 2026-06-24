@@ -1,9 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import Newsletter from '@/components/Newsletter'
-import s from './page.module.css'
 
 export const metadata = {
   title: 'Yoga Retreats: The Complete Guide to Choosing, Booking & Preparing (2026)',
@@ -17,58 +13,26 @@ export const metadata = {
   },
 }
 
+import BlogPost from '@/components/BlogPost'
+import s from '@/app/blog/yoga-retreats/page.module.css'
+
 export default function YogaRetreatsGuide() {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: 'Yoga Retreats: The Complete Guide to Choosing, Booking & Preparing (2026)',
-    description: 'Compare yoga retreats across top destinations. Learn real pricing benchmarks, what to pack, and how to avoid common booking mistakes from a reviewer who has attended 14 retreats.',
-    author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://www.yogaretreatadvisor.com/about' },
-    publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', logo: { '@type': 'ImageObject', url: 'https://www.yogaretreatadvisor.com/logo.png' } },
-    datePublished: '2025-01-14',
-    dateModified: '2025-01-14',
-    image: 'https://www.yogaretreatadvisor.com/images/blog/yoga-retreat-hero.jpg',
-    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.yogaretreatadvisor.com/blog/yoga-retreats' },
-  }
-
-  const breadcrumbLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.yogaretreatadvisor.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.yogaretreatadvisor.com/blog' },
-      { '@type': 'ListItem', position: 3, name: 'Yoga Retreats Guide', item: 'https://www.yogaretreatadvisor.com/blog/yoga-retreats' },
-    ],
-  }
-
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
-      <Navbar />
-
-      <main>
-        <article id="top" className={s.article}>
-        {/* Hero */}
-        <div className={s.heroWrap}>
-          <Image src="/images/blog/pillar-what-is.jpg" alt="Group practicing yoga at sunrise during a week-long retreat" fill priority sizes="100vw" style={{ objectFit: 'cover' }} />
-          <div className={s.heroOverlay}>
-            <span className={s.heroCat}>Complete Guide</span>
-<h1>Yoga Retreats: The Complete Guide to Choosing, Booking & Preparing (2026)</h1>
-              <div className={s.heroMeta}>
-              <span>By Sarah Mitchell</span>
-              <span>January 14, 2025</span>
-              <span>14 min read</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="container">
-          <div className={s.layout}>
-            {/* Main Content */}
-            <div className={s.body}>
-
-              <div className={s.introBrief}>
+    <BlogPost
+      title={metadata.title}
+      category="Complete Guide"
+      date="January"
+      readTime="14 min read"
+      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
+      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
+      canonicalUrl={metadata.alternates?.canonical || ''}
+      tocItems={[]}
+      tags={[]}
+      relatedPosts={[]}
+      faqSchema={null}
+      articleSchema={jsonLd}
+    >
+      <div className={s.introBrief}>
                 <strong>A yoga retreat is a structured 3 to 14-day wellness program focused on daily yoga practice.</strong> The standard package includes on-site accommodation, three healthy meals, and at least two daily practice sessions. It differs from a regular holiday by providing a curated schedule designed to remove daily decision-making and physical distractions.
               </div>
 
@@ -340,96 +304,6 @@ export default function YogaRetreatsGuide() {
               A yoga retreat has yoga as its primary and central activity — the schedule is built around practice. A wellness retreat uses yoga as one element among many: spa treatments, nutrition programs, therapy, breathwork, and fitness might all feature equally. Wellness retreats are typically more expensive, more medically adjacent, and less structurally focused on yoga. If deepening your practice is the goal, a yoga retreat is more effective. If a holistic physical reset is what you're after, a wellness retreat may serve you better.</p>
 
               <p><em>All prices: per week, full board (accommodation + 3 meals/day + all yoga sessions), 2025–2026 benchmarks.</em></p>
-
-              {/* Tags */}
-              <div className={s.tags}>
-                <span className="tag">Yoga Retreats</span>
-                <span className="tag">Retreat Planning</span>
-                <span className="tag">Wellness Travel</span>
-                <span className="tag">Bali</span>
-                <span className="tag">Costa Rica</span>
-                <span className="tag">Budget Retreats</span>
-              </div>
-
-              {/* Author Box */}
-              <div className={s.authorBox}>
-                <div className={s.authorAvatar}>
-                  <Image src="/images/hero-portrait.jpg" alt="Sarah Mitchell" fill sizes="80px" style={{ objectFit: 'cover' }} />
-                </div>
-<div className={s.authorMeta}>
-                   <h3>Sarah Mitchell</h3>
-                   <div className={s.authorRole}>Founder &amp; Lead Reviewer, YogaRetreatAdvisor</div>
-                  <p>Former London project manager turned yoga travel writer. She's attended 14 retreats across 9 countries since 2018. RYT-200 certified. Price range covered: $380–$4,200. Perpetually over-packed.</p>
-                  <p>Sarah started YogaRetreatAdvisor because she got tired of reading reviews written by writers who'd been comped free stays, or platforms ranking retreats based on who pays the highest commission. She has no financial relationship with the retreats she reviews. If she recommends something, it's because she'd tell her best friend to book it.</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Sidebar TOC */}
-            <aside>
-              <div className={s.toc}>
-                <h3>In This Guide</h3>
-                <nav className={s.tocLinks}>
-                  <a href="#what-is-a-yoga-retreat" className={s.tocLink}>What is a yoga retreat?</a>
-                  <a href="#typical-day" className={s.tocLink}>What happens on a typical day?</a>
-                  <a href="#real-benefits" className={s.tocLink}>Why people go — the real benefits</a>
-                  <a href="#types-of-retreats" className={s.tocLink}>Types of yoga retreats</a>
-                  <a href="#where-to-go" className={s.tocLink}>Best destinations &amp; real prices</a>
-                  <a href="#how-to-choose" className={s.tocLink}>How to choose the right retreat</a>
-                  <a href="#how-much-does-it-cost" className={s.tocLink}>How much does a yoga retreat cost?</a>
-                  <a href="#what-to-pack" className={s.tocLink}>What to pack</a>
-                  <a href="#red-flags" className={s.tocLink}>Red flags — spotting bad retreats</a>
-                  <a href="#after-the-retreat" className={s.tocLink}>After the retreat</a>
-                  <a href="#faq" className={s.tocLink}>FAQ</a>
-                </nav>
-              </div>
-            </aside>
-          </div>
-        </div>
-
-        {/* Related Posts */}
-        <section className={s.relatedPosts}>
-          <div className="container">
-            <div className="section-header center">
-              <span className="section-label">Related Articles</span>
-              <h2>Continue Reading</h2>
-            </div>
-            <div className={s.relatedGrid}>
-              <Link href="/blog/luxury-yoga-retreats" className={s.relatedCard}>
-                <div className={s.relatedImg}>
-                  <Image src="/images/blog/luxury-yoga.jpg" alt="Luxury yoga retreat pool" fill sizes="33vw" style={{ objectFit: 'cover' }} />
-                </div>
-<div className={s.relatedBody}>
-                   <span>Retreat Types</span>
-                   <h3>Luxury Yoga Retreats: What $3,000+ Gets You</h3>
-                 </div>
-               </Link>
-               <Link href="/blog/yoga-retreat-for-beginners" className={s.relatedCard}>
-                 <div className={s.relatedImg}>
-                   <Image src="/images/blog/meditation-retreat-group-outdoor.jpg" alt="Meditation group retreat" fill sizes="33vw" style={{ objectFit: 'cover' }} />
-                 </div>
-                 <div className={s.relatedBody}>
-                   <span>Beginners</span>
-                   <h3>Yoga Retreat for Beginners: What to Expect</h3>
-                 </div>
-               </Link>
-               <Link href="/blog/yoga-retreat-bali" className={s.relatedCard}>
-                 <div className={s.relatedImg}>
-                   <Image src="/images/blog/tropical-retreat-hut-bali.jpg" alt="Bali retreat hut" fill sizes="33vw" style={{ objectFit: 'cover' }} />
-                 </div>
-                 <div className={s.relatedBody}>
-                   <span>Destinations</span>
-                   <h3>Best Yoga Retreats in Bali for 2026</h3>
-                 </div>
-               </Link>
-            </div>
-          </div>
-</section>
-        </article>
-      </main>
-
-      <Newsletter />
-      <Footer />
-    </>
+    </BlogPost>
   )
 }

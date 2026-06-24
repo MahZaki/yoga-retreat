@@ -1,9 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import Newsletter from '@/components/Newsletter'
-import s from '../yoga-retreats/page.module.css'
 
 export const metadata = {
   title: 'Luxury Yoga Retreats: What the Premium Actually Buys (2026)',
@@ -77,45 +73,26 @@ const breadcrumbSchema = {
   ]
 };
 
+import BlogPost from '@/components/BlogPost'
+import s from '@/app/blog/yoga-retreats/page.module.css'
+
 export default function LuxuryYogaRetreatsPage() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Navbar />
-      <main>
-      <article id="top" className={s.article}>
-
-        <div className={s.heroWrap}>
-          <Image
-            src="/images/blog/luxury-resort-yoga.jpg"
-            alt="Luxury resort infinity pool overlooking the ocean, ideal for a high-end wellness retreat"
-            fill
-            style={{ objectFit: 'cover' }}
-            priority
-          />
-          <div className={s.heroOverlay}>
-            <div className="container">
-              <div className={s.breadcrumbs} style={{ fontSize: '0.85rem', marginBottom: '1rem', color: 'rgba(255,255,255,0.8)' }}>
-                <Link href="/" style={{textDecoration:'underline'}}>Home</Link> &gt; <Link href="/blog" style={{textDecoration:'underline'}}>Blog</Link> &gt; <span>Article</span>
-              </div>
-              <span className={s.tag}>Retreat Styles</span>
-              <h1>Luxury yoga retreats: what the premium actually buys</h1>
-              <div className={s.meta}>
-                <span>By Sarah Mitchell</span><span>·</span>
-                <span>June 5, 2026</span><span>·</span><span>Last updated: June 5, 2026</span><span>·</span>
-                <span>8 min read</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="container">
-          <div className={s.layout}>
-            <div className={s.body}>
-
-              <div className={s.introBrief}>
+    <BlogPost
+      title={metadata.title}
+      category="Destinations"
+      date="June"
+      readTime="8 min read"
+      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
+      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
+      canonicalUrl={metadata.alternates?.canonical || ''}
+      tocItems={[]}
+      tags={[]}
+      relatedPosts={[]}
+      faqSchema={faqSchema}
+      articleSchema={articleSchema}
+    >
+      <div className={s.introBrief}>
                 <strong>Luxury yoga retreats cost $2,500–$5,000+ per week.</strong> The premium price buys you four specific things: zero logistical friction (private transfers, all meals), elite teaching depth (instructors with 20+ years of experience), intimate groups capped at 8–12 people, and high-end private accommodation. The best luxury wellness hubs are Tuscany, Bali, Provence, and the Riviera Maya.
               </div>
 
@@ -241,52 +218,6 @@ export default function LuxuryYogaRetreatsPage() {
 
               <h3>Where are the best luxury yoga retreats located?</h3>
               <p>Tuscany (Italy), Provence (France), Bali (Ubud and Uluwatu), and the Riviera Maya (Tulum) are the primary hubs. Europe offers historical properties and culinary excellence, while Bali offers deep spiritual infrastructure and jungle architecture.</p>
-
-            </div>
-
-            <aside className={s.sidebar}>
-              <div className={s.toc}>
-                <h3>In this guide</h3>
-                <ul>
-                  <li><a href="#what-it-buys">What it actually buys</a></li>
-                  <li><a href="#when-its-worth-it">When it&apos;s worth it</a></li>
-                  <li><a href="#top-destinations">Top destinations</a></li>
-                  <li><a href="#red-flags">Luxury red flags</a></li>
-                  <li><a href="#verdict">Final verdict</a></li>
-                  <li><a href="#faq">FAQ</a></li>
-                </ul>
-              </div>
-              <div className={s.relatedBox}>
-                <h3>Related reads</h3>
-                <ul>
-                  <li><Link href="/blog/yoga-retreats">The complete yoga retreats guide</Link></li>
-                  <li><Link href="/blog/affordable-yoga-retreats">The best affordable yoga retreats</Link></li>
-                  <li><Link href="/blog/all-inclusive-yoga-retreat">Are all-inclusive retreats worth it?</Link></li>
-                  <li><Link href="/blog/how-to-book-yoga-retreat">How to book a yoga retreat</Link></li>
-                </ul>
-              </div>
-            </aside>
-          </div>
-        </div>
-
-        <div className={s.authorBox}>
-          <div className={s.authorAvatar}>
-            <Image src="/images/hero-portrait.jpg" alt="Sarah Mitchell" fill sizes="80px" style={{ objectFit: 'cover' }} />
-          </div>
-          <div className={s.authorMeta}>
-            <h3>Sarah Mitchell</h3>
-            <div className={s.authorRole}>Founder &amp; Lead Reviewer, YogaRetreatAdvisor</div>
-            <p>Former London project manager turned yoga travel writer. 14 retreats across 9 countries since 2018, from a $380 week in Rishikesh to a $4,200 luxury immersion in Tuscany. RYT-50. Based between London and Lisbon.</p>
-          </div>
-        </div>
-
-        <Newsletter />
-      <div className="container" style={{ textAlign: 'center', padding: '2rem 0' }}>
-          <a href="#top" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>↑ Back to top</a>
-        </div>
-      </article>
-      </main>
-      <Footer />
-    </>
+    </BlogPost>
   )
 }

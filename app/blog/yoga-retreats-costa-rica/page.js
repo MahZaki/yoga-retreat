@@ -1,9 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import Newsletter from '@/components/Newsletter'
-import s from '../yoga-retreats/page.module.css'
 
 export const metadata = {
   title: 'Yoga Retreats in Costa Rica: Nosara vs Santa Teresa vs Uvita (2026 Guide)',
@@ -85,45 +81,26 @@ const breadcrumbSchema = {
   ]
 };
 
+import BlogPost from '@/components/BlogPost'
+import s from '@/app/blog/yoga-retreats/page.module.css'
+
 export default function CostaRicaYogaRetreatsPage() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Navbar />
-      <main>
-      <article id="top" className={s.article}>
-
-        <div className={s.heroWrap}>
-          <Image
-            src="/images/blog/costa-rica-jungle-yoga.jpg"
-            alt="Yoga practice surrounded by lush green jungle in Costa Rica, morning light filtering through the canopy"
-            fill
-            style={{ objectFit: 'cover' }}
-            priority
-          />
-          <div className={s.heroOverlay}>
-            <div className="container">
-              <div className={s.breadcrumbs} style={{ fontSize: '0.85rem', marginBottom: '1rem', color: 'rgba(255,255,255,0.8)' }}>
-                <Link href="/" style={{textDecoration:'underline'}}>Home</Link> &gt; <Link href="/blog" style={{textDecoration:'underline'}}>Blog</Link> &gt; <span>Article</span>
-              </div>
-              <span className={s.tag}>Destination Guide</span>
-              <h1>Yoga retreats in Costa Rica: Nosara, Santa Teresa, and Uvita compared</h1>
-              <div className={s.meta}>
-                <span>By Sarah Mitchell</span><span>·</span>
-                <span>May 28, 2026</span><span>·</span><span>Last updated: May 28, 2026</span><span>·</span>
-                <span>9 min read</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="container">
-          <div className={s.layout}>
-            <div className={s.body}>
-
-              <div className={s.introBrief}>
+    <BlogPost
+      title={metadata.title}
+      category="Destinations"
+      date="May"
+      readTime="9 min read"
+      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
+      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
+      canonicalUrl={metadata.alternates?.canonical || ''}
+      tocItems={[]}
+      tags={[]}
+      relatedPosts={[]}
+      faqSchema={faqSchema}
+      articleSchema={articleSchema}
+    >
+      <div className={s.introBrief}>
                 <strong>A yoga retreat in Costa Rica costs $700–$1,100/week for budget options and $1,200–$1,800/week for mid-range.</strong> Costa Rica is the best destination for US travellers who want world-class wellness infrastructure without a long-haul flight. Nosara is the most established yoga hub, Santa Teresa is social and surf-forward, and Uvita offers deep jungle immersion.
               </div>
 
@@ -280,57 +257,6 @@ export default function CostaRicaYogaRetreatsPage() {
 
               <h3>Do I need a car to get to a retreat in Costa Rica?</h3>
               <p>Yes, or pre-booked transfers. The Nosara road from Liberia is partially unpaved — 4WD recommended in green season. Santa Teresa requires a ferry or long drive from the capital. Uvita is fully paved from San José. Always confirm whether your retreat includes airport shuttles before booking.</p>
-
-            </div>
-
-            <aside className={s.sidebar}>
-              <div className={s.toc}>
-                <h3>In this guide</h3>
-                <ul>
-                  <li><a href="#nosara">Nosara: the established hub</a></li>
-                  <li><a href="#santa-teresa">Santa Teresa: surf-forward</a></li>
-                  <li><a href="#uvita">Uvita: jungle immersion</a></li>
-                  <li><a href="#comparison">Comparison table</a></li>
-                  <li><a href="#logistics">Practical logistics</a></li>
-                  <li><a href="#costa-rica-vs-bali">Costa Rica vs Bali</a></li>
-                  <li><a href="#what-to-budget">Real budget numbers</a></li>
-                  <li><a href="#best-season">Best time to go</a></li>
-                  <li><a href="#verdict">Honest verdict</a></li>
-                  <li><a href="#faq">FAQ</a></li>
-                </ul>
-              </div>
-              <div className={s.relatedBox}>
-                <h3>Related reads</h3>
-                <ul>
-                  <li><Link href="/blog/yoga-retreats">The complete yoga retreats guide</Link></li>
-                  <li><Link href="/blog/yoga-retreat-bali">Bali yoga retreats: Ubud vs Canggu vs Uluwatu</Link></li>
-                  <li><Link href="/blog/yoga-retreats-india">India yoga retreats: Rishikesh and beyond</Link></li>
-                  <li><Link href="/blog/how-to-book-yoga-retreat">How to book a yoga retreat</Link></li>
-                  <li><Link href="/blog/best-yoga-retreats">best yoga retreats</Link></li>
-                </ul>
-              </div>
-            </aside>
-          </div>
-        </div>
-
-        <div className={s.authorBox}>
-          <div className={s.authorAvatar}>
-            <Image src="/images/hero-portrait.jpg" alt="Sarah Mitchell" fill sizes="80px" style={{ objectFit: 'cover' }} />
-          </div>
-          <div className={s.authorMeta}>
-            <h3>Sarah Mitchell</h3>
-            <div className={s.authorRole}>Founder &amp; Lead Reviewer, YogaRetreatAdvisor</div>
-            <p>Former London project manager turned yoga travel writer. 14 retreats across 9 countries since 2018, from a $380 week in Rishikesh to a $4,200 luxury immersion in Tuscany. RYT-50. Based between London and Lisbon.</p>
-          </div>
-        </div>
-
-        <Newsletter />
-      <div className="container" style={{ textAlign: 'center', padding: '2rem 0' }}>
-          <a href="#top" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>↑ Back to top</a>
-        </div>
-      </article>
-      </main>
-      <Footer />
-    </>
+    </BlogPost>
   )
 }

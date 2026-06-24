@@ -1,9 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import Newsletter from '@/components/Newsletter'
-import s from '../yoga-retreats/page.module.css'
 
 export const metadata = {
   title: 'Yoga Retreat California 2026: 10 Top-Rated Centers by Region',
@@ -68,39 +64,26 @@ const breadcrumbSchema = {
   ]
 };
 
+import BlogPost from '@/components/BlogPost'
+import s from '@/app/blog/yoga-retreats/page.module.css'
+
 export default function CaliforniaYogaRetreatPage() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Navbar />
-      <article id="top" className={s.article}>
-
-        {/* Hero */}
-        <div className={s.heroWrap}>
-          <Image
-            src="/images/blog/california-big-sur.jpg"
-            alt="Big Sur California coastal cliffs and ocean"
-            fill
-            style={{ objectFit: 'cover' }}
-            priority
-          />
-          <div className={s.heroOverlay}>
-            <span className={s.heroCat}>Destinations</span>
-            <h1>Yoga retreat California 2026: The 10 best centers by region</h1>
-            <div className={s.heroMeta}>
-              <span>By Sarah Mitchell</span>
-              <span>July 15, 2025</span>
-              <span>9 min read</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="container">
-          <div className={s.layout}>
-            <div className={s.body}>
-
-              {/* Featured snippet */}
+    <BlogPost
+      title={metadata.title}
+      category="Destinations"
+      date="July"
+      readTime="9 min read"
+      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
+      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
+      canonicalUrl={metadata.alternates?.canonical || ''}
+      tocItems={[]}
+      tags={[]}
+      relatedPosts={[]}
+      faqSchema={faqSchema}
+      articleSchema={schema}
+    >
+      {/* Featured snippet */}
               <div className={s.introBrief}>
                 <strong>A yoga retreat in California costs $900–$1,400/week for budget stays and $1,500–$2,200/week for mid-range. Weekend retreats run $400–$1,100.</strong> The best regions are Ojai for spiritual depth, Big Sur for dramatic coastal nature, Joshua Tree for budget-friendly desert isolation, and the Bay Area for accessible residential programs.
               </div>
@@ -215,64 +198,6 @@ export default function CaliforniaYogaRetreatPage() {
 
               <p><strong>Is it hard to book a retreat at Esalen Institute?</strong><br />
               Yes. Programs often sell out months in advance, and waitlists are standard. Book the week the catalogue is released.</p>
-
-              {/* Tags */}
-              <div className={s.tags}>
-                <span className="tag">California</span>
-                <span className="tag">Big Sur</span>
-                <span className="tag">Ojai</span>
-                <span className="tag">Joshua Tree</span>
-                <span className="tag">USA</span>
-              </div>
-
-              {/* Author */}
-              <div className={s.authorBox}>
-                <div className={s.authorAvatar}>
-                  <Image src="/images/hero-portrait.jpg" alt="Sarah Mitchell" fill sizes="80px" style={{ objectFit: 'cover' }} />
-                </div>
-                <div className={s.authorMeta}>
-                  <h4>Sarah Mitchell</h4>
-                  <div className={s.authorRole}>Founder &amp; Lead Reviewer, YogaRetreatAdvisor</div>
-                  <p>Former London project manager. First retreat: Rishikesh, 2018. Has since attended 22 retreats across 14 countries ($380–$4,200). RYT-200 certified. The Ojai valley remains one of her favourite places to sit in total silence.</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Sidebar */}
-            <aside>
-              <div className={s.toc}>
-                <h4>In this guide</h4>
-                <nav className={s.tocLinks}>
-                  <a href="#big-sur" className={s.tocLink}>Big Sur & Central Coast</a>
-                  <a href="#ojai" className={s.tocLink}>Ojai</a>
-                  <a href="#joshua-tree" className={s.tocLink}>Joshua Tree</a>
-                  <a href="#bay-area" className={s.tocLink}>Bay Area</a>
-                  <a href="#prices" className={s.tocLink}>Price comparison</a>
-                  <a href="#california-vs-colorado" className={s.tocLink}>California vs. Colorado</a>
-                  <a href="#reality-check" className={s.tocLink}>The reality check</a>
-                  <a href="#faq" className={s.tocLink}>FAQ</a>
-                </nav>
-              </div>
-
-              <div className={s.toc} style={{ marginTop: '1.5rem' }}>
-                <h4>Related guides</h4>
-                <nav className={s.tocLinks}>
-                  <Link href="/blog/yoga-retreats" className={s.tocLink}>The complete yoga retreats guide</Link>
-                  <Link href="/blog/yoga-retreat-bali" className={s.tocLink}>Best retreats in Bali</Link>
-                  <Link href="/blog/luxury-yoga-retreats" className={s.tocLink}>Luxury retreats: what $3k+ buys</Link>
-                  <Link href="/blog/yoga-retreat-for-beginners" className={s.tocLink}>First retreat: what to expect</Link>
-                </nav>
-              </div>
-            </aside>
-          </div>
-        </div>
-
-        <Newsletter />
-      <div className="container" style={{ textAlign: 'center', padding: '2rem 0' }}>
-          <a href="#top" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>↑ Back to top</a>
-        </div>
-      </article>
-      <Footer />
-    </>
+    </BlogPost>
   )
 }

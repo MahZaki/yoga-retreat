@@ -1,9 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import Newsletter from '@/components/Newsletter'
-import s from '../yoga-retreats/page.module.css'
 
 export const metadata = {
   title: 'How Much Does a Yoga Retreat Cost? True 2026 Price Guide | YogaRetreatAdvisor',
@@ -17,98 +13,26 @@ export const metadata = {
   },
 }
 
+import BlogPost from '@/components/BlogPost'
+import s from '@/app/blog/yoga-retreats/page.module.css'
+
 export default function YogaRetreatCostGuide() {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: 'How Much Does a Yoga Retreat Cost? True 2026 Price Guide',
-    description: 'Real prices for yoga retreats in 2026: Budget to luxury cost breakdowns, hidden fees, and destination comparisons so you know exactly what to budget.',
-    author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://www.yogaretreatadvisor.com/about' },
-    publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', logo: { '@type': 'ImageObject', url: 'https://www.yogaretreatadvisor.com/logo.png' } },
-    datePublished: '2026-06-18',
-    dateModified: '2026-06-18',
-    image: 'https://www.yogaretreatadvisor.com/images/blog/retreat-cost-planning.jpg',
-    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.yogaretreatadvisor.com/blog/yoga-retreat-cost' },
-  }
-
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'How much does a yoga retreat cost?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'A yoga retreat costs $300–$600/week in India, $700–$1,100 in Costa Rica or Thailand, $900–$1,800 in Bali or Europe, and $1,500–$3,500 in Hawaii or the US. Flights and travel insurance are almost always excluded.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'What is included in the cost of a yoga retreat?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Most retreat prices include your accommodation, two to three daily meals (usually vegetarian or vegan), and all scheduled yoga and meditation classes. They rarely include flights, travel insurance, or airport transfers unless explicitly stated.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'Are expensive yoga retreats worth the money?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Price only buys quality up to a point. Beyond $2,500/week, you are usually paying for friction removal—private airport transfers, single-occupancy luxury rooms, and exclusive locations—rather than better yoga teaching. Expensive retreats are only worth it if the price creates zero financial stress.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'Why do booking platforms charge more?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Large booking aggregators take a 15-20% commission on every booking. While some centers absorb this, many pass the cost onto you. You can often get a better rate by finding the retreat on a platform and then booking directly through the teacher or center’s own website.'
-        }
-      }
-    ]
-  }
-
-  const breadcrumbLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.yogaretreatadvisor.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.yogaretreatadvisor.com/blog' },
-      { '@type': 'ListItem', position: 3, name: 'Yoga Retreat Cost', item: 'https://www.yogaretreatadvisor.com/blog/yoga-retreat-cost' },
-    ],
-  }
-
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
-      <Navbar />
-
-      <main>
-        <article id="top" className={s.article}>
-          {/* Hero */}
-          <div className={s.heroWrap}>
-            <Image src="/images/blog/retreat-cost-planning.jpg" alt="Person calculating a travel budget on a laptop with a notebook" fill priority sizes="100vw" style={{ objectFit: 'cover' }} />
-            <div className={s.heroOverlay}>
-              <span className={s.heroCat}>Planning Guide</span>
-              <h1>How Much Does a Yoga Retreat Cost? True 2026 Price Guide</h1>
-              <div className={s.heroMeta}>
-                <span>By Sarah Mitchell</span>
-                <span>June 18, 2026</span>
-                <span>10 min read</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="container">
-            <div className={s.layout}>
-              {/* Main Content */}
-              <div className={s.body}>
-
-                <div className={s.introBrief}>
+    <BlogPost
+      title={metadata.title}
+      category="Planning Guide"
+      date="June"
+      readTime="10 min read"
+      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
+      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
+      canonicalUrl={metadata.alternates?.canonical || ''}
+      tocItems={[]}
+      tags={[]}
+      relatedPosts={[]}
+      faqSchema={faqSchema}
+      articleSchema={jsonLd}
+    >
+      <div className={s.introBrief}>
                   <strong>A yoga retreat costs $300–$600/week in India, $700–$1,100 in Costa Rica or Thailand, $900–$1,800 in Bali or Europe, and $1,500–$3,500 in Hawaii or the US.</strong> Flights and travel insurance are almost always excluded.
                 </div>
 
@@ -260,55 +184,6 @@ export default function YogaRetreatCostGuide() {
 
                 <h3>Why do booking platforms charge more?</h3>
                 <p>Large booking aggregators take a 15-20% commission on every booking. While some centers absorb this, many pass the cost onto you. You can often get a better rate by finding the retreat on a platform and then booking directly through the teacher or center's own website.</p>
-
-              </div>
-
-              {/* Sidebar TOC */}
-              <aside className={s.sidebar}>
-                <div className={s.toc}>
-                  <h3>In This Guide</h3>
-                  <ul>
-                    <li><a href="#destination-breakdown">Cost by Destination</a></li>
-                    <li><a href="#whats-included">What Is Included</a></li>
-                    <li><a href="#platform-commission">The Commission Trap</a></li>
-                    <li><a href="#luxury-vs-budget">Are Luxury Retreats Worth It?</a></li>
-                    <li><a href="#how-to-calculate">Calculate True Cost</a></li>
-                    <li><a href="#verdict">Honest Summary</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                  </ul>
-                </div>
-                <div className={s.relatedBox}>
-                  <h3>Related reads</h3>
-                  <ul>
-                    <li><Link href="/blog/how-to-book-yoga-retreat">How to book a yoga retreat</Link></li>
-                    <li><Link href="/blog/yoga-retreats">The complete yoga retreats guide</Link></li>
-                    <li><Link href="/blog/affordable-yoga-retreats">Cheapest cities for yoga guide</Link></li>
-                    <li><Link href="/blog/luxury-yoga-retreats">Luxury retreats guide</Link></li>
-                    <li><Link href="/blog/yoga-retreat-for-beginners">Beginners retreat guide</Link></li>
-                  </ul>
-                </div>
-              </aside>
-            </div>
-          </div>
-
-          <div className={s.authorBox}>
-            <div className={s.authorAvatar}>
-              <Image src="/images/hero-portrait.jpg" alt="Sarah Mitchell" fill sizes="80px" style={{ objectFit: 'cover' }} />
-            </div>
-            <div className={s.authorMeta}>
-              <h3>Sarah Mitchell</h3>
-              <div className={s.authorRole}>Founder &amp; Lead Reviewer, YogaRetreatAdvisor</div>
-              <p>Former London project manager turned yoga travel writer. 14 retreats across 9 countries since 2018, from a $380 week in Rishikesh to a $4,200 luxury immersion in Tuscany. RYT-50. Based between London and Lisbon.</p>
-            </div>
-          </div>
-
-          <Newsletter />
-          <div className="container" style={{ textAlign: 'center', padding: '2rem 0' }}>
-            <a href="#top" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>↑ Back to top</a>
-          </div>
-        </article>
-      </main>
-      <Footer />
-    </>
+    </BlogPost>
   )
 }

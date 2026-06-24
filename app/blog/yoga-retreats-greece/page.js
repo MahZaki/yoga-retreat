@@ -1,9 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import Newsletter from '@/components/Newsletter'
-import s from '../yoga-retreats/page.module.css'
 
 export const metadata = {
   title: "5 Best Yoga Retreats in Greece (Corfu, Crete, Cyclades) | 2026",
@@ -17,97 +13,26 @@ export const metadata = {
   },
 }
 
+import BlogPost from '@/components/BlogPost'
+import s from '@/app/blog/yoga-retreats/page.module.css'
+
 export default function GreeceRetreatsGuide() {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: "The Best Yoga Retreats in Greece: Corfu, Crete, and the Cyclades",
-    description: "Discover the best authentic yoga retreats in Greece. From luxury sanctuaries in Corfu to hidden gems in Amorgos.",
-    author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://www.yogaretreatadvisor.com/about' },
-    publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', logo: { '@type': 'ImageObject', url: 'https://www.yogaretreatadvisor.com/logo.png' } },
-    datePublished: '2026-06-18',
-    dateModified: '2026-06-18',
-    image: 'https://www.yogaretreatadvisor.com/images/blog/greece-yoga-hero.jpg',
-    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.yogaretreatadvisor.com/blog/yoga-retreats-greece' },
-  }
-
-  const faqLd = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'What is the best month to do a yoga retreat in Greece?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'The best months are May, September, and early October. The weather is warm enough for swimming, but the intense heat and tourist crowds of July and August have dissipated. Retreats are also typically cheaper and easier to book during shoulder season.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'How much does a yoga retreat in Greece cost?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Prices vary widely. A budget, shared-room retreat in Crete might cost $900 for a week, while a luxury, private sea-view retreat in Santorini or Corfu can easily exceed $3,500. Most mid-range retreat programs fall in the $1,200–$2,000 range for 7 days.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'Do I need to be an advanced yogi to attend a retreat in Greece?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Not at all. The vast majority of retreats in Greece cater to all levels, offering modifications for beginners. The focus is usually on holistic wellness, relaxation, and the Mediterranean lifestyle rather than intense physical mastery.'
-        }
-      }
-    ]
-  }
-
-  const breadcrumbLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.yogaretreatadvisor.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.yogaretreatadvisor.com/blog' },
-      { '@type': 'ListItem', position: 3, name: 'Greece Retreats', item: 'https://www.yogaretreatadvisor.com/blog/yoga-retreats-greece' },
-    ],
-  }
-
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
-      <Navbar />
-
-      <main>
-        <article id="top" className={s.article}>
-
-          {/* Hero */}
-          <div className={s.heroWrap}>
-            <Image
-              src="/images/blog/greece-yoga-hero.jpg"
-              alt="Silhouette of a woman practising yoga on a jetty in Kos, Greece, at sunrise"
-              fill priority sizes="100vw"
-              style={{ objectFit: 'cover' }}
-            />
-            <div className={s.heroOverlay}>
-              <span className={s.heroCat}>Destinations</span>
-              <h1>The Best Yoga Retreats in Greece: Corfu, Crete, and the Cyclades</h1>
-              <div className={s.heroMeta}>
-                <span>By Sarah Mitchell</span>
-                <span>June 18, 2026</span>
-                <span>8 min read</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="container">
-            <div className={s.layout}>
-
-              {/* Main Content */}
-              <div className={s.body}>
-
-                <div className={s.introBrief}>
+    <BlogPost
+      title={metadata.title}
+      category="Destinations"
+      date="June"
+      readTime="8 min read"
+      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
+      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
+      canonicalUrl={metadata.alternates?.canonical || ''}
+      tocItems={[]}
+      tags={[]}
+      relatedPosts={[]}
+      faqSchema={faqLd}
+      articleSchema={jsonLd}
+    >
+      <div className={s.introBrief}>
                   <strong>Yoga retreats in Greece cost $900 for a budget stay in Crete up to $3,500+ for luxury in Santorini.</strong> Avoid July and August due to intense heat and tourist swarms—the best months are May and September. The Mediterranean diet and stunning aesthetics make Greece Europe's premier wellness destination, but beware of overpriced, under-taught "resort yoga."
                 </div>
 
@@ -235,89 +160,6 @@ export default function GreeceRetreatsGuide() {
 
                 <h3>Do I need to be an advanced yogi to attend a retreat in Greece?</h3>
                 <p>Not at all. The vast majority of retreats in Greece cater to all levels with modifications for beginners. The focus is usually on holistic wellness and the Mediterranean lifestyle, not athletic performance.</p>
-
-                {/* Tags */}
-                <div className={s.tags}>
-                  <span className="tag">Greece</span>
-                  <span className="tag">Europe Retreats</span>
-                  <span className="tag">Corfu</span>
-                  <span className="tag">Crete</span>
-                  <span className="tag">Mediterranean Yoga</span>
-                </div>
-
-                {/* Author Box */}
-                <div className={s.authorBox}>
-                  <div className={s.authorAvatar}>
-                    <Image src="/images/hero-portrait.jpg" alt="Sarah Mitchell" fill sizes="80px" style={{ objectFit: 'cover' }} />
-                  </div>
-                  <div className={s.authorMeta}>
-                    <h3>Sarah Mitchell</h3>
-                    <div className={s.authorRole}>Founder & Lead Reviewer, YogaRetreatAdvisor</div>
-                    <p>Former London project manager turned yoga travel writer. 14 retreats across 9 countries since 2018. RYT-50 certified. Based between London and Lisbon. Price range covered: $380–$4,200.</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Sidebar TOC */}
-              <aside>
-                <div className={s.toc}>
-                  <h3>In This Guide</h3>
-                  <nav className={s.tocLinks}>
-                    <a href="#booking-trap" className={s.tocLink}>Booking Platform Warning</a>
-                    <a href="#regions" className={s.tocLink}>Choosing Your Region</a>
-                    <a href="#top-retreats" className={s.tocLink}>Top 5 Retreat Centres</a>
-                    <a href="#the-food" className={s.tocLink}>The Mediterranean Advantage</a>
-                    <a href="#faq" className={s.tocLink}>FAQ</a>
-                  </nav>
-                </div>
-              </aside>
-            </div>
-          </div>
-
-          {/* Related Posts */}
-          <section className={s.relatedPosts}>
-            <div className="container">
-              <div className="section-header center">
-                <span className="section-label">Related Articles</span>
-                <h2>Continue Reading</h2>
-              </div>
-              <div className={s.relatedGrid}>
-                <Link href="/blog/yoga-retreats-india" className={s.relatedCard}>
-                  <div className={s.relatedImg}>
-                    <Image src="/images/blog/india-yoga.jpg" alt="India Yoga Retreats" fill sizes="33vw" style={{ objectFit: 'cover' }} />
-                  </div>
-                  <div className={s.relatedBody}>
-                    <span>Destinations</span>
-                    <h3>Yoga Retreats India: Rishikesh to Kerala</h3>
-                  </div>
-                </Link>
-                <Link href="/blog/luxury-yoga-retreats" className={s.relatedCard}>
-                  <div className={s.relatedImg}>
-                    <Image src="/images/blog/luxury-yoga.jpg" alt="Luxury yoga retreat" fill sizes="33vw" style={{ objectFit: 'cover' }} />
-                  </div>
-                  <div className={s.relatedBody}>
-                    <span>Retreat Types</span>
-                    <h3>Luxury Yoga Retreats: What $3,000+ Gets You</h3>
-                  </div>
-                </Link>
-                <Link href="/blog/yoga-retreats-near-me" className={s.relatedCard}>
-                  <div className={s.relatedImg}>
-                    <Image src="/images/blog/beginner-yoga-class.jpg" alt="Retreats Near Me" fill sizes="33vw" style={{ objectFit: 'cover' }} />
-                  </div>
-                  <div className={s.relatedBody}>
-                    <span>Destinations</span>
-                    <h3>Yoga Retreats Near Me: Best Driveable US Escapes</h3>
-                  </div>
-                </Link>
-              </div>
-            </div>
-          </section>
-
-        </article>
-      </main>
-
-      <Newsletter />
-      <Footer />
-    </>
+    </BlogPost>
   )
 }

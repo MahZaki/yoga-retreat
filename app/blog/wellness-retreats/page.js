@@ -1,9 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import Newsletter from '@/components/Newsletter'
-import s from '../yoga-retreats/page.module.css'
 
 export const metadata = {
   title: 'The Ultimate Guide to Wellness Retreats (2026) | YogaRetreatAdvisor',
@@ -17,98 +13,26 @@ export const metadata = {
   },
 }
 
+import BlogPost from '@/components/BlogPost'
+import s from '@/app/blog/yoga-retreats/page.module.css'
+
 export default function WellnessRetreatsGuide() {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: 'The Ultimate Guide to Wellness Retreats (2026)',
-    description: 'Wellness retreats have shifted toward data-driven health and nervous-system regulation. Discover top 2026 destinations, expected costs, and how to choose the right reset.',
-    author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://www.yogaretreatadvisor.com/about' },
-    publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', logo: { '@type': 'ImageObject', url: 'https://www.yogaretreatadvisor.com/logo.png' } },
-    datePublished: '2026-06-18',
-    dateModified: '2026-06-18',
-    image: 'https://www.yogaretreatadvisor.com/images/blog/wellness-retreat-forest.jpg',
-    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.yogaretreatadvisor.com/blog/wellness-retreats' },
-  }
-
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'Are wellness retreats worth the money?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'An expensive wellness retreat is only worth it if the price is emotionally neutral. If spending $4,000 creates financial stress, that anxiety will undo every nervous-system benefit the retreat aims to provide. If you can tolerate a bit of logistical friction, you can find life-changing experiences for under $1,500.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'What actually happens at a wellness retreat?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Unlike standard yoga retreats, 2026 wellness retreats focus heavily on nervous system regulation and longevity. You can expect contrast therapy (hot/cold plunges), advanced sleep diagnostics, metabolic testing, daily breathwork, and structured periods of silence or "cocooning" to combat urban burnout.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'Do I need to be fit to attend a wellness retreat?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Absolutely not. Most wellness retreats are highly personalized and cater to all physical levels. Their primary goal is restoration and regulation of the nervous system, not athletic performance.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'Where are the best wellness retreats located?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'For medical and data-driven wellness, Thailand (Kamalaya, RAKxa) and Europe (Lanserhof Lans, Palazzo Fiuggi) are the 2026 benchmarks. For eco-luxury and jungle immersion, Costa Rica and Bali remain top choices.'
-        }
-      }
-    ]
-  }
-
-  const breadcrumbLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.yogaretreatadvisor.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.yogaretreatadvisor.com/blog' },
-      { '@type': 'ListItem', position: 3, name: 'Wellness Retreats', item: 'https://www.yogaretreatadvisor.com/blog/wellness-retreats' },
-    ],
-  }
-
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
-      <Navbar />
-
-      <main>
-        <article id="top" className={s.article}>
-          {/* Hero */}
-          <div className={s.heroWrap}>
-            <Image src="/images/blog/wellness-retreat-forest.jpg" alt="A person sitting quietly in a dense, fog-covered forest" fill priority sizes="100vw" style={{ objectFit: 'cover' }} />
-            <div className={s.heroOverlay}>
-              <span className={s.heroCat}>Complete Guide</span>
-              <h1>The Ultimate Guide to Wellness Retreats (2026)</h1>
-              <div className={s.heroMeta}>
-                <span>By Sarah Mitchell</span>
-                <span>June 18, 2026</span>
-                <span>10 min read</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="container">
-            <div className={s.layout}>
-              {/* Main Content */}
-              <div className={s.body}>
-
-                <div className={s.introBrief}>
+    <BlogPost
+      title={metadata.title}
+      category="Complete Guide"
+      date="June"
+      readTime="10 min read"
+      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
+      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
+      canonicalUrl={metadata.alternates?.canonical || ''}
+      tocItems={[]}
+      tags={[]}
+      relatedPosts={[]}
+      faqSchema={faqSchema}
+      articleSchema={jsonLd}
+    >
+      <div className={s.introBrief}>
                   <strong>Wellness retreats in 2026 have shifted from simple relaxation to data-driven health, nervous-system regulation, and deep nature immersion.</strong> Expect contrast therapy, sleep optimization, and "cocooning" over high-intensity detoxes. <strong>Budget $1,500–$2,500/week for mid-range.</strong> Premium medical wellness runs $4,000+.
                 </div>
 
@@ -188,54 +112,6 @@ export default function WellnessRetreatsGuide() {
 
                 <h3>Where are the best wellness retreats located?</h3>
                 <p>For medical and data-driven wellness, Thailand (Kamalaya, RAKxa) and Europe (Lanserhof Lans, Palazzo Fiuggi) are the 2026 benchmarks. For eco-luxury and jungle immersion, Costa Rica and Bali remain top choices.</p>
-
-              </div>
-
-              {/* Sidebar TOC */}
-              <aside className={s.sidebar}>
-                <div className={s.toc}>
-                  <h3>In This Guide</h3>
-                  <ul>
-                    <li><a href="#what-has-changed">What Changed in 2026</a></li>
-                    <li><a href="#cost-and-value">Cost vs Value</a></li>
-                    <li><a href="#top-destinations">Benchmark Destinations</a></li>
-                    <li><a href="#how-to-choose">Spotting a Fake</a></li>
-                    <li><a href="#verdict">Honest Summary</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                  </ul>
-                </div>
-                <div className={s.relatedBox}>
-                  <h3>Related reads</h3>
-                  <ul>
-                    <li><Link href="/blog/yoga-retreats">The complete yoga retreats guide</Link></li>
-                    <li><Link href="/blog/how-to-book-yoga-retreat">How to book a yoga retreat</Link></li>
-                    <li><Link href="/blog/best-yoga-retreats">best yoga retreats</Link></li>
-                    <li><Link href="/blog/yoga-retreats-costa-rica">Costa Rica yoga retreats</Link></li>
-                    <li><Link href="/blog/luxury-yoga-retreats">Luxury retreats guide</Link></li>
-                  </ul>
-                </div>
-              </aside>
-            </div>
-          </div>
-
-          <div className={s.authorBox}>
-            <div className={s.authorAvatar}>
-              <Image src="/images/hero-portrait.jpg" alt="Sarah Mitchell" fill sizes="80px" style={{ objectFit: 'cover' }} />
-            </div>
-            <div className={s.authorMeta}>
-              <h3>Sarah Mitchell</h3>
-              <div className={s.authorRole}>Founder &amp; Lead Reviewer, YogaRetreatAdvisor</div>
-              <p>Former London project manager turned yoga travel writer. 14 retreats across 9 countries since 2018, from a $380 week in Rishikesh to a $4,200 luxury immersion in Tuscany. RYT-50. Based between London and Lisbon.</p>
-            </div>
-          </div>
-
-          <Newsletter />
-          <div className="container" style={{ textAlign: 'center', padding: '2rem 0' }}>
-            <a href="#top" style={{ fontWeight: 'bold', textDecoration: 'underline' }}>↑ Back to top</a>
-          </div>
-        </article>
-      </main>
-      <Footer />
-    </>
+    </BlogPost>
   )
 }
