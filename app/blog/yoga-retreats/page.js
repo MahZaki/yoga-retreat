@@ -69,7 +69,7 @@ export default function YogaRetreatsGuide() {
 
               <p>Here's what a mid-range retreat day actually looks like:</p>
 
-              <table className={s.table}>
+              <div className={s.tableWrap}><table className={s.table}>
                 <thead>
                   <tr><th>Time</th><th>Activity</th><th>What to expect</th></tr>
                 </thead>
@@ -85,7 +85,7 @@ export default function YogaRetreatsGuide() {
                   <tr><td>6:30–7:30 PM</td><td>Dinner</td><td>Light, plant-based</td></tr>
                   <tr><td>8:00 PM</td><td>Wind-down or gathering</td><td>Optional talks, kirtan, or just silence</td></tr>
                 </tbody>
-              </table>
+              </table></div>
 
               <p><strong>The meals:</strong> Vegetarian or vegan is the default at almost every retreat I've attended. If you have specific dietary requirements — allergies, intolerances, anything serious — contact the retreat before booking and get confirmation in writing that they can handle it. Don't assume.</p>
 
@@ -194,7 +194,7 @@ export default function YogaRetreatsGuide() {
 
               <p>The full regional breakdown, per week, full board (accommodation + 3 meals/day + all yoga sessions included):</p>
 
-              <table className={s.table}>
+              <div className={s.tableWrap}><table className={s.table}>
                 <thead>
                   <tr><th>Region</th><th>Budget/week</th><th>Mid-range/week</th><th>Luxury/week</th></tr>
                 </thead>
@@ -206,7 +206,7 @@ export default function YogaRetreatsGuide() {
                   <tr><td>Europe (Portugal/Spain/Italy)</td><td>$800–$1,200</td><td>$1,300–$2,100</td><td>$4,000+</td></tr>
                   <tr><td>USA (Colorado/Sedona/CA)</td><td>$900–$1,400</td><td>$1,500–$2,200</td><td>$4,000+</td></tr>
                 </tbody>
-              </table>
+              </table></div>
 
               <p><strong>What drives the price up:</strong></p>
               <ul>

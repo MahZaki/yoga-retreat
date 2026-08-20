@@ -159,7 +159,7 @@ export default function CaliforniaYogaRetreatPage() {
 
               <h2 id="prices">Price comparison by region</h2>
 
-              <table className={s.table}>
+              <div className={s.tableWrap}><table className={s.table}>
                 <thead>
                   <tr><th>Region</th><th>Weekend</th><th>5–7 nights</th><th>Signature venue</th><th>Best for</th></tr>
                 </thead>
@@ -169,7 +169,7 @@ export default function CaliforniaYogaRetreatPage() {
                   <tr><td>Joshua Tree</td><td>$250–$550</td><td>$500–$1,100</td><td>Various centres</td><td>Budget & desert fans</td></tr>
                   <tr><td>Bay Area</td><td>$200–$400</td><td>$450–$850</td><td>Spirit Rock</td><td>Value & meditation</td></tr>
                 </tbody>
-              </table>
+              </table></div>
 
               <h2 id="california-vs-colorado">California vs. Colorado</h2>
 

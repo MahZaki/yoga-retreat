@@ -122,7 +122,7 @@ export default function BestYogaRetreatsPage() {
       </div>
       <p className={s.imgCaption}>Photo by nappy · Pexels</p>
 
-      <table className={s.table}>
+      <div className={s.tableWrap}><table className={s.table}>
         <thead>
           <tr>
             <th>Category</th>
@@ -169,7 +169,7 @@ export default function BestYogaRetreatsPage() {
             <td>Capped groups, experienced teachers, genuine quality at premium</td>
           </tr>
         </tbody>
-      </table>
+      </table></div>
 
       <h2 id="platform-honesty">What retreat booking platforms don&apos;t tell you</h2>
 

@@ -164,7 +164,7 @@ export default function WomensYogaRetreatPage() {
 
               <h2 id="destinations">Best destinations by budget</h2>
 
-              <table className={s.table}>
+              <div className={s.tableWrap}><table className={s.table}>
                 <thead>
                   <tr>
                     <th>Destination</th>
@@ -211,7 +211,7 @@ export default function WomensYogaRetreatPage() {
                     <td>No long-haul, domestic, sliding scale</td>
                   </tr>
                 </tbody>
-              </table>
+              </table></div>
 
               <p><em>Prices from stats.md canonical benchmarks, 2025–2026. Full board = accommodation + 3 meals + all yoga sessions.</em></p>
 

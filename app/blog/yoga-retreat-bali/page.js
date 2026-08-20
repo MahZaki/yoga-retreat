@@ -160,7 +160,7 @@ export default function BaliYogaRetreatPage() {
 
       <h2 id="prices">Price comparison — the real numbers</h2>
 
-      <table className={s.table}>
+      <div className={s.tableWrap}><table className={s.table}>
         <thead>
           <tr><th>Area</th><th>Budget/week</th><th>Mid-range/week</th><th>Premium/week</th><th>Best for</th></tr>
         </thead>
@@ -169,7 +169,7 @@ export default function BaliYogaRetreatPage() {
           <tr><td>Canggu</td><td>$400–$700</td><td>$700–$1,400</td><td>$1,400–$2,200</td><td>First-timers, surfers, social</td></tr>
           <tr><td>Uluwatu</td><td>$900–$1,200</td><td>$1,200–$2,200</td><td>$2,200–$3,500+</td><td>Luxury, couples, experienced practitioners</td></tr>
         </tbody>
-      </table>
+      </table></div>
 
       <p><em>All prices per week, full board (accommodation + meals + all scheduled yoga sessions).</em></p>
 

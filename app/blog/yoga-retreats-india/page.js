@@ -127,7 +127,7 @@ export default function IndiaYogaRetreatPage() {
               <p><strong>How to tell a genuine ashram from a yoga-branded guesthouse:</strong> Ask three questions. Is there a fixed daily schedule? (A real ashram has one. A guesthouse will say "flexible.") What lineage does the teaching follow? (A real ashram can answer this specifically.) Who are the senior teachers and what is their training? If the answer to any of these is vague, you're looking at a guesthouse with incense.</p>
 
               <p><strong>Pricing in Rishikesh (per week, full board):</strong></p>
-              <table className={s.table}>
+              <div className={s.tableWrap}><table className={s.table}>
                 <thead>
                   <tr><th>Level</th><th>Weekly price</th><th>What's included</th></tr>
                 </thead>
@@ -137,7 +137,7 @@ export default function IndiaYogaRetreatPage() {
                   <tr><td>Premium / boutique</td><td>$1,200–$2,000</td><td>Private room, curated program, smaller group</td></tr>
                   <tr><td>Luxury</td><td>$2,500+</td><td>Villa-style, senior teacher, full programme</td></tr>
                 </tbody>
-              </table>
+              </table></div>
 
               <p><strong>Best time to visit:</strong> February to April and September to November. The monsoon runs July to August and brings real flooding — not dramatic, just wet and impractical. December to January is cold but manageable with layers. May to June: avoid if you can. The heat is significant and the town is at its most crowded.</p>
 
@@ -158,7 +158,7 @@ export default function IndiaYogaRetreatPage() {
               </ul>
 
               <p><strong>Pricing in Kerala (per week, including treatments):</strong></p>
-              <table className={s.table}>
+              <div className={s.tableWrap}><table className={s.table}>
                 <thead>
                   <tr><th>Level</th><th>Weekly price</th><th>What's included</th></tr>
                 </thead>
@@ -167,7 +167,7 @@ export default function IndiaYogaRetreatPage() {
                   <tr><td>Mid-range</td><td>$1,200–$2,000</td><td>Full Panchakarma, doctor consultations, meals, yoga</td></tr>
                   <tr><td>Premium</td><td>$2,000–$2,800</td><td>Private villa, personalised program, full treatments</td></tr>
                 </tbody>
-              </table>
+              </table></div>
 
               <p>Kerala is more expensive than Rishikesh because you're paying for the treatments, not the yoga. The cost reflects the cost of genuine Ayurvedic medicine, not a mark-up on accommodation.</p>
 
@@ -203,7 +203,7 @@ export default function IndiaYogaRetreatPage() {
 
               <p>India is the most affordable destination for serious yoga teaching in the world. It is not the most comfortable. The trade-off is real and you should make it consciously, not accidentally.</p>
 
-              <table className={s.table}>
+              <div className={s.tableWrap}><table className={s.table}>
                 <thead>
                   <tr><th>Destination</th><th>Budget/week</th><th>Mid-range/week</th><th>Teaching quality</th><th>Comfort level</th></tr>
                 </thead>
@@ -214,7 +214,7 @@ export default function IndiaYogaRetreatPage() {
                   <tr><td>Portugal, Europe</td><td>$800–$1,200</td><td>$1,300–$2,100</td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐⭐</td></tr>
                   <tr><td>Thailand</td><td>$600–$900</td><td>$950–$1,600</td><td>⭐⭐⭐</td><td>⭐⭐⭐⭐</td></tr>
                 </tbody>
-              </table>
+              </table></div>
 
               <p>My opinion, held consistently since that first Rishikesh trip: if you want the best yoga teaching available and you're willing to accept simpler accommodation, India is the answer. If you want both great teaching and beautiful surroundings, Portugal is the better value. If you want the full holiday experience alongside some yoga, Bali does that better than anywhere. These are different things. Pick based on what you actually need.</p>
 

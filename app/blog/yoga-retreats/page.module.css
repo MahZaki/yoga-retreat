@@ -157,16 +157,26 @@
 }
 
 /* ── Tables ── */
+.tableWrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 2rem 0;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  border: 1px solid var(--mist);
+}
 .table {
   width: 100%;
   border-collapse: collapse;
-  margin: 2rem 0;
   font-size: .95rem;
   background: #fff;
   border-radius: var(--radius-md);
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-  border: 1px solid var(--mist);
+  /* margin/shadow/border moved to .tableWrap so they don't double up */
+  margin: 0;
+  box-shadow: none;
+  border: none;
 }
 .table th {
   text-align: left;
@@ -178,6 +188,7 @@
   letter-spacing: .08em;
   color: var(--jungle-dark);
   border-bottom: 1px solid var(--mist);
+  white-space: nowrap;
 }
 .table td {
   padding: 16px 20px;
@@ -187,6 +198,7 @@
 }
 .table tr:last-child td { border-bottom: none; }
 .table tr:hover td { background: rgba(245, 245, 240, 0.5); }
+
 
 /* ── Sidebar TOC ── */
 .toc {
@@ -455,14 +467,18 @@
     aspect-ratio: 16 / 10;
   }
 
-  /* Tables: horizontal scroll so they never break layout */
+  /* Tables: horizontal scroll lives on tableWrap; just scale font on mobile */
+  .tableWrap {
+    border-radius: var(--radius-sm);
+    margin: 1.5rem 0;
+  }
   .table {
-    display: block;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    font-size: .875rem;
+    font-size: .82rem;
     white-space: nowrap;
   }
+  .table th,
+  .table td { padding: 12px 14px; }
+
 
   /* TOC: full width, horizontal scrolling pill row on small screens */
   .toc {
