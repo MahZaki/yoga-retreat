@@ -40,7 +40,7 @@ export default function WhatToPackPage() {
     <BlogPost
       title="What to Pack for a Yoga Retreat: The Honest 2026 Checklist"
       heroImage="/images/blog/packing-yoga-mat.jpg"
-      heroAlt="A travel bag packed for a wellness retreat with a yoga mat attached"
+      heroAlt="A vibrant collection of various suitcases stacked in preparation for travel."
       canonicalUrl="https://www.yogaretreatadvisor.com/blog/what-to-pack-yoga-retreat"
       category="Planning"
       date="June 2026"

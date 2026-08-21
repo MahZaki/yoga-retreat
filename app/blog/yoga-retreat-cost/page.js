@@ -24,7 +24,7 @@ export default function YogaRetreatCostGuide() {
       date="June 2026"
       readTime="10 min read"
       heroImage="/images/blog/retreat-cost-planning.jpg"
-      heroAlt="Planning a travel budget on a laptop"
+      heroAlt="Desk setup showing calculator, cash, coins, and financial notes for budgeting."
       canonicalUrl="https://www.yogaretreatadvisor.com/blog/yoga-retreat-cost"
       tocItems={[]}
       tags={[]}

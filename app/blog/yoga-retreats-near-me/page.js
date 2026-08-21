@@ -23,8 +23,8 @@ export default function YogaRetreatsNearMe() {
       category="Destinations"
       date="June 2026"
       readTime="8 min read"
-      heroImage="/images/blog/beginner-yoga-class.jpg"
-      heroAlt="Outdoor yoga class"
+      heroImage="/images/blog/yoga-near-me-hero.jpg"
+      heroAlt="Three people practicing yoga in a park during fall surrounded by trees."
       canonicalUrl="https://www.yogaretreatadvisor.com/blog/yoga-retreats-near-me"
       tocItems={[]}
       tags={[]}

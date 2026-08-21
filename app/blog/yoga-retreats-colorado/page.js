@@ -23,8 +23,8 @@ export default function ColoradoRetreatsGuide() {
       category="Destinations"
       date="June 2026"
       readTime="8 min read"
-      heroImage="/images/blog/california-yoga.jpg"
-      heroAlt="Mountain landscape with yoga practitioner"
+      heroImage="/images/blog/colorado-yoga-hero.jpg"
+      heroAlt="A person meditates in a cozy wooden cabin with mountain views in Colorado."
       canonicalUrl="https://www.yogaretreatadvisor.com/blog/yoga-retreats-colorado"
       tocItems={[]}
       tags={[]}
