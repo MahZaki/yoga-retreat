@@ -21,20 +21,20 @@ export default function GreeceRetreatsGuide() {
     <BlogPost
       title={metadata.title}
       category="Destinations"
-      date="June"
+      date="June 2026"
       readTime="8 min read"
-      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
-      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
-      canonicalUrl={metadata.alternates?.canonical || ''}
+      heroImage="/images/blog/greece-yoga-hero.jpg"
+      heroAlt="Woman practising yoga on a jetty in Greece at sunrise"
+      canonicalUrl="https://www.yogaretreatadvisor.com/blog/yoga-retreats-greece"
       tocItems={[]}
       tags={[]}
       relatedPosts={[]}
-      faqSchema={faqLd}
+      faqSchema={[]}
       articleSchema={{ datePublished: '2026-06-01', dateModified: '2026-08-21' }}
     >
-      <div className={s.introBrief}>
+      <p className={s.introBrief}>
                   <strong>Yoga retreats in Greece cost $900 for a budget stay in Crete up to $3,500+ for luxury in Santorini.</strong> Avoid July and August due to intense heat and tourist swarms—the best months are May and September. The Mediterranean diet and stunning aesthetics make Greece Europe's premier wellness destination, but beware of overpriced, under-taught "resort yoga."
-                </div>
+                </p>
 
                 <p>There's a specific quality of light in Greece. It bounces off the white-washed buildings, reflects off the impossibly blue Aegean Sea, and makes everything look slightly cinematic. It is, undeniably, one of the most beautiful places on earth to roll out a yoga mat.</p>
 

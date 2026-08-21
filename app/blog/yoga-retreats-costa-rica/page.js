@@ -91,18 +91,18 @@ export default function CostaRicaYogaRetreatsPage() {
       category="Destinations"
       date="May"
       readTime="9 min read"
-      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
-      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
-      canonicalUrl={metadata.alternates?.canonical || ''}
+      heroImage="/images/blog/costa-rica-jungle-yoga.jpg"
+      heroAlt=""
+      canonicalUrl="https://www.yogaretreatadvisor.com/blog/yoga-retreats-costa-rica"
       tocItems={[]}
       tags={[]}
       relatedPosts={[]}
       faqSchema={faqSchema}
       articleSchema={articleSchema}
     >
-      <div className={s.introBrief}>
+      <p className={s.introBrief}>
                 <strong>A yoga retreat in Costa Rica costs $700–$1,100/week for budget options and $1,200–$1,800/week for mid-range.</strong> Costa Rica is the best destination for US travellers who want world-class wellness infrastructure without a long-haul flight. Nosara is the most established yoga hub, Santa Teresa is social and surf-forward, and Uvita offers deep jungle immersion.
-              </div>
+              </p>
 
               <p>Costa Rica&apos;s yoga scene has been building quietly for fifteen years. It doesn&apos;t have Bali&apos;s brand equity or India&apos;s depth of tradition — but for a US traveller who wants serious yoga in a jungle or beach setting without a 16-hour flight and three days of jet lag recovery, it&apos;s hard to argue with. From the US East Coast, you&apos;re looking at 3–5 hours in the air. From the West Coast, 5–6. That matters more than people admit when you&apos;re trying to arrive ready to practise.</p>
 

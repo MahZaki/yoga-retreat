@@ -81,20 +81,20 @@ export default function SilentYogaRetreatPage() {
     <BlogPost
       title={metadata.title}
       category="Destinations"
-      date="June"
+      date="June 2026"
       readTime="8 min read"
-      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
-      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
-      canonicalUrl={metadata.alternates?.canonical || ''}
+      heroImage="/images/blog/silent-retreat-meditation.jpg"
+      heroAlt=""
+      canonicalUrl="https://www.yogaretreatadvisor.com/blog/silent-yoga-retreat"
       tocItems={[]}
       tags={[]}
       relatedPosts={[]}
       faqSchema={faqSchema}
       articleSchema={articleSchema}
     >
-      <div className={s.introBrief}>
+      <p className={s.introBrief}>
                 <strong>A silent yoga retreat requires strict "noble silence" (no speaking, eye contact, or gestures) for 3 to 10 days.</strong> Traditional 10-day Vipassana retreats are donation-based, while commercial hybrid silent retreats cost $600–$1,200/week. While deeply restorative for many, silent retreats strip away social coping mechanisms and are contraindicated for individuals with untreated depression, PTSD, or severe anxiety.
-              </div>
+              </p>
 
               <p>The first time I handed my phone over at a silent retreat registration desk, my immediate physical reaction was mild panic. It felt like handing over a vital organ. You put your phone, your books, and your journals into a canvas bag, and you don&apos;t see them again for ten days.</p>
               <p>For the next 240 hours, you do not speak. You do not make eye contact. You don&apos;t smile at the person passing you the water jug at lunch. You don&apos;t gesture. You just exist, quietly, alongside fifty other people doing exactly the same thing.</p>

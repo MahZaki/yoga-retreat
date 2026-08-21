@@ -81,20 +81,20 @@ export default function LuxuryYogaRetreatsPage() {
     <BlogPost
       title={metadata.title}
       category="Destinations"
-      date="June"
+      date="June 2026"
       readTime="8 min read"
-      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
-      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
-      canonicalUrl={metadata.alternates?.canonical || ''}
+      heroImage="/images/blog/luxury-resort-yoga.jpg"
+      heroAlt=""
+      canonicalUrl="https://www.yogaretreatadvisor.com/blog/luxury-yoga-retreats"
       tocItems={[]}
       tags={[]}
       relatedPosts={[]}
       faqSchema={faqSchema}
       articleSchema={articleSchema}
     >
-      <div className={s.introBrief}>
+      <p className={s.introBrief}>
                 <strong>Luxury yoga retreats cost $2,500–$5,000+ per week.</strong> The premium price buys you four specific things: zero logistical friction (private transfers, all meals), elite teaching depth (instructors with 20+ years of experience), intimate groups capped at 8–12 people, and high-end private accommodation. The best luxury wellness hubs are Tuscany, Bali, Provence, and the Riviera Maya.
-              </div>
+              </p>
 
               <p>Two years ago, I booked a six-day yoga retreat in a restored 12th-century farmhouse in Tuscany. The price was $4,200. In the months leading up to it, I almost cancelled three separate times. The number felt ridiculous. I had done excellent retreats in India for $380 a week. I knew exactly what a good teacher cost, and I knew the margin on this European retreat was enormous.</p>
               <p>When I arrived, the driver was waiting at Florence airport with cold water. My room had a standalone tub overlooking an olive grove. The group was capped at eight. The teacher had been studying Iyengar for twenty-five years and diagnosed a postural habit I&apos;d had for a decade within the first ten minutes of practice. Every meal was sourced from the surrounding five miles. I didn&apos;t touch my wallet or make a single decision for six days.</p>

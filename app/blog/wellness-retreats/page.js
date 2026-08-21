@@ -21,20 +21,20 @@ export default function WellnessRetreatsGuide() {
     <BlogPost
       title={metadata.title}
       category="Complete Guide"
-      date="June"
+      date="June 2026"
       readTime="10 min read"
-      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
-      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
-      canonicalUrl={metadata.alternates?.canonical || ''}
+      heroImage="/images/blog/wellness-retreat-forest.jpg"
+      heroAlt="Forest bathing at a wellness retreat"
+      canonicalUrl="https://www.yogaretreatadvisor.com/blog/wellness-retreats"
       tocItems={[]}
       tags={[]}
       relatedPosts={[]}
-      faqSchema={faqSchema}
+      faqSchema={[]}
       articleSchema={{ datePublished: '2026-06-01', dateModified: '2026-08-21' }}
     >
-      <div className={s.introBrief}>
+      <p className={s.introBrief}>
                   <strong>Wellness retreats in 2026 have shifted from simple relaxation to data-driven health, nervous-system regulation, and deep nature immersion.</strong> Expect contrast therapy, sleep optimization, and "cocooning" over high-intensity detoxes. <strong>Budget $1,500–$2,500/week for mid-range.</strong> Premium medical wellness runs $4,000+.
-                </div>
+                </p>
 
                 <p>The term "wellness retreat" used to mean a hotel with a slightly elevated spa menu and some morning yoga. By 2026, the industry has fractured into something far more specific, and frankly, far more effective. The current landscape is split between highly clinical, longevity-focused programs and deep, nature-immersive nervous system resets.</p>
 

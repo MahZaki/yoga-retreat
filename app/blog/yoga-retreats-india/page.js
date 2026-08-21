@@ -77,11 +77,11 @@ export default function IndiaYogaRetreatPage() {
     <BlogPost
       title={metadata.title}
       category="Destinations"
-      date="March"
+      date="March 2026"
       readTime="10 min read"
-      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
-      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
-      canonicalUrl={metadata.alternates?.canonical || ''}
+      heroImage="/images/blog/india-yoga.jpg"
+      heroAlt="Yoga practice at a Rishikesh ashram on the Ganges"
+      canonicalUrl="https://www.yogaretreatadvisor.com/blog/yoga-retreats-india"
       tocItems={[]}
       tags={[]}
       relatedPosts={[]}
@@ -89,9 +89,9 @@ export default function IndiaYogaRetreatPage() {
       articleSchema={schema}
     >
       {/* Featured snippet answer */}
-              <div className={s.introBrief}>
+              <p className={s.introBrief}>
                 <strong>A yoga retreat in India costs $300–$600 per week for a full-board ashram stay.</strong> India offers the most authentic teaching globally at the lowest price point. Rishikesh is best for traditional yoga and philosophy, Kerala is for Ayurvedic medical treatments, and Mysore is exclusively for Ashtanga practitioners.
-              </div>
+              </p>
 
               <p>My first yoga retreat was Rishikesh. $380, seven days, full board. I booked it at 11pm in March 2018, roughly two hours after concluding that the pace of my London financial services job had begun to express itself in ways that concerned my colleagues. I did not know what I was doing. I had been to one yoga class in my life. I arrived with three suitcases.</p>
 

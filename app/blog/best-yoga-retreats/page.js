@@ -66,9 +66,9 @@ export default function BestYogaRetreatsPage() {
       articleSchema={{ datePublished: '2025-06-03', image: '/images/blog/best-retreats-group.jpg' }}
       breadcrumbLabel="best yoga retreats"
     >
-      <div className={s.introBrief}>
+      <p className={s.introBrief}>
         <strong>The best yoga retreats consistently share four traits: verified teacher credentials, a daily schedule with 2.5–4 hours of practice, groups capped under 20, and transparent refund policies.</strong> The best value tier for high-quality instruction is $650–$1,800/week. Always verify reviews off-platform, as booking sites often rank retreats based on 10–25% commission fees rather than actual quality.
-      </div>
+      </p>
 
       <p>I have a 47-point retreat evaluation spreadsheet. I&apos;m mentioning this not as a flex but as a warning: I built it after spending $1,200 on a Bali retreat that was technically fine and practically hollow, and I&apos;ve refined it across 13 retreats since. What I learned is that the things most people use to evaluate retreats — the photography, the location, the price point — are not what determines whether the retreat is worth attending.</p>
 

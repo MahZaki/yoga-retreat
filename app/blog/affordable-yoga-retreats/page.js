@@ -105,20 +105,20 @@ export default function AffordableYogaRetreatsPage() {
     <BlogPost
       title={metadata.title}
       category="Destinations"
-      date="June"
+      date="June 2026"
       readTime="8 min read"
-      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
-      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
-      canonicalUrl={metadata.alternates?.canonical || ''}
+      heroImage="/images/blog/budget-yoga-nature.jpg"
+      heroAlt=""
+      canonicalUrl="https://www.yogaretreatadvisor.com/blog/affordable-yoga-retreats"
       tocItems={[]}
       tags={[]}
       relatedPosts={[]}
       faqSchema={faqSchema}
       articleSchema={articleSchema}
     >
-      <div className={s.introBrief}>
+      <p className={s.introBrief}>
                 <strong>When looking for the cheapest cities for yoga, expect to pay $300–$600/week in Rishikesh (India), $600–$900/week in Koh Phangan (Thailand), and $800–$1,200/week in the Algarve (Portugal).</strong> To book safely on a budget in these cheapest cities for yoga retreats, accept shared dormitories and set menus, but never compromise on the teacher's credentials. Always check for hidden costs like airport transfers, and verify if the retreat is genuinely all-inclusive.
-              </div>
+              </p>
 
               <p>The wellness industry has a terrible habit of using the word &quot;affordable&quot; without attaching a number to it. You&apos;ll read an article about an &quot;accessible budget escape&quot; only to click the link and discover it costs $2,400 for five nights, excluding flights.</p>
               <p>Let&apos;s be specific. My first yoga retreat in Rishikesh cost $380 for seven days, including three meals a day and accommodation. Eight years later, that same retreat is $450. That is an actual budget retreat.</p>

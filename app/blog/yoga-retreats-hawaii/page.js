@@ -21,20 +21,20 @@ export default function HawaiiRetreatsGuide() {
     <BlogPost
       title={metadata.title}
       category="Destinations"
-      date="June"
+      date="June 2026"
       readTime="7 min read"
-      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
-      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
-      canonicalUrl={metadata.alternates?.canonical || ''}
+      heroImage="/images/blog/hawaii-yoga-hero.jpg"
+      heroAlt="Beach yoga class with palm trees in Hawaii"
+      canonicalUrl="https://www.yogaretreatadvisor.com/blog/yoga-retreats-hawaii"
       tocItems={[]}
       tags={[]}
       relatedPosts={[]}
-      faqSchema={faqLd}
+      faqSchema={[]}
       articleSchema={{ datePublished: '2026-06-01', dateModified: '2026-08-21' }}
     >
-      <div className={s.introBrief}>
+      <p className={s.introBrief}>
                   <strong>Yoga retreats in Hawaii cost $1,500–$2,200 for budget/mid-range stays and $3,500+ for luxury.</strong> Maui is the best island for high-end wellness and eco-retreats, while the Big Island offers deep jungle immersion and active volcanic landscapes. Avoid Oahu if you want isolation. The high "Hawaii Tax" is offset by not needing a passport or long-haul flight from the US mainland.
-                </div>
+                </p>
 
                 <p>If you live in North America and want a tropical yoga retreat without the hassle of customs, a passport, or a 20-hour flight, Hawaii is the undisputed apex destination. The islands offer deep, ancient natural beauty alongside a mature wellness industry.</p>
 

@@ -81,20 +81,20 @@ export default function AllInclusiveYogaRetreatPage() {
     <BlogPost
       title={metadata.title}
       category="Destinations"
-      date="June"
+      date="June 2026"
       readTime="8 min read"
-      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
-      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
-      canonicalUrl={metadata.alternates?.canonical || ''}
+      heroImage="/images/blog/all-inclusive-resort.jpg"
+      heroAlt=""
+      canonicalUrl="https://www.yogaretreatadvisor.com/blog/all-inclusive-yoga-retreat"
       tocItems={[]}
       tags={[]}
       relatedPosts={[]}
       faqSchema={faqSchema}
       articleSchema={articleSchema}
     >
-      <div className={s.introBrief}>
+      <p className={s.introBrief}>
                 <strong>All-inclusive yoga retreats cost $600–$1,200/week in Asia, $1,200–$1,800/week in Europe, and $2,000–$2,500/week in Costa Rica or Mexico.</strong> A standard all-inclusive package covers accommodation, two daily yoga classes, and three meals per day. Unlike resort holidays, wellness retreats almost never include flights, airport transfers, spa treatments, or alcohol in their base price.
-              </div>
+              </p>
 
               <p>In the traditional travel industry, &quot;all-inclusive&quot; means you hand over your credit card at the time of booking, and you don&apos;t open your wallet again until you get to the airport to go home. It implies limitless margaritas by the pool and buffet dinners.</p>
               <p>In the wellness industry, &quot;all-inclusive&quot; means something slightly different, and first-timers often get caught out by the discrepancy. I&apos;ve booked retreats that claimed to be all-inclusive, only to arrive and find out that lunch wasn&apos;t covered because &quot;people usually like to explore town during the day.&quot;</p>

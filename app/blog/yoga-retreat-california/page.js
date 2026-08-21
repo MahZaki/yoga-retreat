@@ -74,9 +74,9 @@ export default function CaliforniaYogaRetreatPage() {
       category="Destinations"
       date="July"
       readTime="9 min read"
-      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
-      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
-      canonicalUrl={metadata.alternates?.canonical || ''}
+      heroImage="/images/blog/california-big-sur.jpg"
+      heroAlt="Big Sur coast in California"
+      canonicalUrl="https://www.yogaretreatadvisor.com/blog/yoga-retreat-california"
       tocItems={[]}
       tags={[]}
       relatedPosts={[]}
@@ -84,9 +84,9 @@ export default function CaliforniaYogaRetreatPage() {
       articleSchema={schema}
     >
       {/* Featured snippet */}
-              <div className={s.introBrief}>
+              <p className={s.introBrief}>
                 <strong>A yoga retreat in California costs $900–$1,400/week for budget stays and $1,500–$2,200/week for mid-range. Weekend retreats run $400–$1,100.</strong> The best regions are Ojai for spiritual depth, Big Sur for dramatic coastal nature, Joshua Tree for budget-friendly desert isolation, and the Bay Area for accessible residential programs.
-              </div>
+              </p>
 
               <p>I have recommended California and Colorado mountain retreats to three friends from my former corporate life — all of them deeply sceptical, all of them the kind of people who describe themselves as "not really the yoga type." All three came back as converts.</p>
 

@@ -89,20 +89,20 @@ export default function YogaRetreatForBeginnersPage() {
     <BlogPost
       title={metadata.title}
       category="Destinations"
-      date="June"
+      date="June 2026"
       readTime="10 min read"
-      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
-      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
-      canonicalUrl={metadata.alternates?.canonical || ''}
+      heroImage="/images/blog/beginner-yoga-class.jpg"
+      heroAlt=""
+      canonicalUrl="https://www.yogaretreatadvisor.com/blog/yoga-retreat-for-beginners"
       tocItems={[]}
       tags={[]}
       relatedPosts={[]}
       faqSchema={faqSchema}
       articleSchema={articleSchema}
     >
-      <div className={s.introBrief}>
+      <p className={s.introBrief}>
                 <strong>The best yoga retreats for beginners last 4–5 days rather than the standard 7 days.</strong> This duration provides a complete reset without the commitment of a full week. Budget $300–$1,400 depending on the destination. Look for mixed-level classes, a named lead teacher, and a group size under 15. You do not need to be flexible, experienced, or spiritual to attend.
-              </div>
+              </p>
 
               <p>I booked my first yoga retreat at 11pm on a Tuesday, slightly panicked, after a panic attack during a work meeting had left me unable to answer whether I wanted a glass of water. My friend Nina, a yoga teacher I&apos;d largely dismissed as &quot;one of those people,&quot; suggested I book something before I talked myself out of it. Seven days in Rishikesh, India. I arrived with no practice history, genuinely poor flexibility, and absolutely no spiritual framework. I came back different in ways that have proved lasting.</p>
               <p>That&apos;s not a pitch for Rishikesh. It&apos;s a pitch for booking before you feel ready — because most people never feel ready, and the nervousness of a first retreat turns out to be useful information rather than a reason to wait.</p>

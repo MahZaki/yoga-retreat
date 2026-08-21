@@ -70,9 +70,9 @@ export default function BaliYogaRetreatPage() {
       articleSchema={{ datePublished: '2025-02-11', image: '/images/blog/bali-ubud-yoga.jpg' }}
       breadcrumbLabel="yoga retreat bali"
     >
-      <div className={s.introBrief}>
+      <p className={s.introBrief}>
         <strong>A yoga retreat in Bali costs $600–$2,500/week in Ubud (the jungle yoga capital), $400–$1,400/week in Canggu (surf and social), and $900–$3,500/week in Uluwatu (clifftop luxury).</strong> While Bali commands a significant price premium over India, it remains the top global destination for practitioners seeking world-class wellness infrastructure combined with tropical aesthetics.
-      </div>
+      </p>
 
       <p>My second retreat was in Bali. I paid $1,200 for ten days in Ubud. The photography on the website was beautiful, and the schedule looked serious on paper. I arrived genuinely excited.</p>
 

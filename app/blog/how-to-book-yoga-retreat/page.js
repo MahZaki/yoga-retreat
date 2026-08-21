@@ -91,18 +91,18 @@ export default function BookYogaRetreatPage() {
       category="Destinations"
       date="May"
       readTime="8 min read"
-      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
-      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
-      canonicalUrl={metadata.alternates?.canonical || ''}
+      heroImage="/images/blog/booking-laptop-plan.jpg"
+      heroAlt=""
+      canonicalUrl="https://www.yogaretreatadvisor.com/blog/how-to-book-yoga-retreat"
       tocItems={[]}
       tags={[]}
       relatedPosts={[]}
       faqSchema={faqSchema}
       articleSchema={articleSchema}
     >
-      <div className={s.introBrief}>
+      <p className={s.introBrief}>
                 <strong>To book a yoga retreat safely:</strong> (1) set a total budget including flights and transfers, (2) choose a destination based on teaching style, (3) verify teacher credentials off-platform, (4) check the refund policy before paying a deposit (avoid anything over 50% upfront), and (5) always pay by credit card. Never rely solely on retreat booking platforms, as rankings are often influenced by 10–25% commission rates.
-              </div>
+              </p>
 
               <p>Most retreat mistakes aren&apos;t about choosing the wrong destination. They&apos;re about skipping the 45 minutes of admin that happens between &quot;I want to book this&quot; and &quot;I&apos;ve paid the deposit.&quot; Across 14 retreats in 9 countries, I&apos;ve watched myself — and heard from hundreds of readers — make every version of this mistake at least once. This guide is the checklist I wish I&apos;d had in 2018.</p>
 

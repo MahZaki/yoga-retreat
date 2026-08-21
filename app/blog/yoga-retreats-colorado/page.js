@@ -21,20 +21,20 @@ export default function ColoradoRetreatsGuide() {
     <BlogPost
       title={metadata.title}
       category="Destinations"
-      date="June"
+      date="June 2026"
       readTime="8 min read"
-      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
-      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
-      canonicalUrl={metadata.alternates?.canonical || ''}
+      heroImage="/images/blog/california-yoga.jpg"
+      heroAlt="Mountain landscape with yoga practitioner"
+      canonicalUrl="https://www.yogaretreatadvisor.com/blog/yoga-retreats-colorado"
       tocItems={[]}
       tags={[]}
       relatedPosts={[]}
-      faqSchema={faqSchema}
+      faqSchema={[]}
       articleSchema={{ datePublished: '2026-06-01', dateModified: '2026-08-21' }}
     >
-      <div className={s.introBrief}>
+      <p className={s.introBrief}>
                   <strong>Colorado yoga retreats combine high-altitude nature immersion with accessible wellness.</strong> Budget $900–$1,400/week for ashram-style stays (like Shoshoni) and $2,000+ for eco-luxury. It is the ultimate "gateway retreat" destination for beginners avoiding international flights.
-                </div>
+                </p>
 
                 <h2 id="why-colorado">Why Colorado is the Ultimate Gateway Destination</h2>
 

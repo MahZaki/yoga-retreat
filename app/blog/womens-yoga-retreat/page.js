@@ -94,9 +94,9 @@ export default function WomensYogaRetreatPage() {
       category="Retreat Types"
       date="August"
       readTime="9 min read"
-      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
-      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
-      canonicalUrl={metadata.alternates?.canonical || ''}
+      heroImage="/images/blog/womens-retreat-group.jpg"
+      heroAlt="Group of women practising yoga together outdoors at a retreat"
+      canonicalUrl="https://www.yogaretreatadvisor.com/blog/womens-yoga-retreat"
       tocItems={[]}
       tags={[]}
       relatedPosts={[]}
@@ -104,9 +104,9 @@ export default function WomensYogaRetreatPage() {
       articleSchema={schema}
     >
       {/* Featured snippet block — direct answer */}
-              <div className={s.introBrief}>
+              <p className={s.introBrief}>
                 <strong>Women-only yoga retreats cost $280–$550/week (India) to $1,600–$2,400/week (luxury Bali).</strong> The format consistently produces the highest participant satisfaction scores of any retreat type because it removes social self-consciousness. Women make up 72% of all retreat attendees globally, making this the fastest-growing segment in wellness travel.
-              </div>
+              </p>
 
               {/* Morocco story — canonical from stories.md */}
               <p>I almost didn&apos;t book the Atlas Mountains retreat. The format put me off — &quot;emotional processing with strangers in a mountain riad&quot; was not how I&apos;d planned to spend six days. I booked it on the recommendation of a reader who&apos;d emailed me, and largely because the logistics of going alone made sense. One less calculation to run.</p>
