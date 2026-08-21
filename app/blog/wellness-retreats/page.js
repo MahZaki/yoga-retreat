@@ -23,7 +23,7 @@ export default function WellnessRetreatsGuide() {
       category="Complete Guide"
       date="June 2026"
       readTime="10 min read"
-      heroImage="/images/blog/wellness-retreat-forest.jpg"
+      heroImage="/images/blog/wellness-retreats-hero.jpg"
       heroAlt="A man enjoying relaxation in a hot tub with a tranquil lake view outdoors."
       canonicalUrl="https://www.yogaretreatadvisor.com/blog/wellness-retreats"
       tocItems={[]}

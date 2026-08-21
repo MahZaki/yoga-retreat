@@ -45,7 +45,7 @@ export default function BestYogaRetreatsPage() {
       category="Planning"
       date="June 3, 2026"
       readTime="10 min read"
-      heroImage="/images/blog/best-retreats-group.jpg"
+      heroImage="/images/blog/best-yoga-retreats-hero.jpg"
       heroAlt="Group yoga session at an outdoor yoga retreat"
       canonicalUrl="https://www.yogaretreatadvisor.com/blog/best-yoga-retreats"
       tocItems={[
