@@ -59,10 +59,17 @@
   grid-template-columns: 1fr 340px;
   gap: 4rem;
   padding: 4rem 0 6rem;
+  /* Prevent grid children from overflowing the viewport */
+  overflow: hidden;
 }
 
 /* ── Body Typography & Content ── */
-.body { max-width: 760px; }
+.body {
+  max-width: 760px;
+  /* Critical: prevents grid item from expanding wider than the column */
+  min-width: 0;
+  overflow: hidden;
+}
 
 /* The new Intro Brief highlighted box */
 .introBrief {
@@ -159,12 +166,15 @@
 /* ── Tables ── */
 .tableWrap {
   width: 100%;
+  max-width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   margin: 2rem 0;
   border-radius: var(--radius-md);
   box-shadow: 0 4px 15px rgba(0,0,0,0.03);
   border: 1px solid var(--mist);
+  /* Ensure it never bleeds past its parent */
+  box-sizing: border-box;
 }
 .table {
   width: 100%;
@@ -243,6 +253,9 @@
   margin: 4rem 0 3rem;
   padding-top: 2rem;
   border-top: 1px solid var(--mist);
+  /* Safety: tags should never overflow their container */
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .authorBox {
@@ -406,7 +419,7 @@
     margin-bottom: 2.5rem;
   }
 
-  .body { max-width: 100%; }
+  .body { max-width: 100%; min-width: 0; overflow: hidden; }
 
   .relatedGrid { grid-template-columns: repeat(2, 1fr); }
 }
