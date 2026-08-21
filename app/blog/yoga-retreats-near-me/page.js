@@ -30,7 +30,7 @@ export default function YogaRetreatsNearMe() {
       tags={[]}
       relatedPosts={[]}
       faqSchema={faqLd}
-      articleSchema={jsonLd}
+      articleSchema={{ datePublished: '2026-06-01', dateModified: '2026-08-21' }}
     >
       <div className={s.introBrief}>
                   <strong>A domestic weekend yoga retreat in the US costs $400–$900 for a 3-night stay.</strong> You don't need a 15-hour flight to genuinely disconnect. The best driveable retreats are found at dedicated wellness centers like Kripalu (East Coast), Esalen (West Coast), Art of Living (South), and Drala Mountain Center (Rockies).

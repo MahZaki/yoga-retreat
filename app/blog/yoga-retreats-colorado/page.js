@@ -30,7 +30,7 @@ export default function ColoradoRetreatsGuide() {
       tags={[]}
       relatedPosts={[]}
       faqSchema={faqSchema}
-      articleSchema={jsonLd}
+      articleSchema={{ datePublished: '2026-06-01', dateModified: '2026-08-21' }}
     >
       <div className={s.introBrief}>
                   <strong>Colorado yoga retreats combine high-altitude nature immersion with accessible wellness.</strong> Budget $900–$1,400/week for ashram-style stays (like Shoshoni) and $2,000+ for eco-luxury. It is the ultimate "gateway retreat" destination for beginners avoiding international flights.

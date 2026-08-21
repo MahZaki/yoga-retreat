@@ -30,7 +30,7 @@ export default function BestWomensRetreats() {
       tags={[]}
       relatedPosts={[]}
       faqSchema={null}
-      articleSchema={jsonLd}
+      articleSchema={{ datePublished: '2026-06-01', dateModified: '2026-08-21' }}
     >
       <div className={s.introBrief}>
                   <strong>The best women's yoga retreats prioritize safety, deep emotional connection, and high-quality facilitation.</strong> Expect to pay $1,200–$2,800 for a week. Top destinations include Morocco (for emotional intensity), Costa Rica (for surfing and sisterhood), and Bali. Women make up roughly 72% of all retreat attendees globally.

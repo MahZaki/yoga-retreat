@@ -30,7 +30,7 @@ export default function WellnessRetreatsGuide() {
       tags={[]}
       relatedPosts={[]}
       faqSchema={faqSchema}
-      articleSchema={jsonLd}
+      articleSchema={{ datePublished: '2026-06-01', dateModified: '2026-08-21' }}
     >
       <div className={s.introBrief}>
                   <strong>Wellness retreats in 2026 have shifted from simple relaxation to data-driven health, nervous-system regulation, and deep nature immersion.</strong> Expect contrast therapy, sleep optimization, and "cocooning" over high-intensity detoxes. <strong>Budget $1,500–$2,500/week for mid-range.</strong> Premium medical wellness runs $4,000+.

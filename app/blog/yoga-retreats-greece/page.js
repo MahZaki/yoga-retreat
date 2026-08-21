@@ -30,7 +30,7 @@ export default function GreeceRetreatsGuide() {
       tags={[]}
       relatedPosts={[]}
       faqSchema={faqLd}
-      articleSchema={jsonLd}
+      articleSchema={{ datePublished: '2026-06-01', dateModified: '2026-08-21' }}
     >
       <div className={s.introBrief}>
                   <strong>Yoga retreats in Greece cost $900 for a budget stay in Crete up to $3,500+ for luxury in Santorini.</strong> Avoid July and August due to intense heat and tourist swarms—the best months are May and September. The Mediterranean diet and stunning aesthetics make Greece Europe's premier wellness destination, but beware of overpriced, under-taught "resort yoga."

@@ -30,7 +30,7 @@ export default function YogaRetreatCostGuide() {
       tags={[]}
       relatedPosts={[]}
       faqSchema={faqSchema}
-      articleSchema={jsonLd}
+      articleSchema={{ datePublished: '2026-06-01', dateModified: '2026-08-21' }}
     >
       <div className={s.introBrief}>
                   <strong>A yoga retreat costs $300–$600/week in India, $700–$1,100 in Costa Rica or Thailand, $900–$1,800 in Bali or Europe, and $1,500–$3,500 in Hawaii or the US.</strong> Flights and travel insurance are almost always excluded.

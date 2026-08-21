@@ -30,7 +30,7 @@ export default function HawaiiRetreatsGuide() {
       tags={[]}
       relatedPosts={[]}
       faqSchema={faqLd}
-      articleSchema={jsonLd}
+      articleSchema={{ datePublished: '2026-06-01', dateModified: '2026-08-21' }}
     >
       <div className={s.introBrief}>
                   <strong>Yoga retreats in Hawaii cost $1,500–$2,200 for budget/mid-range stays and $3,500+ for luxury.</strong> Maui is the best island for high-end wellness and eco-retreats, while the Big Island offers deep jungle immersion and active volcanic landscapes. Avoid Oahu if you want isolation. The high "Hawaii Tax" is offset by not needing a passport or long-haul flight from the US mainland.
