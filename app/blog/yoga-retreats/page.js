@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import BlogPost from '@/components/BlogPost'
+import s from '@/app/blog/yoga-retreats/page.module.css'
 
 export const metadata = {
   title: 'Yoga Retreats: The Complete Guide to Choosing, Booking & Preparing (2026)',
@@ -8,33 +10,70 @@ export const metadata = {
   openGraph: {
     title: 'Yoga Retreats: The Complete Guide for 2026',
     description: 'Compare yoga retreats across top destinations. Pricing, destinations, and what first-timers need to know.',
-    images: [{ url: '/images/blog/yoga-retreat-hero.jpg', width: 1200, height: 630, alt: 'Group practicing yoga at sunrise' }],
+    images: [{ url: '/images/blog/pillar-featured.png', width: 1200, height: 630, alt: 'Group practicing yoga at sunrise on a retreat' }],
     type: 'article',
   },
 }
 
-import BlogPost from '@/components/BlogPost'
-import s from '@/app/blog/yoga-retreats/page.module.css'
-
 export default function YogaRetreatsGuide() {
   return (
     <BlogPost
-      title={metadata.title}
+      title="Yoga Retreats: The Complete Guide to Choosing, Booking & Preparing (2026)"
       category="Complete Guide"
-      date="January"
+      date="January 2026"
       readTime="14 min read"
-      heroImage={metadata.openGraph?.images?.[0]?.url || ''}
-      heroAlt={metadata.openGraph?.images?.[0]?.alt || ''}
-      canonicalUrl={metadata.alternates?.canonical || ''}
-      tocItems={[]}
-      tags={[]}
-      relatedPosts={[]}
-      faqSchema={null}
-      articleSchema={jsonLd}
+      heroImage="/images/blog/pillar-featured.png"
+      heroAlt="Group practicing yoga at sunrise on a retreat"
+      canonicalUrl="https://www.yogaretreatadvisor.com/blog/yoga-retreats"
+      tocItems={[
+        { href: '#what-is-a-yoga-retreat', label: 'What is a yoga retreat?' },
+        { href: '#typical-day', label: 'A typical day' },
+        { href: '#real-benefits', label: 'Real benefits' },
+        { href: '#types-of-retreats', label: 'Types of retreats' },
+        { href: '#where-to-go', label: 'Best destinations & prices' },
+        { href: '#how-to-choose', label: 'How to choose' },
+        { href: '#how-much-does-it-cost', label: 'How much does it cost?' },
+        { href: '#what-to-pack', label: 'What to pack' },
+        { href: '#red-flags', label: 'Red flags to avoid' },
+        { href: '#after-the-retreat', label: 'After the retreat' },
+        { href: '#faq', label: 'FAQ' },
+      ]}
+      tags={['Planning', 'Beginners', 'Complete Guide']}
+      relatedPosts={[
+        {
+          href: '/blog/yoga-retreat-for-beginners',
+          img: '/images/blog/pillar-typical-day-new.png',
+          imgAlt: 'Beginner yoga class at a retreat',
+          label: 'Beginners',
+          title: 'Yoga Retreat for Beginners: What to Expect',
+        },
+        {
+          href: '/blog/yoga-retreat-cost',
+          img: '/images/blog/pillar-packing-new.jpg',
+          imgAlt: 'Planning a retreat budget',
+          label: 'Planning',
+          title: 'How Much Does a Yoga Retreat Cost? (2026)',
+        },
+        {
+          href: '/blog/yoga-retreat-bali',
+          img: '/images/blog/yoga-retreat-group-bali-beach.jpg',
+          imgAlt: 'Yoga retreat in Bali beach',
+          label: 'Destinations',
+          title: 'Best Yoga Retreats in Bali (2026)',
+        },
+      ]}
+      faqSchema={[
+        { question: 'What is the goal of a yoga retreat?', answer: 'The core goal is to deepen your practice — of yoga, of stillness, of paying attention — in an environment specifically designed for that purpose. The structure removes daily decisions and distractions that make sustained practice difficult at home.' },
+        { question: 'Can a beginner go on a yoga retreat?', answer: 'Yes. Look for a retreat that explicitly mentions beginner-friendly programming and mixed-level classes. A 3–5 day retreat is a better entry point than a 7–10 day program.' },
+        { question: 'How much does a yoga retreat cost?', answer: 'Budget options start at $300–$600/week in India and $600–$900 in Bali or Thailand. Mid-range runs $950–$2,100. Luxury from $2,500–$4,000+. Prices cover accommodation, meals, and yoga sessions.' },
+        { question: 'Can I go to a yoga retreat alone?', answer: 'Yes, and most people do. Around 60–65% of retreat bookings are solo travellers. Going alone means you are more likely to connect with other participants and can make decisions based entirely on what you need.' },
+      ]}
+      articleSchema={{ datePublished: '2026-01-01', dateModified: '2026-06-24' }}
+      breadcrumbLabel="Yoga Retreats Guide"
     >
-      <div className={s.introBrief}>
-                <strong>A yoga retreat is a structured 3 to 14-day wellness program focused on daily yoga practice.</strong> The standard package includes on-site accommodation, three healthy meals, and at least two daily practice sessions. It differs from a regular holiday by providing a curated schedule designed to remove daily decision-making and physical distractions.
-              </div>
+      <p className={s.introBrief}>
+        <strong>A yoga retreat is a structured 3–14 day wellness program built around daily yoga practice.</strong> The standard package includes on-site accommodation, three healthy meals per day, and at least two daily practice sessions. It differs from a regular holiday by providing a curated schedule designed to remove daily decision-making — which is precisely why it works.
+      </p>
 
               <h2 id="what-is-a-yoga-retreat">What is a yoga retreat?</h2>
 
@@ -69,23 +108,25 @@ export default function YogaRetreatsGuide() {
 
               <p>Here's what a mid-range retreat day actually looks like:</p>
 
-              <div className={s.tableWrap}><table className={s.table}>
-                <thead>
-                  <tr><th>Time</th><th>Activity</th><th>What to expect</th></tr>
-                </thead>
-                <tbody>
-                  <tr><td>5:30–6:00 AM</td><td>Wake-up bell / free time</td><td>Cold tiles, the smell of incense before you're ready for it</td></tr>
-                  <tr><td>6:00–6:30 AM</td><td>Pranayama or meditation</td><td>Seated, usually in silence</td></tr>
-                  <tr><td>6:30–8:30 AM</td><td>Morning yoga practice</td><td>The main session — vinyasa, hatha, or ashtanga depending on the program</td></tr>
-                  <tr><td>8:30–9:30 AM</td><td>Breakfast</td><td>Fresh, vegetarian, usually eaten in near-silence</td></tr>
-                  <tr><td>10:00 AM–12:30 PM</td><td>Free time or workshop</td><td>Massage, journaling, walking, or a talk on philosophy/anatomy</td></tr>
-                  <tr><td>12:30–1:30 PM</td><td>Lunch</td><td>Usually the largest meal of the day</td></tr>
-                  <tr><td>1:30–4:30 PM</td><td>Free time</td><td>The hours that feel longest on day one and shortest by day four</td></tr>
-                  <tr><td>4:30–6:00 PM</td><td>Evening yoga</td><td>Yin, restorative, or yoga nidra — slower and quieter</td></tr>
-                  <tr><td>6:30–7:30 PM</td><td>Dinner</td><td>Light, plant-based</td></tr>
-                  <tr><td>8:00 PM</td><td>Wind-down or gathering</td><td>Optional talks, kirtan, or just silence</td></tr>
-                </tbody>
-              </table></div>
+              <div className={s.tableWrap}>
+                <table className={s.table}>
+                  <thead>
+                    <tr><th>Time</th><th>Activity</th><th>What to expect</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>5:30–6:00 AM</td><td>Wake-up bell / free time</td><td>Cold tiles, the smell of incense before you're ready for it</td></tr>
+                    <tr><td>6:00–6:30 AM</td><td>Pranayama or meditation</td><td>Seated, usually in silence</td></tr>
+                    <tr><td>6:30–8:30 AM</td><td>Morning yoga practice</td><td>The main session — vinyasa, hatha, or ashtanga depending on the program</td></tr>
+                    <tr><td>8:30–9:30 AM</td><td>Breakfast</td><td>Fresh, vegetarian, usually eaten in near-silence</td></tr>
+                    <tr><td>10:00 AM–12:30 PM</td><td>Free time or workshop</td><td>Massage, journaling, walking, or a talk on philosophy/anatomy</td></tr>
+                    <tr><td>12:30–1:30 PM</td><td>Lunch</td><td>Usually the largest meal of the day</td></tr>
+                    <tr><td>1:30–4:30 PM</td><td>Free time</td><td>The hours that feel longest on day one and shortest by day four</td></tr>
+                    <tr><td>4:30–6:00 PM</td><td>Evening yoga</td><td>Yin, restorative, or yoga nidra — slower and quieter</td></tr>
+                    <tr><td>6:30–7:30 PM</td><td>Dinner</td><td>Light, plant-based</td></tr>
+                    <tr><td>8:00 PM</td><td>Wind-down or gathering</td><td>Optional talks, kirtan, or just silence</td></tr>
+                  </tbody>
+                </table>
+              </div>
 
               <p><strong>The meals:</strong> Vegetarian or vegan is the default at almost every retreat I've attended. If you have specific dietary requirements — allergies, intolerances, anything serious — contact the retreat before booking and get confirmation in writing that they can handle it. Don't assume.</p>
 
@@ -194,19 +235,21 @@ export default function YogaRetreatsGuide() {
 
               <p>The full regional breakdown, per week, full board (accommodation + 3 meals/day + all yoga sessions included):</p>
 
-              <div className={s.tableWrap}><table className={s.table}>
-                <thead>
-                  <tr><th>Region</th><th>Budget/week</th><th>Mid-range/week</th><th>Luxury/week</th></tr>
-                </thead>
-                <tbody>
-                  <tr><td>India (Rishikesh/Kerala)</td><td>$300–$600</td><td>$650–$1,100</td><td>$2,500+</td></tr>
-                  <tr><td>Bali, Indonesia</td><td>$600–$900</td><td>$1,000–$1,800</td><td>$3,000+</td></tr>
-                  <tr><td>Thailand</td><td>$600–$900</td><td>$950–$1,600</td><td>$3,000+</td></tr>
-                  <tr><td>Mexico</td><td>$700–$1,100</td><td>$1,200–$1,800</td><td>$3,200+</td></tr>
-                  <tr><td>Europe (Portugal/Spain/Italy)</td><td>$800–$1,200</td><td>$1,300–$2,100</td><td>$4,000+</td></tr>
-                  <tr><td>USA (Colorado/Sedona/CA)</td><td>$900–$1,400</td><td>$1,500–$2,200</td><td>$4,000+</td></tr>
-                </tbody>
-              </table></div>
+              <div className={s.tableWrap}>
+                <table className={s.table}>
+                  <thead>
+                    <tr><th>Region</th><th>Budget/week</th><th>Mid-range/week</th><th>Luxury/week</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>India (Rishikesh/Kerala)</td><td>$300–$600</td><td>$650–$1,100</td><td>$2,500+</td></tr>
+                    <tr><td>Bali, Indonesia</td><td>$600–$900</td><td>$1,000–$1,800</td><td>$3,000+</td></tr>
+                    <tr><td>Thailand</td><td>$600–$900</td><td>$950–$1,600</td><td>$3,000+</td></tr>
+                    <tr><td>Mexico</td><td>$700–$1,100</td><td>$1,200–$1,800</td><td>$3,200+</td></tr>
+                    <tr><td>Europe (Portugal/Spain/Italy)</td><td>$800–$1,200</td><td>$1,300–$2,100</td><td>$4,000+</td></tr>
+                    <tr><td>USA (Colorado/Sedona/CA)</td><td>$900–$1,400</td><td>$1,500–$2,200</td><td>$4,000+</td></tr>
+                  </tbody>
+                </table>
+              </div>
 
               <p><strong>What drives the price up:</strong></p>
               <ul>
