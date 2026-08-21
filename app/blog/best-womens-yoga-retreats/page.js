@@ -29,7 +29,7 @@ export default function BestWomensRetreats() {
       tocItems={[]}
       tags={[]}
       relatedPosts={[]}
-      faqSchema={null}
+      faqSchema={[]}
       articleSchema={{ datePublished: '2026-06-01', dateModified: '2026-08-21' }}
     >
       <div className={s.introBrief}>

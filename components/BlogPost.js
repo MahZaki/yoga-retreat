@@ -83,6 +83,13 @@ export default function BlogPost({
   /** JSON-LD: BreadcrumbList extra crumb label (3rd item) */
   breadcrumbLabel = '',
 }) {
+  // Null-safe guards — default values only catch undefined, not null
+  tocItems     = tocItems     ?? []
+  tags         = tags         ?? []
+  relatedPosts = relatedPosts ?? []
+  faqSchema    = faqSchema    ?? []
+  articleSchema = articleSchema ?? {}
+
   const pageUrl = canonicalUrl || SITE_URL
 
   const articleLd = {
