@@ -43,7 +43,7 @@ export default function BaliYogaRetreatPage() {
     <BlogPost
       title="Best yoga retreats in Bali 2026: Ubud, Canggu & Uluwatu — the honest comparison"
       category="Destinations"
-      date="February 11, 2025"
+      date="February 11, 2026"
       readTime="11 min read"
       heroImage="/images/blog/bali-ubud-yoga.jpg"
       heroAlt="Open-air yoga shala in Ubud, Bali surrounded by tropical jungle"
@@ -67,7 +67,7 @@ export default function BaliYogaRetreatPage() {
         { href: '/blog/yoga-retreat-for-beginners', img: '/images/blog/pillar-types-new.png', imgAlt: 'Yoga retreat for beginners', label: 'Beginner', title: 'First retreat: what to expect' },
       ]}
       faqSchema={faqSchema}
-      articleSchema={{ datePublished: '2025-02-11', image: '/images/blog/bali-ubud-yoga.jpg' }}
+      articleSchema={{ datePublished: '2026-02-11', image: '/images/blog/bali-ubud-yoga.jpg' }}
       breadcrumbLabel="yoga retreat bali"
     >
       <p className={s.introBrief}>

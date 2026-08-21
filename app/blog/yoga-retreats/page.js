@@ -346,7 +346,7 @@ export default function YogaRetreatsGuide() {
               <p><strong>What is the difference between a yoga retreat and a wellness retreat?</strong><br/>
               A yoga retreat has yoga as its primary and central activity — the schedule is built around practice. A wellness retreat uses yoga as one element among many: spa treatments, nutrition programs, therapy, breathwork, and fitness might all feature equally. Wellness retreats are typically more expensive, more medically adjacent, and less structurally focused on yoga. If deepening your practice is the goal, a yoga retreat is more effective. If a holistic physical reset is what you're after, a wellness retreat may serve you better.</p>
 
-              <p><em>All prices: per week, full board (accommodation + 3 meals/day + all yoga sessions), 2025–2026 benchmarks.</em></p>
+              <p><em>All prices: per week, full board (accommodation + 3 meals/day + all yoga sessions), 2026–2026 benchmarks.</em></p>
     </BlogPost>
   )
 }

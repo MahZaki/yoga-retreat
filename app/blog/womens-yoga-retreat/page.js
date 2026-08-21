@@ -19,8 +19,8 @@ const schema = {
   headline: "Women's Yoga Retreats 2026: What the Format Actually Changes",
   description: "Why women-only yoga retreats work, what to look for, and the best programmes across every budget.",
   author: { '@type': 'Person', name: 'Sarah Mitchell', url: 'https://www.yogaretreatadvisor.com/about' },
-  datePublished: '2025-08-26',
-  dateModified: '2025-08-26',
+  datePublished: '2026-08-26',
+  dateModified: '2026-08-26',
   publisher: { '@type': 'Organization', name: 'YogaRetreatAdvisor', url: 'https://www.yogaretreatadvisor.com' },
   image: 'https://www.yogaretreatadvisor.com/images/blog/womens-retreat-group.jpg',
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.yogaretreatadvisor.com/blog/womens-yoga-retreat' },
@@ -213,7 +213,7 @@ export default function WomensYogaRetreatPage() {
                 </tbody>
               </table></div>
 
-              <p><em>Prices from stats.md canonical benchmarks, 2025–2026. Full board = accommodation + 3 meals + all yoga sessions.</em></p>
+              <p><em>Prices from stats.md canonical benchmarks, 2026–2026. Full board = accommodation + 3 meals + all yoga sessions.</em></p>
 
               <h2 id="programmes">8 programmes worth knowing</h2>
 

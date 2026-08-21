@@ -43,7 +43,7 @@ export default function BestYogaRetreatsPage() {
     <BlogPost
       title="Best yoga retreats 2026: the 4-pillar framework for choosing well"
       category="Planning"
-      date="June 3, 2025"
+      date="June 3, 2026"
       readTime="10 min read"
       heroImage="/images/blog/best-retreats-group.jpg"
       heroAlt="Group yoga session at an outdoor yoga retreat"
@@ -63,7 +63,7 @@ export default function BestYogaRetreatsPage() {
         { href: '/blog/how-to-book-yoga-retreat', img: '/images/blog/pillar-choose-teacher-new.png', imgAlt: 'How to book a yoga retreat', label: 'Planning', title: 'How to book a retreat (step by step)' },
       ]}
       faqSchema={faqSchema}
-      articleSchema={{ datePublished: '2025-06-03', image: '/images/blog/best-retreats-group.jpg' }}
+      articleSchema={{ datePublished: '2026-06-03', image: '/images/blog/best-retreats-group.jpg' }}
       breadcrumbLabel="best yoga retreats"
     >
       <p className={s.introBrief}>
