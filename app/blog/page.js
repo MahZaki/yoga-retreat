@@ -69,9 +69,15 @@ const articles = [
   { slug: 'womens-yoga-retreat', title: "Women's yoga retreats: 8 programs for female practitioners", desc: "What actually changes in a women-only format — and eight specific programmes worth considering across India, Morocco, Portugal, and Bali.", category: 'Retreat Types', img: '/images/blog/womens-yoga.jpg', date: 'Aug 2026', readTime: '7 min', vol: 720 },
   { slug: 'silent-yoga-retreat', title: 'Silent yoga retreats: a guide to meditation-focused programs', desc: 'What Vipassana and other silent formats actually involve, who they suit, and the mental health considerations nobody puts in the marketing copy.', category: 'Retreat Types', img: '/images/blog/silent-yoga.jpg', date: 'Nov 2026', readTime: '8 min', vol: 210 },
   { slug: 'yoga-retreat-for-beginners', title: 'Yoga retreat for beginners: what to expect on your first trip', desc: 'First retreats done right: why 4–5 days beats 7, how to choose a level-appropriate programme, and what no one tells you about day one.', category: 'Retreat Types', img: '/images/blog/pillar-typical-day-new.png', date: 'Apr 2026', readTime: '7 min', vol: 260 },
+  // Reviews cluster
+  { slug: 'kamalaya-koh-samui-review', title: 'Kamalaya Koh Samui review: what $4,000+ actually buys you', desc: 'An honest, independent review of Kamalaya Koh Samui. What it actually costs, program reality, food standards, and whether the luxury wellness sanctuary justifies its price.', category: 'Reviews', img: '/images/blog/kamalaya-hero.jpg', date: 'Oct 2026', readTime: '8 min', vol: 1600 },
+  { slug: 'the-yoga-barn-ubud-review', title: 'The Yoga Barn Ubud review: Bali\'s wellness epicenter tested', desc: 'An honest review of The Yoga Barn in Ubud, Bali. Classes, retreat packages, crowds, on-site rooms, and whether it lives up to the hype.', category: 'Reviews', img: '/images/blog/yoga-barn-hero.jpg', date: 'Oct 2026', readTime: '7 min', vol: 2400 },
+  { slug: 'esalen-institute-review', title: 'Esalen Institute review: Big Sur\'s mythic sanctuary tested', desc: 'An honest review of Esalen Institute in Big Sur, California. Real costs, clothing-optional cliffside hot springs, workshop realities, and what to expect.', category: 'Reviews', img: '/images/blog/esalen-hero.jpg', date: 'Oct 2026', readTime: '8 min', vol: 1900 },
+  { slug: 'kripalu-yoga-retreat-review', title: 'Kripalu yoga retreat review: the Berkshire wellness giant tested', desc: 'An honest review of Kripalu Center for Yoga & Health in Massachusetts. R&R retreats, silent breakfasts, room tiers, costs, and whether it fits your needs.', category: 'Reviews', img: '/images/blog/kripalu-hero.jpg', date: 'Oct 2026', readTime: '7 min', vol: 1300 },
+  { slug: 'bodhi-tree-yoga-resort-review', title: 'Bodhi Tree Yoga Resort review: Costa Rica\'s jungle benchmark tested', desc: 'An honest review of Bodhi Tree Yoga Resort in Nosara, Costa Rica. Open-air shalas, surf access, true costs, food standards, and unbiased verdict.', category: 'Reviews', img: '/images/blog/bodhi-tree-hero.jpg', date: 'Oct 2026', readTime: '7 min', vol: 1100 },
 ]
 
-const categories = ['All', 'Guide', 'Planning', 'Destinations', 'Retreat Types']
+const categories = ['All', 'Guide', 'Planning', 'Destinations', 'Retreat Types', 'Comparisons', 'Reviews']
 
 export default function BlogPage() {
   const [activeCategory, setActiveCategory] = useState('All')
