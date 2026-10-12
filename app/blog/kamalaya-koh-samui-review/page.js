@@ -10,7 +10,7 @@ export const metadata = {
   openGraph: {
     title: 'Kamalaya Koh Samui Review: Is the $4,000+ Price Tag Worth It?',
     description: 'An honest review of Kamalaya Koh Samui. True costs, program breakdowns, food quality, and candid verdict.',
-    images: [{ url: '/images/blog/kamalaya-hero.jpg', width: 1200, height: 630, alt: 'Tropical wellness pool overlooking lush hillside in Koh Samui' }],
+    images: [{ url: '/images/blog/kamalaya-hero.jpg', width: 1200, height: 630, alt: 'Tranquil sunset over an ocean-facing infinity pool in Koh Samui, Thailand' }],
     type: 'article',
   },
 }
@@ -20,7 +20,7 @@ export default function KamalayaReviewPage() {
     <BlogPost
       title="Kamalaya Koh Samui Review: What $4,000+ Actually Buys You"
       heroImage="/images/blog/kamalaya-hero.jpg"
-      heroAlt="Lush tropical wellness sanctuary overlooking the Gulf of Thailand"
+      heroAlt="Tranquil sunset over an ocean-facing infinity pool in Koh Samui, Thailand"
       canonicalUrl="https://www.yogaretreatadvisor.com/blog/kamalaya-koh-samui-review"
       category="Reviews"
       date="October 2026"
