@@ -209,6 +209,37 @@
 .table tr:last-child td { border-bottom: none; }
 .table tr:hover td { background: rgba(245, 245, 240, 0.5); }
 
+/* ── Retreat Listings & Buttons ── */
+.retreatListing {
+  background: #fff;
+  border: 1px solid var(--mist);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin: 2.5rem 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+.retreatListing h3 {
+  margin-top: 0;
+  color: var(--jungle-dark);
+}
+.primaryBtn {
+  display: inline-block;
+  background-color: var(--terracotta);
+  color: #fff !important;
+  text-decoration: none !important;
+  padding: 12px 28px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: .95rem;
+  transition: all var(--transition);
+  box-shadow: 0 4px 16px rgba(200, 107, 74, 0.3);
+  border: none !important;
+}
+.primaryBtn:hover {
+  background-color: var(--terracotta-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(200, 107, 74, 0.4);
+}
 
 /* ── Sidebar TOC ── */
 .toc {
